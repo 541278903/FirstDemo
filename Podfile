@@ -7,5 +7,6 @@ target 'FirstDemo' do
 	pod 'GDataXML-HTML'
 	pod 'IQKeyboardManager'
 	pod 'RMQClient'
+  pod 'FMDB'
 
 end

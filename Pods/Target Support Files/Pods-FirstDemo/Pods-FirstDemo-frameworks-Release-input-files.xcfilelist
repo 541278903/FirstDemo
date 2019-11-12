@@ -1,6 +1,7 @@
 ${PODS_ROOT}/Target Support Files/Pods-FirstDemo/Pods-FirstDemo-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
 ${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework
+${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework
 ${BUILT_PRODUCTS_DIR}/GDataXML-HTML/GDataXML_HTML.framework
 ${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework
 ${BUILT_PRODUCTS_DIR}/JKVValue/JKVValue.framework
