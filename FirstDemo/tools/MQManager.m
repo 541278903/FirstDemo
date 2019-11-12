@@ -7,11 +7,14 @@
 //
 
 #import "MQManager.h"
+#import <RMQClient/RMQClient.h>
 @interface MQManager()
 
 @property(nonatomic,strong)NSString *IP;
 @property(nonatomic,strong)NSString *HOST;
 @property(nonatomic,strong)NSString *ROOTNAME;
+
+
 @end
 
 @implementation MQManager
