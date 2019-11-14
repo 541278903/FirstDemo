@@ -11,7 +11,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Fmdbtool : NSObject
-
+/// 单例返回
++(instancetype)GetInstance;
+//-(BOOL)insertName:(NSString *)name Age:(int)age;
+-(BOOL)insertWithTable:(NSString *)tablename argmes:(NSArray *)dic;
+-(NSArray *)serchTable:(NSString *)tablename argmes:(NSArray *)dic;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -22,11 +22,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.whiteColor;
-//    [self tou];
-//    Fmdbtool *dbto = [[Fmdbtool alloc]init];
     
-//    NSLog(@"%f",CGRectGetMaxX(self.view.frame));
+    NSArray *a = @[@{@"key":@"id",@"value":@"1"}];
     
+//    [[Fmdbtool GetInstance]insertWithTable:@"t_student" argmes:a];
+//    [[Fmdbtool GetInstance]serchTable:@"t_student" argmes:a];
 }
 
 
