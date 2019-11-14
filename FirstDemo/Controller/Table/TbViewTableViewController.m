@@ -27,9 +27,19 @@
 
 #pragma mark - Table view data source
 
+/// 多少组数据
+/// @param tableView 代理table
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 //#warning Incomplete implementation, return the number of sections
     return 2;
+}
+///下拉偏移量
+/// @param scrollView 代理scrollview
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+//    scrollView.contentOffset.y
+    NSLog(@"%f",scrollView.contentOffset.y);
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
