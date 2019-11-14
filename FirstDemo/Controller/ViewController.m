@@ -23,10 +23,11 @@
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.whiteColor;
     
-    NSArray *a = @[@{@"key":@"id",@"value":@"1"}];
-    
-//    [[Fmdbtool GetInstance]insertWithTable:@"t_student" argmes:a];
-//    [[Fmdbtool GetInstance]serchTable:@"t_student" argmes:a];
+    if(![[Fmdbtool GetInstance]serchBySql:@"select * from t_student1 where id = '13'"])
+    {
+        NSLog(@"error");
+    }
+//    NSLog(@"%@",);
 }
 
 

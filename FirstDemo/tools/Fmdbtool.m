@@ -81,41 +81,47 @@ static Fmdbtool *fmdbtool = nil;
     }
     return NO;
 }
--(BOOL)insertWithTable:(NSString *)tablename argmes:(NSArray *)dic
+/// 插入数据
+/// @param tablename 表名
+/// @param dic 插入的字段和值 如@{@"id":@"2",@"name":@"clasdjfioeow"};
+-(BOOL)insertWithTable:(NSString *)tablename argmes:(NSDictionary *)dic
 {
     [self CreateTable];
-    NSMutableString *arg = [[NSMutableString alloc]initWithFormat:@"("];
-    NSMutableString *value = [[NSMutableString alloc]initWithFormat:@"("];;
-    for (int i = 0; i<=dic.count-1; i++) {
-        NSDictionary *d = dic[i];
-        [arg appendString:d[@"key"]];
-        [value appendFormat:@"'%@'",d[@"value"]];
-        if(i < dic.count-1)
-        {
-            [arg appendString:@","];
-            [value appendString:@","];
-        }
-        else{
-            [arg appendString:@")"];
-            [value appendString:@")"];
-        }
+//    NSMutableString *arg = [[NSMutableString alloc]initWithFormat:@"("];
+//    NSMutableString *value = [[NSMutableString alloc]initWithFormat:@"("];
+    NSMutableArray *arg = [[NSMutableArray alloc]init];
+    NSMutableArray *values = [[NSMutableArray alloc]init];
+    for (NSString *key in dic.allKeys) {
+        [arg addObject:key];
+        [values addObject:[NSString stringWithFormat:@"'%@'",dic[key]]];
     }
-    NSString *strSql = [NSString stringWithFormat:@"insert into %@ %@ values %@",tablename,arg,value];
+    NSString *argstr = [NSString stringWithFormat:@"(%@)",[arg componentsJoinedByString:@","]];
+    NSString *valuesstr = [NSString stringWithFormat:@"(%@)",[values componentsJoinedByString:@","]];
+    NSString *strSql = [NSString stringWithFormat:@"insert into %@ %@ values %@",tablename,argstr,valuesstr];
     return [self.db executeUpdate:strSql];
+    
 }
--(NSArray *)serchTable:(NSString *)tablename argmes:(NSArray *)dic
+
+/// 查询值
+/// @param tablename 表名
+/// @param dic 参数 如@{@"id":@"2",@"name":@"clasdjfioeow"};
+-(NSArray *)serchTable:(NSString *)tablename argmes:(NSDictionary *)dic
 {
     NSMutableArray *result = [[NSMutableArray alloc]init];
     NSMutableString *serch = [[NSMutableString alloc] init];
-    for (NSDictionary *d in dic) {
-        if(!d)
+    for (NSString *key in dic) {
+        if(!dic)
         {
             break;
         }
-        [serch appendFormat:@"and t.%@ = '%@'",d[@"key"],d[@"value"]];
+        [serch appendFormat:@" and t.%@ = '%@' ",key,dic[key]];
     }
     NSString *strSql = [NSString stringWithFormat:@"select * from %@ t where 1=1 %@",tablename,serch];
     FMResultSet *rs = [self.db executeQuery:strSql];
+    if(!rs)
+    {
+        return nil;
+    }
     while ([rs next]) {
         NSMutableDictionary *ad = [[NSMutableDictionary alloc]init];
         for (NSString *key in rs.resultDictionary.allKeys) {
@@ -124,7 +130,32 @@ static Fmdbtool *fmdbtool = nil;
         [result addObject:ad];
         
     }
+    if(![rs next])
+    {
+        return nil;
+    }
 //    NSLog(@"%@",result);
+    return result;
+}
+
+/// 根据sql查询数据库
+/// @param sql  SQL语句
+-(NSArray *)serchBySql:(NSString *)sql
+{
+    NSMutableArray *result = [[NSMutableArray alloc]init];
+    FMResultSet *rs = [self.db executeQuery:sql];
+    if(!rs)
+    {
+        return nil;
+    }
+    while ([rs next]) {
+        NSMutableDictionary *ad = [[NSMutableDictionary alloc]init];
+        for (NSString *key in rs.resultDictionary.allKeys) {
+            [ad setObject:rs.resultDictionary[key] forKey:key];
+        }
+        [result addObject:ad];
+    }
+    NSLog(@"%@",result);
     return result;
 }
 

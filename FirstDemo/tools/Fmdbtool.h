@@ -14,8 +14,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// 单例返回
 +(instancetype)GetInstance;
 //-(BOOL)insertName:(NSString *)name Age:(int)age;
--(BOOL)insertWithTable:(NSString *)tablename argmes:(NSArray *)dic;
--(NSArray *)serchTable:(NSString *)tablename argmes:(NSArray *)dic;
+//-(BOOL)insertWithTable:(NSString *)tablename argmes:(NSArray *)dic;
+-(NSArray *)serchBySql:(NSString *)sql;
+-(BOOL)insertWithTable:(NSString *)tablename argmes:(NSDictionary *)dic;
+-(NSArray *)serchTable:(NSString *)tablename argmes:(NSDictionary *)dic;
 @end
 
 NS_ASSUME_NONNULL_END
