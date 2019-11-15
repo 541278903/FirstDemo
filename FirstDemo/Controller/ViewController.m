@@ -23,10 +23,19 @@
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.whiteColor;
     
-    if(![[Fmdbtool GetInstance]serchBySql:@"select * from t_student1 where id = '13'"])
-    {
-        NSLog(@"error");
-    }
+//    if(![[Fmdbtool GetInstance]serchBySql:@"select * from t_student where id = '1'"])
+//    {
+//        NSLog(@"error");
+//    }
+//    if(![[Fmdbtool GetInstance]ExecSQL:@"insert into t_student (name,age) values ('asd',100)"])
+//    {
+//        NSLog(@"error");
+//    }
+    NSLog(@"%@",[[Fmdbtool GetInstance]serchBySql:@"select * from t_student"]);
+//    if([[Fmdbtool GetInstance]ExecSQL:@"delete from t_student where id = 7 "])
+//    {
+//        NSLog(@"nihao");
+//    }
 //    NSLog(@"%@",);
 }
 

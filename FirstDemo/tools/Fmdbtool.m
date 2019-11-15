@@ -63,9 +63,9 @@ static Fmdbtool *fmdbtool = nil;
     }
     return _db;
 }
--(BOOL)CreateTable
+-(BOOL)CreateTable:(NSString *)TableName SQL:(NSString *)CreatTableSQL
 {
-    NSString *haveTable = @"select count(*) as count  from sqlite_master where type='table' and name = 't_student'";
+    NSString *haveTable = [NSString stringWithFormat:@"select count(*) as count  from sqlite_master where type='table' and name = '%@'",TableName];
     FMResultSet *rs = [self.db executeQuery:haveTable];
     NSLog(@"rs.count ---- %d",[rs columnCount]);
     while ([rs next]) {
@@ -75,8 +75,7 @@ static Fmdbtool *fmdbtool = nil;
             return YES;
         }else
         {
-            NSString *createTableSqlString = @"CREATE TABLE IF NOT EXISTS t_student (id integer PRIMARY KEY AUTOINCREMENT, name text  NULL, age integer  NULL)";
-            return [self.db executeUpdate:createTableSqlString];
+            return [self.db executeUpdate:CreatTableSQL];
         }
     }
     return NO;
@@ -86,9 +85,8 @@ static Fmdbtool *fmdbtool = nil;
 /// @param dic 插入的字段和值 如@{@"id":@"2",@"name":@"clasdjfioeow"};
 -(BOOL)insertWithTable:(NSString *)tablename argmes:(NSDictionary *)dic
 {
-    [self CreateTable];
-//    NSMutableString *arg = [[NSMutableString alloc]initWithFormat:@"("];
-//    NSMutableString *value = [[NSMutableString alloc]initWithFormat:@"("];
+//    [self CreateTable];
+    if(![self CreateTable:@"t_student" SQL:@"CREATE TABLE IF NOT EXISTS t_student (id integer PRIMARY KEY AUTOINCREMENT, name text  NULL, age integer  NULL)"]) return NO;
     NSMutableArray *arg = [[NSMutableArray alloc]init];
     NSMutableArray *values = [[NSMutableArray alloc]init];
     for (NSString *key in dic.allKeys) {
@@ -110,18 +108,12 @@ static Fmdbtool *fmdbtool = nil;
     NSMutableArray *result = [[NSMutableArray alloc]init];
     NSMutableString *serch = [[NSMutableString alloc] init];
     for (NSString *key in dic) {
-        if(!dic)
-        {
-            break;
-        }
+        if(!dic) break;
         [serch appendFormat:@" and t.%@ = '%@' ",key,dic[key]];
     }
     NSString *strSql = [NSString stringWithFormat:@"select * from %@ t where 1=1 %@",tablename,serch];
     FMResultSet *rs = [self.db executeQuery:strSql];
-    if(!rs)
-    {
-        return nil;
-    }
+    if(!rs) return nil;
     while ([rs next]) {
         NSMutableDictionary *ad = [[NSMutableDictionary alloc]init];
         for (NSString *key in rs.resultDictionary.allKeys) {
@@ -130,11 +122,6 @@ static Fmdbtool *fmdbtool = nil;
         [result addObject:ad];
         
     }
-    if(![rs next])
-    {
-        return nil;
-    }
-//    NSLog(@"%@",result);
     return result;
 }
 
@@ -144,10 +131,7 @@ static Fmdbtool *fmdbtool = nil;
 {
     NSMutableArray *result = [[NSMutableArray alloc]init];
     FMResultSet *rs = [self.db executeQuery:sql];
-    if(!rs)
-    {
-        return nil;
-    }
+    if(!rs) return nil;
     while ([rs next]) {
         NSMutableDictionary *ad = [[NSMutableDictionary alloc]init];
         for (NSString *key in rs.resultDictionary.allKeys) {
@@ -155,8 +139,15 @@ static Fmdbtool *fmdbtool = nil;
         }
         [result addObject:ad];
     }
-    NSLog(@"%@",result);
+//    NSLog(@"%@",result);
     return result;
+}
+
+/// 执行操作语句
+/// @param sql  SQL语句
+-(BOOL)ExecSQL:(NSString *)sql
+{
+    return [self.db executeUpdate:sql];
 }
 
 
