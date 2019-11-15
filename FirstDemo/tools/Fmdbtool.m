@@ -67,7 +67,6 @@ static Fmdbtool *fmdbtool = nil;
 {
     NSString *haveTable = [NSString stringWithFormat:@"select count(*) as count  from sqlite_master where type='table' and name = '%@'",TableName];
     FMResultSet *rs = [self.db executeQuery:haveTable];
-    NSLog(@"rs.count ---- %d",[rs columnCount]);
     while ([rs next]) {
         int count = [rs intForColumn:@"count"];
         if(count >= 1)
