@@ -10,6 +10,7 @@
 		2B3F26592355BCD2002E0E50 /* TbViewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3F26582355BCD2002E0E50 /* TbViewTableViewController.m */; };
 		2B3F265C2355BCEE002E0E50 /* TbCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3F265B2355BCEE002E0E50 /* TbCell.m */; };
 		2B4E4101234C3A1200F22869 /* TButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4E4100234C3A1200F22869 /* TButton.m */; };
+		2B8B295C2383C08F0038B9A5 /* MoveRedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B295B2383C08F0038B9A5 /* MoveRedView.m */; };
 		2B8DEF01234191630004E906 /* PageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8DEF00234191630004E906 /* PageView.m */; };
 		2B925E932358717A0036F859 /* Fmdbtool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B925E922358717A0036F859 /* Fmdbtool.m */; };
 		2BBDA090232684A000A2E111 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBDA08F232684A000A2E111 /* AppDelegate.m */; };
@@ -29,6 +30,9 @@
 		2B3F265B2355BCEE002E0E50 /* TbCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TbCell.m; sourceTree = "<group>"; };
 		2B4E40FF234C3A1200F22869 /* TButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TButton.h; sourceTree = "<group>"; };
 		2B4E4100234C3A1200F22869 /* TButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TButton.m; sourceTree = "<group>"; };
+		2B8B295A2383C08F0038B9A5 /* MoveRedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoveRedView.h; sourceTree = "<group>"; };
+		2B8B295B2383C08F0038B9A5 /* MoveRedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoveRedView.m; sourceTree = "<group>"; };
+		2B8B295D2383C37E0038B9A5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		2B8DEEFF234191630004E906 /* PageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageView.h; sourceTree = "<group>"; };
 		2B8DEF00234191630004E906 /* PageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageView.m; sourceTree = "<group>"; };
 		2B925E912358717A0036F859 /* Fmdbtool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fmdbtool.h; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 				2B8DEF00234191630004E906 /* PageView.m */,
 				2B4E40FF234C3A1200F22869 /* TButton.h */,
 				2B4E4100234C3A1200F22869 /* TButton.m */,
+				2B8B295A2383C08F0038B9A5 /* MoveRedView.h */,
+				2B8B295B2383C08F0038B9A5 /* MoveRedView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -151,6 +157,7 @@
 				2BBDA099232684A100A2E111 /* LaunchScreen.storyboard */,
 				2BBDA09C232684A100A2E111 /* Info.plist */,
 				2BBDA09D232684A100A2E111 /* main.m */,
+				2B8B295D2383C37E0038B9A5 /* PrefixHeader.pch */,
 			);
 			path = FirstDemo;
 			sourceTree = "<group>";
@@ -284,6 +291,7 @@
 				2B8DEF01234191630004E906 /* PageView.m in Sources */,
 				2B925E932358717A0036F859 /* Fmdbtool.m in Sources */,
 				2B4E4101234C3A1200F22869 /* TButton.m in Sources */,
+				2B8B295C2383C08F0038B9A5 /* MoveRedView.m in Sources */,
 				2BBDA09E232684A100A2E111 /* main.m in Sources */,
 				2BBDA090232684A000A2E111 /* AppDelegate.m in Sources */,
 			);

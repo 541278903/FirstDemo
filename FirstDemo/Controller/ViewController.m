@@ -11,6 +11,7 @@
 #import "PageView.h"
 #import "TButton.h"
 #import "Fmdbtool.h"
+#import "MoveRedView.h"
 
 @interface ViewController ()
 
@@ -22,21 +23,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.whiteColor;
+    MoveRedView *red = [[MoveRedView alloc]initWithFrame:CGRectMake(100, 100, 20, 20)];
+    red.backgroundColor = UIColor.redColor;
     
-//    if(![[Fmdbtool GetInstance]serchBySql:@"select * from t_student where id = '1'"])
-//    {
-//        NSLog(@"error");
-//    }
-//    if(![[Fmdbtool GetInstance]ExecSQL:@"insert into t_student (name,age) values ('asd',100)"])
-//    {
-//        NSLog(@"error");
-//    }
-    NSLog(@"%@",[[Fmdbtool GetInstance]serchBySql:@"select * from t_student"]);
-//    if([[Fmdbtool GetInstance]ExecSQL:@"delete from t_student where id = 7 "])
-//    {
-//        NSLog(@"nihao");
-//    }
-//    NSLog(@"%@",);
+    UIView *yelloview = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
+    yelloview.backgroundColor = UIColor.yellowColor;
+    [self.view addSubview:yelloview];
+    
+    [self.view addSubview:red];
+    
 }
 
 
