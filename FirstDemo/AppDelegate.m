@@ -6,14 +6,17 @@
 //  Copyright © 2019 com.Edward. All rights reserved.
 //
 
+#define MQKeys @[@"kern.*",@"test.*",@"c.34.33.#"]
+
+
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "TbViewTableViewController.h"
 #import "RecognizerController.h"
 #import "MQManager.h"
+#import "NetAsk.h"
 
 
-#define MQKeys @[@"kern.*",@"test.*"]
 
 @interface AppDelegate ()
 //@property(nonatomic,strong)UIViewController *view;
@@ -25,7 +28,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [[MQManager GetInstance]GetMsgWith:MQKeys];
+    [[MQManager GetInstance] GetMsgWith:MQKeys];
+    [[NetAsk GetInstance] IsNetWorking];
+//    [NetAsk GetInstance] 
 //    [self reccon];
     [self tuee];
     return YES;
@@ -35,16 +40,13 @@
     ViewController *vc = [[ViewController alloc]init];
     self.window.rootViewController = vc;
 }
--(void)reccon
-{
+-(void)reccon{
     RecognizerController *reccon = [[RecognizerController alloc]init];
     self.window.rootViewController = reccon;
 }
 //创建tablecontroller试图控制器
--(void)tuee
-{
+-(void)tuee{
     TbViewTableViewController *tbview = [[TbViewTableViewController alloc]init];
-//    [self StartMQ:tbview];
     self.window.rootViewController = tbview;
 }
 

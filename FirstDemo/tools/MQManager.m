@@ -16,8 +16,7 @@
 static MQManager *mainmanager = nil;
 //所有 MQ 消息形式 https://www.rabbitmq.com/getstarted.html
 @implementation MQManager
-+(instancetype)GetInstance
-{
++(instancetype)GetInstance{
     if(!mainmanager)
     {
         mainmanager = [[MQManager alloc]initWithDevice:@"EdwardMacPro"];
@@ -73,16 +72,13 @@ static MQManager *mainmanager = nil;
     NSLog(@"Waiting for logs.");
     /** 订阅消息 */
     [q subscribe:^(RMQMessage * _Nonnull message) {
-        if([message.routingKey isEqualToString:@"test.534272374"])
-        {
-            dispatch_async(dispatch_get_main_queue(), ^{
-                
-                UIAlertController *alertc = [UIAlertController alertControllerWithTitle:message.routingKey message:[[NSString alloc] initWithData:message.body encoding:NSUTF8StringEncoding] preferredStyle:UIAlertControllerStyleAlert];
-                UIAlertAction *ac = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
-                [alertc addAction:ac];
-                [[self topMostController] presentViewController:alertc animated:YES completion:nil];
-            });
-        }
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            UIAlertController *alertc = [UIAlertController alertControllerWithTitle:message.routingKey message:[[NSString alloc] initWithData:message.body encoding:NSUTF8StringEncoding] preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *ac = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+            [alertc addAction:ac];
+            [[self topMostController] presentViewController:alertc animated:YES completion:nil];
+        });
     }];
 }
 -(UIViewController *) topMostController {

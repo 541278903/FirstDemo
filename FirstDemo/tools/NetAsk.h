@@ -11,7 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NetAsk : NSObject
-
++(instancetype)GetInstance;
+-(void)IsNetWorking;
 @end
 
 NS_ASSUME_NONNULL_END
