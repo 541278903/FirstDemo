@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "TbViewTableViewController.h"
+#import "RecognizerController.h"
 #import "MQManager.h"
 
 
@@ -24,16 +25,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-//    [self logOut];
     [[MQManager GetInstance]GetMsgWith:MQKeys];
-    [self logOut];
+//    [self reccon];
+    [self tuee];
     return YES;
 }
+//创建普通控制器
 -(void)logOut{
     ViewController *vc = [[ViewController alloc]init];
-//    [self StartMQ:vc];
     self.window.rootViewController = vc;
 }
+-(void)reccon
+{
+    RecognizerController *reccon = [[RecognizerController alloc]init];
+    self.window.rootViewController = reccon;
+}
+//创建tablecontroller试图控制器
 -(void)tuee
 {
     TbViewTableViewController *tbview = [[TbViewTableViewController alloc]init];

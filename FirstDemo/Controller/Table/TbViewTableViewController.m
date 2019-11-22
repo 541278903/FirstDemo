@@ -38,7 +38,7 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
 //    scrollView.contentOffset.y
-    NSLog(@"%f",scrollView.contentOffset.y);
+//    NSLog(@"%f",scrollView.contentOffset.y);
     
 }
 

@@ -17,6 +17,7 @@
 		2B98AC2F23877ECB006CC0D1 /* MQManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B98AC2D23877ECB006CC0D1 /* MQManager.m */; };
 		2B98AC3523879191006CC0D1 /* NetAsk.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B98AC3423879191006CC0D1 /* NetAsk.m */; };
 		2B98AC38238796F5006CC0D1 /* DesHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B98AC37238796F5006CC0D1 /* DesHelper.m */; };
+		2B98AC3B23879AB2006CC0D1 /* RecognizerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B98AC3A23879AB2006CC0D1 /* RecognizerController.m */; };
 		2BBDA090232684A000A2E111 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBDA08F232684A000A2E111 /* AppDelegate.m */; };
 		2BBDA093232684A000A2E111 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBDA092232684A000A2E111 /* ViewController.m */; };
 		2BBDA096232684A000A2E111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BBDA094232684A000A2E111 /* Main.storyboard */; };
@@ -49,6 +50,8 @@
 		2B98AC3423879191006CC0D1 /* NetAsk.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetAsk.m; sourceTree = "<group>"; };
 		2B98AC36238796F4006CC0D1 /* DesHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesHelper.h; sourceTree = "<group>"; };
 		2B98AC37238796F5006CC0D1 /* DesHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesHelper.m; sourceTree = "<group>"; };
+		2B98AC3923879AB2006CC0D1 /* RecognizerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecognizerController.h; sourceTree = "<group>"; };
+		2B98AC3A23879AB2006CC0D1 /* RecognizerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecognizerController.m; sourceTree = "<group>"; };
 		2BBA7889234C68BE004055A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2BBDA08B232684A000A2E111 /* FirstDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BBDA08E232684A000A2E111 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -119,6 +122,8 @@
 				2B3F26562355BCBB002E0E50 /* Table */,
 				2BBDA091232684A000A2E111 /* ViewController.h */,
 				2BBDA092232684A000A2E111 /* ViewController.m */,
+				2B98AC3923879AB2006CC0D1 /* RecognizerController.h */,
+				2B98AC3A23879AB2006CC0D1 /* RecognizerController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -306,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B3F26592355BCD2002E0E50 /* TbViewTableViewController.m in Sources */,
+				2B98AC3B23879AB2006CC0D1 /* RecognizerController.m in Sources */,
 				2B98AC3523879191006CC0D1 /* NetAsk.m in Sources */,
 				2BBDA093232684A000A2E111 /* ViewController.m in Sources */,
 				2B3F265C2355BCEE002E0E50 /* TbCell.m in Sources */,

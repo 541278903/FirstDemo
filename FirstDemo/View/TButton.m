@@ -27,6 +27,8 @@
 }
 */
 
+
+//initWithFrame 设置内置控件的各种初始化（设置字体，设置图片，设置样式）
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -44,7 +46,7 @@
     return self;
 }
 
-
+//layoutSubviews设置各种内置控件的frame 添加控件
 - (void)layoutSubviews
 {
     [super layoutSubviews];
