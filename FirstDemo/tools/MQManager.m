@@ -11,6 +11,7 @@
 @interface MQManager()<RMQConnectionDelegate>
 @property (nonatomic,strong) RMQConnection *conn;
 @property (nonatomic,weak) NSString *device;
+//@property (nonatomic,strong)UIAlertController *alertc;
 @end
 static MQManager *mainmanager = nil;
 //所有 MQ 消息形式 https://www.rabbitmq.com/getstarted.html
@@ -33,14 +34,14 @@ static MQManager *mainmanager = nil;
     return self;
 }
 -(void)GetMsg{
-//    [self receiveLogsTopic:@[@"kern.*",@"test.*"]];
+    [self receiveLogsTopic:@[@"kern.*",@"test.*"]];
 }
--(void)GetMsgWith:(NSArray *)routingKeys andwith:(UIViewController *)controller
+-(void)GetMsgWith:(NSArray *)routingKeys
 {
-    [self receiveLogsTopic:routingKeys andwith:controller];
+    [self receiveLogsTopic:routingKeys];
 }
 -(void)SendMsg:(NSString *)msg{
-    //[NSString stringWithFormat:@"test.%@",device]
+    
     [self emitLogTopic:msg routingKey:[NSString stringWithFormat:@"test.%@",self.device]];
 }
 
@@ -56,7 +57,7 @@ static MQManager *mainmanager = nil;
     [con close];
 }
 
--(void)receiveLogsTopic:(NSArray *)routingKeys andwith:(UIViewController *)controller{
+-(void)receiveLogsTopic:(NSArray *)routingKeys{
     NSLog(@"Attempting to connect to local RabbitMQ broker");
     /** 创建连接 */
     [self.conn start];
@@ -74,9 +75,22 @@ static MQManager *mainmanager = nil;
     [q subscribe:^(RMQMessage * _Nonnull message) {
         if([message.routingKey isEqualToString:@"test.534272374"])
         {
-            NSLog(@"%@::::::%@", message.routingKey, [[NSString alloc] initWithData:message.body encoding:NSUTF8StringEncoding]);
+            dispatch_async(dispatch_get_main_queue(), ^{
+                
+                UIAlertController *alertc = [UIAlertController alertControllerWithTitle:message.routingKey message:[[NSString alloc] initWithData:message.body encoding:NSUTF8StringEncoding] preferredStyle:UIAlertControllerStyleAlert];
+                UIAlertAction *ac = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+                [alertc addAction:ac];
+                [[self topMostController] presentViewController:alertc animated:YES completion:nil];
+            });
         }
     }];
+}
+-(UIViewController *) topMostController {
+  UIViewController*topController = [UIApplication sharedApplication].keyWindow.rootViewController;
+  while(topController.presentedViewController){
+    topController=topController.presentedViewController;
+  }
+  return topController;
 }
 -(void)dealloc{
     [self.conn close];

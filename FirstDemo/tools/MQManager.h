@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,weak) NSString *key;
 +(instancetype)GetInstance;
 -(void)GetMsg;
--(void)GetMsgWith:(NSArray *)routingKeys andwith:(UIViewController *)controller;
+-(void)GetMsgWith:(NSArray *)routingKeys;
 -(void)SendMsg:(NSString *)msg;
 @end
 

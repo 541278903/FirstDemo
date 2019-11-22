@@ -15,6 +15,7 @@
 #define MQKeys @[@"kern.*",@"test.*"]
 
 @interface AppDelegate ()
+//@property(nonatomic,strong)UIViewController *view;
 
 @end
 
