@@ -9,6 +9,10 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "TbViewTableViewController.h"
+#import "MQManager.h"
+
+
+#define MQKeys @[@"kern.*",@"test.*"]
 
 @interface AppDelegate ()
 
@@ -23,13 +27,19 @@
     [self logOut];
     return YES;
 }
+-(void)StartMQ:(UIViewController *)con
+{
+    [[MQManager GetInstance]GetMsgWith:MQKeys andwith:con];
+}
 -(void)logOut{
     ViewController *vc = [[ViewController alloc]init];
+    [self StartMQ:vc];
     self.window.rootViewController = vc;
 }
 -(void)tuee
 {
     TbViewTableViewController *tbview = [[TbViewTableViewController alloc]init];
+    [self StartMQ:tbview];
     self.window.rootViewController = tbview;
 }
 

@@ -18,11 +18,6 @@
     CGFloat movex = local.x - before.x;
     CGFloat movey = local.y - before.y;
     self.transform = CGAffineTransformTranslate(self.transform, movex, movey);
-//    CGPoint lo = self.frame.origin;
-//    if(lo.x<100 && lo.y<100)
-//    {
-//        NSLog(@"大于");
-//    }
 }
 
 

@@ -48,12 +48,12 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-//    [self setTitle:@"你好" forState:UIControlStateNormal];
+    [self setTitle:@"你好" forState:UIControlStateNormal];
     self.titleLabel.frame = CGRectMake(0, 50, 50, 10);
     self.imageView.frame = CGRectMake(0,0,50,50);
 
-//    [self setTimview:self.timview];
-//    [self setImage:self.timview forState:UIControlStateNormal];
+    [self setTimview:self.timview];
+    [self setImage:self.timview forState:UIControlStateNormal];
 }
 //
 //- (CGRect)titleRectForContentRect:(CGRect)contentRect

@@ -13,6 +13,8 @@
 		2B8B295C2383C08F0038B9A5 /* MoveRedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B295B2383C08F0038B9A5 /* MoveRedView.m */; };
 		2B8DEF01234191630004E906 /* PageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8DEF00234191630004E906 /* PageView.m */; };
 		2B925E932358717A0036F859 /* Fmdbtool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B925E922358717A0036F859 /* Fmdbtool.m */; };
+		2B98AB6F23868757006CC0D1 /* RecognizerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B98AB6E23868757006CC0D1 /* RecognizerView.m */; };
+		2B98AC2F23877ECB006CC0D1 /* MQManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B98AC2D23877ECB006CC0D1 /* MQManager.m */; };
 		2BBDA090232684A000A2E111 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBDA08F232684A000A2E111 /* AppDelegate.m */; };
 		2BBDA093232684A000A2E111 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBDA092232684A000A2E111 /* ViewController.m */; };
 		2BBDA096232684A000A2E111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BBDA094232684A000A2E111 /* Main.storyboard */; };
@@ -37,6 +39,10 @@
 		2B8DEF00234191630004E906 /* PageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageView.m; sourceTree = "<group>"; };
 		2B925E912358717A0036F859 /* Fmdbtool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fmdbtool.h; sourceTree = "<group>"; };
 		2B925E922358717A0036F859 /* Fmdbtool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fmdbtool.m; sourceTree = "<group>"; };
+		2B98AB6D23868757006CC0D1 /* RecognizerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecognizerView.h; sourceTree = "<group>"; };
+		2B98AB6E23868757006CC0D1 /* RecognizerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecognizerView.m; sourceTree = "<group>"; };
+		2B98AC2D23877ECB006CC0D1 /* MQManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQManager.m; sourceTree = "<group>"; };
+		2B98AC2E23877ECB006CC0D1 /* MQManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQManager.h; sourceTree = "<group>"; };
 		2BBA7889234C68BE004055A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2BBDA08B232684A000A2E111 /* FirstDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BBDA08E232684A000A2E111 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -89,6 +95,8 @@
 		2B925E90235870650036F859 /* tools */ = {
 			isa = PBXGroup;
 			children = (
+				2B98AC2E23877ECB006CC0D1 /* MQManager.h */,
+				2B98AC2D23877ECB006CC0D1 /* MQManager.m */,
 				2B925E912358717A0036F859 /* Fmdbtool.h */,
 				2B925E922358717A0036F859 /* Fmdbtool.m */,
 			);
@@ -121,6 +129,8 @@
 				2B4E4100234C3A1200F22869 /* TButton.m */,
 				2B8B295A2383C08F0038B9A5 /* MoveRedView.h */,
 				2B8B295B2383C08F0038B9A5 /* MoveRedView.m */,
+				2B98AB6D23868757006CC0D1 /* RecognizerView.h */,
+				2B98AB6E23868757006CC0D1 /* RecognizerView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -147,12 +157,12 @@
 			isa = PBXGroup;
 			children = (
 				2B925E90235870650036F859 /* tools */,
-				2BBDA08E232684A000A2E111 /* AppDelegate.h */,
-				2BBDA08F232684A000A2E111 /* AppDelegate.m */,
 				2BA5B181234047A300AD0983 /* Model */,
 				2BA5B182234047AC00AD0983 /* View */,
 				2BA5B1802340478E00AD0983 /* Controller */,
 				2BBDA094232684A000A2E111 /* Main.storyboard */,
+				2BBDA08E232684A000A2E111 /* AppDelegate.h */,
+				2BBDA08F232684A000A2E111 /* AppDelegate.m */,
 				2BBDA097232684A100A2E111 /* Assets.xcassets */,
 				2BBDA099232684A100A2E111 /* LaunchScreen.storyboard */,
 				2BBDA09C232684A100A2E111 /* Info.plist */,
@@ -289,8 +299,10 @@
 				2BBDA093232684A000A2E111 /* ViewController.m in Sources */,
 				2B3F265C2355BCEE002E0E50 /* TbCell.m in Sources */,
 				2B8DEF01234191630004E906 /* PageView.m in Sources */,
+				2B98AC2F23877ECB006CC0D1 /* MQManager.m in Sources */,
 				2B925E932358717A0036F859 /* Fmdbtool.m in Sources */,
 				2B4E4101234C3A1200F22869 /* TButton.m in Sources */,
+				2B98AB6F23868757006CC0D1 /* RecognizerView.m in Sources */,
 				2B8B295C2383C08F0038B9A5 /* MoveRedView.m in Sources */,
 				2BBDA09E232684A100A2E111 /* main.m in Sources */,
 				2BBDA090232684A000A2E111 /* AppDelegate.m in Sources */,
