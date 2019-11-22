@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface NetAsk : NSObject
 +(instancetype)GetInstance;
 -(void)IsNetWorking;
+-(void)POST:(NSString *)URL parameters:(id)parameters isXML:(BOOL)isXML resultcom:(void (^)(NSString *bl))comp;
+-(void)GET:(NSString *)URL parameters:(id)parameters isXML:(BOOL)isXML resultcom:(void (^)(NSString *bl))comp;
 @end
 
 NS_ASSUME_NONNULL_END

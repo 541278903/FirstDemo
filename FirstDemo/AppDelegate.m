@@ -30,9 +30,7 @@
     // Override point for customization after application launch.
     [[MQManager GetInstance] GetMsgWith:MQKeys];
     [[NetAsk GetInstance] IsNetWorking];
-//    [NetAsk GetInstance] 
-//    [self reccon];
-    [self tuee];
+    [self logOut];
     return YES;
 }
 //创建普通控制器

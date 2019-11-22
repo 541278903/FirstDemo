@@ -13,6 +13,7 @@
 #import "Fmdbtool.h"
 #import "MoveRedView.h"
 #import "RecognizerView.h"
+#import "NetAsk.h"
 
 @interface ViewController ()
 
@@ -23,7 +24,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+//    [self.view.backgroundColor ]
+    [self.view setBackgroundColor:UIColor.whiteColor];
+//    [[NetAsk GetInstance] POST:@"http://localhost:8080/zxzx" parameters:nil resultcom:^(NSString * _Nonnull bl) {
+//        NSLog(@"%@",bl);
+//    }];
+    [[NetAsk GetInstance]POST:@"http://y2k8lcqgv7.52http.net/TServer.asmx/GetAllData" parameters:nil isXML:YES resultcom:^(NSString * _Nonnull bl) {
+        NSLog(@"%@",bl);
+    }];
 }
 
 
