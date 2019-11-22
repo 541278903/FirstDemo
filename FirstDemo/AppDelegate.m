@@ -25,22 +25,19 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 //    [self logOut];
+    [[MQManager GetInstance]GetMsgWith:MQKeys];
     [self logOut];
     return YES;
 }
--(void)StartMQ:(UIViewController *)con
-{
-    [[MQManager GetInstance]GetMsgWith:MQKeys andwith:con];
-}
 -(void)logOut{
     ViewController *vc = [[ViewController alloc]init];
-    [self StartMQ:vc];
+//    [self StartMQ:vc];
     self.window.rootViewController = vc;
 }
 -(void)tuee
 {
     TbViewTableViewController *tbview = [[TbViewTableViewController alloc]init];
-    [self StartMQ:tbview];
+//    [self StartMQ:tbview];
     self.window.rootViewController = tbview;
 }
 
