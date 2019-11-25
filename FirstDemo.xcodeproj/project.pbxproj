@@ -12,6 +12,7 @@
 		2B49085D238B7CF900711364 /* BLAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B49085C238B7CF900711364 /* BLAlert.m */; };
 		2B490860238BCBC100711364 /* BLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B49085F238BCBC100711364 /* BLController.m */; };
 		2B490863238BCF8500711364 /* AllController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B490862238BCF8500711364 /* AllController.m */; };
+		2B490866238BD7AD00711364 /* SendMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B490865238BD7AD00711364 /* SendMessageController.m */; };
 		2B4E4101234C3A1200F22869 /* TButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4E4100234C3A1200F22869 /* TButton.m */; };
 		2B8B295C2383C08F0038B9A5 /* MoveRedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B295B2383C08F0038B9A5 /* MoveRedView.m */; };
 		2B8DEF01234191630004E906 /* PageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8DEF00234191630004E906 /* PageView.m */; };
@@ -42,6 +43,8 @@
 		2B49085F238BCBC100711364 /* BLController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLController.m; sourceTree = "<group>"; };
 		2B490861238BCF8500711364 /* AllController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AllController.h; path = FirstDemo/Controller/AllController.h; sourceTree = SOURCE_ROOT; };
 		2B490862238BCF8500711364 /* AllController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AllController.m; path = FirstDemo/Controller/AllController.m; sourceTree = SOURCE_ROOT; };
+		2B490864238BD7AD00711364 /* SendMessageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SendMessageController.h; sourceTree = "<group>"; };
+		2B490865238BD7AD00711364 /* SendMessageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SendMessageController.m; sourceTree = "<group>"; };
 		2B4E40FF234C3A1200F22869 /* TButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TButton.h; sourceTree = "<group>"; };
 		2B4E4100234C3A1200F22869 /* TButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TButton.m; sourceTree = "<group>"; };
 		2B8B295A2383C08F0038B9A5 /* MoveRedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoveRedView.h; sourceTree = "<group>"; };
@@ -64,7 +67,7 @@
 		2BBA7889234C68BE004055A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2BBDA08B232684A000A2E111 /* FirstDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BBDA08E232684A000A2E111 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2BBDA08F232684A000A2E111 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2BBDA08F232684A000A2E111 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; wrapsLines = 0; };
 		2BBDA091232684A000A2E111 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2BBDA092232684A000A2E111 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2BBDA095232684A000A2E111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -135,6 +138,8 @@
 				2B98AC3A23879AB2006CC0D1 /* RecognizerController.m */,
 				2B49085E238BCBC100711364 /* BLController.h */,
 				2B49085F238BCBC100711364 /* BLController.m */,
+				2B490864238BD7AD00711364 /* SendMessageController.h */,
+				2B490865238BD7AD00711364 /* SendMessageController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -332,6 +337,7 @@
 				2B3F265C2355BCEE002E0E50 /* TbCell.m in Sources */,
 				2B8DEF01234191630004E906 /* PageView.m in Sources */,
 				2B98AC2F23877ECB006CC0D1 /* MQManager.m in Sources */,
+				2B490866238BD7AD00711364 /* SendMessageController.m in Sources */,
 				2B490863238BCF8500711364 /* AllController.m in Sources */,
 				2B925E932358717A0036F859 /* Fmdbtool.m in Sources */,
 				2B4E4101234C3A1200F22869 /* TButton.m in Sources */,

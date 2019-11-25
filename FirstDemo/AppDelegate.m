@@ -11,6 +11,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import <IQKeyboardManager/IQKeyboardManager.h>
 #import "TbViewTableViewController.h"
 #import "RecognizerController.h"
 #import "MQManager.h"
@@ -28,9 +29,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    IQKeyboardManager *keyboardManager = [IQKeyboardManager sharedManager];
+    keyboardManager.enable = YES;
+    keyboardManager.shouldResignOnTouchOutside = YES;
     [[MQManager GetInstance] GetMsgWith:MQKeys];
     [[NetAsk GetInstance] IsNetWorking];
-//    [self logOut];
     [self tuee];
     return YES;
 }

@@ -11,7 +11,6 @@
 @interface MQManager()<RMQConnectionDelegate>
 @property (nonatomic,strong) RMQConnection *conn;
 @property (nonatomic,weak) NSString *device;
-//@property (nonatomic,strong)UIAlertController *alertc;
 @end
 static MQManager *mainmanager = nil;
 //所有 MQ 消息形式 https://www.rabbitmq.com/getstarted.html
@@ -19,7 +18,9 @@ static MQManager *mainmanager = nil;
 +(instancetype)GetInstance{
     if(!mainmanager)
     {
-        mainmanager = [[MQManager alloc]initWithDevice:@"EdwardMacPro"];
+        //获取设备id
+        NSString *uuid = [[NSUUID UUID] UUIDString];
+        mainmanager = [[MQManager alloc]initWithDevice:uuid];
     }
     return mainmanager;
 }
