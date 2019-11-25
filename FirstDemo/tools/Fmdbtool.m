@@ -84,7 +84,6 @@ static Fmdbtool *fmdbtool = nil;
 /// @param dic 插入的字段和值 如@{@"id":@"2",@"name":@"clasdjfioeow"};
 -(BOOL)insertWithTable:(NSString *)tablename argmes:(NSDictionary *)dic
 {
-//    [self CreateTable];
     if(![self CreateTable:@"t_student" SQL:@"CREATE TABLE IF NOT EXISTS t_student (id integer PRIMARY KEY AUTOINCREMENT, name text  NULL, age integer  NULL)"]) return NO;
     NSMutableArray *arg = [[NSMutableArray alloc]init];
     NSMutableArray *values = [[NSMutableArray alloc]init];
@@ -96,7 +95,6 @@ static Fmdbtool *fmdbtool = nil;
     NSString *valuesstr = [NSString stringWithFormat:@"(%@)",[values componentsJoinedByString:@","]];
     NSString *strSql = [NSString stringWithFormat:@"insert into %@ %@ values %@",tablename,argstr,valuesstr];
     return [self.db executeUpdate:strSql];
-    
 }
 
 /// 查询值
@@ -138,7 +136,6 @@ static Fmdbtool *fmdbtool = nil;
         }
         [result addObject:ad];
     }
-//    NSLog(@"%@",result);
     return result;
 }
 
