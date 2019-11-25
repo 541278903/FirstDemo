@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)GetMsg;
 -(void)GetMsgWith:(NSArray *)routingKeys;
 -(void)SendMsg:(NSString *)msg;
+-(void)SendMsgWith:(NSString *)msg routingKey:(NSString *)routingKey;
 @end
 
 NS_ASSUME_NONNULL_END

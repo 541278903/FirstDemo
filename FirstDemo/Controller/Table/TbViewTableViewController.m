@@ -12,6 +12,7 @@
 #import "ViewController.h"
 #import "RecognizerController.h"
 #import "BLController.h"
+#import "SendMessageController.h"
 #define XMGTextFont [UIFont systemFontSize:14];
 @interface TbViewTableViewController ()
 @property(nonatomic,strong)NSArray *allcon;
@@ -84,8 +85,8 @@
         [all addObject:seccon];
         AllController *thirdcon = [[AllController alloc]initWithName:@"弹窗View" Con: [[BLController alloc]init]];
         [all addObject:thirdcon];
-//        AllController *forcon = [[AllController alloc]initWithName:@"弹窗View" Con: [[BLController alloc]init]];
-//        [all addObject:forcon];
+        AllController *forcon = [[AllController alloc]initWithName:@"发送mq消息View" Con: [[SendMessageController alloc]init]];
+        [all addObject:forcon];
         _allcon = all;
         
     }

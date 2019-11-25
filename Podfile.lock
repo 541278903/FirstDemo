@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - BulletinBoard (4.1.0)
   - CocoaAsyncSocket (7.4.3):
     - CocoaAsyncSocket/All (= 7.4.3)
   - CocoaAsyncSocket/All (7.4.3):
@@ -25,6 +26,7 @@ PODS:
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
   - GDataXML-HTML (1.4.1)
+  - GTMBase64 (1.0.1)
   - IQKeyboardManager (6.5.3)
   - JKVValue (1.3.3)
   - Masonry (1.1.0)
@@ -35,8 +37,10 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - BulletinBoard
   - FMDB
   - GDataXML-HTML
+  - GTMBase64
   - IQKeyboardManager
   - Masonry
   - MJRefresh
@@ -45,9 +49,11 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - BulletinBoard
     - CocoaAsyncSocket
     - FMDB
     - GDataXML-HTML
+    - GTMBase64
     - IQKeyboardManager
     - JKVValue
     - Masonry
@@ -56,15 +62,17 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  BulletinBoard: c774340545b5cfd05a96a89f63b105ecc95c86f9
   CocoaAsyncSocket: a18c75dca4b08723628a0bacca6e94803d90be91
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   GDataXML-HTML: a4f11079b48d9fe96ff1fe478943a317185227e2
+  GTMBase64: f0f91be06a7a20b84c8e4fee30c0430395091d82
   IQKeyboardManager: c2f901164d56807a35788483584d09fa69192e8e
   JKVValue: d7941071b1cf9ba35c194fd40bcf4c4d9b5462e9
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: 72a46ecaa2a0feaf48fc5198dff95f25f8bb27c6
   RMQClient: e9bfea2d08f151b6b12df82ad115c78bd8de2106
 
-PODFILE CHECKSUM: 841630e01ea22eaee7f1c41f5ee3fafeb5a56b04
+PODFILE CHECKSUM: 69f45152280660e364c4afa11a0e1595fef0ebf3
 
 COCOAPODS: 1.8.4

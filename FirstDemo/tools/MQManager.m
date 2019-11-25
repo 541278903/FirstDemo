@@ -41,8 +41,12 @@ static MQManager *mainmanager = nil;
     [self receiveLogsTopic:routingKeys];
 }
 -(void)SendMsg:(NSString *)msg{
-    
+
     [self emitLogTopic:msg routingKey:[NSString stringWithFormat:@"test.%@",self.device]];
+}
+-(void)SendMsgWith:(NSString *)msg routingKey:(NSString *)routingKey
+{
+    [self emitLogTopic:msg routingKey:routingKey];
 }
 
 - (void)emitLogTopic:(NSString *)msg routingKey:(NSString *)routingKey {
