@@ -14,26 +14,24 @@
 #import "MoveRedView.h"
 #import "RecognizerView.h"
 #import "NetAsk.h"
-@import BLTNBoard;
 
 #define myurl @"http://y2k8lcqgv7.52http.net/TServer.asmx/GetAllData"
 
 @interface ViewController ()
-@property(nonatomic,strong)BLTNItemManager *blnt;
-@property(nonatomic,strong)BLTNPageItem *blitem;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    [self.view.backgroundColor ]
     [self.view setBackgroundColor:UIColor.whiteColor];
     
     
+    
+    
+    
 }
-
-
 
 
 

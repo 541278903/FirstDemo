@@ -11,5 +11,6 @@ target 'FirstDemo' do
   pod 'GTMBase64'
 	pod 'MJRefresh'
 	pod 'Masonry'
-
+  pod 'BulletinBoard'
+  pod 'TransitionButton'
 end

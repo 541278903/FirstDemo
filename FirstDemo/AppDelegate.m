@@ -15,7 +15,7 @@
 #import "RecognizerController.h"
 #import "MQManager.h"
 #import "NetAsk.h"
-
+#import "BLController.h"
 
 
 @interface AppDelegate ()
@@ -30,7 +30,8 @@
     // Override point for customization after application launch.
     [[MQManager GetInstance] GetMsgWith:MQKeys];
     [[NetAsk GetInstance] IsNetWorking];
-    [self logOut];
+//    [self logOut];
+    [self toBLController];
     return YES;
 }
 //创建普通控制器
@@ -46,6 +47,11 @@
 -(void)tuee{
     TbViewTableViewController *tbview = [[TbViewTableViewController alloc]init];
     self.window.rootViewController = tbview;
+}
+//创建弹窗试图控制器
+-(void)toBLController{
+    BLController *blcontroller = [[BLController alloc]init];
+    self.window.rootViewController = blcontroller;
 }
 
 
