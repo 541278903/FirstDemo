@@ -31,7 +31,7 @@
     [[MQManager GetInstance] GetMsgWith:MQKeys];
     [[NetAsk GetInstance] IsNetWorking];
 //    [self logOut];
-    [self toBLController];
+    [self tuee];
     return YES;
 }
 //创建普通控制器
@@ -46,7 +46,8 @@
 //创建tablecontroller试图控制器
 -(void)tuee{
     TbViewTableViewController *tbview = [[TbViewTableViewController alloc]init];
-    self.window.rootViewController = tbview;
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:tbview];
+    self.window.rootViewController = nav;
 }
 //创建弹窗试图控制器
 -(void)toBLController{

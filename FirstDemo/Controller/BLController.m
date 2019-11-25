@@ -10,6 +10,7 @@
 
 #import <BLTNBoard/BLTNBoard.h>
 #import <BLTNBoard-Swift.h>
+#import "TButton.h"
 @interface BLController ()
 
 @property(nonatomic,strong)BLTNItemManager *blnt;
@@ -22,7 +23,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self.view setBackgroundColor:UIColor.whiteColor];
-    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+    TButton *btn = [[TButton alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
     btn.backgroundColor = UIColor.redColor;
     [btn addTarget:self action:@selector(Touch) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];

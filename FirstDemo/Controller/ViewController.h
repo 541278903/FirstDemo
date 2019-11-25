@@ -10,6 +10,5 @@
 @import BLTNBoard;
 
 @interface ViewController : UIViewController 
-
 @end
 

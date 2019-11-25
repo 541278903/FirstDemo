@@ -8,8 +8,13 @@
 
 #import "TbViewTableViewController.h"
 #import "TbCell.h"
+#import "AllController.h"
+#import "ViewController.h"
+#import "RecognizerController.h"
+#import "BLController.h"
 #define XMGTextFont [UIFont systemFontSize:14];
 @interface TbViewTableViewController ()
+@property(nonatomic,strong)NSArray *allcon;
 
 @end
 
@@ -18,12 +23,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.rowHeight = 80;
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
+
 
 #pragma mark - Table view data source
 
@@ -31,7 +32,7 @@
 /// @param tableView 代理table
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 //#warning Incomplete implementation, return the number of sections
-    return 2;
+    return 1;
 }
 ///下拉偏移量
 /// @param scrollView 代理scrollview
@@ -44,15 +45,21 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 //#warning Incomplete implementation, return the number of rows
-    return 3;
+    return self.allcon.count;
 }
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+//- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+//{
+//    return @"你好";
+//}
+//- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
+//{
+//    return @"ffefae";
+//}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return @"你好";
-}
-- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
-{
-    return @"ffefae";
+    AllController *con = self.allcon[indexPath.row];
+    
+    [self.navigationController pushViewController:con.ConView animated:YES];
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -61,12 +68,27 @@
     if(tbc == nil)
     {
         tbc = [[TbCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
-        tbc.textLabel.text = @"123";
+        AllController *con = self.allcon[indexPath.row];
+        tbc.textLabel.text = con.ConName;
         tbc.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        
-        
     }
     return tbc;
 }
-
+- (NSArray *)allcon
+{
+    if(!_allcon){
+        NSMutableArray *all = [[NSMutableArray alloc]init];
+        AllController *firstcon = [[AllController alloc]initWithName:@"空白View" Con: [[ViewController alloc]init]];
+        [all addObject:firstcon];
+        AllController *seccon = [[AllController alloc]initWithName:@"手势View" Con: [[RecognizerController alloc]init]];
+        [all addObject:seccon];
+        AllController *thirdcon = [[AllController alloc]initWithName:@"弹窗View" Con: [[BLController alloc]init]];
+        [all addObject:thirdcon];
+//        AllController *forcon = [[AllController alloc]initWithName:@"弹窗View" Con: [[BLController alloc]init]];
+//        [all addObject:forcon];
+        _allcon = all;
+        
+    }
+    return _allcon;
+}
 @end
