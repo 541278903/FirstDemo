@@ -138,8 +138,10 @@
         NSLog(@"%@",n);
         return @"回传A";
     }];
-    //代理监听e的使用
-    [self.delegate SetMessageDelegate:self];
+    //代理监听e的使用(先判断代理是否编写了方法)
+    if([self.delegate respondsToSelector:@selector(SetMessageDelegate:)]){
+        [self.delegate SetMessageDelegate:self];
+    }
     
     
 }
