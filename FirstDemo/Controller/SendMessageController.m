@@ -134,16 +134,17 @@
 {
     [[MQManager GetInstance]SendMsgWith:self.messagetextview.text routingKey:self.keytextview.text];
     //block的使用
-    [self SendM:^(NSString *n) {
-//        NSLog(@"%@",n);
+    [self SendM:^NSString *(NSString *n){
+        NSLog(@"%@",n);
+        return @"回传A";
     }];
     //代理监听e的使用
     [self.delegate SetMessageDelegate:self];
     
     
 }
--(void)SendM:(void (^)(NSString *n))M{
-    M(@"caonim");
+-(void)SendM:(NSString * (^)(NSString *n))M{
+    NSLog(@"%@",M(@"回传B"));
 }
 
 
