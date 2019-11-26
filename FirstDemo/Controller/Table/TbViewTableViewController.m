@@ -14,8 +14,8 @@
 #import "BLController.h"
 #import "SendMessageController.h"
 #define XMGTextFont [UIFont systemFontSize:14];
-@interface TbViewTableViewController ()
-@property(nonatomic,strong)NSArray *allcon;
+@interface TbViewTableViewController ()<SendMessageControllerDeleage>
+@property(nonatomic,strong)NSMutableArray *allcon;
 
 @end
 
@@ -75,7 +75,7 @@
     }
     return tbc;
 }
-- (NSArray *)allcon
+- (NSMutableArray *)allcon
 {
     if(!_allcon){
         NSMutableArray *all = [[NSMutableArray alloc]init];
@@ -85,11 +85,20 @@
         [all addObject:seccon];
         AllController *thirdcon = [[AllController alloc]initWithName:@"弹窗View" Con: [[BLController alloc]init]];
         [all addObject:thirdcon];
-        AllController *forcon = [[AllController alloc]initWithName:@"发送mq消息View" Con: [[SendMessageController alloc]init]];
+        SendMessageController *forth = [[SendMessageController alloc]init];
+        //设置将代理传进去
+        forth.delegate = self;
+        AllController *forcon = [[AllController alloc]initWithName:@"发送mq消息View" Con: forth];
         [all addObject:forcon];
         _allcon = all;
         
     }
     return _allcon;
+}
+-(void)SetMessageDelegate:(SendMessageController *)con
+{
+    AllController *firstcon = [[AllController alloc]initWithName:@"空白View" Con: [[ViewController alloc]init]];
+    [self.allcon addObject:firstcon];
+    [self.tableView reloadData];
 }
 @end

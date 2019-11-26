@@ -9,9 +9,17 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
+@class SendMessageController;
 
+@protocol SendMessageControllerDeleage <NSObject>
+
+-(void)SetMessageDelegate:(SendMessageController *)con;
+
+
+@end
 @interface SendMessageController : UIViewController
 
+@property(nonatomic,weak)id<SendMessageControllerDeleage> delegate;
 @end
 
 NS_ASSUME_NONNULL_END

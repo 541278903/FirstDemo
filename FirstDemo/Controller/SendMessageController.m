@@ -11,13 +11,13 @@
 #import "MQManager.h"
 #import <Masonry/Masonry.h>
 
+
 @interface SendMessageController ()
 
 @property(nonatomic,strong)UIView *sendKeyView;
 @property(nonatomic,strong)UITextView *keytextview;
 @property(nonatomic,strong)UIView *messageView;
 @property(nonatomic,strong)UITextView *messagetextview;
-//@property(nonatomic,strong)TButton *SendBtn;
 @property(nonatomic,strong)UIButton *SendBtn;
 
 @end
@@ -26,7 +26,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     self.view.backgroundColor = UIColor.whiteColor;
     [self setAll];
 }
@@ -133,10 +132,19 @@
 }
 -(void)Send
 {
-//    NSLog(@"allready to send");
     [[MQManager GetInstance]SendMsgWith:self.messagetextview.text routingKey:self.keytextview.text];
+    //block的使用
+    [self SendM:^(NSString *n) {
+//        NSLog(@"%@",n);
+    }];
+    //代理监听e的使用
+    [self.delegate SetMessageDelegate:self];
+    
+    
 }
-
+-(void)SendM:(void (^)(NSString *n))M{
+    M(@"caonim");
+}
 
 
 @end
