@@ -54,6 +54,7 @@
     }];
     
 }
+#pragma mark - 首次初始化
 - (UITextView *)keytextview{
     if(!_keytextview){
         UITextView *keytextview = [[UITextView alloc]init];

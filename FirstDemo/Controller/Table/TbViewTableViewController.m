@@ -24,6 +24,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.rowHeight = 80;
+    
+    
+    NSDateFormatter *dateformater = [[NSDateFormatter alloc]init];
+    [dateformater setDateFormat:@"yyyy年MM月dd日 HH-mm-ss z"];
+    NSString *nowdate = [dateformater stringFromDate:[NSDate date]];
+    NSLog(@"%@",nowdate);
+//    [dateformater release];
 }
 
 
@@ -48,14 +55,6 @@
 //#warning Incomplete implementation, return the number of rows
     return self.allcon.count;
 }
-//- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
-//{
-//    return @"你好";
-//}
-//- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section
-//{
-//    return @"ffefae";
-//}
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     AllController *con = self.allcon[indexPath.row];
@@ -75,6 +74,13 @@
     }
     return tbc;
 }
+-(void)SetMessageDelegate:(SendMessageController *)con
+{
+    AllController *firstcon = [[AllController alloc]initWithName:@"空白View" Con: [[ViewController alloc]init]];
+    [self.allcon addObject:firstcon];
+    [self.tableView reloadData];
+}
+#pragma mark - 首次初始化
 - (NSMutableArray *)allcon
 {
     if(!_allcon){
@@ -94,11 +100,5 @@
         
     }
     return _allcon;
-}
--(void)SetMessageDelegate:(SendMessageController *)con
-{
-    AllController *firstcon = [[AllController alloc]initWithName:@"空白View" Con: [[ViewController alloc]init]];
-    [self.allcon addObject:firstcon];
-    [self.tableView reloadData];
 }
 @end
