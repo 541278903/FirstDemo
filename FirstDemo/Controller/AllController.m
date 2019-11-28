@@ -10,8 +10,7 @@
 #import "ViewController.h"
 
 @implementation AllController
-- (instancetype)init
-{
+- (instancetype)init{
     self = [super init];
     if (self) {
         self.ConName = @"未初始化";
@@ -20,8 +19,7 @@
     }
     return self;
 }
-- (instancetype)initWithName:(NSString *)name  Con:(UIViewController *)con
-{
+- (instancetype)initWithName:(NSString *)name  Con:(UIViewController *)con{
     self = [super init];
     if (self) {
         self.ConName = name;
