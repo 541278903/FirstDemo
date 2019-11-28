@@ -24,6 +24,7 @@ static MQManager *mainmanager = nil;
     }
     return mainmanager;
 }
+
 - (instancetype)initWithDevice:(NSString *)device
 {
     self = [super init];

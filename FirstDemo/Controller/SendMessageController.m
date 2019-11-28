@@ -34,7 +34,7 @@
     [self.view addSubview:self.sendKeyView];
 
     [self.sendKeyView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.view.mas_top).mas_offset(200);
+        make.top.equalTo(self.view.mas_top).mas_offset(100);
         make.left.equalTo(self.view).offset(10);
         make.right.equalTo(self.view).offset(-10);
         make.height.offset(100);

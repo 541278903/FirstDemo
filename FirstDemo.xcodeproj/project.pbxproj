@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B235D2A238F7B7A0013B665 /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B235D29238F7B7A0013B665 /* Toast.m */; };
+		2B235D2D238F9FFD0013B665 /* ToastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B235D2C238F9FFD0013B665 /* ToastViewController.m */; };
 		2B3F26592355BCD2002E0E50 /* TbViewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3F26582355BCD2002E0E50 /* TbViewTableViewController.m */; };
 		2B3F265C2355BCEE002E0E50 /* TbCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3F265B2355BCEE002E0E50 /* TbCell.m */; };
 		2B49085D238B7CF900711364 /* BLAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B49085C238B7CF900711364 /* BLAlert.m */; };
@@ -33,6 +35,10 @@
 
 /* Begin PBXFileReference section */
 		2B203EFC234C59CB00808F21 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2B235D28238F7B7A0013B665 /* Toast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Toast.h; sourceTree = "<group>"; };
+		2B235D29238F7B7A0013B665 /* Toast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Toast.m; sourceTree = "<group>"; };
+		2B235D2B238F9FFD0013B665 /* ToastViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToastViewController.h; sourceTree = "<group>"; };
+		2B235D2C238F9FFD0013B665 /* ToastViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToastViewController.m; sourceTree = "<group>"; };
 		2B3F26572355BCD2002E0E50 /* TbViewTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TbViewTableViewController.h; sourceTree = "<group>"; };
 		2B3F26582355BCD2002E0E50 /* TbViewTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TbViewTableViewController.m; sourceTree = "<group>"; };
 		2B3F265A2355BCEE002E0E50 /* TbCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TbCell.h; sourceTree = "<group>"; };
@@ -124,6 +130,8 @@
 				2B925E922358717A0036F859 /* Fmdbtool.m */,
 				2B98AC3323879191006CC0D1 /* NetAsk.h */,
 				2B98AC3423879191006CC0D1 /* NetAsk.m */,
+				2B235D28238F7B7A0013B665 /* Toast.h */,
+				2B235D29238F7B7A0013B665 /* Toast.m */,
 			);
 			path = tools;
 			sourceTree = "<group>";
@@ -140,6 +148,8 @@
 				2B49085F238BCBC100711364 /* BLController.m */,
 				2B490864238BD7AD00711364 /* SendMessageController.h */,
 				2B490865238BD7AD00711364 /* SendMessageController.m */,
+				2B235D2B238F9FFD0013B665 /* ToastViewController.h */,
+				2B235D2C238F9FFD0013B665 /* ToastViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -338,6 +348,7 @@
 				2B8DEF01234191630004E906 /* PageView.m in Sources */,
 				2B98AC2F23877ECB006CC0D1 /* MQManager.m in Sources */,
 				2B490866238BD7AD00711364 /* SendMessageController.m in Sources */,
+				2B235D2A238F7B7A0013B665 /* Toast.m in Sources */,
 				2B490863238BCF8500711364 /* AllController.m in Sources */,
 				2B925E932358717A0036F859 /* Fmdbtool.m in Sources */,
 				2B4E4101234C3A1200F22869 /* TButton.m in Sources */,
@@ -347,6 +358,7 @@
 				2BBDA09E232684A100A2E111 /* main.m in Sources */,
 				2BBDA090232684A000A2E111 /* AppDelegate.m in Sources */,
 				2B49085D238B7CF900711364 /* BLAlert.m in Sources */,
+				2B235D2D238F9FFD0013B665 /* ToastViewController.m in Sources */,
 				2B98AC38238796F5006CC0D1 /* DesHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,6 +13,7 @@
 #import "RecognizerController.h"
 #import "BLController.h"
 #import "SendMessageController.h"
+#import "ToastViewController.h"
 #define XMGTextFont [UIFont systemFontSize:14];
 @interface TbViewTableViewController ()<SendMessageControllerDeleage>
 @property(nonatomic,strong)NSMutableArray *allcon;
@@ -96,6 +97,9 @@
         forth.delegate = self;
         AllController *forcon = [[AllController alloc]initWithName:@"发送mq消息View" Con: forth];
         [all addObject:forcon];
+//        ToastViewController *fifcon = [ToastViewController alloc]
+        AllController *fifcon = [[AllController alloc]initWithName:@"Toast提示" Con:[[ToastViewController alloc] init]];
+        [all addObject:fifcon];
         _allcon = all;
         
     }

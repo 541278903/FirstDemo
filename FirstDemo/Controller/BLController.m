@@ -10,6 +10,7 @@
 
 #import <BLTNBoard/BLTNBoard.h>
 #import <BLTNBoard-Swift.h>
+#import "Toast.h"
 #import "TButton.h"
 @interface BLController ()
 
@@ -39,6 +40,7 @@
         blitem.dismissable = YES;
         blitem.shouldStartWithActivityIndicator = YES;
         blitem.actionHandler = ^(BLTNActionItem * _Nonnull _item) {
+            [[Toast GetInstance] showMessage];
             [_item.manager dismissBulletinAnimated:YES];
         };
         blitem.alternativeHandler = ^(BLTNActionItem * _Nonnull _item) {
