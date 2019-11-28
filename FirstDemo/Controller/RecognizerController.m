@@ -26,7 +26,7 @@
     self.recview = [[RecognizerView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
     [self.recview setBackgroundColor:UIColor.redColor];
     [self.view addSubview:self.recview];
-    [self moveRe];
+    [self swip];
     
 }
 
@@ -65,7 +65,6 @@
     }else if (swip.direction == UISwipeGestureRecognizerDirectionLeft){
         NSLog(@"left");
     }
-//    NSLog(@"$@");
 }
 
 

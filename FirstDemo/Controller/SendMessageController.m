@@ -86,7 +86,8 @@
             make.bottom.left.right.equalTo(sendkeyv);
             make.top.equalTo(titlelabel.mas_bottom);
         }];
-        self.keytextview.text = [NSString stringWithFormat:@"test.%@",[[NSUUID UUID] UUIDString]];
+//        NSString *adid = []
+        self.keytextview.text = [NSString stringWithFormat:@"test.%@",[[UIDevice currentDevice].identifierForVendor UUIDString]];
         self.keytextview.font = [UIFont systemFontOfSize:16];
         [self.keytextview.layer setBorderWidth:1];
         [self.keytextview.layer setBorderColor:[UIColor blackColor].CGColor];
