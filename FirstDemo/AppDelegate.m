@@ -6,7 +6,7 @@
 //  Copyright © 2019 com.Edward. All rights reserved.
 //
 
-#define MQKeys @[@"kern.*",@"test.*",@"c.34.33.#"]
+#define MQKeys @[@"kern.*",@"test.*",@"acc.#"]
 
 
 #import "AppDelegate.h"
