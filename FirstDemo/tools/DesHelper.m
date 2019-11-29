@@ -8,9 +8,24 @@
 
 #import "DesHelper.h"
 #import "GTMBase64.h"
+@interface DesHelper()
+@end
+static DesHelper *instance = nil;
 @implementation DesHelper
 
-
++(instancetype)GetInstance{
+    if(!instance){
+        instance = [[DesHelper alloc]init];
+    }
+    return instance;
+}
++(instancetype)alloc{
+    if(instance){
+        NSException *ecs = [NSException exceptionWithName:@"error" reason:@"can not creat a danli" userInfo:nil];
+        [ecs raise];
+    }
+    return [super alloc];
+}
 #pragma mark MD5加解秘钥
 
 #pragma mark 解密

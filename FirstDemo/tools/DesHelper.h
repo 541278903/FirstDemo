@@ -12,6 +12,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DesHelper : NSObject
++(instancetype)GetInstance;
++(instancetype)alloc;
 -(NSString *)DecryptUseDES:(NSString *)message :(NSString *)key;
 -(NSString *)EncryptUseDES:(NSString *)message :(NSString *)key;
 -(NSString *)SetPar:(NSString *)para;
