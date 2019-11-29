@@ -16,6 +16,8 @@
 		2B490863238BCF8500711364 /* AllController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B490862238BCF8500711364 /* AllController.m */; };
 		2B490866238BD7AD00711364 /* SendMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B490865238BD7AD00711364 /* SendMessageController.m */; };
 		2B4E4101234C3A1200F22869 /* TButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4E4100234C3A1200F22869 /* TButton.m */; };
+		2B6671C0239123FB001469C3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2B6671BE239123FB001469C3 /* README.md */; };
+		2B6671C1239123FB001469C3 /* README.en.md in Resources */ = {isa = PBXBuildFile; fileRef = 2B6671BF239123FB001469C3 /* README.en.md */; };
 		2B8B295C2383C08F0038B9A5 /* MoveRedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B295B2383C08F0038B9A5 /* MoveRedView.m */; };
 		2B8DEF01234191630004E906 /* PageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8DEF00234191630004E906 /* PageView.m */; };
 		2B925E932358717A0036F859 /* Fmdbtool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B925E922358717A0036F859 /* Fmdbtool.m */; };
@@ -53,6 +55,8 @@
 		2B490865238BD7AD00711364 /* SendMessageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SendMessageController.m; sourceTree = "<group>"; };
 		2B4E40FF234C3A1200F22869 /* TButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TButton.h; sourceTree = "<group>"; };
 		2B4E4100234C3A1200F22869 /* TButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TButton.m; sourceTree = "<group>"; };
+		2B6671BE239123FB001469C3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2B6671BF239123FB001469C3 /* README.en.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.en.md; sourceTree = "<group>"; };
 		2B8B295A2383C08F0038B9A5 /* MoveRedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoveRedView.h; sourceTree = "<group>"; };
 		2B8B295B2383C08F0038B9A5 /* MoveRedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoveRedView.m; sourceTree = "<group>"; };
 		2B8B295D2383C37E0038B9A5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -183,6 +187,8 @@
 		2BBDA082232684A000A2E111 = {
 			isa = PBXGroup;
 			children = (
+				2B6671BF239123FB001469C3 /* README.en.md */,
+				2B6671BE239123FB001469C3 /* README.md */,
 				2BBDA08D232684A000A2E111 /* FirstDemo */,
 				2BBDA08C232684A000A2E111 /* Products */,
 				2B203EFB234C59CB00808F21 /* Frameworks */,
@@ -287,7 +293,9 @@
 			files = (
 				2BBDA09B232684A100A2E111 /* LaunchScreen.storyboard in Resources */,
 				2BBDA098232684A100A2E111 /* Assets.xcassets in Resources */,
+				2B6671C0239123FB001469C3 /* README.md in Resources */,
 				2BBDA096232684A000A2E111 /* Main.storyboard in Resources */,
+				2B6671C1239123FB001469C3 /* README.en.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

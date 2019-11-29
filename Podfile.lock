@@ -30,6 +30,7 @@ PODS:
   - IQKeyboardManager (6.5.3)
   - JKVValue (1.3.3)
   - Masonry (1.1.0)
+  - MBProgressHUD (1.1.0)
   - MJRefresh (3.2.2)
   - RMQClient (0.10.0):
     - CocoaAsyncSocket (~> 7.4.0)
@@ -43,6 +44,7 @@ DEPENDENCIES:
   - GTMBase64
   - IQKeyboardManager
   - Masonry
+  - MBProgressHUD
   - MJRefresh
   - RMQClient
 
@@ -57,6 +59,7 @@ SPEC REPOS:
     - IQKeyboardManager
     - JKVValue
     - Masonry
+    - MBProgressHUD
     - MJRefresh
     - RMQClient
 
@@ -70,9 +73,10 @@ SPEC CHECKSUMS:
   IQKeyboardManager: c2f901164d56807a35788483584d09fa69192e8e
   JKVValue: d7941071b1cf9ba35c194fd40bcf4c4d9b5462e9
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJRefresh: 72a46ecaa2a0feaf48fc5198dff95f25f8bb27c6
   RMQClient: e9bfea2d08f151b6b12df82ad115c78bd8de2106
 
-PODFILE CHECKSUM: 69f45152280660e364c4afa11a0e1595fef0ebf3
+PODFILE CHECKSUM: afc45aa32d1c122a7e23fc4c2c0f5b328ae7bb2f
 
 COCOAPODS: 1.8.4
