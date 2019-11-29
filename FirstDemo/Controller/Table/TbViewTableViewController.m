@@ -5,7 +5,7 @@
 //  Created by edward on 2019/10/15.
 //  Copyright © 2019 com.Edward. All rights reserved.
 //
-
+#import "PrefixHeader.pch"
 #import "TbViewTableViewController.h"
 #import "TbCell.h"
 #import "AllController.h"
@@ -14,6 +14,7 @@
 #import "BLController.h"
 #import "SendMessageController.h"
 #import "ToastViewController.h"
+#import "NetAsk.h"
 
 
 #define XMGTextFont [UIFont systemFontSize:14];
@@ -29,11 +30,10 @@
     self.tableView.rowHeight = 80;
     
     
-    NSDateFormatter *dateformater = [[NSDateFormatter alloc]init];
-    [dateformater setDateFormat:@"yyyy年MM月dd日 HH-mm-ss z"];
-    NSString *nowdate = [dateformater stringFromDate:[NSDate date]];
-    NSLog(@"%@",nowdate);
-//    [dateformater release];
+    //延时操作
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        MLog(@"延时操作");
+    });
 }
 
 

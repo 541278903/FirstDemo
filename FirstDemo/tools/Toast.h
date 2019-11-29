@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Toast : NSObject
+@interface Toast : NSObject  
 +(instancetype)GetInstance;
 -(void)showMessage;
 @end

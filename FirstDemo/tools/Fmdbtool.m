@@ -42,6 +42,13 @@ static Fmdbtool *fmdbtool = nil;
     }
     return fmdbtool;
 }
++ (instancetype)alloc{
+    if(fmdbtool){
+        NSException *ecs = [NSException exceptionWithName:@"error" reason:@"can not create a danli" userInfo:nil];
+        [ecs raise];
+    }
+    return [super alloc];
+}
 - (instancetype)init
 {
     self = [super init];

@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface Fmdbtool : NSObject
 /// 单例返回
 +(instancetype)GetInstance;
++(instancetype)alloc;
 -(NSArray *)serchBySql:(NSString *)sql;
 -(BOOL)insertWithTable:(NSString *)tablename argmes:(NSDictionary *)dic;
 -(NSArray *)serchTable:(NSString *)tablename argmes:(NSDictionary *)dic;

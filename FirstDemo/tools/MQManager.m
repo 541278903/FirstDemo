@@ -24,6 +24,13 @@ static MQManager *mainmanager = nil;
     }
     return mainmanager;
 }
++ (instancetype)alloc{
+    if(mainmanager){
+        NSException *ecs = [NSException exceptionWithName:@"error" reason:@"can not create a danli" userInfo:nil];
+        [ecs raise];
+    }
+    return [super alloc];
+}
 
 - (instancetype)initWithDevice:(NSString *)device
 {

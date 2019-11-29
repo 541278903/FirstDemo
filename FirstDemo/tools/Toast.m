@@ -21,6 +21,7 @@ static Toast *_instance;
     return _instance;
 }
 
+
 -(void)showMessage
 {
      MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:[self topMostController].view animated:YES];

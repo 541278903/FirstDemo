@@ -25,6 +25,13 @@ static NetAsk *netasking = nil;
     }
     return netasking;
 }
++ (instancetype)alloc{
+    if(netasking){
+        NSException *ecs = [NSException exceptionWithName:@"错误" reason:@"can not create a danli" userInfo:@"不能创建单例"];
+        [ecs raise];
+    }
+    return [super alloc];
+}
 - (instancetype)init
 {
     self = [super init];
