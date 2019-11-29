@@ -14,6 +14,8 @@
 #import "BLController.h"
 #import "SendMessageController.h"
 #import "ToastViewController.h"
+
+
 #define XMGTextFont [UIFont systemFontSize:14];
 @interface TbViewTableViewController ()<SendMessageControllerDeleage>
 @property(nonatomic,strong)NSMutableArray *allcon;

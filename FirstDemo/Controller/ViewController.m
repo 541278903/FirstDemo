@@ -22,6 +22,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //加载bundle资源
+    self.view.backgroundColor = UIColor.whiteColor;
+    NSString *Toast = [[NSBundle mainBundle]pathForResource:@"Info" ofType:@"plist"];
+    NSDictionary *dic = [NSDictionary dictionaryWithContentsOfFile:Toast];
+    NSLog(@"%@",dic);
 }
 
 
