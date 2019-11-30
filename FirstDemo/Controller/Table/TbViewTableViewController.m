@@ -6,15 +6,7 @@
 //  Copyright © 2019 com.Edward. All rights reserved.
 //
 #import "PrefixHeader.pch"
-#import "TbViewTableViewController.h"
-#import "TbCell.h"
-#import "AllController.h"
-#import "ViewController.h"
-#import "RecognizerController.h"
-#import "BLController.h"
-#import "SendMessageController.h"
-#import "ToastViewController.h"
-#import "NetAsk.h"
+
 
 
 #define XMGTextFont [UIFont systemFontSize:14];
@@ -66,6 +58,7 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    //每一次创建的控制器都是只有一个，不会重复创建
     static NSString *ID = @"tb";
     UITableViewCell *tbc = [tableView dequeueReusableCellWithIdentifier:ID];
     if(tbc == nil)
@@ -102,6 +95,8 @@
 //        ToastViewController *fifcon = [ToastViewController alloc]
         AllController *fifcon = [[AllController alloc]initWithName:@"Toast提示" Con:[[ToastViewController alloc] init]];
         [all addObject:fifcon];
+        AllController *sixcon = [[AllController alloc]initWithName:@"多线程" Con:[[ThreadViewController alloc]init]];
+        [all addObject:sixcon];
         _allcon = all;
         
     }

@@ -5,6 +5,16 @@
 //  Created by edward on 2019/11/19.
 //  Copyright © 2019 com.Edward. All rights reserved.
 //
+#import "TbViewTableViewController.h"
+#import "TbCell.h"
+#import "AllController.h"
+#import "ViewController.h"
+#import "RecognizerController.h"
+#import "BLController.h"
+#import "SendMessageController.h"
+#import "ToastViewController.h"
+#import "NetAsk.h"
+#import "ThreadViewController.h"
 
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch

@@ -24,6 +24,7 @@
         [self.view setBackgroundColor:UIColor.whiteColor];
     [self AddAllCon];
 }
+#pragma mark - 添加控件
 -(void)AddAllCon{
     [self.view addSubview:self.loadingbtn];
     [self.loadingbtn mas_makeConstraints:^(MASConstraintMaker *make) {

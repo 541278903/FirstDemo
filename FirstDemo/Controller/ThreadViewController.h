@@ -1,8 +1,8 @@
 //
-//  RecognizerView.h
+//  ThreadViewController.h
 //  FirstDemo
 //
-//  Created by edward on 2019/11/21.
+//  Created by edward on 2019/11/30.
 //  Copyright © 2019 com.Edward. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface RecognizerView : UIView
+@interface ThreadViewController : UIViewController
 
 @end
 
