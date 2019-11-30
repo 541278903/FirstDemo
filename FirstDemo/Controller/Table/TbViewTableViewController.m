@@ -21,11 +21,11 @@
     [super viewDidLoad];
     self.tableView.rowHeight = 80;
     
-    
     //延时操作
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         MLog(@"延时操作");
     });
+
 }
 
 
@@ -58,7 +58,7 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //每一次创建的控制器都是只有一个，不会重复创建
+    //每一次创建的控制器都是只有一个，不会重复创建(此处不会重复创建是指上下拖动的时候不会重复创建 )
     static NSString *ID = @"tb";
     UITableViewCell *tbc = [tableView dequeueReusableCellWithIdentifier:ID];
     if(tbc == nil)
@@ -70,6 +70,8 @@
     }
     return tbc;
 }
+/// 自定义的代理
+/// @param con 所存在的控制器
 -(void)SetMessageDelegate:(SendMessageController *)con
 {
     AllController *firstcon = [[AllController alloc]initWithName:@"空白View" Con: [[ViewController alloc]init]];
@@ -92,7 +94,6 @@
         forth.delegate = self;
         AllController *forcon = [[AllController alloc]initWithName:@"发送mq消息View" Con: forth];
         [all addObject:forcon];
-//        ToastViewController *fifcon = [ToastViewController alloc]
         AllController *fifcon = [[AllController alloc]initWithName:@"Toast提示" Con:[[ToastViewController alloc] init]];
         [all addObject:fifcon];
         AllController *sixcon = [[AllController alloc]initWithName:@"多线程" Con:[[ThreadViewController alloc]init]];

@@ -8,9 +8,7 @@
 
 
 #import "ViewController.h"
-#import "PageView.h"
-#import "Fmdbtool.h"
-#import "NetAsk.h"
+#import "PrefixHeader.pch"
 
 #define myurl @"http://y2k8lcqgv7.52http.net/TServer.asmx/GetAllData"
 
@@ -27,6 +25,10 @@
     NSString *Toast = [[NSBundle mainBundle]pathForResource:@"Info" ofType:@"plist"];
     NSDictionary *dic = [NSDictionary dictionaryWithContentsOfFile:Toast];
     NSLog(@"%@",dic);
+}
+//点击空白触发手势
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    MLog(@"%@",self.view.subviews);
 }
 
 
