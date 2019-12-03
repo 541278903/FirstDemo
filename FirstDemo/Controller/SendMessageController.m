@@ -7,9 +7,7 @@
 //
 
 #import "SendMessageController.h"
-#import "TButton.h"
-#import "MQManager.h"
-#import <Masonry/Masonry.h>
+#import "PrefixHeader.pch"
 
 
 @interface SendMessageController ()

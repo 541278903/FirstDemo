@@ -12,7 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Toast : NSObject  
 +(instancetype)GetInstance;
--(void)showMessage;
+-(void)nomalToast;
+-(void)annularDeterminate;
+-(void)annularDeterminatecancelation;
 @end
 
 NS_ASSUME_NONNULL_END

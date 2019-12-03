@@ -11,7 +11,7 @@
 #import "PrefixHeader.pch"
 
 #define myurl @"http://y2k8lcqgv7.52http.net/TServer.asmx/GetAllData"
-#define testurl @"localhost:8181/login"
+#define testurl @"http://localhost:8181/login"
 
 @interface ViewController ()
 
@@ -25,7 +25,7 @@
 }
 //测试网络请求
 -(void)testGET{
-    [[NetAsk GetInstance]GET:myurl parameters:@{@"nihao":@"c"} isXML:YES resultcom:^(NSDictionary * _Nonnull bl) {
+    [[NetAsk GetInstance]POST:testurl parameters:@{@"nihao":@"c"} isXML:NO resultcom:^(NSDictionary * _Nonnull bl) {
         MLog(@"%@",bl);
     }];
 }
@@ -37,7 +37,6 @@
 }
 //点击空白触发手势
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    
     [self testGET];
 //    MLog(@"打印了子控件%@",self.view.subviews);
 }

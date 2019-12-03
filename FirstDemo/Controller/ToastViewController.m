@@ -7,13 +7,13 @@
 //
 
 #import "ToastViewController.h"
-#import <Masonry/Masonry.h>
-#import "Toast.h"
+#import "PrefixHeader.pch"
 
 @interface ToastViewController ()
 
 @property(nonatomic,strong)UIButton *loadingbtn;
 @property(nonatomic,strong)UIButton *loadingwithmassage;
+@property(nonatomic,strong)UIButton *loadingwithcancel;
 
 @end
 
@@ -37,6 +37,11 @@
     [self.loadingwithmassage mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.height.equalTo(self.loadingbtn);
         make.top.equalTo(self.loadingbtn.mas_bottom).offset(10);
+    }];
+    [self.view addSubview:self.loadingwithcancel];
+    [self.loadingwithcancel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.height.equalTo(self.loadingbtn);
+        make.top.equalTo(self.loadingwithmassage.mas_bottom).offset(10);
     }];
 }
 #pragma mark - 首次初始化
@@ -62,10 +67,25 @@
     }
     return _loadingwithmassage;
 }
+- (UIButton *)loadingwithcancel{
+    if(!_loadingwithcancel){
+        UIButton *btn = [[UIButton alloc]init];
+        btn.backgroundColor = UIColor.blueColor;
+        [btn setTitle:@"LoadingWithCancle" forState:UIControlStateNormal];
+        [btn addTarget:self action:@selector(loadingcancel:) forControlEvents:UIControlEventTouchUpInside];
+        _loadingwithcancel = btn;
+    }
+    return _loadingwithcancel;
+}
+-(void)loadingcancel:(id)sender{
+    [[Toast GetInstance]annularDeterminatecancelation];
+}
 -(void)loadingwithmessage{
-    NSLog(@"message");
+//    NSLog(@"message");
+    [[Toast GetInstance]annularDeterminate];
 }
 -(void)locadingtest{
-    [[Toast GetInstance]showMessage];
+    [[Toast GetInstance]nomalToast];
 }
+//-(void)
 @end
