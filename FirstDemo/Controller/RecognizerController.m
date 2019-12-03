@@ -49,6 +49,7 @@
 {
     CGPoint tranp = [pan translationInView:self.greanview];
     self.greanview.transform = CGAffineTransformTranslate(self.greanview.transform, tranp.x, tranp.y);
+    //重新设置拖动的起始点相应为上一次的拖动后的点，即每改变一次均要重置定位，类似的拖动，放大，旋转均要重置拖动后的起始点
     [pan setTranslation:CGPointZero inView:self.greanview];
 }
 //清扫
@@ -68,9 +69,9 @@
 -(void)tap:(UISwipeGestureRecognizer *)swip
 {
     if (swip.direction == UISwipeGestureRecognizerDirectionRight) {
-        NSLog(@"right");
+        MLog(@"right");
     }else if (swip.direction == UISwipeGestureRecognizerDirectionLeft){
-        NSLog(@"left");
+        MLog(@"left");
     }
 }
 
