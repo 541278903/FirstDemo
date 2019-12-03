@@ -12,6 +12,7 @@
 
 @property(nonatomic,strong)UIView *recview;
 @property(nonatomic,strong)UIView *greanview;
+@property(nonatomic,strong)UIView *orangeview;
 @end
 
 @implementation RecognizerController
@@ -34,9 +35,23 @@
     [self.greanview setBackgroundColor:UIColor.greenColor];
     [self.view addSubview:self.greanview];
     [self moveRe];
-    
+    self.orangeview = [[UIView alloc]initWithFrame:CGRectMake(100, 500, 100, 100)];
+    UILabel *orangelabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
+    orangelabel.text = @"旋转";
+    [self.orangeview addSubview:orangelabel];
+    [self.orangeview setBackgroundColor:UIColor.orangeColor];
+    [self.view addSubview:self.orangeview];
+    [self Rotation];
 }
-
+-(void)Rotation{
+    UIRotationGestureRecognizer *pan = [[UIRotationGestureRecognizer alloc]initWithTarget:self action:@selector(Rotaitionselector:)];
+    [self.orangeview addGestureRecognizer:pan];
+}
+-(void)Rotaitionselector:(UIRotationGestureRecognizer *)pan{
+    CGFloat p = pan.rotation;
+    self.orangeview.transform = CGAffineTransformRotate(self.orangeview.transform, p);
+    [pan setRotation:0];
+}
 
 //平移手势
 -(void)moveRe
