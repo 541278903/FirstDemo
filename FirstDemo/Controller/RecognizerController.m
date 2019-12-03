@@ -21,27 +21,45 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = UIColor.whiteColor;
-    self.recview = [[UIView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
-    UILabel *reclabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
-    reclabel.text = @"左右滑";
-    [self.recview addSubview:reclabel];
-    [self.recview setBackgroundColor:UIColor.redColor];
     [self.view addSubview:self.recview];
     [self swip];
-    self.greanview = [[UIView alloc]initWithFrame:CGRectMake(100, 300, 100, 100)];
-    UILabel *greenlabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
-    greenlabel.text = @"拖动";
-    [self.greanview addSubview:greenlabel];
-    [self.greanview setBackgroundColor:UIColor.greenColor];
     [self.view addSubview:self.greanview];
     [self moveRe];
-    self.orangeview = [[UIView alloc]initWithFrame:CGRectMake(100, 500, 100, 100)];
-    UILabel *orangelabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
-    orangelabel.text = @"旋转";
-    [self.orangeview addSubview:orangelabel];
-    [self.orangeview setBackgroundColor:UIColor.orangeColor];
     [self.view addSubview:self.orangeview];
     [self Rotation];
+}
+- (UIView *)recview{
+    if(!_recview){
+        UIView *view = [[UIView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
+        UILabel *reclabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
+        reclabel.text = @"左右滑";
+        [view addSubview:reclabel];
+        [view setBackgroundColor:UIColor.redColor];
+        _recview = view;
+    }
+    return _recview;
+}
+- (UIView *)greanview{
+    if(!_greanview){
+        UIView *view = [[UIView alloc]initWithFrame:CGRectMake(100, 300, 100, 100)];
+        UILabel *greenlabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
+        greenlabel.text = @"拖动";
+        [view addSubview:greenlabel];
+        [view setBackgroundColor:UIColor.greenColor];
+        _greanview = view;
+    }
+    return _greanview;
+}
+- (UIView *)orangeview{
+    if(!_orangeview){
+        UIView *view = [[UIView alloc]initWithFrame:CGRectMake(100, 500, 100, 100)];
+        UILabel *orangelabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
+        orangelabel.text = @"旋转";
+        [view addSubview:orangelabel];
+        [view setBackgroundColor:UIColor.orangeColor];
+        _orangeview = view;
+    }
+    return _orangeview;
 }
 -(void)Rotation{
     UIRotationGestureRecognizer *pan = [[UIRotationGestureRecognizer alloc]initWithTarget:self action:@selector(Rotaitionselector:)];
