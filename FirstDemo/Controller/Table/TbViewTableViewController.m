@@ -20,14 +20,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.rowHeight = 80;
-    
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        [self refleshdata];
+    }];
     //延时操作
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        MLog(@"延时操作");
-    });
-
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        MLog(@"延时操作");
+//    });
 }
-
+-(void)refleshdata{
+    self.allcon = nil;
+    [self.tableView reloadData];
+    [self.tableView.mj_header endRefreshing];
+}
 
 #pragma mark - Table view data source
 
@@ -99,8 +104,8 @@
         AllController *sixcon = [[AllController alloc]initWithName:@"多线程" Con:[[ThreadViewController alloc]init]];
         [all addObject:sixcon];
         _allcon = all;
-        
     }
     return _allcon;
 }
+//navigationShouldPopOnBackButt
 @end

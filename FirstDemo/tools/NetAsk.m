@@ -9,7 +9,7 @@
 #import "NetAsk.h"
 #import "GDataXMLNode.h"
 #import <AFNetworking/AFNetworking.h>
-#import "PrefixHeader.pch"
+//#import "PrefixHeader.pch"
 @interface NetAsk()
 @property(nonatomic,strong)AFNetworkReachabilityManager *AfManager;
 @property(nonatomic,strong)AFHTTPSessionManager *manager;
@@ -62,7 +62,7 @@ static NetAsk *netasking = nil;
         NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:[result dataUsingEncoding:NSUTF8StringEncoding] options:0 error:nil];
         comp(dic);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        MLog(@"%@",error.debugDescription);
+        NSLog(@"%@",error.debugDescription);
     }];
 }
 //GET请求
@@ -80,7 +80,7 @@ static NetAsk *netasking = nil;
         NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:[result dataUsingEncoding:NSUTF8StringEncoding] options:0 error:nil];
         comp(dic);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        MLog(@"%@",error.debugDescription);
+        NSLog(@"%@",error.debugDescription);
     }];
 }
 

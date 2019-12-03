@@ -39,6 +39,7 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self testGET];
 //    MLog(@"打印了子控件%@",self.view.subviews);
+//    self.navigationController.bac
 }
 
 

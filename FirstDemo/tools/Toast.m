@@ -45,7 +45,7 @@ static Toast *_instance;
         float progress = 0.0f;
         while (progress < 1.0f) {
             if (self.canceled) break;
-            progress += 0.01f;
+            progress += 0.04f;
             dispatch_async(dispatch_get_main_queue(), ^{
                 hud.progress = progress;
             });
@@ -81,7 +81,6 @@ static Toast *_instance;
         });
     });
 }
-//-(void)
 - (void)cancelWork:(id)sender {
     self.canceled = YES;
 }

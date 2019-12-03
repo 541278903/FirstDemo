@@ -18,6 +18,8 @@
 #import "PageView.h"
 #import "Fmdbtool.h"
 #import <Masonry/Masonry.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+#import <MJRefresh/MJRefresh.h>
 #import "Toast.h"
 #import "TButton.h"
 #import "MQManager.h"
