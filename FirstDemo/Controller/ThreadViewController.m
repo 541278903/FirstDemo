@@ -28,7 +28,7 @@
     self.view.backgroundColor = UIColor.whiteColor;
     self.totalCont = 100;
     [self.view addSubview:self.imageview];
-    [NSThread detachNewThreadSelector:@selector(fff) toTarget:self withObject:nil];
+//    [NSThread detachNewThreadSelector:@selector(fff) toTarget:self withObject:nil];
 }
 #pragma mark -多线程显示图片
 //http://img4.imgtn.bdimg.com/it/u=3209370120,2008812818&fm=26&gp=0.jpg

@@ -9,6 +9,7 @@
 #import "NetAsk.h"
 #import "GDataXMLNode.h"
 #import <AFNetworking/AFNetworking.h>
+#import "PrefixHeader.pch"
 @interface NetAsk()
 @property(nonatomic,strong)AFNetworkReachabilityManager *AfManager;
 @property(nonatomic,strong)AFHTTPSessionManager *manager;
@@ -27,7 +28,7 @@ static NetAsk *netasking = nil;
 }
 + (instancetype)alloc{
     if(netasking){
-        NSException *ecs = [NSException exceptionWithName:@"错误" reason:@"can not create a danli" userInfo:@"不能创建单例"];
+        NSException *ecs = [NSException exceptionWithName:@"错误" reason:@"can not create a danli" userInfo:NULL];
         [ecs raise];
     }
     return [super alloc];
@@ -47,7 +48,7 @@ static NetAsk *netasking = nil;
 
 
 //POST请求
--(void)POST:(NSString *)URL parameters:(id)parameters isXML:(BOOL)isXML resultcom:(void (^)(NSString *bl))comp{
+-(void)POST:(NSString *)URL parameters:(id)parameters isXML:(BOOL)isXML resultcom:(void (^)(NSDictionary *bl))comp{
     [self.manager POST:URL parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSString *result = nil;
         if(isXML)
@@ -59,13 +60,13 @@ static NetAsk *netasking = nil;
         }
         //转成JSON
         NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:[result dataUsingEncoding:NSUTF8StringEncoding] options:0 error:nil];
-        comp(result);
+        comp(dic);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        NSLog(@"%@",error.debugDescription);
+        MLog(@"%@",error.debugDescription);
     }];
 }
 //GET请求
--(void)GET:(NSString *)URL parameters:(id)parameters isXML:(BOOL)isXML resultcom:(void (^)(NSString *bl))comp{
+-(void)GET:(NSString *)URL parameters:(id)parameters isXML:(BOOL)isXML resultcom:(void (^)(NSDictionary *bl))comp{
     [self.manager GET:URL parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSString *result = nil;
         if(isXML)
@@ -77,9 +78,9 @@ static NetAsk *netasking = nil;
         }
         //转成JSON
         NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:[result dataUsingEncoding:NSUTF8StringEncoding] options:0 error:nil];
-        comp(result);
+        comp(dic);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        NSLog(@"%@",error.debugDescription);
+        MLog(@"%@",error.debugDescription);
     }];
 }
 

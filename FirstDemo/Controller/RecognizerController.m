@@ -21,12 +21,16 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = UIColor.whiteColor;
     self.recview = [[UIView alloc]initWithFrame:CGRectMake(100, 100, 100, 100)];
-//    self.recview.text = @"左右滑";
+    UILabel *reclabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
+    reclabel.text = @"左右滑";
+    [self.recview addSubview:reclabel];
     [self.recview setBackgroundColor:UIColor.redColor];
     [self.view addSubview:self.recview];
     [self swip];
     self.greanview = [[UIView alloc]initWithFrame:CGRectMake(100, 300, 100, 100)];
-//    self.greanview.text = @"拖动";
+    UILabel *greenlabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
+    greenlabel.text = @"拖动";
+    [self.greanview addSubview:greenlabel];
     [self.greanview setBackgroundColor:UIColor.greenColor];
     [self.view addSubview:self.greanview];
     [self moveRe];
