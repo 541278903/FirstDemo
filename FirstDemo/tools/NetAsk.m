@@ -37,7 +37,7 @@ static NetAsk *netasking = nil;
 {
     self = [super init];
     if (self) {
-        //初始化网络请求管理器manager
+        //初始化网络请求管理manager
         self.AfManager = [AFNetworkReachabilityManager sharedManager];
         self.manager.responseSerializer = [AFHTTPResponseSerializer serializer];
         //设置参数类型ContentTypes，在后面的array中添加形式即可，最终会转成nsset

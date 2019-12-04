@@ -28,6 +28,16 @@
     //同步函数无论在任何队列中  1、不开启线程2、串行执行
     //在主队列中无论同步还是异步都是 1、不开启线程2、串行执行
     [self syncCONCURENT];
+    
+}
+-(void)onceAndafter{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        MLog(@"once");
+    });
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        MLog(@"after");
+    });
 }
 -(void)asyncconcurrent{
     // 开启多条线程 并且队列中任务异步执行

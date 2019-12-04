@@ -5,25 +5,31 @@
 //  Created by edward on 2019/11/19.
 //  Copyright © 2019 com.Edward. All rights reserved.
 //
-#import "TbViewTableViewController.h"
-#import "TbCell.h"
-#import "AllController.h"
-#import "ViewController.h"
-#import "RecognizerController.h"
-#import "BLController.h"
-#import "SendMessageController.h"
-#import "ToastViewController.h"
-#import "NetAsk.h"
-#import "ThreadViewController.h"
-#import "GCDViewController.h"
-#import "PageView.h"
-#import "Fmdbtool.h"
+
 #import <Masonry/Masonry.h>
 #import <MBProgressHUD/MBProgressHUD.h>
 #import <MJRefresh/MJRefresh.h>
-#import "Toast.h"
+
+#import "TbViewTableViewController.h"
+#import "ViewController.h"
+#import "RecognizerController.h"
+#import "SendMessageController.h"
+#import "ToastViewController.h"
+#import "BLController.h"
+#import "ThreadViewController.h"
+#import "GCDViewController.h"
+
+#import "TbCell.h"
+#import "PageView.h"
 #import "TButton.h"
+
+#import "AllController.h"
+
+#import "NetAsk.h"
+#import "Fmdbtool.h"
+#import "Toast.h"
 #import "MQManager.h"
+#import "DesHelper.h"
 
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch

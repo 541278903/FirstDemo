@@ -8,11 +8,12 @@
 
 //#import "RecognizerController.h"
 #import "PrefixHeader.pch"
-@interface RecognizerController ()
+@interface RecognizerController ()<UIGestureRecognizerDelegate>
 
 @property(nonatomic,strong)UIView *recview;
 @property(nonatomic,strong)UIView *greanview;
 @property(nonatomic,strong)UIView *orangeview;
+@property(nonatomic,strong)UIView *blackview;
 @end
 
 @implementation RecognizerController
@@ -27,6 +28,11 @@
     [self moveRe];
     [self.view addSubview:self.orangeview];
     [self Rotation];
+    [self.view addSubview:self.blackview];
+    [self Scale];
+}
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer{
+    return YES;
 }
 - (UIView *)recview{
     if(!_recview){
@@ -60,6 +66,26 @@
         _orangeview = view;
     }
     return _orangeview;
+}
+- (UIView *)blackview{
+    if(!_blackview){
+        UIView *view = [[UIView alloc]initWithFrame:CGRectMake(100, 700, 100, 100)];
+        UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, 100)];
+        label.text = @"放大";
+        [view addSubview:label];
+        [view setBackgroundColor:UIColor.blueColor];
+        _blackview = view;
+    }
+    return _blackview;
+}
+-(void)Scale{
+    UIPinchGestureRecognizer *pan = [[UIPinchGestureRecognizer alloc]initWithTarget:self action:@selector(ScaleSelector:)];
+    [self.blackview addGestureRecognizer:pan];
+}
+-(void)ScaleSelector:(UIPinchGestureRecognizer *)pan{
+    CGFloat p = pan.scale;
+    self.blackview.transform = CGAffineTransformScale(self.blackview.transform, p, p);
+    [pan setScale:1];
 }
 -(void)Rotation{
     UIRotationGestureRecognizer *pan = [[UIRotationGestureRecognizer alloc]initWithTarget:self action:@selector(Rotaitionselector:)];
