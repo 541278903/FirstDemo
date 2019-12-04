@@ -15,6 +15,7 @@
 #import "ToastViewController.h"
 #import "NetAsk.h"
 #import "ThreadViewController.h"
+#import "GCDViewController.h"
 #import "PageView.h"
 #import "Fmdbtool.h"
 #import <Masonry/Masonry.h>

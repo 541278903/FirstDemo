@@ -41,7 +41,7 @@ static NetAsk *netasking = nil;
         self.AfManager = [AFNetworkReachabilityManager sharedManager];
         self.manager.responseSerializer = [AFHTTPResponseSerializer serializer];
         //设置参数类型ContentTypes，在后面的array中添加形式即可，最终会转成nsset
-        self.manager.responseSerializer.acceptableContentTypes = [NSSet setWithArray:@[@"text/plain",@"text/xml"]];
+        self.manager.responseSerializer.acceptableContentTypes = [NSSet setWithArray:@[@"text/plain",@"text/xml",@"application/octet-stream",@"multipart/form-data"]];
     }
     return self;
 }
@@ -61,6 +61,13 @@ static NetAsk *netasking = nil;
         //转成JSON
         NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:[result dataUsingEncoding:NSUTF8StringEncoding] options:0 error:nil];
         comp(dic);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"%@",error.debugDescription);
+    }];
+}
+-(void)PUT:(NSString *)URLString parameters:(id)parameters isXML:(BOOL)isXml resultcom:(void (^)(NSString *bl))comp{
+    [self.manager PUT:URLString parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        comp([[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding]);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"%@",error.debugDescription);
     }];

@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)IsNetWorking;
 -(void)POST:(NSString *)URL parameters:(id)parameters isXML:(BOOL)isXML resultcom:(void (^)(NSDictionary *bl))comp;
 -(void)GET:(NSString *)URL parameters:(id)parameters isXML:(BOOL)isXML resultcom:(void (^)(NSDictionary *bl))comp;
+-(void)PUT:(NSString *)URLString parameters:(id)parameters isXML:(BOOL)isXml resultcom:(void (^)(NSString *bl))comp;
 @end
 
 NS_ASSUME_NONNULL_END

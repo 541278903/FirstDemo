@@ -18,6 +18,7 @@
 		2B6671C0239123FB001469C3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2B6671BE239123FB001469C3 /* README.md */; };
 		2B6671C1239123FB001469C3 /* README.en.md in Resources */ = {isa = PBXBuildFile; fileRef = 2B6671BF239123FB001469C3 /* README.en.md */; };
 		2B6671C4239217F8001469C3 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6671C3239217F8001469C3 /* ThreadViewController.m */; };
+		2B66794F23975B44001469C3 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B66794E23975B44001469C3 /* GCDViewController.m */; };
 		2B8B295C2383C08F0038B9A5 /* MoveRedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B295B2383C08F0038B9A5 /* MoveRedView.m */; };
 		2B8DEF01234191630004E906 /* PageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8DEF00234191630004E906 /* PageView.m */; };
 		2B925E932358717A0036F859 /* Fmdbtool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B925E922358717A0036F859 /* Fmdbtool.m */; };
@@ -56,6 +57,8 @@
 		2B6671BF239123FB001469C3 /* README.en.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.en.md; sourceTree = "<group>"; };
 		2B6671C2239217F8001469C3 /* ThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadViewController.h; sourceTree = "<group>"; };
 		2B6671C3239217F8001469C3 /* ThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
+		2B66794D23975B44001469C3 /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
+		2B66794E23975B44001469C3 /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
 		2B8B295A2383C08F0038B9A5 /* MoveRedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoveRedView.h; sourceTree = "<group>"; };
 		2B8B295B2383C08F0038B9A5 /* MoveRedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoveRedView.m; sourceTree = "<group>"; };
 		2B8B295D2383C37E0038B9A5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -153,6 +156,8 @@
 				2B235D2C238F9FFD0013B665 /* ToastViewController.m */,
 				2B6671C2239217F8001469C3 /* ThreadViewController.h */,
 				2B6671C3239217F8001469C3 /* ThreadViewController.m */,
+				2B66794D23975B44001469C3 /* GCDViewController.h */,
+				2B66794E23975B44001469C3 /* GCDViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -346,6 +351,7 @@
 				2B3F26592355BCD2002E0E50 /* TbViewTableViewController.m in Sources */,
 				2B98AC3B23879AB2006CC0D1 /* RecognizerController.m in Sources */,
 				2B98AC3523879191006CC0D1 /* NetAsk.m in Sources */,
+				2B66794F23975B44001469C3 /* GCDViewController.m in Sources */,
 				2BBDA093232684A000A2E111 /* ViewController.m in Sources */,
 				2B3F265C2355BCEE002E0E50 /* TbCell.m in Sources */,
 				2B8DEF01234191630004E906 /* PageView.m in Sources */,

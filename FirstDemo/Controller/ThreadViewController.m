@@ -6,7 +6,7 @@
 //  Copyright © 2019 com.Edward. All rights reserved.
 //
 
-#import "ThreadViewController.h"
+//#import "ThreadViewController.h"
 #import "PrefixHeader.pch"
 
 @interface ThreadViewController ()

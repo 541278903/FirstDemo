@@ -27,6 +27,7 @@
 //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 //        MLog(@"延时操作");
 //    });
+    
 }
 -(void)refleshdata{
     self.allcon = nil;
@@ -103,6 +104,8 @@
         [all addObject:fifcon];
         AllController *sixcon = [[AllController alloc]initWithName:@"多线程" Con:[[ThreadViewController alloc]init]];
         [all addObject:sixcon];
+        AllController *sevencon = [[AllController alloc]initWithName:@"GCD管理" Con:[[GCDViewController alloc]init]];
+        [all addObject:sevencon];
         _allcon = all;
     }
     return _allcon;
