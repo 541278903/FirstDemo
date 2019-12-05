@@ -9,7 +9,6 @@
 #import "NetAsk.h"
 #import "GDataXMLNode.h"
 #import <AFNetworking/AFNetworking.h>
-//#import "PrefixHeader.pch"
 @interface NetAsk()
 @property(nonatomic,strong)AFNetworkReachabilityManager *AfManager;
 @property(nonatomic,strong)AFHTTPSessionManager *manager;
@@ -114,12 +113,11 @@ static NetAsk *netasking = nil;
             case AFNetworkReachabilityStatusNotReachable:
                 break;
             case AFNetworkReachabilityStatusReachableViaWWAN:
-//                NSLog(@"wilan");
                 break;
             case AFNetworkReachabilityStatusReachableViaWiFi:
-//                NSLog(@"wifi");
                 break;
             default:
+                
                 break;
         }
     }];

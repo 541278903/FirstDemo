@@ -6,9 +6,12 @@
 //  Copyright © 2019 com.Edward. All rights reserved.
 //
 
+#define MQKeys @[@"kern.*",@"test.*",@"acc.#",@""]
+
 #import <Masonry/Masonry.h>
 #import <MBProgressHUD/MBProgressHUD.h>
 #import <MJRefresh/MJRefresh.h>
+#import <IQKeyboardManager/IQKeyboardManager.h>
 
 #import "TbViewTableViewController.h"
 #import "ViewController.h"
@@ -30,6 +33,7 @@
 #import "Toast.h"
 #import "MQManager.h"
 #import "DesHelper.h"
+
 
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch

@@ -6,17 +6,10 @@
 //  Copyright © 2019 com.Edward. All rights reserved.
 //
 
-#define MQKeys @[@"kern.*",@"test.*",@"acc.#"]
 
 
 #import "AppDelegate.h"
-#import "ViewController.h"
-#import <IQKeyboardManager/IQKeyboardManager.h>
-#import "TbViewTableViewController.h"
-#import "RecognizerController.h"
-#import "MQManager.h"
-#import "NetAsk.h"
-#import "BLController.h"
+#import "PrefixHeader.pch"
 
 
 @interface AppDelegate ()

@@ -44,20 +44,18 @@ static MQManager *mainmanager = nil;
 -(void)GetMsg{
     [self receiveLogsTopic:@[@"kern.*",@"test.*"]];
 }
--(void)GetMsgWith:(NSArray *)routingKeys
-{
+-(void)GetMsgWith:(NSArray *)routingKeys{
     [self receiveLogsTopic:routingKeys];
 }
 -(void)SendMsg:(NSString *)msg{
 
     [self emitLogTopic:msg routingKey:[NSString stringWithFormat:@"test.%@",self.device]];
 }
--(void)SendMsgWith:(NSString *)msg routingKey:(NSString *)routingKey
-{
+-(void)SendMsgWith:(NSString *)msg routingKey:(NSString *)routingKey{
     [self emitLogTopic:msg routingKey:routingKey];
 }
 
-- (void)emitLogTopic:(NSString *)msg routingKey:(NSString *)routingKey {
+-(void)emitLogTopic:(NSString *)msg routingKey:(NSString *)routingKey {
 //    [UIApplication sharedApplication].idleTimerDisabled = YES;
     RMQConnection *con = [[RMQConnection alloc] initWithUri:@"amqp://root:root@jxe9bfqtpi.52http.net:39301" delegate:self];
     [con start];
@@ -121,6 +119,7 @@ static MQManager *mainmanager = nil;
 
 - (void)recoveredConnection:(RMQConnection *)connection {
     NSLog(@"4_recoveredConnection::%@",connection.description);
+    [self GetMsg];
 }
 
 - (void)startingRecoveryWithConnection:(RMQConnection *)connection {
