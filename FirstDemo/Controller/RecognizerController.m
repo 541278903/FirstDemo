@@ -7,7 +7,7 @@
 //
 
 //#import "RecognizerController.h"
-#import "PrefixHeader.pch"
+//#import "PrefixHeader.pch"
 @interface RecognizerController ()<UIGestureRecognizerDelegate>
 
 @property(nonatomic,strong)UIView *recview;

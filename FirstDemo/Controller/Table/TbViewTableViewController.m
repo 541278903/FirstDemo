@@ -5,7 +5,7 @@
 //  Created by edward on 2019/10/15.
 //  Copyright © 2019 com.Edward. All rights reserved.
 //
-#import "PrefixHeader.pch"
+//#import "PrefixHeader.pch"
 
 
 
@@ -27,6 +27,7 @@
 //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 //        MLog(@"延时操作");
 //    });
+    NSLog(@"%f",EQUIPMENT_SCREENT_WIDTH);
     
 }
 -(void)refleshdata{
@@ -80,7 +81,7 @@
 /// @param con 所存在的控制器
 -(void)SetMessageDelegate:(SendMessageController *)con
 {
-    AllController *firstcon = [[AllController alloc]initWithName:@"空白View" Con: [[ViewController alloc]init]];
+    AllController *firstcon = [[AllController alloc]init];
     [self.allcon addObject:firstcon];
     [self.tableView reloadData];
 }
@@ -106,6 +107,8 @@
         [all addObject:sixcon];
         AllController *sevencon = [[AllController alloc]initWithName:@"GCD管理" Con:[[GCDViewController alloc]init]];
         [all addObject:sevencon];
+        AllController *eightcon = [[AllController alloc]initWithName:@"拖动试图" Con:[[ScrollerController alloc] init]];
+        [all addObject:eightcon];
         _allcon = all;
     }
     return _allcon;

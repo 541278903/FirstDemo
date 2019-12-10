@@ -6,7 +6,7 @@
 //  Copyright © 2019 com.Edward. All rights reserved.
 //
 
-#import "PrefixHeader.pch"
+//#import "PrefixHeader.pch"
 
 @interface GCDViewController ()
 
@@ -27,7 +27,7 @@
 //    开启线程的条件，函数是异步函数，队列不在主队列中
 //    同步函数无论在任何队列中  1、不开启线程2、串行执行
 //    在主队列中无论同步还是异步都是 1、不开启线程2、串行执行
-    [self onceAndafter];
+    [self asyncconcurrent];
     
 }
 -(void)onceAndafter{
@@ -43,15 +43,63 @@
 //    开启多条线程 并且并发队列中任务异步执行
     dispatch_queue_t queue = dispatch_queue_create("com.mashiro", DISPATCH_QUEUE_CONCURRENT);
     MLog(@"-start-");
-    dispatch_async(queue, ^{
-        MLog(@"-download1-%@",[NSThread currentThread]);
+    
+    dispatch_apply(220, queue, ^(size_t index) {
+        NSString *a = [NSString stringWithFormat:@"%@",[NSThread currentThread]];
+        [[NetAsk GetInstance]POST:@"http://localhost:8181/login" parameters:@{@"name":a} isXML:NO resultcom:^(id  _Nullable bl) {
+            NSLog(@"%@",bl);
+        }];
     });
-    dispatch_async(queue, ^{
-        MLog(@"-download2-%@",[NSThread currentThread]);
+    
+    dispatch_apply(220, queue, ^(size_t index) {
+        NSString *a = [NSString stringWithFormat:@"%@",[NSThread currentThread]];
+        [[NetAsk GetInstance]POST:@"http://localhost:8181/login" parameters:@{@"name":a} isXML:NO resultcom:^(id  _Nullable bl) {
+            NSLog(@"%@",bl);
+        }];
     });
-    dispatch_async(queue, ^{
-        MLog(@"-download3-%@",[NSThread currentThread]);
+    
+    dispatch_apply(220, queue, ^(size_t index) {
+        NSString *a = [NSString stringWithFormat:@"%@",[NSThread currentThread]];
+        [[NetAsk GetInstance]POST:@"http://localhost:8181/login" parameters:@{@"name":a} isXML:NO resultcom:^(id  _Nullable bl) {
+            NSLog(@"%@",bl);
+        }];
     });
+    
+    dispatch_apply(220, queue, ^(size_t index) {
+        NSString *a = [NSString stringWithFormat:@"%@",[NSThread currentThread]];
+        [[NetAsk GetInstance]POST:@"http://localhost:8181/login" parameters:@{@"name":a} isXML:NO resultcom:^(id  _Nullable bl) {
+            NSLog(@"%@",bl);
+        }];
+    });
+    
+    dispatch_apply(220, queue, ^(size_t index) {
+        NSString *a = [NSString stringWithFormat:@"%@",[NSThread currentThread]];
+        [[NetAsk GetInstance]POST:@"http://localhost:8181/login" parameters:@{@"name":a} isXML:NO resultcom:^(id  _Nullable bl) {
+            NSLog(@"%@",bl);
+        }];
+    });
+    
+    dispatch_apply(220, queue, ^(size_t index) {
+        NSString *a = [NSString stringWithFormat:@"%@",[NSThread currentThread]];
+        [[NetAsk GetInstance]POST:@"http://localhost:8181/login" parameters:@{@"name":a} isXML:NO resultcom:^(id  _Nullable bl) {
+            NSLog(@"%@",bl);
+        }];
+    });
+    
+    dispatch_apply(220, queue, ^(size_t index) {
+        NSString *a = [NSString stringWithFormat:@"%@",[NSThread currentThread]];
+        [[NetAsk GetInstance]POST:@"http://localhost:8181/login" parameters:@{@"name":a} isXML:NO resultcom:^(id  _Nullable bl) {
+            NSLog(@"%@",bl);
+        }];
+    });
+    
+//    dispatch_async(queue, ^{
+////        MLog(@"-download3-%@",[NSThread currentThread]);
+//        NSString *a = [NSString stringWithFormat:@"%zu",index];
+//        [[NetAsk GetInstance]POST:@"http://localhost:8181/login" parameters:@{@"name":a} isXML:NO resultcom:^(id  _Nullable bl) {
+//            NSLog(@"%@",bl);
+//        }];
+//    });
     NSLog(@"-end-");
 }
 -(void)asyncseriac{

@@ -19,6 +19,7 @@
 		2B6671C1239123FB001469C3 /* README.en.md in Resources */ = {isa = PBXBuildFile; fileRef = 2B6671BF239123FB001469C3 /* README.en.md */; };
 		2B6671C4239217F8001469C3 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6671C3239217F8001469C3 /* ThreadViewController.m */; };
 		2B66794F23975B44001469C3 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B66794E23975B44001469C3 /* GCDViewController.m */; };
+		2B7241AE239F537B00344E4F /* ScrollerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7241AD239F537B00344E4F /* ScrollerController.m */; };
 		2B8B295C2383C08F0038B9A5 /* MoveRedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B295B2383C08F0038B9A5 /* MoveRedView.m */; };
 		2B8DEF01234191630004E906 /* PageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8DEF00234191630004E906 /* PageView.m */; };
 		2B925E932358717A0036F859 /* Fmdbtool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B925E922358717A0036F859 /* Fmdbtool.m */; };
@@ -59,6 +60,8 @@
 		2B6671C3239217F8001469C3 /* ThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadViewController.m; sourceTree = "<group>"; };
 		2B66794D23975B44001469C3 /* GCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
 		2B66794E23975B44001469C3 /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
+		2B7241AC239F537B00344E4F /* ScrollerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollerController.h; sourceTree = "<group>"; };
+		2B7241AD239F537B00344E4F /* ScrollerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollerController.m; sourceTree = "<group>"; };
 		2B8B295A2383C08F0038B9A5 /* MoveRedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoveRedView.h; sourceTree = "<group>"; };
 		2B8B295B2383C08F0038B9A5 /* MoveRedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoveRedView.m; sourceTree = "<group>"; };
 		2B8B295D2383C37E0038B9A5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -158,6 +161,8 @@
 				2B6671C3239217F8001469C3 /* ThreadViewController.m */,
 				2B66794D23975B44001469C3 /* GCDViewController.h */,
 				2B66794E23975B44001469C3 /* GCDViewController.m */,
+				2B7241AC239F537B00344E4F /* ScrollerController.h */,
+				2B7241AD239F537B00344E4F /* ScrollerController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -354,6 +359,7 @@
 				2B66794F23975B44001469C3 /* GCDViewController.m in Sources */,
 				2BBDA093232684A000A2E111 /* ViewController.m in Sources */,
 				2B3F265C2355BCEE002E0E50 /* TbCell.m in Sources */,
+				2B7241AE239F537B00344E4F /* ScrollerController.m in Sources */,
 				2B8DEF01234191630004E906 /* PageView.m in Sources */,
 				2B98AC2F23877ECB006CC0D1 /* MQManager.m in Sources */,
 				2B490866238BD7AD00711364 /* SendMessageController.m in Sources */,
@@ -513,6 +519,8 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7REQ36AB7X;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FirstDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = FirstDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -535,6 +543,8 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7REQ36AB7X;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FirstDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = FirstDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
