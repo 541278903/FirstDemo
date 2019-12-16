@@ -11,15 +11,17 @@
 NS_ASSUME_NONNULL_BEGIN
 @class SendMessageController;
 
+//添加代理
 @protocol SendMessageControllerDeleage <NSObject>
-
 @required
+//添加代理方法
 -(void)SetMessageDelegate:(SendMessageController *)con;
-
-
 @end
+
+
 @interface SendMessageController : UIViewController
 
+- (instancetype)initWithDelegate:(id)delegate;
 @property(nonatomic,weak)id<SendMessageControllerDeleage> delegate;
 @end
 

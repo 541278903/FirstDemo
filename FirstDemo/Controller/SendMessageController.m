@@ -22,6 +22,15 @@
 
 @implementation SendMessageController
 
+- (instancetype)initWithDelegate:(id)delegate
+{
+    self = [super init];
+    if (self) {
+        self.delegate = delegate;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.whiteColor;

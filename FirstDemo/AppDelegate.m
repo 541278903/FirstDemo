@@ -25,7 +25,7 @@
     IQKeyboardManager *keyboardManager = [IQKeyboardManager sharedManager];
     keyboardManager.enable = YES;
     keyboardManager.shouldResignOnTouchOutside = YES;
-//    [[MQManager GetInstance] GetMsgWith:MQKeys];
+    [[MQManager GetInstance] GetMsgWith:MQKeys];
     [[NetAsk GetInstance] IsNetWorking];
     [self tuee];
     return YES;
@@ -43,6 +43,7 @@
 -(void)tuee{
     TbViewTableViewController *tbview = [[TbViewTableViewController alloc]init];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:tbview];
+//    ScrollerController *sv = [[ScrollerController alloc]init];
     self.window.rootViewController = nav;
 }
 //创建弹窗试图控制器

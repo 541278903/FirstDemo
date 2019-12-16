@@ -13,4 +13,6 @@ target 'FirstDemo' do
   pod 'FMDB'
   pod 'GTMBase64'
   pod 'MBProgressHUD'
+  pod 'PPBadgeView'
+  pod 'LazyScroll'
 end

@@ -27,7 +27,6 @@
 //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 //        MLog(@"延时操作");
 //    });
-    NSLog(@"%f",EQUIPMENT_SCREENT_WIDTH);
     
 }
 -(void)refleshdata{
@@ -96,10 +95,7 @@
         [all addObject:seccon];
         AllController *thirdcon = [[AllController alloc]initWithName:@"弹窗View" Con: [[BLController alloc]init]];
         [all addObject:thirdcon];
-        SendMessageController *forth = [[SendMessageController alloc]init];
-        //设置将代理传进去
-        forth.delegate = self;
-        AllController *forcon = [[AllController alloc]initWithName:@"发送mq消息View" Con: forth];
+        AllController *forcon = [[AllController alloc]initWithName:@"发送mq消息View" Con: [[SendMessageController alloc]initWithDelegate:self]];
         [all addObject:forcon];
         AllController *fifcon = [[AllController alloc]initWithName:@"Toast提示" Con:[[ToastViewController alloc] init]];
         [all addObject:fifcon];

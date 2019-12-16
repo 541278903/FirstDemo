@@ -32,6 +32,7 @@ PODS:
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
   - MJRefresh (3.2.2)
+  - PPBadgeView (3.1.0)
   - RMQClient (0.10.0):
     - CocoaAsyncSocket (~> 7.4.0)
     - JKVValue
@@ -46,6 +47,7 @@ DEPENDENCIES:
   - Masonry
   - MBProgressHUD
   - MJRefresh
+  - PPBadgeView
   - RMQClient
 
 SPEC REPOS:
@@ -61,6 +63,7 @@ SPEC REPOS:
     - Masonry
     - MBProgressHUD
     - MJRefresh
+    - PPBadgeView
     - RMQClient
 
 SPEC CHECKSUMS:
@@ -75,8 +78,9 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJRefresh: 72a46ecaa2a0feaf48fc5198dff95f25f8bb27c6
+  PPBadgeView: b50a223638970fd0781e8753250385864b6dd2fe
   RMQClient: e9bfea2d08f151b6b12df82ad115c78bd8de2106
 
-PODFILE CHECKSUM: afc45aa32d1c122a7e23fc4c2c0f5b328ae7bb2f
+PODFILE CHECKSUM: 83dfac5c1d66b4a747418b78fbb2517a45a49cb7
 
 COCOAPODS: 1.8.4
