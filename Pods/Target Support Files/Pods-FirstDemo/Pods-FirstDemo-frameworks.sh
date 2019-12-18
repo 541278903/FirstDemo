@@ -169,11 +169,13 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/GTMBase64/GTMBase64.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/JKVValue/JKVValue.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/LazyScroll/LazyScroll.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PPBadgeView/PPBadgeView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RMQClient/RMQClient.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TMUtils/TMUtils.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
@@ -184,11 +186,13 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/GTMBase64/GTMBase64.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/JKVValue/JKVValue.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/LazyScroll/LazyScroll.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PPBadgeView/PPBadgeView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RMQClient/RMQClient.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TMUtils/TMUtils.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

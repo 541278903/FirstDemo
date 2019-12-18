@@ -1,0 +1,6 @@
+framework module TMUtils {
+  umbrella header "TMUtils-umbrella.h"
+
+  export *
+  module * { export * }
+}

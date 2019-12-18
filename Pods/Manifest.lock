@@ -29,6 +29,8 @@ PODS:
   - GTMBase64 (1.0.1)
   - IQKeyboardManager (6.5.3)
   - JKVValue (1.3.3)
+  - LazyScroll (1.0.1):
+    - TMUtils (~> 1.0.1)
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
   - MJRefresh (3.2.2)
@@ -36,6 +38,7 @@ PODS:
   - RMQClient (0.10.0):
     - CocoaAsyncSocket (~> 7.4.0)
     - JKVValue
+  - TMUtils (1.0.1)
 
 DEPENDENCIES:
   - AFNetworking
@@ -44,6 +47,7 @@ DEPENDENCIES:
   - GDataXML-HTML
   - GTMBase64
   - IQKeyboardManager
+  - LazyScroll
   - Masonry
   - MBProgressHUD
   - MJRefresh
@@ -60,11 +64,13 @@ SPEC REPOS:
     - GTMBase64
     - IQKeyboardManager
     - JKVValue
+    - LazyScroll
     - Masonry
     - MBProgressHUD
     - MJRefresh
     - PPBadgeView
     - RMQClient
+    - TMUtils
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
@@ -75,12 +81,14 @@ SPEC CHECKSUMS:
   GTMBase64: f0f91be06a7a20b84c8e4fee30c0430395091d82
   IQKeyboardManager: c2f901164d56807a35788483584d09fa69192e8e
   JKVValue: d7941071b1cf9ba35c194fd40bcf4c4d9b5462e9
+  LazyScroll: 23f4550711452ad4306a30fc75106a7a5556a882
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJRefresh: 72a46ecaa2a0feaf48fc5198dff95f25f8bb27c6
   PPBadgeView: b50a223638970fd0781e8753250385864b6dd2fe
   RMQClient: e9bfea2d08f151b6b12df82ad115c78bd8de2106
+  TMUtils: 8af8e4695b6e4086d0545ecd7cd025556515ab42
 
-PODFILE CHECKSUM: 83dfac5c1d66b4a747418b78fbb2517a45a49cb7
+PODFILE CHECKSUM: f51bb69323ddc772a6549cd4074c8ec0fb9fa74c
 
 COCOAPODS: 1.8.4

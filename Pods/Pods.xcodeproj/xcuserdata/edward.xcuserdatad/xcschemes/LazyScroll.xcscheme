@@ -14,9 +14,9 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3CBE366D25C3692AAE548A9B678264C8"
-               BuildableName = "BulletinBoard.framework"
-               BlueprintName = "BulletinBoard"
+               BlueprintIdentifier = "0620493F3B6F611088C7488B6C80FEA2"
+               BuildableName = "LazyScroll.framework"
+               BlueprintName = "LazyScroll"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
