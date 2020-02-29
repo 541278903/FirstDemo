@@ -47,59 +47,65 @@
     dispatch_apply(220, queue, ^(size_t index) {
         NSString *a = [NSString stringWithFormat:@"%@",[NSThread currentThread]];
         [[NetAsk GetInstance]POST:@"http://localhost:8181/login" parameters:@{@"name":a} isXML:NO resultcom:^(id  _Nullable bl) {
-            NSLog(@"%@",bl);
+            
         }];
     });
     
     dispatch_apply(220, queue, ^(size_t index) {
         NSString *a = [NSString stringWithFormat:@"%@",[NSThread currentThread]];
         [[NetAsk GetInstance]POST:@"http://localhost:8181/login" parameters:@{@"name":a} isXML:NO resultcom:^(id  _Nullable bl) {
-            NSLog(@"%@",bl);
+            
         }];
     });
     
     dispatch_apply(220, queue, ^(size_t index) {
         NSString *a = [NSString stringWithFormat:@"%@",[NSThread currentThread]];
         [[NetAsk GetInstance]POST:@"http://localhost:8181/login" parameters:@{@"name":a} isXML:NO resultcom:^(id  _Nullable bl) {
-            NSLog(@"%@",bl);
+            
         }];
     });
     
     dispatch_apply(220, queue, ^(size_t index) {
         NSString *a = [NSString stringWithFormat:@"%@",[NSThread currentThread]];
         [[NetAsk GetInstance]POST:@"http://localhost:8181/login" parameters:@{@"name":a} isXML:NO resultcom:^(id  _Nullable bl) {
-            NSLog(@"%@",bl);
+            
         }];
     });
     
     dispatch_apply(220, queue, ^(size_t index) {
         NSString *a = [NSString stringWithFormat:@"%@",[NSThread currentThread]];
         [[NetAsk GetInstance]POST:@"http://localhost:8181/login" parameters:@{@"name":a} isXML:NO resultcom:^(id  _Nullable bl) {
-            NSLog(@"%@",bl);
+            
         }];
     });
     
     dispatch_apply(220, queue, ^(size_t index) {
         NSString *a = [NSString stringWithFormat:@"%@",[NSThread currentThread]];
         [[NetAsk GetInstance]POST:@"http://localhost:8181/login" parameters:@{@"name":a} isXML:NO resultcom:^(id  _Nullable bl) {
-            NSLog(@"%@",bl);
+            
         }];
     });
     
     dispatch_apply(220, queue, ^(size_t index) {
         NSString *a = [NSString stringWithFormat:@"%@",[NSThread currentThread]];
         [[NetAsk GetInstance]POST:@"http://localhost:8181/login" parameters:@{@"name":a} isXML:NO resultcom:^(id  _Nullable bl) {
-            NSLog(@"%@",bl);
+            
         }];
     });
     
-//    dispatch_async(queue, ^{
-////        MLog(@"-download3-%@",[NSThread currentThread]);
-//        NSString *a = [NSString stringWithFormat:@"%zu",index];
-//        [[NetAsk GetInstance]POST:@"http://localhost:8181/login" parameters:@{@"name":a} isXML:NO resultcom:^(id  _Nullable bl) {
-//            NSLog(@"%@",bl);
-//        }];
-//    });
+    dispatch_apply(220, queue, ^(size_t index) {
+        NSString *a = [NSString stringWithFormat:@"%@",[NSThread currentThread]];
+        [[NetAsk GetInstance]POST:@"http://localhost:8181/login" parameters:@{@"name":a} isXML:NO resultcom:^(id  _Nullable bl) {
+            
+        }];
+    });
+    
+    dispatch_apply(220, queue, ^(size_t index) {
+        NSString *a = [NSString stringWithFormat:@"%@",[NSThread currentThread]];
+        [[NetAsk GetInstance]POST:@"http://localhost:8181/login" parameters:@{@"name":a} isXML:NO resultcom:^(id  _Nullable bl) {
+            
+        }];
+    });
     NSLog(@"-end-");
 }
 -(void)asyncseriac{

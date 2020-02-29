@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 @required
 //添加代理方法
 -(void)SetMessageDelegate:(SendMessageController *)con;
+@optional
+-(void)DoSomeThing:(SendMessageController *)con;
 @end
 
 

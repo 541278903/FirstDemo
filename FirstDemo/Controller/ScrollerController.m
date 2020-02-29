@@ -12,6 +12,7 @@
 @property(nonatomic,strong)UITextField *serchfield;
 @property(nonatomic,strong)UIView *buttonview;
 @property(nonatomic,strong)UIView *textview;
+@property(nonatomic,strong)UIImageView *imageView;
 //@property(nonatomic,)
 @end
 @implementation ScrollerController
@@ -30,6 +31,7 @@
     [self.scrollview addSubview:self.serchfield];
     [self.scrollview addSubview:self.buttonview];
     [self.scrollview addSubview:self.textview];
+    [self.scrollview addSubview:self.imageView];
     
 }
 #pragma mark -初始化控件
@@ -79,12 +81,22 @@
         UIView *view = [[UIView alloc]initWithFrame:CGRectMake(CGRectGetMinX(self.buttonview.frame), CGRectGetMaxY(self.buttonview.frame)+50, CGRectGetWidth(self.buttonview.frame), 200)];
         view.layer.borderWidth = 0.5;
         view.layer.borderColor = UIColor.blackColor.CGColor;
-        UITextView *tview = [[UITextView alloc]initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.buttonview.frame), CGRectGetHeight(self.buttonview.frame))];
+        UITextView *tview = [[UITextView alloc]initWithFrame:CGRectMake(0, 0, CGRectGetWidth(view.frame), CGRectGetHeight(view.frame))];
         tview.text = @"最新合同";
         [view addSubview:tview];
         _textview = view;
     }
     return _textview;
+}
+
+- (UIImageView *)imageView{
+    if(!_imageView){
+        UIImageView *imageview = [[UIImageView alloc]initWithFrame:CGRectMake(CGRectGetMinX(self.textview.frame), CGRectGetMaxY(self.textview.frame)+50, CGRectGetWidth(self.buttonview.frame), 500)];
+        imageview.layer.borderWidth = 0.5;
+        imageview.layer.borderColor = UIColor.blackColor.CGColor;
+        _imageView = imageview;
+    }
+    return _imageView;
 }
 -(void)targe:(UIButton *)btn{
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -97,7 +109,7 @@
 }
 -(UIScrollView *)scrollview{
     if(!_scrollview){
-        UIScrollView *sc = [[UIScrollView alloc]initWithFrame:CGRectMake(0, TOPNAVHEIGHT, EQUIPMENT_SCREENT_WIDTH, EQUIPMENT_SCREENT_HEIGHT - TABBAR_HEIGHT - TABBAR_HEIGHT)];
+        UIScrollView *sc = [[UIScrollView alloc]initWithFrame:CGRectMake(0, TOPNAVHEIGHT, EQUIPMENT_SCREENT_WIDTH, EQUIPMENT_SCREENT_HEIGHT - TABBAR_HEIGHT)];
         CGSize size = self.view.frame.size;
         size.height = [self setcontentSizeHeigh];
         sc.contentSize = size;
@@ -109,6 +121,7 @@
     CGFloat height = self.serchfield.frame.size.height;
     height += self.buttonview.frame.size.height;
     height += self.textview.frame.size.height;
+    height += self.imageView.frame.size.height;
     return height;
 }
 

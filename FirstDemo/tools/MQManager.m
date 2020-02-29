@@ -106,15 +106,15 @@ static MQManager *mainmanager = nil;
 
 
 - (void)channel:(id<RMQChannel>)channel error:(NSError *)error {
-    NSLog(@"1_channel::%@",error.localizedDescription);
+    NSLog(@"1_channel::%@",error.localizedFailureReason);
 }
 
 - (void)connection:(RMQConnection *)connection disconnectedWithError:(NSError *)error {
-    NSLog(@"2_connection::%@",error.localizedDescription);
+    NSLog(@"2_connection::%@",error.localizedFailureReason);
 }
 
 - (void)connection:(RMQConnection *)connection failedToConnectWithError:(NSError *)error {
-    NSLog(@"3_connecion::%@",error.localizedDescription);
+    NSLog(@"3_connecion::%@",error.localizedFailureReason);
 }
 
 - (void)recoveredConnection:(RMQConnection *)connection {

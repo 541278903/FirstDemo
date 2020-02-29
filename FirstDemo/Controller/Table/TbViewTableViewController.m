@@ -105,6 +105,8 @@
         [all addObject:sevencon];
         AllController *eightcon = [[AllController alloc]initWithName:@"拖动试图" Con:[[ScrollerController alloc] init]];
         [all addObject:eightcon];
+        AllController *nigthcon = [[AllController alloc]initWithName:@"NSOperation" Con:[[OperationViewController alloc] init]];
+        [all addObject:nigthcon];
         _allcon = all;
     }
     return _allcon;

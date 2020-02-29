@@ -9,7 +9,6 @@
 
 
 #import "AppDelegate.h"
-#import "PrefixHeader.pch"
 
 
 @interface AppDelegate ()
@@ -25,7 +24,7 @@
     IQKeyboardManager *keyboardManager = [IQKeyboardManager sharedManager];
     keyboardManager.enable = YES;
     keyboardManager.shouldResignOnTouchOutside = YES;
-    [[MQManager GetInstance] GetMsgWith:MQKeys];
+//    [[MQManager GetInstance] GetMsgWith:MQKeys];
     [[NetAsk GetInstance] IsNetWorking];
     [self tuee];
     return YES;
