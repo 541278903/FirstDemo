@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B23594F23B495C000C5E1B3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B23594E23B495C000C5E1B3 /* CoreFoundation.framework */; };
 		2B235D2A238F7B7A0013B665 /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B235D29238F7B7A0013B665 /* Toast.m */; };
 		2B235D2D238F9FFD0013B665 /* ToastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B235D2C238F9FFD0013B665 /* ToastViewController.m */; };
+		2B235DD423B4A55A00C5E1B3 /* OperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B235DD323B4A55A00C5E1B3 /* OperationViewController.m */; };
 		2B3F26592355BCD2002E0E50 /* TbViewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3F26582355BCD2002E0E50 /* TbViewTableViewController.m */; };
 		2B3F265C2355BCEE002E0E50 /* TbCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B3F265B2355BCEE002E0E50 /* TbCell.m */; };
 		2B490860238BCBC100711364 /* BLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B49085F238BCBC100711364 /* BLController.m */; };
@@ -38,10 +40,13 @@
 
 /* Begin PBXFileReference section */
 		2B203EFC234C59CB00808F21 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2B23594E23B495C000C5E1B3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		2B235D28238F7B7A0013B665 /* Toast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Toast.h; sourceTree = "<group>"; };
 		2B235D29238F7B7A0013B665 /* Toast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Toast.m; sourceTree = "<group>"; };
 		2B235D2B238F9FFD0013B665 /* ToastViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToastViewController.h; sourceTree = "<group>"; };
 		2B235D2C238F9FFD0013B665 /* ToastViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToastViewController.m; sourceTree = "<group>"; };
+		2B235DD223B4A55A00C5E1B3 /* OperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationViewController.h; sourceTree = "<group>"; };
+		2B235DD323B4A55A00C5E1B3 /* OperationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationViewController.m; sourceTree = "<group>"; };
 		2B3F26572355BCD2002E0E50 /* TbViewTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TbViewTableViewController.h; sourceTree = "<group>"; };
 		2B3F26582355BCD2002E0E50 /* TbViewTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TbViewTableViewController.m; sourceTree = "<group>"; };
 		2B3F265A2355BCEE002E0E50 /* TbCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TbCell.h; sourceTree = "<group>"; };
@@ -98,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B23594F23B495C000C5E1B3 /* CoreFoundation.framework in Frameworks */,
 				DCAEF9209F46B39D96AFDB64 /* Pods_FirstDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,6 +114,7 @@
 		2B203EFB234C59CB00808F21 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2B23594E23B495C000C5E1B3 /* CoreFoundation.framework */,
 				2BBA7889234C68BE004055A9 /* Foundation.framework */,
 				2B203EFC234C59CB00808F21 /* UIKit.framework */,
 				934455A8135A010255932ED3 /* Pods_FirstDemo.framework */,
@@ -163,6 +170,8 @@
 				2B66794E23975B44001469C3 /* GCDViewController.m */,
 				2B7241AC239F537B00344E4F /* ScrollerController.h */,
 				2B7241AD239F537B00344E4F /* ScrollerController.m */,
+				2B235DD223B4A55A00C5E1B3 /* OperationViewController.h */,
+				2B235DD323B4A55A00C5E1B3 /* OperationViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -367,6 +376,7 @@
 				2B490863238BCF8500711364 /* AllController.m in Sources */,
 				2B925E932358717A0036F859 /* Fmdbtool.m in Sources */,
 				2B4E4101234C3A1200F22869 /* TButton.m in Sources */,
+				2B235DD423B4A55A00C5E1B3 /* OperationViewController.m in Sources */,
 				2B8B295C2383C08F0038B9A5 /* MoveRedView.m in Sources */,
 				2B490860238BCBC100711364 /* BLController.m in Sources */,
 				2BBDA09E232684A100A2E111 /* main.m in Sources */,
