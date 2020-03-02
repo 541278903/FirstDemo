@@ -8,8 +8,19 @@
 
 #import "AllController.h"
 #import "ViewController.h"
+@interface AllController()
+
+
+@end
 
 @implementation AllController
+
+
+@synthesize name = theName;//自定义变量名，执行完次代码后，内存中_name将被theName代替
+- (NSString *)name{
+    if(theName){}
+    return theName;
+}
 - (instancetype)init{
     self = [super init];
     if (self) {

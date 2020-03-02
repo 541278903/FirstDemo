@@ -17,7 +17,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = UIColor.whiteColor;
-    [self Setup];
+//    [self Setup];
+//    NSDictionary
+    //通过谓词对象查找数组中模型的东西 其中Person模型有name和age两个属性
+    NSArray *objectArray = [[NSArray alloc]initWithObjects:@"Person模型",@"",@"", nil];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"age > 10 && age <20"];
+    NSArray *newArray = [objectArray filteredArrayUsingPredicate:predicate];
 }
 -(void)Setup{
     
@@ -44,6 +49,15 @@
     [queue addOperationWithBlock:^{
         MLog(@"queue add operation");
     }];
+    [serqueue addOperationWithBlock:^{    //<-通讯外的队列不能为主队列
+        //线程间通讯
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+            MLog(@"%@",[NSThread currentThread]);
+        }];
+    }];
+    if (self._IQDescription) {
+        MLog(@"1.....%@",self._IQDescription);
+    }
 }
 
 @end
