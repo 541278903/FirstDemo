@@ -21,6 +21,7 @@
 #import <IQKeyboardManager/IQKeyboardManager.h>
 #import <PPBadgeView/PPBadgeView.h>
 
+/**controller*/
 #import "TbViewTableViewController.h"
 #import "ViewController.h"
 #import "RecognizerController.h"
@@ -32,13 +33,15 @@
 #import "ScrollerController.h"
 #import "OperationViewController.h"
 
+/**cell and viewbymyself*/
 #import "TbCell.h"
 #import "PageView.h"
 #import "TButton.h"
 
+/**model*/
 #import "AllController.h"
-#import "PersonModel.h"
 
+/**tools*/
 #import "NetAsk.h"
 #import "Fmdbtool.h"
 #import "Toast.h"

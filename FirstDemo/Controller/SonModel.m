@@ -1,19 +1,18 @@
 //
-//  PersonModel.m
+//  SonModel.m
 //  FirstDemo
 //
 //  Created by edward on 2020/3/3.
 //  Copyright © 2020 com.Edward. All rights reserved.
 //
 
-#import "PersonModel.h"
-@interface PersonModel()
-
+#import "SonModel.h"
+@interface SonModel()
 
 @end
 
-@implementation PersonModel
--(void)shout{
-    MLog(@"...");
+@implementation SonModel
+- (void)shout{
+    MLog(@"son ....");
 }
 @end

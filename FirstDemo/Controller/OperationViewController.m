@@ -7,6 +7,8 @@
 //
 
 
+#import "PersonModel.h"
+#import "SonModel.h"
 @interface OperationViewController ()
 
 @end
@@ -18,7 +20,13 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = UIColor.whiteColor;
 //    [self Setup];
-//    NSDictionary
+    PersonModel *per = [[PersonModel alloc]init];
+    PersonModel *son = [[SonModel alloc]init];
+    [per shout];
+    [son shout];
+}
+-(void)Demo{
+    
     //通过谓词对象查找数组中模型的东西 其中Person模型有name和age两个属性
     NSArray *objectArray = [[NSArray alloc]initWithObjects:@"Person模型",@"",@"", nil];
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"age > 10 && age <20"];
