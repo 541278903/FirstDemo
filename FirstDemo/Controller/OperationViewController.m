@@ -57,7 +57,7 @@
     [queue addOperationWithBlock:^{
         MLog(@"queue add operation");
     }];
-    [serqueue addOperationWithBlock:^{    //<-通讯外的队列不能为主队列
+    [serqueue addOperationWithBlock:^{    //  <-通讯外的队列不能为主队列
         //线程间通讯
         [[NSOperationQueue mainQueue] addOperationWithBlock:^{
             MLog(@"%@",[NSThread currentThread]);
