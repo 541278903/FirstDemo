@@ -37,6 +37,7 @@
 #import "TButton.h"
 
 #import "AllController.h"
+#import "PersonModel.h"
 
 #import "NetAsk.h"
 #import "Fmdbtool.h"
