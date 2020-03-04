@@ -16,4 +16,21 @@
 -(void)shout{
     MLog(@"...");
 }
++ (BOOL)resolveClassMethod:(SEL)sel{
+    NSString *str = NSStringFromSelector(sel);
+    if([str isEqualToString:@"eat"]){
+        IMP imp = method_getImplementation(class_getInstanceMethod(self, @selector(shout)));
+        class_addMethod(self, @selector(eat), imp, "");
+    }
+    return [super resolveClassMethod:sel];
+}
++ (BOOL)resolveInstanceMethod:(SEL)sel{
+    
+    NSString *str = NSStringFromSelector(sel);
+    if([str isEqualToString:@"eat"]){
+        IMP imp = method_getImplementation(class_getInstanceMethod(self, @selector(shout)));
+        class_addMethod(self, @selector(eat), imp, "");
+    }
+    return [super resolveInstanceMethod:sel];
+}
 @end

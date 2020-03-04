@@ -9,7 +9,9 @@
 //#import "RunTimeController.h"
 
 #import <objc/message.h>
-#import "PersonModel.h"
+#import <objc/runtime.h>
+#import "PersonModel+thesec.h"
+//#import "PersonModel.h"
 @interface RunTimeController ()
 
 @end
@@ -19,7 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    [self setup];
-    [self setup2];
+//    [self setup2];
+//    [self setup3];
+    [self setup4];
     
 }
 -(void)setup{
@@ -47,6 +51,8 @@
 // ⏬使用runtime 动态添加一个类
 -(void)setup2{
     /** 创建一个新类  步骤一*/
+    
+    /**注意添加成员变量和方法要在alloccreateClassPair 和 registerClassPair之间 */
     Class myClass = objc_allocateClassPair([NSObject class], "myClass", 0);
     class_addIvar(myClass, "_address", sizeof(NSString *), log2(sizeof(NSString *)), @encode(NSString *));
     class_addIvar(myClass, "_age", sizeof(NSUInteger), log2(sizeof(NSUInteger)), @encode(NSUInteger));
@@ -56,11 +62,24 @@
     /** 注册刚刚新建的类  步骤二*/
     objc_registerClassPair(myClass);
     id object = [[myClass alloc]init];
+    [object setValue:@"caonima" forKey:@"address"];
     objc_msgSend(object, sel_registerName("mm"));
+    MLog(@"%@",[object valueForKey:@"address"]);
     /** 销毁刚刚新建的类  步骤三*/
     object = nil;
     objc_disposeClassPair(myClass);
     
+}
+// ⏬使用runtime 给分类category添加属性，category添加属性是不会自动产生getter和setter方法
+-(void)setup3{
+    PersonModel *person = [[PersonModel alloc]init];
+    person.father = @"nihao";
+    MLog(@"%@",person.father);
+}
+// ⏬使用runtime 动态方法解析，防止调用没有定义好的方法产生错误（即消息转发）
+-(void)setup4{
+    PersonModel *p = [[PersonModel alloc]init];
+    [p performSelector:@selector(eat)];
     
 }
 -(void)test{

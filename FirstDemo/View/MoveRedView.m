@@ -7,7 +7,6 @@
 //
 
 #import "MoveRedView.h"
-
 @implementation MoveRedView
 
 
