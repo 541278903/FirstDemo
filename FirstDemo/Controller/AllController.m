@@ -42,9 +42,9 @@
 -(BOOL)isNull{
     return self.ConView == NULL;
 }
-- (void)eat2
+- (void)eat
 {
-    MLog(@"AllController吃了东西")
+//    MLog(@"AllController吃了东西");
 }
 
 @end

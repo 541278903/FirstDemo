@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,strong)NSString *ConName;
 @property(nonatomic,strong)UIViewController *ConView;
 - (instancetype)initWithName:(NSString *)name  Con:(UIViewController *)con;
--(void)eat2;
+-(void)eat;
 //week和assign 的区别，week修饰的指针变量在所指的对象释放时会自动将变量指针置nil，而assgin不行。\
 assign主要修饰简单的“纯量类型”，即week修饰OC对象，assign修饰非OC对象
 
