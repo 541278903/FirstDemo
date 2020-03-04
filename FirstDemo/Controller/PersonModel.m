@@ -9,7 +9,7 @@
 #import "PersonModel.h"
 @interface PersonModel()
 
-
+@property(nonatomic,strong)NSString *sex;
 @end
 
 @implementation PersonModel

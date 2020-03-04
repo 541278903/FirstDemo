@@ -22,6 +22,9 @@
 		2B6671C4239217F8001469C3 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6671C3239217F8001469C3 /* ThreadViewController.m */; };
 		2B66794F23975B44001469C3 /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B66794E23975B44001469C3 /* GCDViewController.m */; };
 		2B7241AE239F537B00344E4F /* ScrollerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7241AD239F537B00344E4F /* ScrollerController.m */; };
+		2B78ECF5240DFC7F007B8DA2 /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B78ECF4240DFC7F007B8DA2 /* PersonModel.m */; };
+		2B78ED21240DFE24007B8DA2 /* SonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B78ED20240DFE24007B8DA2 /* SonModel.m */; };
+		2B78ED24240F9398007B8DA2 /* RunTimeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B78ED23240F9398007B8DA2 /* RunTimeController.m */; };
 		2B8B295C2383C08F0038B9A5 /* MoveRedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B295B2383C08F0038B9A5 /* MoveRedView.m */; };
 		2B8DEF01234191630004E906 /* PageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8DEF00234191630004E906 /* PageView.m */; };
 		2B925E932358717A0036F859 /* Fmdbtool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B925E922358717A0036F859 /* Fmdbtool.m */; };
@@ -67,6 +70,12 @@
 		2B66794E23975B44001469C3 /* GCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
 		2B7241AC239F537B00344E4F /* ScrollerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollerController.h; sourceTree = "<group>"; };
 		2B7241AD239F537B00344E4F /* ScrollerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollerController.m; sourceTree = "<group>"; };
+		2B78ECF3240DFC7F007B8DA2 /* PersonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PersonModel.h; path = FirstDemo/Controller/PersonModel.h; sourceTree = SOURCE_ROOT; };
+		2B78ECF4240DFC7F007B8DA2 /* PersonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PersonModel.m; path = FirstDemo/Controller/PersonModel.m; sourceTree = SOURCE_ROOT; };
+		2B78ED1F240DFE24007B8DA2 /* SonModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SonModel.h; path = FirstDemo/Controller/SonModel.h; sourceTree = SOURCE_ROOT; };
+		2B78ED20240DFE24007B8DA2 /* SonModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SonModel.m; path = FirstDemo/Controller/SonModel.m; sourceTree = SOURCE_ROOT; };
+		2B78ED22240F9398007B8DA2 /* RunTimeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunTimeController.h; sourceTree = "<group>"; };
+		2B78ED23240F9398007B8DA2 /* RunTimeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunTimeController.m; sourceTree = "<group>"; };
 		2B8B295A2383C08F0038B9A5 /* MoveRedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoveRedView.h; sourceTree = "<group>"; };
 		2B8B295B2383C08F0038B9A5 /* MoveRedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoveRedView.m; sourceTree = "<group>"; };
 		2B8B295D2383C37E0038B9A5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -172,6 +181,8 @@
 				2B7241AD239F537B00344E4F /* ScrollerController.m */,
 				2B235DD223B4A55A00C5E1B3 /* OperationViewController.h */,
 				2B235DD323B4A55A00C5E1B3 /* OperationViewController.m */,
+				2B78ED22240F9398007B8DA2 /* RunTimeController.h */,
+				2B78ED23240F9398007B8DA2 /* RunTimeController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -181,6 +192,10 @@
 			children = (
 				2B490861238BCF8500711364 /* AllController.h */,
 				2B490862238BCF8500711364 /* AllController.m */,
+				2B78ECF3240DFC7F007B8DA2 /* PersonModel.h */,
+				2B78ECF4240DFC7F007B8DA2 /* PersonModel.m */,
+				2B78ED1F240DFE24007B8DA2 /* SonModel.h */,
+				2B78ED20240DFE24007B8DA2 /* SonModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -371,8 +386,10 @@
 				2B7241AE239F537B00344E4F /* ScrollerController.m in Sources */,
 				2B8DEF01234191630004E906 /* PageView.m in Sources */,
 				2B98AC2F23877ECB006CC0D1 /* MQManager.m in Sources */,
+				2B78ECF5240DFC7F007B8DA2 /* PersonModel.m in Sources */,
 				2B490866238BD7AD00711364 /* SendMessageController.m in Sources */,
 				2B235D2A238F7B7A0013B665 /* Toast.m in Sources */,
+				2B78ED24240F9398007B8DA2 /* RunTimeController.m in Sources */,
 				2B490863238BCF8500711364 /* AllController.m in Sources */,
 				2B925E932358717A0036F859 /* Fmdbtool.m in Sources */,
 				2B4E4101234C3A1200F22869 /* TButton.m in Sources */,
@@ -383,6 +400,7 @@
 				2BBDA090232684A000A2E111 /* AppDelegate.m in Sources */,
 				2B235D2D238F9FFD0013B665 /* ToastViewController.m in Sources */,
 				2B98AC38238796F5006CC0D1 /* DesHelper.m in Sources */,
+				2B78ED21240DFE24007B8DA2 /* SonModel.m in Sources */,
 				2B6671C4239217F8001469C3 /* ThreadViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -529,6 +547,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7REQ36AB7X;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = FirstDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = FirstDemo/Info.plist;
@@ -553,6 +572,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7REQ36AB7X;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = FirstDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = FirstDemo/Info.plist;

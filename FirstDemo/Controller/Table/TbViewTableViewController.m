@@ -89,24 +89,28 @@
 {
     if(!_allcon){
         NSMutableArray *all = [[NSMutableArray alloc]init];
-        AllController *firstcon = [[AllController alloc]initWithName:@"空白View" Con: [[ViewController alloc]init]];
-        [all addObject:firstcon];
-        AllController *seccon = [[AllController alloc]initWithName:@"手势View" Con: [[RecognizerController alloc]init]];
-        [all addObject:seccon];
-        AllController *thirdcon = [[AllController alloc]initWithName:@"弹窗View" Con: [[BLController alloc]init]];
-        [all addObject:thirdcon];
-        AllController *forcon = [[AllController alloc]initWithName:@"发送mq消息View" Con: [[SendMessageController alloc]initWithDelegate:self]];
-        [all addObject:forcon];
-        AllController *fifcon = [[AllController alloc]initWithName:@"Toast提示" Con:[[ToastViewController alloc] init]];
-        [all addObject:fifcon];
-        AllController *sixcon = [[AllController alloc]initWithName:@"多线程" Con:[[ThreadViewController alloc]init]];
-        [all addObject:sixcon];
-        AllController *sevencon = [[AllController alloc]initWithName:@"GCD管理" Con:[[GCDViewController alloc]init]];
-        [all addObject:sevencon];
-        AllController *eightcon = [[AllController alloc]initWithName:@"拖动试图" Con:[[ScrollerController alloc] init]];
-        [all addObject:eightcon];
+        
+        
+        AllController *tencon = [[AllController alloc]initWithName:@"Runtime" Con:[[RunTimeController alloc]init]];
+        [all addObject:tencon];
         AllController *nigthcon = [[AllController alloc]initWithName:@"NSOperation" Con:[[OperationViewController alloc] init]];
         [all addObject:nigthcon];
+        AllController *eightcon = [[AllController alloc]initWithName:@"拖动试图" Con:[[ScrollerController alloc] init]];
+        [all addObject:eightcon];
+        AllController *sevencon = [[AllController alloc]initWithName:@"GCD管理" Con:[[GCDViewController alloc]init]];
+        [all addObject:sevencon];
+        AllController *sixcon = [[AllController alloc]initWithName:@"多线程" Con:[[ThreadViewController alloc]init]];
+        [all addObject:sixcon];
+        AllController *fifcon = [[AllController alloc]initWithName:@"Toast提示" Con:[[ToastViewController alloc] init]];
+        [all addObject:fifcon];
+        AllController *forcon = [[AllController alloc]initWithName:@"发送mq消息View" Con: [[SendMessageController alloc]initWithDelegate:self]];
+        [all addObject:forcon];
+        AllController *thirdcon = [[AllController alloc]initWithName:@"弹窗View" Con: [[BLController alloc]init]];
+        [all addObject:thirdcon];
+        AllController *seccon = [[AllController alloc]initWithName:@"手势View" Con: [[RecognizerController alloc]init]];
+        [all addObject:seccon];
+        AllController *firstcon = [[AllController alloc]initWithName:@"空白View" Con: [[ViewController alloc]init]];
+        [all addObject:firstcon];
         _allcon = all;
     }
     return _allcon;

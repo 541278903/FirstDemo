@@ -11,6 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PersonModel : NSObject
+@property(nonatomic,copy)NSString *name;
+@property(nonatomic,assign)int age;
 -(void)shout;
 @end
 
