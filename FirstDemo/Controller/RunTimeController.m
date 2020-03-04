@@ -20,10 +20,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    [self setup];
+    [self setup];
 //    [self setup2];
 //    [self setup3];
-    [self setup4];
+//    [self setup4];
     
 }
 -(void)setup{
