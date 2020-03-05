@@ -21,6 +21,7 @@
 @implementation TbCell
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
+    // reuseIdentifier:复用标识符
     if(self = [super initWithStyle:style reuseIdentifier:reuseIdentifier])
     {
         

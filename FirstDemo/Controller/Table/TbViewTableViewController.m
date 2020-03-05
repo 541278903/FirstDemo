@@ -16,7 +16,13 @@
 @end
 
 @implementation TbViewTableViewController
-
+-(void)gettextHeight{
+    //获取行间字体高度
+    NSString *text = @"feo";
+    NSDictionary *texxtAtt = @{NSFontAttributeName:[UIFont systemFontOfSize:14]};
+    CGSize textsize = CGSizeMake(self.view.bounds.size.width, MAXFLOAT);
+    CGFloat hight = [text boundingRectWithSize:textsize options:NSStringDrawingUsesLineFragmentOrigin attributes:texxtAtt context:nil].size.height;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.rowHeight = 80;
@@ -65,12 +71,17 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //每一次创建的控制器都是只有一个，不会重复创建(此处不会重复创建是指上下拖动的时候不会重复创建 )
+    /**定义可重用的静态标识符*/
     static NSString *ID = @"tb";
+    /**优先使用可复用的cell*/
     UITableViewCell *tbc = [tableView dequeueReusableCellWithIdentifier:ID];
+    /**如果复用的cell还没有创建，那么创建一个供之后复用*/
     if(tbc == nil)
     {
+        /**新创建的cell并使用id复用符标记*/
         tbc = [[TbCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
         AllController *con = self.allcon[indexPath.row];
+        /**配置cell数据*/
         tbc.textLabel.text = con.ConName;
         tbc.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
