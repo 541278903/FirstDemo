@@ -20,10 +20,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setup];
+//    [self setup];
 //    [self setup2];
 //    [self setup3];
 //    [self setup4];
+    [self setup5];
     
 }
 -(void)setup{
@@ -85,6 +86,11 @@
 -(void)test{
     MLog(@"nihao");
 
+}
+// ⏬使用runtime 替换类中某两个方法
+-(void)setup5{
+    PersonModel *p = [[PersonModel alloc]init];
+    [p instanceMethod1];
 }
 /*
 #pragma mark - Navigation

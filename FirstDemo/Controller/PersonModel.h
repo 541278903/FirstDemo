@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,copy)NSString *name;
 @property(nonatomic,assign)int age;
 -(void)shout;
+-(void)instanceMethod1;
+-(void)instanceMethod2;
 @end
 
 NS_ASSUME_NONNULL_END
