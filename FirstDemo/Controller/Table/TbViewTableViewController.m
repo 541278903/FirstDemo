@@ -101,7 +101,8 @@
     if(!_allcon){
         NSMutableArray *all = [[NSMutableArray alloc]init];
         
-        
+        AllController *elevcon = [[AllController alloc]initWithName:@"通知机制" Con:[[NotificationKVCKVO alloc]init]];
+        [all addObject:elevcon];
         AllController *tencon = [[AllController alloc]initWithName:@"Runtime" Con:[[RunTimeController alloc]init]];
         [all addObject:tencon];
         AllController *nigthcon = [[AllController alloc]initWithName:@"NSOperation" Con:[[OperationViewController alloc] init]];

@@ -15,4 +15,5 @@ target 'FirstDemo' do
   pod 'MBProgressHUD'
   pod 'PPBadgeView'
   pod 'LazyScroll'
+  pod 'SDWebImage'
 end

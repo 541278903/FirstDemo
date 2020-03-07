@@ -24,7 +24,8 @@
 //    [self setup2];
 //    [self setup3];
 //    [self setup4];
-    [self setup5];
+//    [self setup5];
+//    NSCoder *coder = [NSNotificationCenter]
     
 }
 -(void)setup{
