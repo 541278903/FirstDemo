@@ -53,6 +53,11 @@
     
     
 }
+
+// ⏬使用 KVC 和 KVO
+-(void)setup2{
+    
+}
 -(void)testNotification{
     sleep(2);//模拟延迟操作
     MLog(@"this is the testnotification");
