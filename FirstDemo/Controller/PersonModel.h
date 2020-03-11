@@ -7,10 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+@class Major;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PersonModel : NSObject
+
+@property(nonatomic,strong)NSString *infomation;
+@property(nonatomic,strong)Major *major;
 @property(nonatomic,copy)NSString *name;
 @property(nonatomic,assign)int age;
 -(void)shout;

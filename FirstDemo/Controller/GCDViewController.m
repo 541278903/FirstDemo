@@ -27,7 +27,7 @@
 //    开启线程的条件，函数是异步函数，队列不在主队列中
 //    同步函数无论在任何队列中  1、不开启线程2、串行执行
 //    在主队列中无论同步还是异步都是 1、不开启线程2、串行执行
-    [self asyncconcurrent];
+//    [self asyncconcurrent];
     
 }
 -(void)onceAndafter{

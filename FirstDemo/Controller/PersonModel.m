@@ -7,7 +7,11 @@
 //
 
 #import "PersonModel.h"
-@interface PersonModel()
+#import "Major.h"
+@interface PersonModel(){
+    @private
+    NSString *myname;
+}
 
 @property(nonatomic,strong)NSString *sex;
 @property(nonatomic,strong)AllController *con;
@@ -30,6 +34,19 @@
 }
 -(void)shout{
     MLog(@"...");
+}
+//⏬KVO 键值关联
+- (NSString *)infomation{
+    return [NSString stringWithFormat:@"majorsax:%@",self.major.sax];
+}
+- (void)setInfomation:(NSString *)infomation
+{
+    self.major.sax = infomation;
+    
+}
++ (NSSet<NSString *> *)keyPathsForValuesAffectingInfomation
+{
+    return [NSSet setWithObjects:@"major.sax", nil];
 }
 // ⏬使用runtime 交换两种方法
 + (void)load{

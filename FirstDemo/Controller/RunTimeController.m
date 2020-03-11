@@ -20,11 +20,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    [self setup];
-//    [self setup2];
-//    [self setup3];
-//    [self setup4];
-//    [self setup5];
+//    [self setup];◀️使用runtime方法调用流程
+//    [self setup2];◀️使用runtime 动态添加一个类
+//    [self setup3];◀️使用runtime 给分类category添加属性
+//    [self setup4];◀️使用runtime 动态方法解析
+//    [self setup5];◀️使用runtime 替换类中某两个方法
 //    NSCoder *coder = [NSNotificationCenter]
     
 }

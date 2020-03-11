@@ -101,6 +101,10 @@
     if(!_allcon){
         NSMutableArray *all = [[NSMutableArray alloc]init];
         
+        AllController *setincon = [[AllController alloc]initWithName:@"数据持久化" Con:[[UserDefaultCon alloc]init]];
+        [all addObject:setincon];
+        AllController *twelcon = [[AllController alloc]initWithName:@"图层与动画" Con:[[LayerAndUIView alloc] init ]];
+        [all addObject:twelcon];
         AllController *elevcon = [[AllController alloc]initWithName:@"通知机制" Con:[[NotificationKVCKVO alloc]init]];
         [all addObject:elevcon];
         AllController *tencon = [[AllController alloc]initWithName:@"Runtime" Con:[[RunTimeController alloc]init]];
