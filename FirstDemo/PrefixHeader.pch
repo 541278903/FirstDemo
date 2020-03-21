@@ -7,6 +7,7 @@
 //
 
 #define MQKeys @[@"kern.*",@"test.*",@"acc.#",@""]
+#define WSURL @""
 #define STATUSBAR_HEIGHT [UIApplication sharedApplication].statusBarFrame.size.height
 #define NAVGATIONBAR_HEIGHT 44.0
 #define TOPNAVHEIGHT STATUSBAR_HEIGHT + NAVGATIONBAR_HEIGHT

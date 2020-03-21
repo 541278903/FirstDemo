@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@import BLTNBoard;
+//@import BLTNBoard;
 
 @interface ViewController : UIViewController 
 @end

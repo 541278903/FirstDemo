@@ -9,7 +9,7 @@ target 'FirstDemo' do
 	pod 'RMQClient'
 	pod 'MJRefresh'
 	pod 'Masonry'
-  pod 'BulletinBoard'
+#  pod 'BulletinBoard'
   pod 'FMDB'
   pod 'GTMBase64'
   pod 'MBProgressHUD'

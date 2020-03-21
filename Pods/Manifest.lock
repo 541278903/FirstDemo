@@ -14,7 +14,6 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - BulletinBoard (4.1.0)
   - CocoaAsyncSocket (7.4.3):
     - CocoaAsyncSocket/All (= 7.4.3)
   - CocoaAsyncSocket/All (7.4.3):
@@ -45,7 +44,6 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
-  - BulletinBoard
   - FMDB
   - GDataXML-HTML
   - GTMBase64
@@ -61,7 +59,6 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AFNetworking
-    - BulletinBoard
     - CocoaAsyncSocket
     - FMDB
     - GDataXML-HTML
@@ -79,7 +76,6 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  BulletinBoard: c774340545b5cfd05a96a89f63b105ecc95c86f9
   CocoaAsyncSocket: a18c75dca4b08723628a0bacca6e94803d90be91
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   GDataXML-HTML: a4f11079b48d9fe96ff1fe478943a317185227e2
@@ -95,6 +91,6 @@ SPEC CHECKSUMS:
   SDWebImage: 5bf6aec6481ae2a062bdc59f9d6c1d1e552090e0
   TMUtils: 8af8e4695b6e4086d0545ecd7cd025556515ab42
 
-PODFILE CHECKSUM: 7b9745f1f8d5101faf98607d1094083fe3871273
+PODFILE CHECKSUM: cd6f5d9772d2b031cd961518311cac3070540f12
 
 COCOAPODS: 1.8.4

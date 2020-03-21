@@ -10,7 +10,7 @@
 #import "Major.h"
 
 @interface UserDefaultCon ()
-
+@property(nonatomic,strong)NSString *n;
 @end
 
 @implementation UserDefaultCon
@@ -22,9 +22,17 @@
 //    [self setup2];// ⏬属性列表文件存储 并写入沙盒，重点沙盒熟记
 //    [self setup3];// ⏬Archive 归档
 //    [self setup4];// ⏬Archive 自定义对象归档
-    [self setup5];
+//    [self setup5];
+    self.n = @"25";
 }
 // ⏬NSUserDefaults 简单数据快速读写
+
+-(void)demo:(NSString *)p test:(int (^)(int a,int b))ggg{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(50 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        MLog(@"123");
+    });
+}
+
 -(void)setup{
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:@"data" forKey:@"key1"];
