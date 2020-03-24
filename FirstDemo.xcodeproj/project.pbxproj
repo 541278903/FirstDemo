@@ -16,6 +16,8 @@
 		2B490860238BCBC100711364 /* BLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B49085F238BCBC100711364 /* BLController.m */; };
 		2B490863238BCF8500711364 /* AllController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B490862238BCF8500711364 /* AllController.m */; };
 		2B490866238BD7AD00711364 /* SendMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B490865238BD7AD00711364 /* SendMessageController.m */; };
+		2B491E0C242A5BD8006121F9 /* TcaishiDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B491E0B242A5BD8006121F9 /* TcaishiDB.m */; };
+		2B491E12242A5E86006121F9 /* T_CS_Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B491E11242A5E86006121F9 /* T_CS_Entity.m */; };
 		2B4E4101234C3A1200F22869 /* TButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B4E4100234C3A1200F22869 /* TButton.m */; };
 		2B6671C0239123FB001469C3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2B6671BE239123FB001469C3 /* README.md */; };
 		2B6671C1239123FB001469C3 /* README.en.md in Resources */ = {isa = PBXBuildFile; fileRef = 2B6671BF239123FB001469C3 /* README.en.md */; };
@@ -66,6 +68,10 @@
 		2B490862238BCF8500711364 /* AllController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AllController.m; path = FirstDemo/Controller/AllController.m; sourceTree = SOURCE_ROOT; };
 		2B490864238BD7AD00711364 /* SendMessageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SendMessageController.h; sourceTree = "<group>"; };
 		2B490865238BD7AD00711364 /* SendMessageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SendMessageController.m; sourceTree = "<group>"; };
+		2B491E0A242A5BD8006121F9 /* TcaishiDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TcaishiDB.h; sourceTree = "<group>"; };
+		2B491E0B242A5BD8006121F9 /* TcaishiDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TcaishiDB.m; sourceTree = "<group>"; };
+		2B491E10242A5E86006121F9 /* T_CS_Entity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = T_CS_Entity.h; path = FirstDemo/Controller/T_CS_Entity.h; sourceTree = SOURCE_ROOT; };
+		2B491E11242A5E86006121F9 /* T_CS_Entity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = T_CS_Entity.m; path = FirstDemo/Controller/T_CS_Entity.m; sourceTree = SOURCE_ROOT; };
 		2B4E40FF234C3A1200F22869 /* TButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TButton.h; sourceTree = "<group>"; };
 		2B4E4100234C3A1200F22869 /* TButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TButton.m; sourceTree = "<group>"; };
 		2B6671BE239123FB001469C3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -172,6 +178,8 @@
 				2B98AC3423879191006CC0D1 /* NetAsk.m */,
 				2B235D28238F7B7A0013B665 /* Toast.h */,
 				2B235D29238F7B7A0013B665 /* Toast.m */,
+				2B491E0A242A5BD8006121F9 /* TcaishiDB.h */,
+				2B491E0B242A5BD8006121F9 /* TcaishiDB.m */,
 			);
 			path = tools;
 			sourceTree = "<group>";
@@ -223,6 +231,8 @@
 				2B78ED26240FB811007B8DA2 /* PersonModel+thesec.m */,
 				2B78ED2D24135CFA007B8DA2 /* Major.h */,
 				2B78ED2E24135CFA007B8DA2 /* Major.m */,
+				2B491E10242A5E86006121F9 /* T_CS_Entity.h */,
+				2B491E11242A5E86006121F9 /* T_CS_Entity.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -413,11 +423,13 @@
 				2B66794F23975B44001469C3 /* GCDViewController.m in Sources */,
 				2BBDA093232684A000A2E111 /* ViewController.m in Sources */,
 				2B78ED3224162043007B8DA2 /* LayerAndUIView.m in Sources */,
+				2B491E0C242A5BD8006121F9 /* TcaishiDB.m in Sources */,
 				2B3F265C2355BCEE002E0E50 /* TbCell.m in Sources */,
 				2B78ED2A24134FDB007B8DA2 /* NotificationKVCKVO.m in Sources */,
 				2B7241AE239F537B00344E4F /* ScrollerController.m in Sources */,
 				2B8DEF01234191630004E906 /* PageView.m in Sources */,
 				2B98AC2F23877ECB006CC0D1 /* MQManager.m in Sources */,
+				2B491E12242A5E86006121F9 /* T_CS_Entity.m in Sources */,
 				2B78ECF5240DFC7F007B8DA2 /* PersonModel.m in Sources */,
 				2B490866238BD7AD00711364 /* SendMessageController.m in Sources */,
 				2B235D2A238F7B7A0013B665 /* Toast.m in Sources */,
