@@ -15,7 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 +(instancetype)GetInstance;
 +(instancetype)alloc;
 -(NSArray *)serchBySql:(NSString *)sql;
+-(BOOL)CreateTable:(NSString *)TableName SQL:(NSString *)CreatTableSQL;
 -(BOOL)insertWithTable:(NSString *)tablename argmes:(NSDictionary *)dic;
+-(void)insertWithTableByQueue:(NSString *)tablename argmes:(NSDictionary *)dic com:(void (^)(BOOL *result))com;
 -(NSArray *)serchTable:(NSString *)tablename argmes:(NSDictionary *)dic;
 -(BOOL)ExecSQL:(NSString *)sql;
 @end

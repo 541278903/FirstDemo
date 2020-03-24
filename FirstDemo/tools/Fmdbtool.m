@@ -13,6 +13,7 @@
 @interface Fmdbtool()
 @property(nonatomic,strong)NSString *filePath;
 @property(nonatomic,strong)FMDatabase *db;
+@property(nonatomic,strong)FMDatabaseQueue *dbqueue;
 
 @end
 static Fmdbtool *fmdbtool = nil;
@@ -70,6 +71,14 @@ static Fmdbtool *fmdbtool = nil;
     }
     return _db;
 }
+- (FMDatabaseQueue *)dbqueue
+{
+    if(!_dbqueue)
+    {
+        _dbqueue = [FMDatabaseQueue databaseQueueWithPath:self.filePath];
+    }
+    return _dbqueue;
+}
 -(BOOL)CreateTable:(NSString *)TableName SQL:(NSString *)CreatTableSQL
 {
     NSString *haveTable = [NSString stringWithFormat:@"select count(*) as count  from sqlite_master where type='table' and name = '%@'",TableName];
@@ -89,19 +98,48 @@ static Fmdbtool *fmdbtool = nil;
 /// 插入数据
 /// @param tablename 表名
 /// @param dic 插入的字段和值 如@{@"id":@"2",@"name":@"clasdjfioeow"};
--(BOOL)insertWithTable:(NSString *)tablename argmes:(NSDictionary *)dic
+-(void)insertWithTableByQueue:(NSString *)tablename argmes:(NSDictionary *)dic com:(void (^)(BOOL))com
 {
-    if(![self CreateTable:@"t_student" SQL:@"CREATE TABLE IF NOT EXISTS t_student (id integer PRIMARY KEY AUTOINCREMENT, name text  NULL, age integer  NULL)"]) return NO;
+    
     NSMutableArray *arg = [[NSMutableArray alloc]init];
     NSMutableArray *values = [[NSMutableArray alloc]init];
     for (NSString *key in dic.allKeys) {
+        if(dic[key] == nil)
+        {
+            continue;
+        }
         [arg addObject:key];
         [values addObject:[NSString stringWithFormat:@"'%@'",dic[key]]];
     }
     NSString *argstr = [NSString stringWithFormat:@"(%@)",[arg componentsJoinedByString:@","]];
     NSString *valuesstr = [NSString stringWithFormat:@"(%@)",[values componentsJoinedByString:@","]];
     NSString *strSql = [NSString stringWithFormat:@"insert into %@ %@ values %@",tablename,argstr,valuesstr];
-    return [self.db executeUpdate:strSql];
+    [self.dbqueue inDatabase:^(FMDatabase * _Nonnull dbd) {
+        if ([dbd executeUpdate:strSql]) {
+            com(YES);
+        }else
+        {
+            com(NO);
+        }
+    }];
+}
+-(BOOL)insertWithTable:(NSString *)tablename argmes:(NSDictionary *)dic
+{
+     
+        NSMutableArray *arg = [[NSMutableArray alloc]init];
+        NSMutableArray *values = [[NSMutableArray alloc]init];
+        for (NSString *key in dic.allKeys) {
+            if(dic[key] == nil)
+            {
+                continue;
+            }
+            [arg addObject:key];
+            [values addObject:[NSString stringWithFormat:@"'%@'",dic[key]]];
+        }
+        NSString *argstr = [NSString stringWithFormat:@"(%@)",[arg componentsJoinedByString:@","]];
+        NSString *valuesstr = [NSString stringWithFormat:@"(%@)",[values componentsJoinedByString:@","]];
+        NSString *strSql = [NSString stringWithFormat:@"insert into %@ %@ values %@",tablename,argstr,valuesstr];
+        return [self.db executeUpdate:strSql];
 }
 
 /// 查询值
@@ -154,6 +192,13 @@ static Fmdbtool *fmdbtool = nil;
 }
 
 
-
+- (void)dealloc
+{
+//    [self.db close]
+    if(![self.db close]){
+        NSException *ecs = [NSException exceptionWithName:@"error" reason:@"can not close db" userInfo:nil];
+        [ecs raise];
+    }
+}
 
 @end

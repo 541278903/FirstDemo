@@ -23,14 +23,23 @@
 //    [self setup3];// ⏬Archive 归档
 //    [self setup4];// ⏬Archive 自定义对象归档
 //    [self setup5];
-    self.n = @"25";
+//    [[TcaishiDB GetInstance]GetData:nil];
+    [self demo];
+    
 }
 // ⏬NSUserDefaults 简单数据快速读写
-
--(void)demo:(NSString *)p test:(int (^)(int a,int b))ggg{
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(50 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        MLog(@"123");
-    });
+-(void)demo{
+    
+    NSMutableArray<T_CS_Entity *> *arr = [[NSMutableArray alloc]init];
+    for (int i = 0; i<50; i++) {
+        T_CS_Entity *t = [[T_CS_Entity alloc]init];
+//        t.c_id = ;
+        t.c_name = [NSString stringWithFormat:@"%d",i];
+        [arr addObject:t];
+    }
+    [[TcaishiDB GetInstance]InstallData:arr completed:^(BOOL isSuccess, NSString * _Nonnull result) {
+        NSLog(@"%@",result);
+    }];
 }
 
 -(void)setup{
