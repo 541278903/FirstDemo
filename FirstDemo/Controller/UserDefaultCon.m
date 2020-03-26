@@ -24,24 +24,31 @@
 //    [self setup4];// ⏬Archive 自定义对象归档
 //    [self setup5];
 //    [[TcaishiDB GetInstance]GetData:nil];
-    [self demo];
-    
+//    [self demo];
+    [self demo2];
 }
-// ⏬NSUserDefaults 简单数据快速读写
+-(void)demo2{
+    MLog(@"%@",[[TcaishiDB GetInstance]GetData:nil]);
+}
 -(void)demo{
     
+    T_CS_Entity *t = [[T_CS_Entity alloc]init];
+    t.c_id = @"BCB54FD5-7ED6-4E7C-AAFA-FADF37AB5A98";
+    t.c_name = @"你好22";
+    t.c_guige = @"nihaowan";
+    t.c_shouhuo = [NSNumber numberWithUnsignedLong:20.0];
+    t.c_shuliang = [NSNumber numberWithLong:300.0];
     NSMutableArray<T_CS_Entity *> *arr = [[NSMutableArray alloc]init];
-    for (int i = 0; i<50; i++) {
-        T_CS_Entity *t = [[T_CS_Entity alloc]init];
-//        t.c_id = ;
-        t.c_name = [NSString stringWithFormat:@"%d",i];
-        [arr addObject:t];
-    }
-    [[TcaishiDB GetInstance]InstallData:arr completed:^(BOOL isSuccess, NSString * _Nonnull result) {
+    [arr addObject:t];
+    [[TcaishiDB GetInstance]InstallData:[arr copy] completed:^(BOOL isSuccess, NSString * _Nonnull result) {
         NSLog(@"%@",result);
     }];
+//    [[Fmdbtool GetInstance]updateWithTable:@"T_caishi" argmes:[t dicFromObject:t] params:@"c_id" parValue:t.c_id];
+//    [[TcaishiDB GetInstance]InstallData:arr completed:^(BOOL isSuccess, NSString * _Nonnull result) {
+//        NSLog(@"%@",result);
+//    }];
 }
-
+// ⏬NSUserDefaults 简单数据快速读写
 -(void)setup{
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:@"data" forKey:@"key1"];

@@ -65,7 +65,7 @@ static TcaishiDB *caishidb;
             if(obj.c_id == nil)
             {
                 obj.c_id = [[NSUUID UUID] UUIDString];
-                [self.maindb insertWithTableByQueue:@"T_caishi" argmes:[obj dicFromObject:obj] com:^(BOOL * _Nonnull result) {
+                [self.maindb insertWithTableByQueue:@"T_caishi" argmes:[self.maindb dicFromObject:obj] com:^(BOOL result) {
                     if(!result)
                     {
                         errnum++;
@@ -73,7 +73,12 @@ static TcaishiDB *caishidb;
                 }];
             }else
             {
-               //TODO:编写更新
+                [self.maindb updateWithTableByQueue:@"T_caishi" argmes:[self.maindb dicFromObject:obj] params:@"c_id" parValue:obj.c_id com:^(BOOL result) {
+                    if(!result)
+                    {
+                        errnum++;
+                    }
+                }];
             }
             
         }];

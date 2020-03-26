@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,assign)NSNumber *c_shouhuo;
 @property(nonatomic,assign)NSNumber *c_shuliang;
 
-- (NSDictionary *)dicFromObject:(NSObject *)object ;
+//- (NSDictionary *)dicFromObject:(NSObject *)object ;
 @end
 
 NS_ASSUME_NONNULL_END
