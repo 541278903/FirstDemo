@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 +(instancetype)GetInstance;
 -(NSArray<T_CS_Entity *> *)GetData:(NSDictionary *)parms;
 -(void)InstallData:(NSArray<T_CS_Entity *>*)arr completed:(void (^)(BOOL,NSString *))com;
+-(void)SetDataWithNetWork;
+-(void)SyncData:(NSArray<T_CS_Entity *> *)formData;
 @end
 
 NS_ASSUME_NONNULL_END

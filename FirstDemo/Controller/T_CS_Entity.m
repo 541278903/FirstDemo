@@ -13,6 +13,13 @@
 
 @implementation T_CS_Entity
 
-
+- (instancetype)initWithDic:(NSDictionary *)dic
+{
+    self = [super init];
+    if (self) {
+        [self setValuesForKeysWithDictionary:dic];
+    }
+    return self;
+}
 
 @end

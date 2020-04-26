@@ -80,11 +80,13 @@
     {
         /**新创建的cell并使用id复用符标记*/
         tbc = [[TbCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
-        AllController *con = self.allcon[indexPath.row];
-        /**配置cell数据*/
-        tbc.textLabel.text = con.ConName;
-        tbc.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        //cell中的内容不允许在这个创建花括号中填写，因为每个cell的样式可能相同，但是cell中的内容不同会导致cell内容错乱
     }
+
+    AllController *con = self.allcon[indexPath.row];
+    /**配置cell数据*/
+    tbc.textLabel.text = con.ConName;
+    tbc.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return tbc;
 }
 /// 自定义的代理

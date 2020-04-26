@@ -56,7 +56,8 @@ static Fmdbtool *fmdbtool = nil;
     if (self) {
         if ([self.db open]) {
             // do something
-            NSLog(@"db is opened");
+            
+            NSLog(@"db is opened dbpath : %@",self.filePath);
         } else {
             NSLog(@"fail to open database");
         }
@@ -248,7 +249,6 @@ static Fmdbtool *fmdbtool = nil;
 
 - (void)dealloc
 {
-//    [self.db close]
     if(![self.db close]){
         NSException *ecs = [NSException exceptionWithName:@"error" reason:@"can not close db" userInfo:nil];
         [ecs raise];
@@ -268,7 +268,6 @@ static Fmdbtool *fmdbtool = nil;
         
         if ([value isKindOfClass:[NSString class]] || [value isKindOfClass:[NSNumber class]])
         {
-            //string , bool, int ,NSinteger
             [dic setObject:value forKey:name];
 
         } else if ([value isKindOfClass:[NSArray class]] || [value isKindOfClass:[NSDictionary class]]) {

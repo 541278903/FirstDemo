@@ -25,10 +25,13 @@
 //    [self setup5];
 //    [[TcaishiDB GetInstance]GetData:nil];
 //    [self demo];
-    [self demo2];
+//    [self demo2];
+//    MLog(@"%@",[[TcaishiDB GetInstance]GetData:nil]);
+    [[TcaishiDB GetInstance]SetDataWithNetWork];
+//    MLog(@"%@",[[TcaishiDB GetInstance]GetData:nil]);
 }
 -(void)demo2{
-    MLog(@"%@",[[TcaishiDB GetInstance]GetData:nil]);
+//    MLog(@"%@",[[TcaishiDB GetInstance]GetData:nil]);
 }
 -(void)demo{
     
@@ -47,6 +50,7 @@
 //    [[TcaishiDB GetInstance]InstallData:arr completed:^(BOOL isSuccess, NSString * _Nonnull result) {
 //        NSLog(@"%@",result);
 //    }];
+    
 }
 // ⏬NSUserDefaults 简单数据快速读写
 -(void)setup{

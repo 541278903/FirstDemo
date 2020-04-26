@@ -6,6 +6,8 @@
 //  Copyright © 2019 com.Edward. All rights reserved.
 //
 
+#define MQSERVERPATH @"192.168.0.115:5672"
+
 #import "MQManager.h"
 #import <RMQClient/RMQClient.h>
 @interface MQManager()<RMQConnectionDelegate>
@@ -37,7 +39,7 @@ static MQManager *mainmanager = nil;
     self = [super init];
     if (self) {
         _device = device;
-        self.conn = [[RMQConnection alloc] initWithUri:@"amqp://root:root@jxe9bfqtpi.52http.net:39301" delegate:self];
+        self.conn = [[RMQConnection alloc] initWithUri:[NSString stringWithFormat:@"amqp://root:root@%@",MQSERVERPATH] delegate:self];
     }
     return self;
 }
@@ -57,7 +59,7 @@ static MQManager *mainmanager = nil;
 
 -(void)emitLogTopic:(NSString *)msg routingKey:(NSString *)routingKey {
 //    [UIApplication sharedApplication].idleTimerDisabled = YES;
-    RMQConnection *con = [[RMQConnection alloc] initWithUri:@"amqp://root:root@jxe9bfqtpi.52http.net:39301" delegate:self];
+    RMQConnection *con = [[RMQConnection alloc] initWithUri:[NSString stringWithFormat:@"amqp://root:root@%@",MQSERVERPATH] delegate:self];
     [con start];
     id<RMQChannel> ch = [con createChannel];
     /** 创建交换器 */

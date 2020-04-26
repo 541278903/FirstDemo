@@ -8,6 +8,7 @@
 
 #import "TcaishiDB.h"
 #import "T_CS_Entity.h"
+//#def
 @interface TcaishiDB()
 @property(nonatomic,strong)Fmdbtool *maindb;
 @property(nonatomic,strong)T_CS_Entity *t_cs_entity;
@@ -53,9 +54,69 @@ static TcaishiDB *caishidb;
 }
 -(NSArray<T_CS_Entity *> *)GetData:(NSDictionary *)parms
 {
-    NSMutableArray<T_CS_Entity *> *arr = [[NSMutableArray alloc]init];
-    arr = (NSMutableArray<T_CS_Entity *> *)[self.maindb serchTable:@"T_caishi" argmes:parms];
-    return [arr copy];
+    @autoreleasepool {
+        NSMutableArray<T_CS_Entity *> *arr = [[NSMutableArray alloc]init];
+        NSArray *larr = [self.maindb serchTable:@"T_caishi" argmes:parms];
+        for (id obj in larr) {
+            T_CS_Entity *tcs = [[T_CS_Entity alloc]initWithDic:obj];
+            [arr addObject:tcs];
+        }
+        return [arr copy];
+    }
+}
+-(void)SetDataWithNetWork{
+    [[NetAsk GetInstance]POST:@"http://192.168.0.115:1208/TServer.asmx/GetAllData" parameters:nil isXML:YES resultcom:^(NSDictionary *  _Nullable bl) {
+        NSArray *arr = bl[@"Menu"];
+        NSMutableArray<T_CS_Entity *> *tcsarr = [[NSMutableArray alloc]init];
+        for (id obj in arr) {
+            T_CS_Entity *tcs = [[T_CS_Entity alloc]initWithDic:obj];
+            [tcsarr addObject:tcs];
+        }
+        [self SyncData:tcsarr];
+        
+    }];
+}
+-(void)SyncData:(NSArray<T_CS_Entity *> *)formData{
+    @autoreleasepool {
+        NSArray<T_CS_Entity *> *localData = [self GetData:nil];
+        NSMutableArray<T_CS_Entity *> *insertData = [[NSMutableArray alloc]init];
+        NSMutableArray<T_CS_Entity *> *updateData = [[NSMutableArray alloc]init];
+        NSMutableArray<T_CS_Entity *> *delData = [[NSMutableArray alloc]init];
+        for (T_CS_Entity *fortcs in formData) {
+            T_CS_Entity *loctcs;
+            for (T_CS_Entity *localtcs in localData) {
+               if([fortcs.c_name isEqualToString:localtcs.c_name] && [fortcs.c_guige isEqualToString:localtcs.c_guige]){
+                   //本地存有相同的 则将这模型导入到更新数组中
+                   loctcs = localtcs;
+               }
+            }
+            if(loctcs == nil)
+            {
+                //本地没有 则将这模型导入到插入数组中   无论任何情况都插入了进去（bug）
+                [insertData addObject:fortcs];
+            }else
+            {
+                [updateData addObject:loctcs];
+            }
+        }
+        for (T_CS_Entity *insertModel in insertData) {
+            [self.maindb insertWithTableByQueue:@"T_caishi" argmes:[self.maindb dicFromObject:insertModel] com:^(BOOL result) {
+                if(result)
+                {
+                    MLog(@"插入成功");
+                }
+            }];
+        }
+        for (T_CS_Entity *updateModel in updateData) {
+            [self.maindb updateWithTableByQueue:@"T_caishi" argmes:[self.maindb dicFromObject:updateModel] params:@"c_id" parValue:updateModel.c_id com:^(BOOL result) {
+                if(result)
+                {
+                    MLog(@"更新成功");
+                }
+            }];
+        }
+    }
+    
 }
 -(void)InstallData:(NSArray<T_CS_Entity *>*)arr completed:(void (^)(BOOL,NSString *))com
 {
