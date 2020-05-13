@@ -8,6 +8,7 @@
 //#import "PrefixHeader.pch"
 
 
+#import "CTableViewController.h"
 
 #define XMGTextFont [UIFont systemFontSize:14];
 @interface TbViewTableViewController ()<SendMessageControllerDeleage>
@@ -102,6 +103,9 @@
 {
     if(!_allcon){
         NSMutableArray *all = [[NSMutableArray alloc]init];
+        
+        AllController *lastcon = [[AllController alloc]initWithName:@"数据库" Con:[[CTableViewController alloc]init]];
+        [all addObject:lastcon];
         
         AllController *setincon = [[AllController alloc]initWithName:@"数据持久化" Con:[[UserDefaultCon alloc]init]];
         [all addObject:setincon];

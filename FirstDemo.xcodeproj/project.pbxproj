@@ -33,6 +33,8 @@
 		2B78ED3224162043007B8DA2 /* LayerAndUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B78ED3124162043007B8DA2 /* LayerAndUIView.m */; };
 		2B78ED352418DC42007B8DA2 /* UserDefaultCon.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B78ED342418DC42007B8DA2 /* UserDefaultCon.m */; };
 		2B78ED372418DEE2007B8DA2 /* test.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B78ED362418DEE2007B8DA2 /* test.plist */; };
+		2B88BE13246BA3FE00BD6CCD /* CTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B88BE12246BA3FE00BD6CCD /* CTableViewController.m */; };
+		2B88BE16246BA67A00BD6CCD /* TShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B88BE15246BA67A00BD6CCD /* TShowViewController.m */; };
 		2B8B295C2383C08F0038B9A5 /* MoveRedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8B295B2383C08F0038B9A5 /* MoveRedView.m */; };
 		2B8DEF01234191630004E906 /* PageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8DEF00234191630004E906 /* PageView.m */; };
 		2B925E932358717A0036F859 /* Fmdbtool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B925E922358717A0036F859 /* Fmdbtool.m */; };
@@ -99,6 +101,10 @@
 		2B78ED332418DC42007B8DA2 /* UserDefaultCon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserDefaultCon.h; sourceTree = "<group>"; };
 		2B78ED342418DC42007B8DA2 /* UserDefaultCon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserDefaultCon.m; sourceTree = "<group>"; };
 		2B78ED362418DEE2007B8DA2 /* test.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = test.plist; sourceTree = "<group>"; };
+		2B88BE11246BA3FE00BD6CCD /* CTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTableViewController.h; sourceTree = "<group>"; };
+		2B88BE12246BA3FE00BD6CCD /* CTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTableViewController.m; sourceTree = "<group>"; };
+		2B88BE14246BA67A00BD6CCD /* TShowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TShowViewController.h; sourceTree = "<group>"; };
+		2B88BE15246BA67A00BD6CCD /* TShowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TShowViewController.m; sourceTree = "<group>"; };
 		2B8B295A2383C08F0038B9A5 /* MoveRedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoveRedView.h; sourceTree = "<group>"; };
 		2B8B295B2383C08F0038B9A5 /* MoveRedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoveRedView.m; sourceTree = "<group>"; };
 		2B8B295D2383C37E0038B9A5 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -165,6 +171,17 @@
 			path = Table;
 			sourceTree = "<group>";
 		};
+		2B88BE10246BA3D500BD6CCD /* CTable */ = {
+			isa = PBXGroup;
+			children = (
+				2B88BE11246BA3FE00BD6CCD /* CTableViewController.h */,
+				2B88BE12246BA3FE00BD6CCD /* CTableViewController.m */,
+				2B88BE14246BA67A00BD6CCD /* TShowViewController.h */,
+				2B88BE15246BA67A00BD6CCD /* TShowViewController.m */,
+			);
+			path = CTable;
+			sourceTree = "<group>";
+		};
 		2B925E90235870650036F859 /* tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +204,7 @@
 		2BA5B1802340478E00AD0983 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2B88BE10246BA3D500BD6CCD /* CTable */,
 				2B3F26562355BCBB002E0E50 /* Table */,
 				2BBDA091232684A000A2E111 /* ViewController.h */,
 				2BBDA092232684A000A2E111 /* ViewController.m */,
@@ -430,6 +448,7 @@
 				2B8DEF01234191630004E906 /* PageView.m in Sources */,
 				2B98AC2F23877ECB006CC0D1 /* MQManager.m in Sources */,
 				2B491E12242A5E86006121F9 /* T_CS_Entity.m in Sources */,
+				2B88BE16246BA67A00BD6CCD /* TShowViewController.m in Sources */,
 				2B78ECF5240DFC7F007B8DA2 /* PersonModel.m in Sources */,
 				2B490866238BD7AD00711364 /* SendMessageController.m in Sources */,
 				2B235D2A238F7B7A0013B665 /* Toast.m in Sources */,
@@ -439,6 +458,7 @@
 				2B4E4101234C3A1200F22869 /* TButton.m in Sources */,
 				2B235DD423B4A55A00C5E1B3 /* OperationViewController.m in Sources */,
 				2B8B295C2383C08F0038B9A5 /* MoveRedView.m in Sources */,
+				2B88BE13246BA3FE00BD6CCD /* CTableViewController.m in Sources */,
 				2B78ED2F24135CFA007B8DA2 /* Major.m in Sources */,
 				2B490860238BCBC100711364 /* BLController.m in Sources */,
 				2BBDA09E232684A100A2E111 /* main.m in Sources */,

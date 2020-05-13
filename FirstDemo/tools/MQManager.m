@@ -6,7 +6,7 @@
 //  Copyright © 2019 com.Edward. All rights reserved.
 //
 
-#define MQSERVERPATH @"192.168.0.115:5672"
+#define MQSERVERPATH @"192.168.0.111:5672"
 
 #import "MQManager.h"
 #import <RMQClient/RMQClient.h>

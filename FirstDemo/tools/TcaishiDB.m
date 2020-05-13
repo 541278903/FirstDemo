@@ -65,7 +65,7 @@ static TcaishiDB *caishidb;
     }
 }
 -(void)SetDataWithNetWork{
-    [[NetAsk GetInstance]POST:@"http://192.168.0.115:1208/TServer.asmx/GetAllData" parameters:nil isXML:YES resultcom:^(NSDictionary *  _Nullable bl) {
+    [[NetAsk GetInstance]POST:@"http://192.168.0.111:1208/TServer.asmx/GetAllData" parameters:nil isXML:YES resultcom:^(NSDictionary *  _Nullable bl) {
         NSArray *arr = bl[@"Menu"];
         NSMutableArray<T_CS_Entity *> *tcsarr = [[NSMutableArray alloc]init];
         for (id obj in arr) {

@@ -26,12 +26,35 @@
 //    [[TcaishiDB GetInstance]GetData:nil];
 //    [self demo];
 //    [self demo2];
+    UIButton *btn1 = [[UIButton alloc]initWithFrame:CGRectMake(0, 100, EQUIPMENT_SCREENT_WIDTH, 20)];
+    btn1.backgroundColor = UIColor.yellowColor;
+    [btn1 addTarget:self action:@selector(demo2) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIButton *btn2 = [[UIButton alloc]initWithFrame:CGRectMake(0, 200, EQUIPMENT_SCREENT_WIDTH, 20)];
+    btn2.backgroundColor = UIColor.redColor;
+    [btn2 addTarget:self action:@selector(demo3) forControlEvents:UIControlEventTouchUpInside];
+    //    MLog(@"%@",[[TcaishiDB GetInstance]GetData:nil]);
+//    [[TcaishiDB GetInstance]SetDataWithNetWork];
 //    MLog(@"%@",[[TcaishiDB GetInstance]GetData:nil]);
-    [[TcaishiDB GetInstance]SetDataWithNetWork];
-//    MLog(@"%@",[[TcaishiDB GetInstance]GetData:nil]);
+    [self.view addSubview:btn1];
+    [self.view addSubview:btn2];
+    
+}
+-(void)demo3{
+    
+    NSArray *d =[[TcaishiDB GetInstance]GetData:nil];
+    for (T_CS_Entity *t in d) {
+        MLog(@"%@",t.c_name);
+        
+}
+    
+}
+-(void)demo4{
+    NSString *demo = @"";
+    MLog(@"%#",demo);
 }
 -(void)demo2{
-//    MLog(@"%@",[[TcaishiDB GetInstance]GetData:nil]);
+    [[TcaishiDB GetInstance]SetDataWithNetWork];
 }
 -(void)demo{
     
@@ -46,10 +69,7 @@
     [[TcaishiDB GetInstance]InstallData:[arr copy] completed:^(BOOL isSuccess, NSString * _Nonnull result) {
         NSLog(@"%@",result);
     }];
-//    [[Fmdbtool GetInstance]updateWithTable:@"T_caishi" argmes:[t dicFromObject:t] params:@"c_id" parValue:t.c_id];
-//    [[TcaishiDB GetInstance]InstallData:arr completed:^(BOOL isSuccess, NSString * _Nonnull result) {
-//        NSLog(@"%@",result);
-//    }];
+    
     
 }
 // ⏬NSUserDefaults 简单数据快速读写
