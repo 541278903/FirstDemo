@@ -104,6 +104,9 @@
     if(!_allcon){
         NSMutableArray *all = [[NSMutableArray alloc]init];
         
+        AllController *tirteen = [[AllController alloc]initWithName:@"CollectionView" Con:[[TestCollectionView alloc]init]];
+        [all addObject:tirteen];
+        
         AllController *lastcon = [[AllController alloc]initWithName:@"数据库" Con:[[CTableViewController alloc]init]];
         [all addObject:lastcon];
         

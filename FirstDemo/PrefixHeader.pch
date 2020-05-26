@@ -21,6 +21,7 @@
 #import <MJRefresh/MJRefresh.h>
 #import <IQKeyboardManager/IQKeyboardManager.h>
 #import <PPBadgeView/PPBadgeView.h>
+#import <YYK_BaseViews/YYKBaseViews.h>
 
 /**controller*/
 #import "TbViewTableViewController.h"
@@ -37,6 +38,7 @@
 #import "NotificationKVCKVO.h"
 #import "LayerAndUIView.h"
 #import "UserDefaultCon.h"
+#import "TestCollectionView.h"
 
 /**cell and viewbymyself*/
 #import "TbCell.h"

@@ -8,9 +8,12 @@ ${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework
 ${BUILT_PRODUCTS_DIR}/JKVValue/JKVValue.framework
 ${BUILT_PRODUCTS_DIR}/LazyScroll/LazyScroll.framework
 ${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework
 ${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework
 ${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework
 ${BUILT_PRODUCTS_DIR}/PPBadgeView/PPBadgeView.framework
 ${BUILT_PRODUCTS_DIR}/RMQClient/RMQClient.framework
+${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework
 ${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
 ${BUILT_PRODUCTS_DIR}/TMUtils/TMUtils.framework
+${BUILT_PRODUCTS_DIR}/YYK_BaseViews/YYK_BaseViews.framework

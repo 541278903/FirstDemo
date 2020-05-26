@@ -1,0 +1,6 @@
+framework module YYK_BaseViews {
+  umbrella header "YYK_BaseViews-umbrella.h"
+
+  export *
+  module * { export * }
+}
