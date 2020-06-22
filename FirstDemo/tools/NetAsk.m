@@ -48,7 +48,24 @@ static NetAsk *netasking = nil;
 
 //POST请求
 -(void)POST:(NSString *)URL parameters:(id)parameters isXML:(BOOL)isXML resultcom:(void (^)(id _Nullable bl))comp{
-    [self.manager POST:URL parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//    [self.manager POST:URL parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        NSString *result = nil;
+//        if(isXML)
+//        {
+//            result = [self GetNodelist:responseObject];
+//        }else
+//        {
+//            result = [[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding];
+//        }
+//        //转成JSON
+//        NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:[result dataUsingEncoding:NSUTF8StringEncoding] options:0 error:nil];
+//        comp(dic);
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//        NSLog(@"%@",error.debugDescription);
+//    }];
+    
+    [self.manager POST:URL parameters:parameters headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
         NSString *result = nil;
         if(isXML)
         {
@@ -61,19 +78,36 @@ static NetAsk *netasking = nil;
         NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:[result dataUsingEncoding:NSUTF8StringEncoding] options:0 error:nil];
         comp(dic);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
         NSLog(@"%@",error.debugDescription);
     }];
 }
 -(void)PUT:(NSString *)URLString parameters:(id)parameters isXML:(BOOL)isXml resultcom:(void (^)(NSString *bl))comp{
-    [self.manager PUT:URLString parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        comp([[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding]);
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        NSLog(@"%@",error.debugDescription);
-    }];
+//    [self.manager PUT:URLString parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        comp([[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding]);
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//        NSLog(@"%@",error.debugDescription);
+//    }];
 }
 //GET请求
 -(void)GET:(NSString *)URL parameters:(id)parameters isXML:(BOOL)isXML resultcom:(void (^)(NSDictionary *bl))comp{
-    [self.manager GET:URL parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//    [self.manager GET:URL parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        NSString *result = nil;
+//        if(isXML)
+//        {
+//            result = [self GetNodelist:responseObject];
+//        }else
+//        {
+//            result = [[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding];
+//        }
+//        //转成JSON
+//        NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:[result dataUsingEncoding:NSUTF8StringEncoding] options:0 error:nil];
+//        comp(dic);
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//        NSLog(@"%@",error.debugDescription);
+//    }];
+    [self.manager GET:URL parameters:parameters headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        comp(bl);
         NSString *result = nil;
         if(isXML)
         {
@@ -86,7 +120,7 @@ static NetAsk *netasking = nil;
         NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:[result dataUsingEncoding:NSUTF8StringEncoding] options:0 error:nil];
         comp(dic);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        NSLog(@"%@",error.debugDescription);
+        
     }];
 }
 

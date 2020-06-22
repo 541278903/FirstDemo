@@ -7,8 +7,12 @@
 //
 
 //#import "PrefixHeader.pch"
+#import <ReactiveObjC/ReactiveObjC.h>
 
 @interface GCDViewController ()
+
+@property(nonatomic,strong) NSMutableArray * list;
+@property(nonatomic,assign) int numisSave;
 
 @end
 
@@ -16,6 +20,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    -(void)asyncconcurrent{
+    [self asyncconcurrent];
+//    [self Do];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = UIColor.whiteColor;
     
@@ -41,72 +48,62 @@
 }
 -(void)asyncconcurrent{
 //    开启多条线程 并且并发队列中任务异步执行
-    dispatch_queue_t queue = dispatch_queue_create("com.mashiro", DISPATCH_QUEUE_CONCURRENT);
+//    dispatch_queue_t queue = dispatch_queue_create("com.mashiro", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
     MLog(@"-start-");
     
     dispatch_apply(220, queue, ^(size_t index) {
-        NSString *a = [NSString stringWithFormat:@"%@",[NSThread currentThread]];
-        [[NetAsk GetInstance]POST:@"http://localhost:8181/login" parameters:@{@"name":a} isXML:NO resultcom:^(id  _Nullable bl) {
-            
-        }];
+        [self Do];
     });
     
     dispatch_apply(220, queue, ^(size_t index) {
-        NSString *a = [NSString stringWithFormat:@"%@",[NSThread currentThread]];
-        [[NetAsk GetInstance]POST:@"http://localhost:8181/login" parameters:@{@"name":a} isXML:NO resultcom:^(id  _Nullable bl) {
-            
-        }];
+        [self Do];
     });
     
     dispatch_apply(220, queue, ^(size_t index) {
-        NSString *a = [NSString stringWithFormat:@"%@",[NSThread currentThread]];
-        [[NetAsk GetInstance]POST:@"http://localhost:8181/login" parameters:@{@"name":a} isXML:NO resultcom:^(id  _Nullable bl) {
-            
-        }];
+        [self Do];
     });
     
     dispatch_apply(220, queue, ^(size_t index) {
-        NSString *a = [NSString stringWithFormat:@"%@",[NSThread currentThread]];
-        [[NetAsk GetInstance]POST:@"http://localhost:8181/login" parameters:@{@"name":a} isXML:NO resultcom:^(id  _Nullable bl) {
-            
-        }];
+        [self Do];
+        
     });
-    
+//
     dispatch_apply(220, queue, ^(size_t index) {
-        NSString *a = [NSString stringWithFormat:@"%@",[NSThread currentThread]];
-        [[NetAsk GetInstance]POST:@"http://localhost:8181/login" parameters:@{@"name":a} isXML:NO resultcom:^(id  _Nullable bl) {
-            
-        }];
+        [self Do];
     });
-    
-    dispatch_apply(220, queue, ^(size_t index) {
-        NSString *a = [NSString stringWithFormat:@"%@",[NSThread currentThread]];
-        [[NetAsk GetInstance]POST:@"http://localhost:8181/login" parameters:@{@"name":a} isXML:NO resultcom:^(id  _Nullable bl) {
-            
-        }];
-    });
-    
-    dispatch_apply(220, queue, ^(size_t index) {
-        NSString *a = [NSString stringWithFormat:@"%@",[NSThread currentThread]];
-        [[NetAsk GetInstance]POST:@"http://localhost:8181/login" parameters:@{@"name":a} isXML:NO resultcom:^(id  _Nullable bl) {
-            
-        }];
-    });
-    
-    dispatch_apply(220, queue, ^(size_t index) {
-        NSString *a = [NSString stringWithFormat:@"%@",[NSThread currentThread]];
-        [[NetAsk GetInstance]POST:@"http://localhost:8181/login" parameters:@{@"name":a} isXML:NO resultcom:^(id  _Nullable bl) {
-            
-        }];
-    });
-    
-    dispatch_apply(220, queue, ^(size_t index) {
-        NSString *a = [NSString stringWithFormat:@"%@",[NSThread currentThread]];
-        [[NetAsk GetInstance]POST:@"http://localhost:8181/login" parameters:@{@"name":a} isXML:NO resultcom:^(id  _Nullable bl) {
-            
-        }];
-    });
+//
+//    dispatch_apply(220, queue, ^(size_t index) {
+//    });
+//
+//    dispatch_apply(220, queue, ^(size_t index) {
+//    });
+//
+//    dispatch_apply(220, queue, ^(size_t index) {
+//    });
+//
+//    dispatch_apply(220, queue, ^(size_t index) {
+//    });
     NSLog(@"-end-");
+}
+-(void)Do
+{
+    @weakify(self);
+    
+    [[NetAsk GetInstance]GET:@"http://106.55.12.108:1208/TServer.asmx/TestlockAsync" parameters:nil isXML:YES resultcom:^(NSDictionary * _Nonnull bl) {
+        @strongify(self);
+//        NSDictionary *b = NSDictionary dic
+//        NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:[bl[@"Data"] dataUsingEncoding:NSUTF8StringEncoding] options:0 error:nil];
+////        MLog(@"%@",bl);
+//        if ([self.list containsObject:b]) {
+//            MLog(@"%@",++self.numisSave);
+//        }else
+//        {
+//            [self.list addObject:b];
+//        }
+        MLog(@"%@",bl);
+    }];
+    
 }
 -(void)asyncseriac{
 //    异步函数在串行队列中，会开线程，开一条线程，队列中的任务是串行执行（在新开的那条线程中）。
@@ -153,5 +150,15 @@
     });
     NSLog(@"-end-");
     
+}
+#pragma mark get/set
+
+- (NSMutableArray *)list
+{
+    if(!_list)
+    {
+        _list = [[NSMutableArray alloc]init];
+    }
+    return _list;
 }
 @end

@@ -212,7 +212,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/PPBadgeView/PPBadgeView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RMQClient/RMQClient.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TMUtils/TMUtils.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YYK_BaseViews/YYK_BaseViews.framework"
 fi
@@ -232,7 +231,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/PPBadgeView/PPBadgeView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RMQClient/RMQClient.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TMUtils/TMUtils.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YYK_BaseViews/YYK_BaseViews.framework"
 fi

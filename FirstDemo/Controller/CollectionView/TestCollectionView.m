@@ -19,13 +19,6 @@
     [super viewDidLoad];
     self.view.backgroundColor = UIColor.whiteColor;
 //    YYKBaseButton *btn =
-    YYKBaseButtonConfig *config = [[YYKBaseButtonConfig alloc]init];
-    config.titleName = @"你好";
-    config.image = [UIImage imageNamed:@"1"];
-    config.target = @selector(clickSet);
-    config.selfViewController = self;
-    YYKBaseButton *btn = [[YYKBaseButton alloc]initWithFrame:CGRectMake(0, 100, 100, 100) AndYYKBaseButtonConfig:config];
-    [self.view addSubview:btn];
     
     // Do any additional setup after loading the view.
 }
