@@ -32,16 +32,23 @@ PODS:
     - TMUtils (~> 1.0.1)
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
-  - MJExtension (3.2.1)
+  - MJExtension (3.2.2)
   - MJRefresh (3.4.3)
   - PPBadgeView (3.1.0)
   - ReactiveObjC (3.1.1)
   - RMQClient (0.10.0):
     - CocoaAsyncSocket (~> 7.4.0)
     - JKVValue
+  - SDWebImage (5.8.4):
+    - SDWebImage/Core (= 5.8.4)
+  - SDWebImage/Core (5.8.4)
   - TMUtils (1.0.1)
-  - YYK_BaseViews (0.0.7):
+  - YK_BaseTools (0.0.1):
     - AFNetworking
+    - FMDB
+    - ReactiveObjC
+    - RMQClient
+  - YYK_BaseViews (1.0.3):
     - Masonry
     - MJExtension
     - ReactiveObjC
@@ -58,12 +65,15 @@ DEPENDENCIES:
   - MJRefresh
   - PPBadgeView
   - RMQClient
+  - SDWebImage
+  - YK_BaseTools
   - YYK_BaseViews
 
 SPEC REPOS:
-  https://gitee.com/Edwrard/YYKSpec.git:
+  https://github.com/541278903/YKSpec.git:
+    - YK_BaseTools
     - YYK_BaseViews
-  https://gitee.com/mirrors/CocoaPods-Specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - CocoaAsyncSocket
     - FMDB
@@ -79,6 +89,7 @@ SPEC REPOS:
     - PPBadgeView
     - ReactiveObjC
     - RMQClient
+    - SDWebImage
     - TMUtils
 
 SPEC CHECKSUMS:
@@ -92,14 +103,16 @@ SPEC CHECKSUMS:
   LazyScroll: 23f4550711452ad4306a30fc75106a7a5556a882
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
-  MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
+  MJExtension: d9b9c74cbdeb724c1e9ecbb157b318276e62e876
   MJRefresh: 53e3e3219f204425ee6d3e62e8733d3295944cd6
   PPBadgeView: b50a223638970fd0781e8753250385864b6dd2fe
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   RMQClient: e9bfea2d08f151b6b12df82ad115c78bd8de2106
+  SDWebImage: cf6922231e95550934da2ada0f20f2becf2ceba9
   TMUtils: 8af8e4695b6e4086d0545ecd7cd025556515ab42
-  YYK_BaseViews: 2ab277ed5aebc8d6c21757317ec361f4c72f55ea
+  YK_BaseTools: 1b1ec216d5e1900e15ccd8e0ce7b2c2348463c68
+  YYK_BaseViews: e8008b075368f53fafd09b0a6ac8a02d2ed90ec0
 
-PODFILE CHECKSUM: 9dd88cd17921faac7b2a432a9cf6dbb253829284
+PODFILE CHECKSUM: d851b7d353c2233f2d948ae9dcb0fa7fe576115a
 
 COCOAPODS: 1.9.3

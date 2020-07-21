@@ -1,0 +1,6 @@
+framework module YK_BaseTools {
+  umbrella header "YK_BaseTools-umbrella.h"
+
+  export *
+  module * { export * }
+}

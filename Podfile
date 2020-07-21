@@ -1,7 +1,7 @@
 
-#source 'https://github.com/CocoaPods/Specs.git'
-source 'https://gitee.com/mirrors/CocoaPods-Specs.git'
-source 'https://gitee.com/Edwrard/YYKSpec.git'
+source 'https://github.com/541278903/YKSpec.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
 target 'FirstDemo' do
 	# Comment the next line if you're not using Swift and don't want to use dynamic frameworks
 	use_frameworks!
@@ -21,4 +21,5 @@ target 'FirstDemo' do
   pod 'LazyScroll'
   pod 'SDWebImage'
   pod 'YYK_BaseViews'
+ pod 'YK_BaseTools'
 end
