@@ -10,6 +10,7 @@
 
 #import "TShowViewController.h"
 #import <YYK_BaseViews/YKBaseClass.h>
+#import <YYK_BaseViews/UIBarButtonItem+YYK.h>
 @interface CTableViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)NSArray<T_CS_Entity *> *datalist;
 
@@ -30,11 +31,14 @@
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         [self refleshdata];
     }];
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    @weakify(self);
+    UIBarButtonItem *barbuttonitem = [UIBarButtonItem yk_itemForButtonWithTitle:@"新增" color:YKHEXCOLOR(@"#5A9CFF") actionBlock:^(UIButton *button) {
+        @strongify(self);
+        T_CS_Entity *entity = [[T_CS_Entity alloc]init];
+        DetailViewController *vc = [[DetailViewController alloc]initWithEntity:entity];
+        [self.navigationController pushViewController:vc animated:YES];
+    }];
+    self.navigationItem.rightBarButtonItem = barbuttonitem;
 }
 -(void)refleshdata{
     [[TcaishiDB GetInstance]SetDataWithNetWork];

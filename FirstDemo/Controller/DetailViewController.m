@@ -38,33 +38,55 @@
 -(void)setup{
     [self.view addSubview:self.nameView];
     [self.nameView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.mas_equalTo(0);
-        make.top.mas_equalTo(KTOP_MARGIN);
+        make.left.mas_equalTo(10);
+        make.right.mas_equalTo(-10);
+        make.top.mas_equalTo(KTOP_MARGIN+20);
         make.height.mas_equalTo(30);
     }];
     [self.view addSubview:self.guigeView];
     [self.guigeView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.mas_equalTo(0);
-        make.top.mas_equalTo(self.nameView.mas_bottom);
+        make.left.mas_equalTo(10);
+        make.right.mas_equalTo(-10);
+        make.top.mas_equalTo(self.nameView.mas_bottom).offset(20);
         make.height.mas_equalTo(30);
     }];
     [self.view addSubview:self.jinhuoView];
     [self.jinhuoView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.mas_equalTo(0);
-        make.top.mas_equalTo(self.guigeView.mas_bottom);
+        make.left.mas_equalTo(10);
+        make.right.mas_equalTo(-10);
+        make.top.mas_equalTo(self.guigeView.mas_bottom).offset(20);
         make.height.mas_equalTo(30);
     }];
     [self.view addSubview:self.shoujiaView];
     [self.shoujiaView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.mas_equalTo(0);
-        make.top.mas_equalTo(self.jinhuoView.mas_bottom);
+        make.left.mas_equalTo(10);
+        make.right.mas_equalTo(-10);
+        make.top.mas_equalTo(self.jinhuoView.mas_bottom).offset(20);
         make.height.mas_equalTo(30);
     }];
     [self.view addSubview:self.shuliangView];
     [self.shuliangView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.mas_equalTo(0);
-        make.top.mas_equalTo(self.shoujiaView.mas_bottom);
+        make.left.mas_equalTo(10);
+        make.right.mas_equalTo(-10);
+        make.top.mas_equalTo(self.shoujiaView.mas_bottom).offset(20);
         make.height.mas_equalTo(30);
+    }];
+    UIButton *comfimbutton = [UIButton buttonWithType:UIButtonTypeCustom];
+    comfimbutton.backgroundColor = YKHEXCOLOR(@"#5A9CFF");
+    comfimbutton.layer.cornerRadius = 10;
+    comfimbutton.clipsToBounds = YES;
+    [comfimbutton setTitle:@"保 存" forState:UIControlStateNormal];
+    [self.view addSubview:comfimbutton];
+    [comfimbutton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self.shuliangView.mas_bottom).offset(20);
+        make.left.mas_equalTo(10);
+        make.right.mas_equalTo(-10);
+        make.height.mas_equalTo(60);
+    }];
+    @weakify(self);
+    [[comfimbutton rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
+       @strongify(self);
+//        self.en
     }];
     
 }
@@ -104,7 +126,8 @@
     {
         EnterDetailView *x = [[EnterDetailView alloc]init];
         x.titleLabel.text = @"商品进货价";
-        x.textField.text = self.entity.c_jinhuo;
+        x.textField.text = [NSString stringWithFormat:@"%@",self.entity.c_jinhuo?:@""];
+        x.textField.keyboardType =UIKeyboardTypeNumbersAndPunctuation;
         _jinhuoView = x;
     }
     return _jinhuoView;
@@ -115,7 +138,8 @@
     {
         EnterDetailView *x = [[EnterDetailView alloc]init];
         x.titleLabel.text = @"商品售货价";
-        x.textField.text = self.entity.c_shouhuo;
+        x.textField.text = [NSString stringWithFormat:@"%@",self.entity.c_shouhuo?:@""];
+        x.textField.keyboardType =UIKeyboardTypeNumbersAndPunctuation;
         _shoujiaView = x;
     }
     return _shoujiaView;
@@ -126,7 +150,8 @@
     {
         EnterDetailView *x = [[EnterDetailView alloc]init];
         x.titleLabel.text = @"商品数量";
-        x.textField.text = self.entity.c_shuliang;
+        x.textField.text = [NSString stringWithFormat:@"%@",self.entity.c_shuliang?:@""];
+        x.textField.keyboardType =UIKeyboardTypeNumbersAndPunctuation;
         _shuliangView = x;
     }
     return _shuliangView;
