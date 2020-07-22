@@ -50,6 +50,10 @@
 		2BBDA09B232684A100A2E111 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BBDA099232684A100A2E111 /* LaunchScreen.storyboard */; };
 		2BBDA09E232684A100A2E111 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBDA09D232684A100A2E111 /* main.m */; };
 		DCAEF9209F46B39D96AFDB64 /* Pods_FirstDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934455A8135A010255932ED3 /* Pods_FirstDemo.framework */; };
+		F92389AC24C7D6530000BCC2 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92389AB24C7D6530000BCC2 /* TextViewController.m */; };
+		F92389AF24C7DD420000BCC2 /* YKAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92389AE24C7DD420000BCC2 /* YKAlertViewController.m */; };
+		F92389B224C801470000BCC2 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92389B124C801470000BCC2 /* DetailViewController.m */; };
+		F92389B524C801E80000BCC2 /* EnterDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = F92389B424C801E80000BCC2 /* EnterDetailView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -137,6 +141,14 @@
 		47D9FFB30FEE4A3B1BF0A528 /* Pods-FirstDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstDemo.release.xcconfig"; path = "Target Support Files/Pods-FirstDemo/Pods-FirstDemo.release.xcconfig"; sourceTree = "<group>"; };
 		934455A8135A010255932ED3 /* Pods_FirstDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirstDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B9BEDE23D0CEE1E85F90557 /* Pods-FirstDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstDemo.debug.xcconfig"; path = "Target Support Files/Pods-FirstDemo/Pods-FirstDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F92389AA24C7D6530000BCC2 /* TextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
+		F92389AB24C7D6530000BCC2 /* TextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
+		F92389AD24C7DD420000BCC2 /* YKAlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKAlertViewController.h; sourceTree = "<group>"; };
+		F92389AE24C7DD420000BCC2 /* YKAlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKAlertViewController.m; sourceTree = "<group>"; };
+		F92389B024C801470000BCC2 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		F92389B124C801470000BCC2 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		F92389B324C801E80000BCC2 /* EnterDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnterDetailView.h; sourceTree = "<group>"; };
+		F92389B424C801E80000BCC2 /* EnterDetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnterDetailView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +257,12 @@
 				2B78ED3124162043007B8DA2 /* LayerAndUIView.m */,
 				2B78ED332418DC42007B8DA2 /* UserDefaultCon.h */,
 				2B78ED342418DC42007B8DA2 /* UserDefaultCon.m */,
+				F92389AA24C7D6530000BCC2 /* TextViewController.h */,
+				F92389AB24C7D6530000BCC2 /* TextViewController.m */,
+				F92389AD24C7DD420000BCC2 /* YKAlertViewController.h */,
+				F92389AE24C7DD420000BCC2 /* YKAlertViewController.m */,
+				F92389B024C801470000BCC2 /* DetailViewController.h */,
+				F92389B124C801470000BCC2 /* DetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -277,6 +295,8 @@
 				2B4E4100234C3A1200F22869 /* TButton.m */,
 				2B8B295A2383C08F0038B9A5 /* MoveRedView.h */,
 				2B8B295B2383C08F0038B9A5 /* MoveRedView.m */,
+				F92389B324C801E80000BCC2 /* EnterDetailView.h */,
+				F92389B424C801E80000BCC2 /* EnterDetailView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -456,6 +476,7 @@
 				2B88BE4C2479254B00BD6CCD /* TestCollectionView.m in Sources */,
 				2B78ED3224162043007B8DA2 /* LayerAndUIView.m in Sources */,
 				2B491E0C242A5BD8006121F9 /* TcaishiDB.m in Sources */,
+				F92389B224C801470000BCC2 /* DetailViewController.m in Sources */,
 				2B3F265C2355BCEE002E0E50 /* TbCell.m in Sources */,
 				2B78ED2A24134FDB007B8DA2 /* NotificationKVCKVO.m in Sources */,
 				2B7241AE239F537B00344E4F /* ScrollerController.m in Sources */,
@@ -474,6 +495,8 @@
 				2B8B295C2383C08F0038B9A5 /* MoveRedView.m in Sources */,
 				2B88BE13246BA3FE00BD6CCD /* CTableViewController.m in Sources */,
 				2B78ED2F24135CFA007B8DA2 /* Major.m in Sources */,
+				F92389B524C801E80000BCC2 /* EnterDetailView.m in Sources */,
+				F92389AC24C7D6530000BCC2 /* TextViewController.m in Sources */,
 				2B490860238BCBC100711364 /* BLController.m in Sources */,
 				2BBDA09E232684A100A2E111 /* main.m in Sources */,
 				2B78ED27240FB811007B8DA2 /* PersonModel+thesec.m in Sources */,
@@ -482,6 +505,7 @@
 				2B98AC38238796F5006CC0D1 /* DesHelper.m in Sources */,
 				2B78ED21240DFE24007B8DA2 /* SonModel.m in Sources */,
 				2B6671C4239217F8001469C3 /* ThreadViewController.m in Sources */,
+				F92389AF24C7DD420000BCC2 /* YKAlertViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

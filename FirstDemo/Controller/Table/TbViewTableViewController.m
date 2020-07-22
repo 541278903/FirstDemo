@@ -26,7 +26,7 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.tableView.rowHeight = 80;
+    self.tableView.rowHeight = 50;
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         [self refleshdata];
     }];
@@ -103,6 +103,12 @@
 {
     if(!_allcon){
         NSMutableArray *all = [[NSMutableArray alloc]init];
+        
+        AllController *fifteen = [[AllController alloc]initWithName:@"自定义弹出Con" Con:[[YKAlertViewController alloc] init]];
+        [all addObject:fifteen];
+        
+        AllController *forteen = [[AllController alloc]initWithName:@"数据显示" Con:[[TextViewController alloc]init]];
+        [all addObject:forteen];
         
         AllController *tirteen = [[AllController alloc]initWithName:@"CollectionView" Con:[[TestCollectionView alloc]init]];
         [all addObject:tirteen];

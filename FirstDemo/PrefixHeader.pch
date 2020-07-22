@@ -39,11 +39,15 @@
 #import "LayerAndUIView.h"
 #import "UserDefaultCon.h"
 #import "TestCollectionView.h"
+#import "TextViewController.h"
+#import "YKAlertViewController.h"
+#import "DetailViewController.h"
 
 /**cell and viewbymyself*/
 #import "TbCell.h"
 #import "PageView.h"
 #import "TButton.h"
+#import "EnterDetailView.h"
 
 /**model*/
 #import "AllController.h"
@@ -56,6 +60,8 @@
 #import "DesHelper.h"
 //#import "Fmdbtool.h"
 #import "TcaishiDB.h"
+#import <YYK_BaseViews/YKMacro.h>
+#import <YYK_BaseViews/YKBaseClass.h>
 
 
 #ifndef PrefixHeader_pch

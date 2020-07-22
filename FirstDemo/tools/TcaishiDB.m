@@ -48,7 +48,7 @@ static TcaishiDB *caishidb;
 {
     self = [super init];
     if (self) {
-        [self.maindb CreateTable:@"T_caishi" SQL:@"CREATE TABLE IF NOT EXISTS T_caishi (c_id varchar(50) PRIMARY KEY,c_name varchar(50)  NULL, c_guige varchar(50)  NULL,c_jinhuo float NULL,c_shouhuo float NULL,c_shuliang float NULL)"];
+        [self.maindb CreateTable:@"T_caishi" SQL:@"CREATE TABLE IF NOT EXISTS T_caishi (c_id varchar(50) PRIMARY KEY,c_name varchar(50)  NULL, c_guige varchar(50)  NULL,c_jinhuo varchar(50) NULL,c_shouhuo varchar(50) NULL,c_shuliang varchar(50) NULL)"];
     }
     return self;
 }

@@ -9,6 +9,7 @@
 #import "NotificationKVCKVO.h"
 #import "PersonModel.h"
 #import "Major.h"
+#import <ReactiveObjC/ReactiveObjC.h>
 #define MyNotification @"NSNotificationTestName"
 
 @interface NotificationKVCKVO ()
@@ -27,6 +28,7 @@
 }
 - (void)viewDidAppear:(BOOL)animated{
 //    MLog(@"viewapper");
+    [super viewWillAppear:animated];
 }
 // ⏬使用Notification
 -(void)setup{
@@ -70,7 +72,9 @@
     
     [self.person addObserver:self forKeyPath:@"major.myname" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
     //在最后delloc中要释放掉观察值资源，防止资源泄露
+    @weakify(self);
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        @strongify(self);
         [self.person setValue:@"Edward's major" forKeyPath:@"major.myname"];
     });
     

@@ -22,4 +22,6 @@ target 'FirstDemo' do
   pod 'SDWebImage'
   pod 'YYK_BaseViews'
  pod 'YK_BaseTools'
+ pod 'WoodPeckeriOS', :configurations => ['Debug']
+ pod 'LookinServer', :configurations => ['Debug']
 end

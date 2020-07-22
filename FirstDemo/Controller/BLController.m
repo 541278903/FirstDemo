@@ -72,6 +72,10 @@
 {
 //    [self.blnt showBulletinAboveViewController:self animated:YES completion:NULL];
 }
+- (void)dealloc
+{
+    MLog(@"dealloc");
+}
 
 
 @end

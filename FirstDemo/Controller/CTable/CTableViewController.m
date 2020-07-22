@@ -9,6 +9,7 @@
 #import "CTableViewController.h"
 
 #import "TShowViewController.h"
+#import <YYK_BaseViews/YKBaseClass.h>
 @interface CTableViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)NSArray<T_CS_Entity *> *datalist;
 
@@ -55,6 +56,7 @@
 }
 
 
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     //每一次创建的控制器都是只有一个，不会重复创建(此处不会重复创建是指上下拖动的时候不会重复创建 )
     /**定义可重用的静态标识符*/
@@ -77,10 +79,15 @@
     return tbc;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    TShowViewController *tshowcontroller = [[TShowViewController alloc]init];
-    tshowcontroller.entity = self.datalist[indexPath.row];
-//    [self.navigationController popToViewController:tshowcontroller animated:YES];
-    [self.navigationController pushViewController:tshowcontroller animated:YES];
+//    TShowViewController *tshowcontroller = [[TShowViewController alloc]init];
+//    tshowcontroller.entity = self.datalist[indexPath.row];
+////    [self.navigationController popToViewController:tshowcontroller animated:YES];
+//    [self.navigationController pushViewController:tshowcontroller animated:YES];
+//    YKAlertCenter showMessage:
+    T_CS_Entity *entity = self.datalist[indexPath.row];
+//    [YKAlertCenter showMessage:[NSString stringWithFormat:@"%@:%@",entity.c_name,entity.c_guige]];
+    DetailViewController *vc = [[DetailViewController alloc]initWithEntity:entity];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 /*
