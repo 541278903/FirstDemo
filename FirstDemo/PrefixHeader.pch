@@ -21,7 +21,7 @@
 #import <MJRefresh/MJRefresh.h>
 #import <IQKeyboardManager/IQKeyboardManager.h>
 #import <PPBadgeView/PPBadgeView.h>
-#import <YYK_BaseViews/YYKBaseViews.h>
+//#import <YYK_BaseViews/YYKBaseViews.h>
 
 /**controller*/
 #import "TbViewTableViewController.h"

@@ -62,8 +62,8 @@
     t.c_id = @"BCB54FD5-7ED6-4E7C-AAFA-FADF37AB5A98";
     t.c_name = @"你好22";
     t.c_guige = @"nihaowan";
-    t.c_shouhuo = [NSNumber numberWithUnsignedLong:20.0];
-    t.c_shuliang = [NSNumber numberWithLong:300.0];
+    t.c_shouhuo = @"20.0";
+    t.c_shuliang = @"300.0";
     NSMutableArray<T_CS_Entity *> *arr = [[NSMutableArray alloc]init];
     [arr addObject:t];
     [[TcaishiDB GetInstance]InstallData:[arr copy] completed:^(BOOL isSuccess, NSString * _Nonnull result) {
