@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import <ReactiveObjC/ReactiveObjC.h>
 #import <Masonry/Masonry.h>
 
 @interface DetailViewController ()
@@ -29,6 +30,7 @@
     }
     return self;
 }
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -84,9 +86,17 @@
         make.height.mas_equalTo(60);
     }];
     @weakify(self);
+    RAC(self.entity,c_name) = RACObserve(self.nameView.textField, text);
+    RAC(self.entity,c_guige) = RACObserve(self.guigeView.textField, text);
+    RAC(self.entity,c_jinhuo) = RACObserve(self.jinhuoView.textField, text);
+    RAC(self.entity,c_shouhuo) = RACObserve(self.shoujiaView.textField, text);
+    RAC(self.entity,c_shuliang) = RACObserve(self.shuliangView.textField, text);
+    
     [[comfimbutton rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
        @strongify(self);
 //        self.en
+//        MLog(@"%@",self.entity.description);
+        [self.entity update:self.entity.description];
     }];
     
 }

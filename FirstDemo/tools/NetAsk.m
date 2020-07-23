@@ -48,24 +48,9 @@ static NetAsk *netasking = nil;
 
 //POST请求
 -(void)POST:(NSString *)URL parameters:(id)parameters isXML:(BOOL)isXML resultcom:(void (^)(id _Nullable bl))comp{
-//    [self.manager POST:URL parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-//        NSString *result = nil;
-//        if(isXML)
-//        {
-//            result = [self GetNodelist:responseObject];
-//        }else
-//        {
-//            result = [[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding];
-//        }
-//        //转成JSON
-//        NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:[result dataUsingEncoding:NSUTF8StringEncoding] options:0 error:nil];
-//        comp(dic);
-//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-//        NSLog(@"%@",error.debugDescription);
-//    }];
-    
+    @weakify(self);
     [self.manager POST:URL parameters:parameters headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
+        @strongify(self);
         NSString *result = nil;
         if(isXML)
         {
@@ -78,7 +63,7 @@ static NetAsk *netasking = nil;
         NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:[result dataUsingEncoding:NSUTF8StringEncoding] options:0 error:nil];
         comp(dic);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
+        @strongify(self);
         NSLog(@"%@",error.debugDescription);
     }];
 }
@@ -88,26 +73,19 @@ static NetAsk *netasking = nil;
 //    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
 //        NSLog(@"%@",error.debugDescription);
 //    }];
+    @weakify(self);
+    [self.manager PUT:URLString parameters:parameters headers:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+    }];
 }
 //GET请求
 -(void)GET:(NSString *)URL parameters:(id)parameters isXML:(BOOL)isXML resultcom:(void (^)(NSDictionary *bl))comp{
-//    [self.manager GET:URL parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-//        NSString *result = nil;
-//        if(isXML)
-//        {
-//            result = [self GetNodelist:responseObject];
-//        }else
-//        {
-//            result = [[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding];
-//        }
-//        //转成JSON
-//        NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:[result dataUsingEncoding:NSUTF8StringEncoding] options:0 error:nil];
-//        comp(dic);
-//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-//        NSLog(@"%@",error.debugDescription);
-//    }];
+    @weakify(self);
     [self.manager GET:URL parameters:parameters headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
 //        comp(bl);
+        @strongify(self);
         NSString *result = nil;
         if(isXML)
         {
@@ -120,7 +98,7 @@ static NetAsk *netasking = nil;
         NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:[result dataUsingEncoding:NSUTF8StringEncoding] options:0 error:nil];
         comp(dic);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
+        @strongify(self);
     }];
 }
 

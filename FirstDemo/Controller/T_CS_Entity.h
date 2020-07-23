@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,copy)NSString *c_shuliang;
 - (instancetype)initWithDic:(NSDictionary *)dic;
 //- (NSDictionary *)dicFromObject:(NSObject *)object ;
+-(void)update:(NSString *)entity;
 @end
 
 NS_ASSUME_NONNULL_END
