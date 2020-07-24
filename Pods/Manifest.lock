@@ -43,7 +43,7 @@ PODS:
     - SDWebImage/Core (= 5.8.4)
   - SDWebImage/Core (5.8.4)
   - TMUtils (1.0.1)
-  - YK_BaseTools (0.0.1):
+  - YK_BaseTools (0.0.2):
     - AFNetworking
     - FMDB
     - ReactiveObjC
@@ -110,7 +110,7 @@ SPEC CHECKSUMS:
   RMQClient: e9bfea2d08f151b6b12df82ad115c78bd8de2106
   SDWebImage: cf6922231e95550934da2ada0f20f2becf2ceba9
   TMUtils: 8af8e4695b6e4086d0545ecd7cd025556515ab42
-  YK_BaseTools: 1b1ec216d5e1900e15ccd8e0ce7b2c2348463c68
+  YK_BaseTools: d865a59109bd9f0c044f9bbb3a5290c4a7c91519
   YYK_BaseViews: e8008b075368f53fafd09b0a6ac8a02d2ed90ec0
 
 PODFILE CHECKSUM: 56db564f50573476979b3aae1733594d35fd9bd7

@@ -16,6 +16,7 @@
 #import "Singleton.h"
 #import "YKAudioManager.h"
 #import "YKNetWorking.h"
+#import "YKNetWorkingRequest.h"
 #import "YKRecordUtil.h"
 #import "YKTools.h"
 
