@@ -7,6 +7,7 @@ ${BUILT_PRODUCTS_DIR}/GTMBase64/GTMBase64.framework
 ${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework
 ${BUILT_PRODUCTS_DIR}/JKVValue/JKVValue.framework
 ${BUILT_PRODUCTS_DIR}/LazyScroll/LazyScroll.framework
+${PODS_ROOT}/LookinServer/LookinServer.framework
 ${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework
 ${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework
 ${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework
@@ -16,5 +17,6 @@ ${BUILT_PRODUCTS_DIR}/RMQClient/RMQClient.framework
 ${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework
 ${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
 ${BUILT_PRODUCTS_DIR}/TMUtils/TMUtils.framework
+${PODS_ROOT}/WoodPeckeriOS/WoodPeckeriOS.framework
 ${BUILT_PRODUCTS_DIR}/YK_BaseTools/YK_BaseTools.framework
 ${BUILT_PRODUCTS_DIR}/YYK_BaseViews/YYK_BaseViews.framework

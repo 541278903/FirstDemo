@@ -205,6 +205,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/JKVValue/JKVValue.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/LazyScroll/LazyScroll.framework"
+  install_framework "${PODS_ROOT}/LookinServer/LookinServer.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework"
@@ -214,6 +215,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/TMUtils/TMUtils.framework"
+  install_framework "${PODS_ROOT}/WoodPeckeriOS/WoodPeckeriOS.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YK_BaseTools/YK_BaseTools.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YYK_BaseViews/YYK_BaseViews.framework"
 fi
