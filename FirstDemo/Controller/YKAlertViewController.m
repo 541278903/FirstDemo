@@ -7,6 +7,8 @@
 //
 
 #import "YKAlertViewController.h"
+#import <UserNotifications/UserNotifications.h>
+
 
 @interface YKAlertViewController ()
 
@@ -17,6 +19,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UNMutableNotificationContent *content = [UNMutableNotificationContent new];
+    content.title = @"测试iOS10定时推送本地通知";
+    content.subtitle = @"subTitle";
+    content.badge = @1;
+    content.body = @"test body";
+    content.sound = [UNNotificationSound defaultSound];
+    content.userInfo = @{@"testdata":@"xxxxx"};
+    UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+    UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:1 repeats:NO];
+    UNNotificationRequest *request =[UNNotificationRequest requestWithIdentifier:@"testID" content:content trigger:trigger];
+    [center addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
+        NSLog(@"添加推送成功");
+    }];
 }
 
 /*
