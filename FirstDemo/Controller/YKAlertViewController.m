@@ -18,7 +18,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+}
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    
     UNMutableNotificationContent *content = [UNMutableNotificationContent new];
     content.title = @"测试iOS10定时推送本地通知";
     content.subtitle = @"subTitle";
@@ -27,7 +30,7 @@
     content.sound = [UNNotificationSound defaultSound];
     content.userInfo = @{@"testdata":@"xxxxx"};
     UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
-    UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:1 repeats:NO];
+    UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:0.01 repeats:NO];
     UNNotificationRequest *request =[UNNotificationRequest requestWithIdentifier:@"testID" content:content trigger:trigger];
     [center addNotificationRequest:request withCompletionHandler:^(NSError * _Nullable error) {
         NSLog(@"添加推送成功");

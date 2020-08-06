@@ -60,6 +60,11 @@
 			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
+		<key>LookinServer.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>21</integer>
+		</dict>
 		<key>MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -129,6 +134,11 @@
 			<false/>
 			<key>orderHint</key>
 			<integer>17</integer>
+		</dict>
+		<key>WoodPeckeriOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>22</integer>
 		</dict>
 		<key>YK_BaseTools.xcscheme</key>
 		<dict>
