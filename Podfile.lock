@@ -26,7 +26,7 @@ PODS:
   - FMDB/standard (2.7.5)
   - GDataXML-HTML (1.4.1)
   - GTMBase64 (1.0.1)
-  - IQKeyboardManager (6.5.5)
+  - IQKeyboardManager (6.5.6)
   - JKVValue (1.3.3)
   - LazyScroll (1.0.1):
     - TMUtils (~> 1.0.1)
@@ -34,7 +34,7 @@ PODS:
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
   - MJExtension (3.2.2)
-  - MJRefresh (3.4.3)
+  - MJRefresh (3.5.0)
   - PPBadgeView (3.1.0)
   - ReactiveObjC (3.1.1)
   - RMQClient (0.10.0):
@@ -43,13 +43,15 @@ PODS:
   - SDWebImage (5.8.4):
     - SDWebImage/Core (= 5.8.4)
   - SDWebImage/Core (5.8.4)
+  - SocketRocket (0.5.1)
   - TMUtils (1.0.1)
   - WoodPeckeriOS (1.2.7)
-  - YK_BaseTools (0.0.2):
+  - YK_BaseTools (0.0.3):
     - AFNetworking
     - FMDB
     - ReactiveObjC
     - RMQClient
+    - SocketRocket
   - YYK_BaseViews (1.0.3):
     - Masonry
     - MJExtension
@@ -95,6 +97,7 @@ SPEC REPOS:
     - ReactiveObjC
     - RMQClient
     - SDWebImage
+    - SocketRocket
     - TMUtils
     - WoodPeckeriOS
 
@@ -104,21 +107,22 @@ SPEC CHECKSUMS:
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   GDataXML-HTML: a4f11079b48d9fe96ff1fe478943a317185227e2
   GTMBase64: f0f91be06a7a20b84c8e4fee30c0430395091d82
-  IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
   JKVValue: d7941071b1cf9ba35c194fd40bcf4c4d9b5462e9
   LazyScroll: 23f4550711452ad4306a30fc75106a7a5556a882
   LookinServer: 0002891cd3cec5e082a910e897dfe71b4f06b89e
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJExtension: d9b9c74cbdeb724c1e9ecbb157b318276e62e876
-  MJRefresh: 53e3e3219f204425ee6d3e62e8733d3295944cd6
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   PPBadgeView: b50a223638970fd0781e8753250385864b6dd2fe
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   RMQClient: e9bfea2d08f151b6b12df82ad115c78bd8de2106
   SDWebImage: cf6922231e95550934da2ada0f20f2becf2ceba9
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   TMUtils: 8af8e4695b6e4086d0545ecd7cd025556515ab42
   WoodPeckeriOS: a6784fc0efaa5491bf924df24fcdd246ad49ab30
-  YK_BaseTools: d865a59109bd9f0c044f9bbb3a5290c4a7c91519
+  YK_BaseTools: 2760a1eaed4c1427bfaa28ff9efa9e488d460799
   YYK_BaseViews: e8008b075368f53fafd09b0a6ac8a02d2ed90ec0
 
 PODFILE CHECKSUM: 1b54eb3efc64ddbf6916e2e2fc9b62405b97c36f

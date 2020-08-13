@@ -223,6 +223,14 @@ static MQManager *manager;
     }
     return _errorCommmand;
 }
+- (RACSignal *)executeSignal
+{
+    @weakify(self);
+    RACSignal *signal = [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        return nil;
+    }];
+    return signal;
+}
 
 -(UIViewController *) topMostController {
   UIViewController*topController = [UIApplication sharedApplication].keyWindow.rootViewController;

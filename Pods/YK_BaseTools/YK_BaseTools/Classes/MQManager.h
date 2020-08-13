@@ -9,6 +9,8 @@
 
 
 #import <UIKit/UIKit.h>
+#import <ReactiveObjC/ReactiveObjC.h>
+
 #import "MQKey.h"
 NS_ASSUME_NONNULL_BEGIN
 
@@ -21,6 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 +(BOOL)conisClosd;
 +(void)GetMsg;
 +(void)SendMsg:(NSString *)msg AndKey:(MQKey *)key;
+
+- (RACSignal *)executeSignal;
 
 @end
 

@@ -18,6 +18,7 @@
 #import "YKNetWorking.h"
 #import "YKNetWorkingRequest.h"
 #import "YKRecordUtil.h"
+#import "YKSocket.h"
 #import "YKTools.h"
 
 FOUNDATION_EXPORT double YK_BaseToolsVersionNumber;

@@ -72,14 +72,9 @@
 - (YKNetWorking * _Nonnull (^)(NSString * _Nonnull))url
 {
     return ^YKNetWorking *(NSString *url){
-//        NSString *urlStr;
         
         NSString *utf8Url = [url stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet characterSetWithCharactersInString:@"`#%^{}\"[]|\\<> "].invertedSet];
-//
-//        if ([url hasPrefix:@"http://"] || [url hasPrefix:@"https://"]) {
-//            self.urlStr = utf8Url;
-//            return self;
-//        }
+        
         self.urlStr = utf8Url;
         
         return self;
@@ -114,7 +109,7 @@
         [[self.manager dataTaskWithHTTPMethod:self.methodStr URLString:self.urlStr parameters:self.param headers:nil uploadProgress:^(NSProgress * _Nonnull uploadProgress) {
             
         } downloadProgress:^(NSProgress * _Nonnull downloadProgress) {
-            
+            NSLog(@"🔥:%f",downloadProgress.fractionCompleted);
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             NSString *result = [[NSString alloc]initWithData:responseObject encoding:NSUTF8StringEncoding];
             [subscriber sendNext:result];

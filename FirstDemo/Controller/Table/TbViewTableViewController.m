@@ -9,6 +9,8 @@
 
 
 #import "CTableViewController.h"
+#import <SocketRocket/SocketRocket.h>
+
 
 #define XMGTextFont [UIFont systemFontSize:14];
 @interface TbViewTableViewController ()<SendMessageControllerDeleage>
@@ -34,6 +36,7 @@
 //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 //        MLog(@"延时操作");
 //    });
+//    LOG_ERR(@"123");
     
 }
 -(void)refleshdata{
