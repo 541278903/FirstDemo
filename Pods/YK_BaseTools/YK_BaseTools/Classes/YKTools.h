@@ -17,5 +17,6 @@
 
 #import "YKRecordUtil.h"
 #import "YKAudioManager.h"
+#import "YKSocket.h"
 
 #endif /* YKTools_h */

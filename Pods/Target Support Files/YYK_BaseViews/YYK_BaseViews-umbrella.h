@@ -16,6 +16,7 @@
 #import "UIResponder+YYK.h"
 #import "UIView+YYK.h"
 #import "YKAlertCenter.h"
+#import "YKAlertView.h"
 #import "YKBaseClass.h"
 #import "YYKObject.h"
 #import "YYKView.h"

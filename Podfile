@@ -1,5 +1,5 @@
 
-source 'https://github.com/541278903/YKSpec.git'
+source 'https://gitee.com/Edwrard/YKSpec.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
 target 'FirstDemo' do
@@ -21,7 +21,7 @@ target 'FirstDemo' do
   pod 'LazyScroll'
   pod 'SDWebImage'
   pod 'YYK_BaseViews'
- pod 'YK_BaseTools'
- pod 'WoodPeckeriOS', :configurations => ['Debug']
- pod 'LookinServer', :configurations => ['Debug']
+  pod 'YK_BaseTools'
+  pod 'WoodPeckeriOS', :configurations => ['Debug']
+  pod 'LookinServer', :configurations => ['Debug']
 end
