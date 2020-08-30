@@ -25,7 +25,7 @@
     IQKeyboardManager *keyboardManager = [IQKeyboardManager sharedManager];
     keyboardManager.enable = YES;
     keyboardManager.shouldResignOnTouchOutside = YES;
-//    [[MQManager GetInstance] GetMsgWith:MQKeys];
+    [[MQManager GetInstance] GetMsgWith:MQKeys];
     [[NetAsk GetInstance] IsNetWorking];
     [self tuee];
     UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];

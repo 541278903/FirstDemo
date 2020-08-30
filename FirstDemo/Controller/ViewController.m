@@ -9,6 +9,7 @@
 
 //#import "ViewController.h"
 //#import "PrefixHeader.pch"
+#import <YK_BaseTools/YKNetWorking.h>
 
 #define myurl @"http://y2k8lcqgv7.52http.net/TServer.asmx/GetAllData"
 #define testurl @"http://localhost:8181/login"
@@ -41,11 +42,11 @@
 //    MLog(@"打印了子控件%@",self.view.subviews);ååå
 //    self.navigationController.bac
 //    UIImage *image = [UIImage imageNamed:@"1"];
-    NSString *a = @"caefaefawegawe";
-    NSData *data = [a dataUsingEncoding:NSUTF8StringEncoding];
-    [[NetAsk GetInstance]PUT:@"http://localhost:8080/fafa" parameters:@{@"g":data,@"name":@"c",@"age":@"18h"} isXML:NO resultcom:^(NSString * _Nonnull bl) {
-        MLog(@"%@",data);
-        MLog(@"%@",bl);
+    YKNetWorking *netWorking = [[YKNetWorking alloc]init];
+    @weakify(self);
+    [netWorking.post(@"http://106.55.12.108/TServer.asmx/CheckUser").params(@{@"count":@"root",@"pass":@"root"}).executeSignal subscribeNext:^(id  _Nullable x) {
+        @strongify(self);
+        NSLog(@"%@",x);
     }];
 }
 
