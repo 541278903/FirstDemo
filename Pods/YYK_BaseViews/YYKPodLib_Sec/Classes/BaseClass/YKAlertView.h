@@ -18,6 +18,8 @@ typedef NS_ENUM(NSUInteger, AlertShowType) {
 
 @interface YKAlertView : UIView
 
+@property(nonatomic,assign) BOOL isGrayBackground;
+
 - (instancetype)initViewController:(UIViewController *)viewController showType:(AlertShowType)showType;
 
 -(void)addViewinMainView:(UIView *) view;

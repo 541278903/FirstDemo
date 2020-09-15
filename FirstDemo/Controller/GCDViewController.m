@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    -(void)asyncconcurrent{
-    [self asyncconcurrent];
+//    [self asyncconcurrent];
 //    [self Do];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = UIColor.whiteColor;
@@ -34,7 +34,7 @@
 //    开启线程的条件，函数是异步函数，队列不在主队列中
 //    同步函数无论在任何队列中  1、不开启线程2、串行执行
 //    在主队列中无论同步还是异步都是 1、不开启线程2、串行执行
-//    [self asyncconcurrent];
+    [self asyncconcurrent];
     
 }
 -(void)onceAndafter{
@@ -52,24 +52,38 @@
     dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
     MLog(@"-start-");
     
-    dispatch_apply(220, queue, ^(size_t index) {
+    dispatch_apply(20, queue, ^(size_t index) {
         [self Do];
     });
     
-    dispatch_apply(220, queue, ^(size_t index) {
+    dispatch_apply(20, queue, ^(size_t index) {
         [self Do];
     });
     
-    dispatch_apply(220, queue, ^(size_t index) {
+    dispatch_apply(20, queue, ^(size_t index) {
         [self Do];
     });
     
-    dispatch_apply(220, queue, ^(size_t index) {
+    dispatch_apply(20, queue, ^(size_t index) {
         [self Do];
         
     });
-//
-    dispatch_apply(220, queue, ^(size_t index) {
+    dispatch_apply(20, queue, ^(size_t index) {
+        [self Do];
+    });
+    dispatch_apply(20, queue, ^(size_t index) {
+        [self Do];
+    });
+    dispatch_apply(20, queue, ^(size_t index) {
+        [self Do];
+    });
+    dispatch_apply(20, queue, ^(size_t index) {
+        [self Do];
+    });
+    dispatch_apply(20, queue, ^(size_t index) {
+        [self Do];
+    });
+    dispatch_apply(20, queue, ^(size_t index) {
         [self Do];
     });
 //
@@ -90,7 +104,7 @@
 {
     @weakify(self);
     
-    [[NetAsk GetInstance]GET:@"http://106.55.12.108:1208/TServer.asmx/TestlockAsync" parameters:nil isXML:YES resultcom:^(NSDictionary * _Nonnull bl) {
+    [[NetAsk GetInstance]GET:@"http://106.55.12.108/TServer.asmx/TestlockAsync" parameters:nil isXML:YES resultcom:^(NSDictionary * _Nonnull bl) {
         @strongify(self);
 //        NSDictionary *b = NSDictionary dic
 //        NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:[bl[@"Data"] dataUsingEncoding:NSUTF8StringEncoding] options:0 error:nil];

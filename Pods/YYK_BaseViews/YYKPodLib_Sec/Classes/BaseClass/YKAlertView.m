@@ -10,6 +10,8 @@
 #import <ReactiveObjC/ReactiveObjC.h>
 #import <Masonry/Masonry.h>
 #import "UIDevice+YYK.h"
+
+#define IS_IPHONE_X [UIDevice isIPhoneXSeries]
 @interface YKAlertView()
 
 @property(nonatomic,weak) UIViewController *viewController;
@@ -28,13 +30,66 @@
         [self setup];
         self.viewController = viewController;
         self.showType = showType;
+        self.bgView.clipsToBounds = YES;
+        @weakify(self);
+        UISwipeGestureRecognizer *swip;
+        if(self.showType == AlertShowTypeFromTop)
+        {
+
+            swip = [[UISwipeGestureRecognizer alloc]init];
+            swip.direction = UISwipeGestureRecognizerDirectionUp;
+        }else if (self.showType == AlertShowTypeFromBottom)
+        {
+
+            swip = [[UISwipeGestureRecognizer alloc]init];
+            swip.direction = UISwipeGestureRecognizerDirectionDown;
+        }else{
+
+            swip = [[UISwipeGestureRecognizer alloc]init];
+            swip.direction = UISwipeGestureRecognizerDirectionLeft;
+        }
+        [[swip rac_gestureSignal]subscribeNext:^(__kindof UIGestureRecognizer * _Nullable x) {
+            @strongify(self);
+            [self dissView];
+        }];
+        [self.mainView addGestureRecognizer:swip];
     }
     return self;
 }
 -(void)setup{
     
 }
+-(void)tap:(UISwipeGestureRecognizer *)swip
+{
+    CGFloat cgx;
+    CGFloat cgy;
+    if(self.showType == AlertShowTypeFromBottom)
+    {
+        cgx = 15;
+        cgy = UIScreen.mainScreen.bounds.size.height;
+    }else if (self.showType == AlertShowTypeFromTop)
+    {
+        cgx = 15;
+        cgy = 0 - UIScreen.mainScreen.bounds.size.height;
+    }else
+    {
+        cgy = IS_IPHONE_X ? 54 :30;
+        cgx = 0 - UIScreen.mainScreen.bounds.size.width;
+    }
+    [UIView animateWithDuration:0.1 animations:^{
+        self.mainView.frame = CGRectMake(cgx,
+                                            cgy,
+                                            CGRectGetWidth(self.mainView.frame),
+                                            CGRectGetHeight(self.mainView.frame));
+    } completion:^(BOOL finished) {
 
+        if(finished)
+        {
+            [self.bgView removeFromSuperview];
+
+        }
+    }];
+}
 -(void)showView{
     UIWindow *window = [[UIApplication sharedApplication]keyWindow];
     UIViewController *vc = window.rootViewController;
@@ -42,50 +97,101 @@
       vc=vc.presentedViewController;
     }
     [vc.view addSubview:self.bgView];
+    CGFloat x;
+    CGFloat y;
+    if (self.showType == AlertShowTypeFromBottom) {
+        x = 15;
+        y = UIScreen.mainScreen.bounds.size.height - CGRectGetHeight(self.mainView.frame) - (IS_IPHONE_X ? 34 : 15);
+        
+    }else if (self.showType == AlertShowTypeFromTop){
+        x = 15;
+        y = IS_IPHONE_X ? 54 :30;
+    }else if(self.showType == AlertShowTypeFromLeft)
+    {
+        x = 0;
+        y = IS_IPHONE_X ? 54 :30;
+    }
     [UIView animateWithDuration:0.2 animations:^{
-        self.bgView.frame = CGRectMake(0,
-                                            UIScreen.mainScreen.bounds.size.height - CGRectGetHeight(self.bgView.frame),
-                                            CGRectGetWidth(self.bgView.frame),
-                                            CGRectGetHeight(self.bgView.frame));
+        self.mainView.frame = CGRectMake(x,
+                                            y,
+                                            CGRectGetWidth(self.mainView.frame),
+                                            CGRectGetHeight(self.mainView.frame));
     }];
     
 }
 -(void)dissView{
-    CGFloat changeH;
-    CGFloat changeW;
+    CGFloat cgx;
+    CGFloat cgy;
     if(self.showType == AlertShowTypeFromBottom)
     {
-        changeH = UIScreen.mainScreen.bounds.size.height;
-        changeW = 0;
+        cgx = 15;
+        cgy = UIScreen.mainScreen.bounds.size.height;
     }else if (self.showType == AlertShowTypeFromTop)
     {
-        changeH = 0 - UIScreen.mainScreen.bounds.size.height;
-        changeW = 0;
-    }else if (self.showType == AlertShowTypeFromLeft)
+        cgx = 15;
+        cgy = 0 - UIScreen.mainScreen.bounds.size.height;
+    }else
     {
-        changeH = 0;
-        changeW = 0 - UIScreen.mainScreen.bounds.size.width;
+        cgy = IS_IPHONE_X ? 54 :30;
+        cgx = 0 - UIScreen.mainScreen.bounds.size.width;
     }
     [UIView animateWithDuration:0.1 animations:^{
-        self.bgView.frame = CGRectMake(changeW,
-                                            changeH,
-                                            CGRectGetWidth(self.bgView.frame),
-                                            CGRectGetHeight(self.bgView.frame));
+        self.mainView.frame = CGRectMake(cgx,
+                                            cgy,
+                                            CGRectGetWidth(self.mainView.frame),
+                                            CGRectGetHeight(self.mainView.frame));
     } completion:^(BOOL finished) {
-        
+
         if(finished)
         {
             [self.bgView removeFromSuperview];
+
         }
     }];
+
 }
 - (void)addViewinMainView:(UIView *)view
 {
     [self.mainView addSubview:view];
-    [view mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.left.mas_equalTo(10);
-        make.right.bottom.mas_equalTo(-10);
-    }];
+    if(self.showType == AlertShowTypeFromBottom)
+    {
+        [self.mainView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.bottom.mas_equalTo(self.bgView.mas_bottom).offset(-(IS_IPHONE_X ? 34 :15));
+            make.left.mas_equalTo(self.bgView.mas_left).offset(15);
+            make.right.mas_equalTo(self.bgView.mas_right).offset(-15);
+        }];
+        [view mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.left.mas_equalTo(10);
+//            make.height.mas_equalTo(200);
+            make.right.bottom.mas_equalTo(-10);
+        }];
+    }else if(self.showType == AlertShowTypeFromTop)
+    {
+        [self.mainView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(self.bgView.mas_top).offset(IS_IPHONE_X ? 54 :30);
+            make.left.mas_equalTo(self.bgView.mas_left).offset(15);
+            make.right.mas_equalTo(self.bgView.mas_right).offset(-15);
+        }];
+        [view mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.left.mas_equalTo(10);
+//            make.height.mas_equalTo(200);
+            make.right.bottom.mas_equalTo(-10);
+        }];
+    }else
+    {
+        [self.mainView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.top.mas_equalTo(self.bgView.mas_top).offset(IS_IPHONE_X ? 54 :30);
+            make.left.mas_equalTo(self.bgView.mas_left).offset(0);
+            make.bottom.mas_equalTo(self.bgView.mas_bottom).offset(-(IS_IPHONE_X ? 34 :15));
+        }];
+        
+        [view mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.left.mas_equalTo(10);
+            make.width.mas_equalTo(200);
+            make.right.bottom.mas_equalTo(-10);
+        }];
+    }
+    [self layoutSubviews];
 }
 
 
@@ -94,110 +200,96 @@
 {
     if(!_bgView)
     {
-        UIView *view = [[UIView alloc]init];
         CGFloat screenW = UIScreen.mainScreen.bounds.size.width;
         CGFloat screenH = UIScreen.mainScreen.bounds.size.height;
-        CGFloat y = screenH;
-        CGFloat x = screenW;
-        if(self.showType == AlertShowTypeFromTop)
-        {
-            y = -screenH;
-            x = 0;
-        }else if (self.showType == AlertShowTypeFromBottom)
-        {
-            y = screenH;
-            x = 0;
-        }else if (self.showType == AlertShowTypeFromLeft)
-        {
-            //TODO:新增右边弹出
-            x = -screenW;
-            y = 0;
-        }
-        CGRect frame = CGRectMake(x,y,screenW,screenH);
-        view = [[UIView alloc] initWithFrame:frame];
-        view.backgroundColor = UIColor.clearColor;
-        if(self.showType == AlertShowTypeFromLeft)
-        {
-            view.backgroundColor = UIColor.grayColor;
-            view.alpha = 0.8;
-        }
-        @weakify(self);
-        CGFloat changeH;
-        CGFloat changeW;
+        UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, screenW, screenH)];
+        CGFloat cgx;
+        CGFloat cgy;
         if(self.showType == AlertShowTypeFromBottom)
         {
-            changeH = UIScreen.mainScreen.bounds.size.height;
-            changeW = 0;
+            cgx = 15;
+            cgy = screenH;
         }else if (self.showType == AlertShowTypeFromTop)
         {
-            changeH = 0 - UIScreen.mainScreen.bounds.size.height;
-            changeW = 0;
-        }else if (self.showType == AlertShowTypeFromLeft)
+            cgx = 15;
+            cgy = 0 - screenH;
+        }else
         {
-            changeH = 0;
-            changeW = 0 - UIScreen.mainScreen.bounds.size.width;
+            cgy = IS_IPHONE_X ? 54 :30;
+            cgx = 0 - screenW;
         }
+
+        view.backgroundColor = UIColor.grayColor;
+        view.alpha = 0.8;
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]init];
+        @weakify(self);
         [tap.rac_gestureSignal subscribeNext:^(__kindof UIGestureRecognizer * _Nullable x) {
             @strongify(self);
             [UIView animateWithDuration:0.1 animations:^{
-                view.frame = CGRectMake(changeW,
-                                                    changeH,
-                                                    CGRectGetWidth(view.frame),
-                                                    CGRectGetHeight(view.frame));
+                self.mainView.frame = CGRectMake(cgx,
+                                                    cgy,
+                                                    CGRectGetWidth(self.mainView.frame),
+                                                    CGRectGetHeight(self.mainView.frame));
             } completion:^(BOOL finished) {
-                
+
                 if(finished)
                 {
                     [view removeFromSuperview];
-                    
+
                 }
             }];
         }];
         view.gestureRecognizers = nil;
         [view addGestureRecognizer:tap];
         [view addSubview:self.mainView];
-        [self.mainView mas_makeConstraints:^(MASConstraintMaker *make) {
-            if(self.showType == AlertShowTypeFromTop)
-            {
-                make.top.mas_equalTo([UIDevice isIPhoneXSeries]?44:25);
-            }else if (self.showType == AlertShowTypeFromBottom)
-            {
-                make.bottom.mas_equalTo([UIDevice isIPhoneXSeries]?-34:-10);
-            }
-            make.left.mas_equalTo(15);
-            make.right.mas_equalTo(-15);
-//            make.height.mas_equalTo(50);
-        }];
-        if(self.showType == AlertShowTypeFromLeft)
-        {
-            [self.mainView mas_remakeConstraints:^(MASConstraintMaker *make) {
-                make.left.mas_equalTo(0);
-                make.top.mas_equalTo([UIDevice isIPhoneXSeries]?44:25);
-                make.bottom.mas_equalTo([UIDevice isIPhoneXSeries]?-34:-10);
-                make.width.mas_equalTo(view.mas_width).multipliedBy(0.6);
-            }];
-        }
+        
         
         _bgView = view;
     }
     return _bgView;
 }
-
+//
 - (UIView *)mainView
 {
     if(!_mainView)
     {
-        UIView *view = [[UIView alloc]init];
+        
+        CGFloat screenW = UIScreen.mainScreen.bounds.size.width;
+        CGFloat screenH = UIScreen.mainScreen.bounds.size.height;
+        CGFloat x;
+        CGFloat y;
+        CGFloat w;
+        CGFloat h;
+        if(self.showType == AlertShowTypeFromBottom)
+        {
+            x = 15;
+            y = screenH;
+            w = screenW-30;
+            h = 100;
+        }else if (self.showType == AlertShowTypeFromTop)
+        {
+            x = 15;
+            y = 0 - screenH;
+            w = screenW-30;
+            h = 100;
+        }else
+        {
+            y = IS_IPHONE_X ? 54 :30;
+            x = 0 - screenW;
+            w = 300;
+            h = screenH-(IS_IPHONE_X ? 54 :30);
+        }
+        UIView *view = [[UIView alloc]initWithFrame:CGRectMake(x, y, w, h)];
         view.backgroundColor = UIColor.whiteColor;
         view.userInteractionEnabled = YES;
-        view.layer.cornerRadius = 8;
+        view.layer.cornerRadius = self.showType == AlertShowTypeFromLeft?0: 8;
+        view.alpha = 1;
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]init];
         [tap.rac_gestureSignal subscribeNext:^(__kindof UIGestureRecognizer * _Nullable x) {
-            
         }];
         view.gestureRecognizers = nil;
         [view addGestureRecognizer:tap];
+        
         _mainView = view;
     }
     return _mainView;

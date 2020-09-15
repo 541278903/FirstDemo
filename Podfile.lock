@@ -52,7 +52,7 @@ PODS:
     - ReactiveObjC
     - RMQClient
     - SocketRocket
-  - YYK_BaseViews (1.0.1):
+  - YYK_BaseViews (1.0.3):
     - Masonry
     - MJExtension
     - MJRefresh
@@ -124,7 +124,7 @@ SPEC CHECKSUMS:
   TMUtils: 8af8e4695b6e4086d0545ecd7cd025556515ab42
   WoodPeckeriOS: 20a14e389721ec317d99512b98885fce7076a05c
   YK_BaseTools: bd77bbf13681aedbcde423f00a4a2f4d513d2906
-  YYK_BaseViews: efb8767a765eedd4496030acd0ef77e53b87f6ec
+  YYK_BaseViews: 101b2687595ff6d182172e2596d21cae1252a87d
 
 PODFILE CHECKSUM: 221a091fbd10e698d23f900f9da31874fa14211f
 
