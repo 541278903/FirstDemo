@@ -10,15 +10,17 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NS_ENUM(NSUInteger, AlertShowType) {
-    AlertShowTypeFromBottom = 0,
-    AlertShowTypeFromTop,
-    AlertShowTypeFromLeft,
+typedef NS_ENUM(NSUInteger, YKAlertShowType) {
+    YKAlertShowTypeFromBottom = 0,
+    YKAlertShowTypeFromTop,
+    YKAlertShowTypeFromLeft,
 };
 
 @interface YKAlertView : UIView
 
-- (instancetype)initViewController:(UIViewController *)viewController showType:(AlertShowType)showType;
+@property(nonatomic,assign) BOOL isGrayBackground;
+
+- (instancetype)initViewController:(UIViewController *)viewController showType:(YKAlertShowType)showType;
 
 -(void)addViewinMainView:(UIView *) view;
 

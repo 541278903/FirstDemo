@@ -40,9 +40,9 @@ PODS:
   - RMQClient (0.10.0):
     - CocoaAsyncSocket (~> 7.4.0)
     - JKVValue
-  - SDWebImage (5.9.0):
-    - SDWebImage/Core (= 5.9.0)
-  - SDWebImage/Core (5.9.0)
+  - SDWebImage (5.9.1):
+    - SDWebImage/Core (= 5.9.1)
+  - SDWebImage/Core (5.9.1)
   - SocketRocket (0.5.1)
   - TMUtils (1.0.1)
   - WoodPeckeriOS (1.2.8)
@@ -52,11 +52,58 @@ PODS:
     - ReactiveObjC
     - RMQClient
     - SocketRocket
-  - YYK_BaseViews (1.0.1):
+  - YYK_BaseViews (1.0.9):
     - Masonry
     - MJExtension
     - MJRefresh
     - ReactiveObjC
+    - SDWebImage
+    - YYK_BaseViews/BaseClass (= 1.0.9)
+    - YYK_BaseViews/Exection (= 1.0.9)
+    - YYK_BaseViews/SdView (= 1.0.9)
+  - YYK_BaseViews/BaseClass (1.0.9):
+    - Masonry
+    - MJExtension
+    - MJRefresh
+    - ReactiveObjC
+    - SDWebImage
+  - YYK_BaseViews/Exection (1.0.9):
+    - Masonry
+    - MJExtension
+    - MJRefresh
+    - ReactiveObjC
+    - SDWebImage
+    - YYK_BaseViews/Exection/Third (= 1.0.9)
+    - YYK_BaseViews/Exection/YYKNSObject (= 1.0.9)
+    - YYK_BaseViews/Exection/YYKUIK (= 1.0.9)
+  - YYK_BaseViews/Exection/Third (1.0.9):
+    - Masonry
+    - MJExtension
+    - MJRefresh
+    - ReactiveObjC
+    - SDWebImage
+    - YYK_BaseViews/BaseClass
+  - YYK_BaseViews/Exection/YYKNSObject (1.0.9):
+    - Masonry
+    - MJExtension
+    - MJRefresh
+    - ReactiveObjC
+    - SDWebImage
+    - YYK_BaseViews/BaseClass
+  - YYK_BaseViews/Exection/YYKUIK (1.0.9):
+    - Masonry
+    - MJExtension
+    - MJRefresh
+    - ReactiveObjC
+    - SDWebImage
+    - YYK_BaseViews/BaseClass
+  - YYK_BaseViews/SdView (1.0.9):
+    - Masonry
+    - MJExtension
+    - MJRefresh
+    - ReactiveObjC
+    - SDWebImage
+    - YYK_BaseViews/BaseClass
 
 DEPENDENCIES:
   - AFNetworking
@@ -119,12 +166,12 @@ SPEC CHECKSUMS:
   PPBadgeView: b50a223638970fd0781e8753250385864b6dd2fe
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   RMQClient: e9bfea2d08f151b6b12df82ad115c78bd8de2106
-  SDWebImage: 62ae4a18473520c67b79e9724c31a63599cc9423
+  SDWebImage: a990c053fff71e388a10f3357edb0be17929c9c5
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   TMUtils: 8af8e4695b6e4086d0545ecd7cd025556515ab42
   WoodPeckeriOS: 20a14e389721ec317d99512b98885fce7076a05c
   YK_BaseTools: bd77bbf13681aedbcde423f00a4a2f4d513d2906
-  YYK_BaseViews: efb8767a765eedd4496030acd0ef77e53b87f6ec
+  YYK_BaseViews: 2305ba939574346feb31e549bddb8df9bcdccbe3
 
 PODFILE CHECKSUM: 221a091fbd10e698d23f900f9da31874fa14211f
 

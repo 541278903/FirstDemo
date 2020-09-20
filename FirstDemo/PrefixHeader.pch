@@ -42,6 +42,7 @@
 #import "TextViewController.h"
 #import "YKAlertViewController.h"
 #import "DetailViewController.h"
+#import "YKMp3ViewController.h"
 
 /**cell and viewbymyself*/
 #import "TbCell.h"

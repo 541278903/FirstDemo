@@ -10,6 +10,7 @@
 
 #import "AppDelegate.h"
 #import <UserNotifications/UserNotifications.h>
+#import "YKBaseNavigationController.h"
 
 
 @interface AppDelegate ()<UNUserNotificationCenterDelegate>
@@ -49,7 +50,7 @@
 //创建tablecontroller试图控制器
 -(void)tuee{
     TbViewTableViewController *tbview = [[TbViewTableViewController alloc]init];
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:tbview];
+    YKBaseNavigationController *nav = [[YKBaseNavigationController alloc]initWithRootViewController:tbview];
 //    ScrollerController *sv = [[ScrollerController alloc]init];
     self.window.rootViewController = nav;
 }

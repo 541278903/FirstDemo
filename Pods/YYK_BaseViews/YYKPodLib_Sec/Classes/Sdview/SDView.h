@@ -14,5 +14,9 @@
 #import "YKCollectionView.h"
 
 #import "YKCollection.h"
+
+#import "YKAlertView.h"
+
+#import "YKBannerView.h"
 #endif /* Base_h */
 

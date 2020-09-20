@@ -69,9 +69,18 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     AllController *con = self.allcon[indexPath.row];
-    
-    [self.navigationController pushViewController:con.ConView animated:YES];
+
+
+    CATransition* transition = [CATransition animation];
+    transition.duration = 0.4;
+    transition.type = kCATransitionMoveIn;
+    transition.subtype = kCATransitionFromTop;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+    [self.navigationController.view.layer addAnimation:transition forKey:kCATransition];
+    [self.navigationController pushViewController:con.ConView animated:NO];
+//    [self.navigationController pushViewController:con.ConView animated:YES];
 }
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //每一次创建的控制器都是只有一个，不会重复创建(此处不会重复创建是指上下拖动的时候不会重复创建 )
@@ -107,18 +116,19 @@
     if(!_allcon){
         NSMutableArray *all = [[NSMutableArray alloc]init];
         
+//        AllController *sixteen = [[AllController alloc]initWithName:@"" Con:[[YKAlertViewController alloc] init]];
+//        [all addObject:sixteen];
+        
+        AllController *sixteen = [[AllController alloc]initWithName:@"音视频" Con:[[YKMp3ViewController alloc] init]];
+        [all addObject:sixteen];
         AllController *fifteen = [[AllController alloc]initWithName:@"自定义弹出Con" Con:[[YKAlertViewController alloc] init]];
         [all addObject:fifteen];
-        
         AllController *forteen = [[AllController alloc]initWithName:@"数据显示" Con:[[TextViewController alloc]init]];
         [all addObject:forteen];
-        
         AllController *tirteen = [[AllController alloc]initWithName:@"CollectionView" Con:[[TestCollectionView alloc]init]];
         [all addObject:tirteen];
-        
         AllController *lastcon = [[AllController alloc]initWithName:@"数据库" Con:[[CTableViewController alloc]init]];
         [all addObject:lastcon];
-        
         AllController *setincon = [[AllController alloc]initWithName:@"数据持久化" Con:[[UserDefaultCon alloc]init]];
         [all addObject:setincon];
         AllController *twelcon = [[AllController alloc]initWithName:@"图层与动画" Con:[[LayerAndUIView alloc] init ]];
