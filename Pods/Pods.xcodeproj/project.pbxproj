@@ -895,117 +895,117 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0953BA2F5D2974DC126B36C82F289D3C /* PBXContainerItemProxy */ = {
+		01BB4FF7D4EA9AD64AA24B8B091D1396 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8592E0E389D40AC17881400ADC67ABC0;
-			remoteInfo = FMDB;
+			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
+			remoteInfo = Masonry;
 		};
-		0A4F8CBA154E65F8E90A23CD7B02C11C /* PBXContainerItemProxy */ = {
+		079DEC2B292B5E458E76A0ED10F40081 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3847153A6E5EEFB86565BA840768F429;
 			remoteInfo = SDWebImage;
 		};
-		10F02637C1880B1315CC2284A230F152 /* PBXContainerItemProxy */ = {
+		0D4AA4B417DFD8C6162CE42FC3A9AD04 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8592E0E389D40AC17881400ADC67ABC0;
 			remoteInfo = FMDB;
 		};
-		1D13DEA2FBE7E84381147ED357FDAF84 /* PBXContainerItemProxy */ = {
+		16DABFFB3103834C4FE76E98AE10605D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0130B3724283586C0E9D2A112D4F2AA1;
-			remoteInfo = AFNetworking;
+			remoteGlobalIDString = 9BA99EA678644AC23346F73D0DD3DCEB;
+			remoteInfo = PPBadgeView;
 		};
-		1ED786DE7DC9AEB38DD6BCE72EA2017A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0130B3724283586C0E9D2A112D4F2AA1;
-			remoteInfo = AFNetworking;
-		};
-		2157C4D6C91DFC0D264A06F7A583D058 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8DC930BB3CA83896E6936E285BBA90B9;
-			remoteInfo = "GDataXML-HTML";
-		};
-		23AD28F641413C128BFBEC623B87497C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6868056D761E163D10FDAF8CF1C4D9B8;
-			remoteInfo = MJRefresh;
-		};
-		286B4C3AD3DBE4794C9769AE3435990D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 693F68B0ECDCFF738C4CC7B5E5243743;
-			remoteInfo = JKVValue;
-		};
-		29CD2D1A22C023800B019A7F3633B95F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0620493F3B6F611088C7488B6C80FEA2;
-			remoteInfo = LazyScroll;
-		};
-		2AE379C31A04A21FDD66567817EE5664 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 000E2E1CEA5AF96DEBC2F5498D244C6E;
-			remoteInfo = TMUtils;
-		};
-		352C4817B2FC467288F549C8E77F4105 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D015D7C0C1EE9DDC863F493A9551FFE3;
-			remoteInfo = RMQClient;
-		};
-		353796AFAFA1BD5373874F101777AA10 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4D3BA58D0583DF37575CACAB3DDADC85;
-			remoteInfo = MJExtension;
-		};
-		3619F33E96837F11B431FB258473383E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4D3BA58D0583DF37575CACAB3DDADC85;
-			remoteInfo = MJExtension;
-		};
-		4BF39C9F1B68B5EB245EBB13FB4568CD /* PBXContainerItemProxy */ = {
+		17C8B88C66972C441F16B11C2F58EE23 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1E15F13BBB81310B9597BFC22320D4E5;
 			remoteInfo = YK_BaseTools;
 		};
-		58D77226146CFCB5469E1975EB8FA055 /* PBXContainerItemProxy */ = {
+		2157C4D6C91DFC0D264A06F7A583D058 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FBA456CB50E371584C11231929A0971E;
-			remoteInfo = IQKeyboardManager;
+			remoteGlobalIDString = D015D7C0C1EE9DDC863F493A9551FFE3;
+			remoteInfo = RMQClient;
 		};
-		68C4F085E491AB92C73AA4DB109A23CA /* PBXContainerItemProxy */ = {
+		3627B5B3AC8ED2D9E9410DC7EA43976A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0130B3724283586C0E9D2A112D4F2AA1;
+			remoteInfo = AFNetworking;
+		};
+		45FA3F31A7B3601807DCAAA6FFDD9DEC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 693F68B0ECDCFF738C4CC7B5E5243743;
 			remoteInfo = JKVValue;
+		};
+		4A53AB0EC3476B5BB3EB8AD78AE21520 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D3BA58D0583DF37575CACAB3DDADC85;
+			remoteInfo = MJExtension;
+		};
+		4C3F5A2389C5171A1C0F9DC7E735DB03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC930BB3CA83896E6936E285BBA90B9;
+			remoteInfo = "GDataXML-HTML";
+		};
+		539F025CDC569F015C7025F2423E4A53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82B0A41D3031FF27D78E17B0A9A46FB0;
+			remoteInfo = MBProgressHUD;
+		};
+		353796AFAFA1BD5373874F101777AA10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8592E0E389D40AC17881400ADC67ABC0;
+			remoteInfo = FMDB;
+		};
+		3619F33E96837F11B431FB258473383E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0130B3724283586C0E9D2A112D4F2AA1;
+			remoteInfo = AFNetworking;
+		};
+		67A096F39603EFFAC1278CE44D4B36FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
+			remoteInfo = Masonry;
+		};
+		69E1B9CC2B88B6796E652A24A5303837 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6083682834ABE0AE7BD1CBF06CADD036;
+			remoteInfo = CocoaAsyncSocket;
+		};
+		72A3938468B4D438BE16D8A47B8ED7B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6083682834ABE0AE7BD1CBF06CADD036;
+			remoteInfo = CocoaAsyncSocket;
 		};
 		724F2AB11CC970505613A682B2DD6397 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1018,36 +1018,36 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1150BA9E63B3AAABFCA7335BD73FD9FD;
-			remoteInfo = WoodPeckeriOS;
-		};
-		80E6A07AAF261FA315D5736C5D489806 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
 			remoteGlobalIDString = 438B238ACC7DF1178D1BCE1A31983146;
 			remoteInfo = ReactiveObjC;
 		};
-		815BD9475C4ABEB9D95D9E66B702B473 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6083682834ABE0AE7BD1CBF06CADD036;
-			remoteInfo = CocoaAsyncSocket;
-		};
-		815F736B4D91C6DF7D8AE2A005DCE939 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ABD0BEB997F424C11EE21A4E091425E4;
-			remoteInfo = GTMBase64;
-		};
-		93FF9E9752A68D756C4E6BAC617DE4A5 /* PBXContainerItemProxy */ = {
+		788156E6C1E660110597CE083E7E5F66 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 000E2E1CEA5AF96DEBC2F5498D244C6E;
 			remoteInfo = TMUtils;
+		};
+		79F125FFBBE666677448449B2F98DCFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92973FFF73DE59F41738C0316DE4387F;
+			remoteInfo = YYK_BaseViews;
+		};
+		883DBA802ED8AE0DC2A3F63FFA6A8E7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1948D0B63D2CF6A48E18B0B292BC6091;
+			remoteInfo = SocketRocket;
+		};
+		921CA55F39DC0B1D265C1F45C8C4ADFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 438B238ACC7DF1178D1BCE1A31983146;
+			remoteInfo = ReactiveObjC;
 		};
 		9DEFDBA7403C43F1088A29B6792019AC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1056,42 +1056,42 @@
 			remoteGlobalIDString = 438B238ACC7DF1178D1BCE1A31983146;
 			remoteInfo = ReactiveObjC;
 		};
-		A020AE62D4E679383B1B0C965CC63433 /* PBXContainerItemProxy */ = {
+		AC62698FAA8455FCC0E4DA3F1614CFA1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 82B0A41D3031FF27D78E17B0A9A46FB0;
-			remoteInfo = MBProgressHUD;
+			remoteGlobalIDString = 438B238ACC7DF1178D1BCE1A31983146;
+			remoteInfo = ReactiveObjC;
 		};
-		A3D9BACBF18973D11C82A759A221B1B7 /* PBXContainerItemProxy */ = {
+		B60CCA74F2C7889A0124B25FFF0DD722 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
-			remoteInfo = Masonry;
+			remoteGlobalIDString = 1150BA9E63B3AAABFCA7335BD73FD9FD;
+			remoteInfo = WoodPeckeriOS;
 		};
-		AC567253A95D206551CEA3C054827719 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1948D0B63D2CF6A48E18B0B292BC6091;
-			remoteInfo = SocketRocket;
-		};
-		BCE374D1A0FCEA021B50C1A76D208AB3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D015D7C0C1EE9DDC863F493A9551FFE3;
-			remoteInfo = RMQClient;
-		};
-		C6C04ECB137D4973FBAD70A01C75C3D6 /* PBXContainerItemProxy */ = {
+		C0789757214CFCA6588EB56A8C71415F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1948D0B63D2CF6A48E18B0B292BC6091;
 			remoteInfo = SocketRocket;
 		};
-		CEEF1C07F31872EBD0B95E3F69547B86 /* PBXContainerItemProxy */ = {
+		C9939F6F7202EBF34E0AE2B27A08740C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6868056D761E163D10FDAF8CF1C4D9B8;
+			remoteInfo = MJRefresh;
+		};
+		E14313806E098EECF42A0118365EC9B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6868056D761E163D10FDAF8CF1C4D9B8;
+			remoteInfo = MJRefresh;
+		};
+		E3FDA8BBBF0757C799F8D13FF5C43F02 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -1102,15 +1102,15 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9BA99EA678644AC23346F73D0DD3DCEB;
-			remoteInfo = PPBadgeView;
+			remoteGlobalIDString = FBA456CB50E371584C11231929A0971E;
+			remoteInfo = IQKeyboardManager;
 		};
-		E87A77C774C24DC674E8776DCFD157D3 /* PBXContainerItemProxy */ = {
+		F01A262D9B68F679D6EC06AB26DF260D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 92973FFF73DE59F41738C0316DE4387F;
-			remoteInfo = YYK_BaseViews;
+			remoteGlobalIDString = 000E2E1CEA5AF96DEBC2F5498D244C6E;
+			remoteInfo = TMUtils;
 		};
 		F0CFCF0C2B86E343E7D246FE9E228805 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1130,15 +1130,15 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6083682834ABE0AE7BD1CBF06CADD036;
-			remoteInfo = CocoaAsyncSocket;
+			remoteGlobalIDString = ABD0BEB997F424C11EE21A4E091425E4;
+			remoteInfo = GTMBase64;
 		};
-		F9952A944447156A750A0422F503CDAD /* PBXContainerItemProxy */ = {
+		FFA40AEB98A0977C86B9C4442F5FD99E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 438B238ACC7DF1178D1BCE1A31983146;
-			remoteInfo = ReactiveObjC;
+			remoteGlobalIDString = 693F68B0ECDCFF738C4CC7B5E5243743;
+			remoteInfo = JKVValue;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -2112,15 +2112,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0CC9A32EFD136206E5A425D9DF2A26EC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				21C53216FE8B1263D06B07103638CAB7 /* Foundation.framework in Frameworks */,
-				6378DE85D57692160BD3AE9786A6D25D /* TMUtils.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1AA3C16B4B3AB40CA74BDDADEF5C143A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2194,11 +2185,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46A26D60232713B37516B8E5EF90CA55 /* Frameworks */ = {
+		42EEB1516040507037638E034BBA4636 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF5E1555C50CBB03E93FF706A5219439 /* Foundation.framework in Frameworks */,
+				72BB75CC3FACDE295824FD705B280A2E /* AFNetworking.framework in Frameworks */,
+				78BB46993A5CC7107A1D5F4110F06ED0 /* AVFoundation.framework in Frameworks */,
+				9F44072F77B75F03C6442A9AD4E6BC2A /* FMDB.framework in Frameworks */,
+				B500DFF2D57AD1626E38FC8B837D2D46 /* Foundation.framework in Frameworks */,
+				BB707C7F29750D37483CD201D6C93789 /* Photos.framework in Frameworks */,
+				B1BDCA84ED2DE46725C1BE49EA22131B /* ReactiveObjC.framework in Frameworks */,
+				A3C6D4D49EE6A3C796FBD9E2C2EBFB72 /* RMQClient.framework in Frameworks */,
+				70625AB5CED4C2D9A1354C230F8E66BB /* Security.framework in Frameworks */,
+				EAEAAE2B152A8EFF36D5F06D3CFED5E7 /* SocketRocket.framework in Frameworks */,
+				9BEE87259B9E5C23C62A2D6373B27787 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FD1DB8C8CB52CA07B8C84BA75ED26B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				063261D728CFA590F35E66114C85BC64 /* AVFoundation.framework in Frameworks */,
+				D1FEDAE1C464053EC9886CA1AE4104FC /* Foundation.framework in Frameworks */,
+				F3EDC3CFF3DF45B2184539E46116EC8E /* Masonry.framework in Frameworks */,
+				8B2051CAE7593404A32ED18A1EA0E708 /* MJExtension.framework in Frameworks */,
+				BA8B641042515E1E90B82E80F6535FD2 /* MJRefresh.framework in Frameworks */,
+				AD9B8072F6B9FEA075EC4E5730EBAF3E /* Photos.framework in Frameworks */,
+				FBBEF0E8537DAA44F91F02B9CDE4BD00 /* ReactiveObjC.framework in Frameworks */,
+				AC8F0E84976BC5C14C2B29E57D0EA7F7 /* Security.framework in Frameworks */,
+				34FF7B7ED557342A11C5E30AB9999134 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2245,16 +2261,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		86378F970F652D16F6A4F96D763E46D2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4F1CCB40E6DC5424985070DB58D800A2 /* CocoaAsyncSocket.framework in Frameworks */,
-				ED2CC6CC33303C92125B0D0E9D4EFC86 /* Foundation.framework in Frameworks */,
-				0B772A89A15C3B34E80D66E3030FEE78 /* JKVValue.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8889C8AFAB37E060AD881B0E266AA3EC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2271,11 +2277,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		94B58F5BDD8AF6214F0AB1FC08277768 /* Frameworks */ = {
+		94D4CF2E192D37F6B29C218663176818 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				966AE0376A3D2B4AD8E1F2B42BB464B6 /* Foundation.framework in Frameworks */,
+				20425BC6BD3AFE54752F50839BAFA281 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2288,28 +2294,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C1DC70D953BA2625C2371DE87C143487 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1C6B54BA75A17198C96AD2F8A461B660 /* AFNetworking.framework in Frameworks */,
-				8B75B7C8B4BE72CAB6F8E184C19BB815 /* AVFoundation.framework in Frameworks */,
-				5A0FF0FE8AEE9B7C177A74F8FAA56B96 /* FMDB.framework in Frameworks */,
-				C1C686166004B737B5EFFA175B41C730 /* Foundation.framework in Frameworks */,
-				0F2CE726231ED258EE7C1AAA0ACE4A2B /* Photos.framework in Frameworks */,
-				9711B5FC69F1D420C871167D574EB0DF /* ReactiveObjC.framework in Frameworks */,
-				D17648B005A84A33BA6EEE47D875A53B /* RMQClient.framework in Frameworks */,
-				4E82503E66F842877841314EE2F8837C /* Security.framework in Frameworks */,
-				231998150A98651899879FA803FCCDBC /* SocketRocket.framework in Frameworks */,
-				BBDCB2B7AEE7D8D4DB585E52302D617D /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E3DFB7F06EC80553131DB5B0993D681C /* Frameworks */ = {
+		B621838E9985FDCBB44497A1B908552D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8FC29E832DDAB80383225B6835060BA1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7DF8F13D7FF0E6685C2FC60D022C928 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4A10906A5A31E359651468A15C24305 /* CocoaAsyncSocket.framework in Frameworks */,
+				B539380072BE83FF467E9663D5109363 /* Foundation.framework in Frameworks */,
+				33DAB9C7812AD0DFB6C0965EB6F88D20 /* JKVValue.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD47580C6E8590D9AD2780DE40827AF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB73F105E6E5B626B9D27BB16BE7993D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3903,15 +3910,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1C03F13FD5041570A74DC48FC0AB8B51 /* Headers */ = {
+		1BB69489F03B2F37717EE174219C239B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CC96366D9C15520CF3BEE60059ADFAD /* NSArray+TMSafeUtils.h in Headers */,
-				A5BD2794A416E1B3637DBB8C118D9D1B /* NSDictionary+TMSafeUtils.h in Headers */,
-				CFD8A11BC3CA7A75A0DA5FBE6E539196 /* NSString+TMSafeUtils.h in Headers */,
-				7702CEEA7C1203035702AFBE5815A571 /* TMUtils-umbrella.h in Headers */,
-				59BF40420A296A36C8FBB46BD5FE2025 /* TMUtils.h in Headers */,
+				6C05F134D666F33CB0957ADEE6E79317 /* LazyScroll-umbrella.h in Headers */,
+				43BFACC8E13671560EC64514ACFB2DE9 /* LazyScroll.h in Headers */,
+				C3C13A3FEDBD8CE63F5456D2BD903353 /* TMLazyItemModel.h in Headers */,
+				4C031B3E09211339F5C806CD0401A166 /* TMLazyItemViewProtocol.h in Headers */,
+				157F7F0383087F3931AC7A48043598E9 /* TMLazyModelBucket.h in Headers */,
+				640BD147339BEE9C56AF94BB28A0B0D6 /* TMLazyReusePool.h in Headers */,
+				FAF3906DFE63659831AC64B133B263BE /* TMLazyScrollView.h in Headers */,
+				5BF59A01C22CB135E0AC2FEE641D5AC8 /* UIView+TMLazyScrollView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3938,6 +3948,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		258661F5530C8FE0AB5B759C4E7E769E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7B1D1640CD084476A6BD39B115A5A3E /* FMDBTools.h in Headers */,
+				3A22A10980B39806490689A1DD8132C6 /* MQKey.h in Headers */,
+				ECCB6F1F1F58C1A4312F4158266443FB /* MQManager.h in Headers */,
+				D79BE80F972C2748BA867B93C7EABE8B /* Singleton.h in Headers */,
+				F5DEC3E940E25E5D92E64CFDC6ECB2FA /* YK_BaseTools-umbrella.h in Headers */,
+				941BC07B58AEAF4A6D9C650418E94977 /* YKAudioManager.h in Headers */,
+				A3E3F91F3C142D35002F3F88D62226A1 /* YKNetWorking.h in Headers */,
+				F7C565017200959910715840917E40F2 /* YKNetWorkingRequest.h in Headers */,
+				987703A6B201524A77C6565C83129B4D /* YKRecordUtil.h in Headers */,
+				9D74D0685D75BACBA3C972906AEB4929 /* YKSocket.h in Headers */,
+				C027951A8D2B5AA3989D5773D7B62750 /* YKTools.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		382C8E2861D03ED6631E56AE52BF17E9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B297511DA4D3BDE49B065E7BC51BF3C9 /* NSArray+TMSafeUtils.h in Headers */,
+				8AA84BFEDFA3778588CB76B96AA3AEE5 /* NSDictionary+TMSafeUtils.h in Headers */,
+				71255C4A7FB3F9101D66816967C0D4FB /* NSString+TMSafeUtils.h in Headers */,
+				96FEED9319507AE849FC4BF6F9AA63DF /* TMUtils-umbrella.h in Headers */,
+				312E343DE4DAC3E0837F20840113D133 /* TMUtils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65E5F81ECB5EB69AE63D7601A0EB872F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0DB3964052AAD9CC73615CBDC855BD1 /* Pods-FirstDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7B04ACBA4522760CA66A5D4AFA498F81 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -3961,21 +4009,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8B0F59EF05BF63B669B1F7776A989E07 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				371B811D6F4F93717F2A1106631707D6 /* LazyScroll-umbrella.h in Headers */,
-				0787E297ABC2C1153061F784820092DF /* LazyScroll.h in Headers */,
-				C56F5FBCCBE5F7486C9F197D327093F2 /* TMLazyItemModel.h in Headers */,
-				2CFF66638B65EB50D1A1DB5DE92CB77F /* TMLazyItemViewProtocol.h in Headers */,
-				BD220A04CB05A5031F20F8331647305A /* TMLazyModelBucket.h in Headers */,
-				F183B47A6A235918B3506883700D342C /* TMLazyReusePool.h in Headers */,
-				D50A9AFAF2B83356DD4B9D11398CCC4C /* TMLazyScrollView.h in Headers */,
-				6E660BED8458C98F7FF3C70E5ACA0946 /* UIView+TMLazyScrollView.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8F0EBAB2761523F18BB73EB4DC5CBEC3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -3985,20 +4018,135 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9168DBF59634D291E064011BF80584AD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B924086732D91447EA6288CD3B75CD3 /* Base.h in Headers */,
+				420DCD48FAD00C275B1C8F3572B81E2C /* BaseAlertAction.h in Headers */,
+				202C431134A6389836EC49D606029A92 /* MASConstraint+YYK.h in Headers */,
+				6501E8EF66515DDEF56DF1012601EB03 /* NSArray+YYK.h in Headers */,
+				8DC601CE3F6E3709D293C1E5DE50C1B7 /* NSDate+YYK.h in Headers */,
+				5C99992C2B2A505568A1EDC03B491281 /* NSDictionary+YYK.h in Headers */,
+				BA5171D71A7102D94725327F42B3CD90 /* NSMutableAttributedString+YYK.h in Headers */,
+				AE3496F0578F85D53BB2AB3F80C46087 /* NSObject+YYK.h in Headers */,
+				31FDD18246803F07C8561839DC8B739C /* NSObject+YYKLanguage.h in Headers */,
+				B054C03BC0A1B1F2649334C5B4AD8D56 /* NSString+YYK.h in Headers */,
+				4BEDDC1B9B17190DA7BB5FE98CF43F54 /* RACSignal+YYK.h in Headers */,
+				9EC680EB788A03FA5D08796869726034 /* SDView.h in Headers */,
+				E9CA17A7A1A617ECF5E5A7D392A55B7C /* Singleton.h in Headers */,
+				75B09FC07FE8D0E8088A45906095F0CE /* UIAlertController+YYK.h in Headers */,
+				C56491EA459B90C288E84F924BEAB31D /* UIBarButtonItem+YYK.h in Headers */,
+				B7B8A8CD27B91A6A1AFBACEA247C0815 /* UIButton+YYK.h in Headers */,
+				70D2FE3508B2C53E390F1303C6CEB497 /* UIColor+YYK.h in Headers */,
+				701D71F71C1590E63EA13958E0AAF6F4 /* UIDevice+YYK.h in Headers */,
+				B509D78333C3EEAD6839B16E4A9A8292 /* UIImage+YYK.h in Headers */,
+				852ADA761517E7448CDF4C84AC61B139 /* UIImageView+YYK.h in Headers */,
+				E6B009B5E3A2103A8E004AF2AFF1400A /* UILabel+YYK.h in Headers */,
+				C2B80FC66006B0762E7F068B42E2EBDA /* UINavigationController+YYK.h in Headers */,
+				F41B85D680F274B99628CA863A7E97BA /* UIResponder+YYK.h in Headers */,
+				C354B9B581279D908F649E3C5BFF0588 /* UITableView+YYK.h in Headers */,
+				EA91CEA490CE1069D5B4EC012CFC277F /* UITextField+YYK.h in Headers */,
+				EC11E10249185FF60B29C3807F7D530F /* UITextView+YYK.h in Headers */,
+				CF0F7095763044586097631C3A2A29E2 /* UIView+YYK.h in Headers */,
+				DF0AFB5AA6E1152D286790F8189E2052 /* UIViewController+YYK.h in Headers */,
+				7E1B832536478FD1B6849BA0D23FE60B /* YKAlertCenter.h in Headers */,
+				BA76BF7852EB5E3C5D916F4BAF14680C /* YKAlertView.h in Headers */,
+				DFACAA4E7F8BA632CD117C50C8D74640 /* YKBaseClass.h in Headers */,
+				ABBD427CC8E7F0C36FC9EE8A4465856E /* YKButton.h in Headers */,
+				1B4CF38DDA55D1373F719EA5B286A20B /* YKCollection.h in Headers */,
+				C32BDFB9ED15F493C88CA7107DC63469 /* YKCollectionView.h in Headers */,
+				74E88CAE9608689285AB74B84FE47D2B /* YKExection.h in Headers */,
+				A4980ED1B22E64E1AFD5BE536E337465 /* YKFoundation.h in Headers */,
+				4FD999AEF44CF452E86E09262AD66F4A /* YKMacro.h in Headers */,
+				64228AAB6569FFD0F1E749CFEE3B835F /* YKTableView.h in Headers */,
+				D848221E8FA2EFCFC5B3B2F8B0BB2BAA /* YKThird.h in Headers */,
+				9B61265C30CE4D51060ACA11FB010891 /* YKUIK.h in Headers */,
+				1CEADEB99FC690F8FF794A05D68110E6 /* YYK_BaseViews-umbrella.h in Headers */,
+				C5F02294FB50431E5A4E15A225D438E9 /* YYKBaseCollectionViewCell.h in Headers */,
+				027F801E2D73D999D6ED56334D2BA4BC /* YYKObject.h in Headers */,
+				5722E7F9272E29A6458FE807EABE7220 /* YYKView.h in Headers */,
+				B09179BC3AFA7AB4AE7AD830C579A730 /* YYKViewModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93ED5F7B4BB460F72ED2CDACBC91497C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36A35F0BA210662D102C1E10EF39A27F /* RMQAllocatedChannel.h in Headers */,
+				08E1FD199F36514CC00E73127740EC52 /* RMQBasicProperties+MergeDefaults.h in Headers */,
+				3BE9F1C798BDF550977136173F685AD4 /* RMQBasicProperties.h in Headers */,
+				F04638CE107E1DBCEDD236C616F4DDA2 /* RMQChannel.h in Headers */,
+				8AD160943AF9954BF21C791437BF70BC /* RMQChannelAllocator.h in Headers */,
+				F589BE1A14C656411C9B40527016EB14 /* RMQClient-umbrella.h in Headers */,
+				415A1E60722115257C90A6791F8EC27F /* RMQClient.h in Headers */,
+				CC1BA2A0F987417B3F1DD74A8A7E8F47 /* RMQClock.h in Headers */,
+				8CEA44085666C8724A4A4713B87A7B9C /* RMQConfirmations.h in Headers */,
+				2561499F437ED5F465C975600004B8CB /* RMQConfirmationTransaction.h in Headers */,
+				9A843D600CB25F7C829EF79B6693B273 /* RMQConnection.h in Headers */,
+				CEA901C160EA0C7686131BDEE8C4F93D /* RMQConnectionConfig.h in Headers */,
+				138FAFE35A7E90F0A177E378B5A6CBCD /* RMQConnectionDelegate.h in Headers */,
+				01ADA55EC697FAB51C374677D1BB79D7 /* RMQConnectionDelegateLogger.h in Headers */,
+				17FCEE0B8A94AB4BC59E4FD606B93315 /* RMQConnectionRecover.h in Headers */,
+				7CECC9BE66C233053DEA5AAA032317A5 /* RMQConnectionRecovery.h in Headers */,
+				61EFCF9B41ECED32C3479F2123FC0FF4 /* RMQConsumer.h in Headers */,
+				85E5CF8AA8BDC34A656B9FE5723228B1 /* RMQConsumerHandlers.h in Headers */,
+				4022A54ACCDF6C1FF5DB9923FA1F6C5E /* RMQDispatcher.h in Headers */,
+				070B1786303E756B1345169364134ECC /* RMQErrors.h in Headers */,
+				0214BC7744762E0986AC6163509D2C78 /* RMQExchange.h in Headers */,
+				FA0990C97C0A7C3C01B7CB8500B62A7C /* RMQFrame.h in Headers */,
+				B5A89AF0FBA2021B0C59D3B41A401115 /* RMQFrameHandler.h in Headers */,
+				7E26231D96F2DA2933E9C059B396C9D7 /* RMQFrameset.h in Headers */,
+				722BDC7C2F944AC101BD484767805F0F /* RMQFramesetValidationResult.h in Headers */,
+				39E0FEC62042C3397A6B79C2AF47C509 /* RMQFramesetValidator.h in Headers */,
+				20B30BD272EA8FB8CF67D94CB76D74F5 /* RMQGCDHeartbeatSender.h in Headers */,
+				683F7858AF61A2372A0AF7789F3D0712 /* RMQGCDSerialQueue.h in Headers */,
+				35F6162FBD5B28BB183A1322B10177FA /* RMQHandshaker.h in Headers */,
+				25D28EB4C86D6D152043EB5B9F874597 /* RMQHeartbeat.h in Headers */,
+				102A4EBD19C978A72D53DBA05CF7EDB2 /* RMQHeartbeatSender.h in Headers */,
+				B5DBA19C81ECE3CB9E942E83EBCAB90F /* RMQLocalSerialQueue.h in Headers */,
+				6C2F5ABF151B7A253ECD00ACD18587D3 /* RMQMessage.h in Headers */,
+				195B079397FF0A4DA9830FF8A732B4DE /* RMQMethodDecoder.h in Headers */,
+				903DF037F60BD9743CB17D0365DD5C26 /* RMQMethodMap.h in Headers */,
+				541441752F65E49384AF1596ADE30261 /* RMQMethods+Convenience.h in Headers */,
+				9F3D63CDE9F99CDC8FCE261D10D18834 /* RMQMethods.h in Headers */,
+				E3D0186AABF99CDFEF7FC3DD6D41A568 /* RMQMultipleChannelAllocator.h in Headers */,
+				269A8C9BB4605F42D5EA224D52FD0258 /* RMQNameGenerator.h in Headers */,
+				B45752E0108EC01764630D19FB00664F /* RMQParser.h in Headers */,
+				071CB79EE383EC460866BD71695E091A /* RMQPKCS12CertificateConverter.h in Headers */,
+				DC9F2BC7D61B6F2714BF2F24B6D36A2B /* RMQProcessInfoNameGenerator.h in Headers */,
+				A450E8D660581E479C0B36080B36D8DF /* RMQProtocolHeader.h in Headers */,
+				5B3B61EB89B5D7383C1CE69577211514 /* RMQQueue.h in Headers */,
+				87D0263C6013D7A570CCC2D243D1E0FC /* RMQQueuingConnectionDelegateProxy.h in Headers */,
+				749C70D437DBE3BD16DFDA788D117005 /* RMQReader.h in Headers */,
+				7C602EB38223BC7F71D302823A944B88 /* RMQSemaphoreWaiter.h in Headers */,
+				FAB99528094E5988269D5BA0A9A4DDA4 /* RMQSemaphoreWaiterFactory.h in Headers */,
+				48A49D6AD6CE9A930049B765DC7739C4 /* RMQSender.h in Headers */,
+				64B2106E99B9362DD3732B7DEEB6861E /* RMQStarter.h in Headers */,
+				B8528BBC4AB651ECDF5A7B4DE16ADD91 /* RMQSuspendResumeDispatcher.h in Headers */,
+				C754F39DC54DA2FDF041F21273710C02 /* RMQSynchronizedMutableDictionary.h in Headers */,
+				BBEBDF72AF3564DEB98804816447EE2E /* RMQTable.h in Headers */,
+				A360B3D01BB03BC83CE90C25EF3879FD /* RMQTCPSocketTransport.h in Headers */,
+				8D6E45E206E43C06BDC77F177CDB439E /* RMQTickingClock.h in Headers */,
+				BB5C0561C5C4EFD1A9D5E38B6745193C /* RMQTLSOptions.h in Headers */,
+				B9E3C74069F0465065F59D30B1940840 /* RMQTransactionalConfirmations.h in Headers */,
+				3D0C7A10118288A2EC397A73AF5CCAF8 /* RMQTransport.h in Headers */,
+				C91BE8F41F0207A0DCCED72346C49978 /* RMQTransportDelegate.h in Headers */,
+				3A0EE740A59A02FFFC3DF15112551885 /* RMQUnallocatedChannel.h in Headers */,
+				86773376C28DB1106F7EBAA355C06F2E /* RMQURI.h in Headers */,
+				3C568CCDE70324E279226C29F489E584 /* RMQValues.h in Headers */,
+				4387D3B2C390CBC4B556ED9114662020 /* RMQWaiter.h in Headers */,
+				C4C8F6A6885845421D00A7BE27A3104A /* RMQWaiterFactory.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		94CFDC9061CBA1530382A345C7E6CA4D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EB6F943F2CC3A68CF1B23F7AE0DB7424 /* GDataXML-HTML-umbrella.h in Headers */,
 				A439DC6FD01B628A1F7E798F8C5D1A2E /* GDataXMLNode.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9B55F1EBC1989E5B9AF08CAEE7753124 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5DD5BEE30E0108A7CD12913C1351F27B /* Pods-FirstDemo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4467,12 +4615,12 @@
 /* Begin PBXNativeTarget section */
 		000E2E1CEA5AF96DEBC2F5498D244C6E /* TMUtils */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B03F374EB80226CAEFE3F5BB017130E4 /* Build configuration list for PBXNativeTarget "TMUtils" */;
+			buildConfigurationList = 3AD457A57C2BEC81AE59FB4685978B60 /* Build configuration list for PBXNativeTarget "TMUtils" */;
 			buildPhases = (
-				1C03F13FD5041570A74DC48FC0AB8B51 /* Headers */,
-				64B8EB80E929E59595124434D119D08E /* Sources */,
-				46A26D60232713B37516B8E5EF90CA55 /* Frameworks */,
-				05DD4CE2AC80796222825A950D4F3F4F /* Resources */,
+				382C8E2861D03ED6631E56AE52BF17E9 /* Headers */,
+				92E5E51ABEEA49B786FA0696542938CD /* Sources */,
+				FD47580C6E8590D9AD2780DE40827AF8 /* Frameworks */,
+				D8CBB9851C1238AB1A893CD6E09C3160 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -4503,17 +4651,17 @@
 		};
 		0620493F3B6F611088C7488B6C80FEA2 /* LazyScroll */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A680B8760B0894FDF1B9F0F17A831925 /* Build configuration list for PBXNativeTarget "LazyScroll" */;
+			buildConfigurationList = 69A7C5A9F68AFADD2D2FDFAE42065177 /* Build configuration list for PBXNativeTarget "LazyScroll" */;
 			buildPhases = (
-				8B0F59EF05BF63B669B1F7776A989E07 /* Headers */,
-				FC61FBB056CA26C46C54A95B8805F258 /* Sources */,
-				0CC9A32EFD136206E5A425D9DF2A26EC /* Frameworks */,
-				A706880E23420055D9CF0CAF43B2011B /* Resources */,
+				1BB69489F03B2F37717EE174219C239B /* Headers */,
+				C81A37846DFF38E4188ED82174681EDB /* Sources */,
+				B72F4A92E740B5881E39EB270809B619 /* Frameworks */,
+				B72E3F7F7735F1E39A3CDB992933ED3F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				52811D2A724EABFFCE9C87BE029F1E96 /* PBXTargetDependency */,
+				1B77EF8BCB3CB80750F8C9B8E5C120AA /* PBXTargetDependency */,
 			);
 			name = LazyScroll;
 			productName = LazyScroll;
@@ -4540,21 +4688,21 @@
 		};
 		1E15F13BBB81310B9597BFC22320D4E5 /* YK_BaseTools */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 210647153E6CEB06D1C1FA0F4697E8E6 /* Build configuration list for PBXNativeTarget "YK_BaseTools" */;
+			buildConfigurationList = E50069C3EB917EBB49F00010D6AD6CAF /* Build configuration list for PBXNativeTarget "YK_BaseTools" */;
 			buildPhases = (
-				E703A3667D49BBC56E0866B3384B48E7 /* Headers */,
-				11C51BD46DBB7BC5B53E846CCFBC96E0 /* Sources */,
-				C1DC70D953BA2625C2371DE87C143487 /* Frameworks */,
-				3ACF7521AFBC5A56C1FFF996C6885619 /* Resources */,
+				258661F5530C8FE0AB5B759C4E7E769E /* Headers */,
+				2ED141B3EAD56AFFBCEF0F303C573307 /* Sources */,
+				42EEB1516040507037638E034BBA4636 /* Frameworks */,
+				7105DA724381A8267C8EB65175C26F9C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				837F5BBCCA73855374D702DC90860862 /* PBXTargetDependency */,
-				375619852492947359EB8A1F99537168 /* PBXTargetDependency */,
-				2CFF306AB82585FF4A35623D4B892973 /* PBXTargetDependency */,
-				75DDC3CA4FEDC04F8E6C06A3837D8892 /* PBXTargetDependency */,
-				502C748367A37E0507BCED042E7F3A36 /* PBXTargetDependency */,
+				600E71DDEA11C4ED8FB742BA4F4A6BDE /* PBXTargetDependency */,
+				FEF64F0C6646FE2142831B3212A577BB /* PBXTargetDependency */,
+				276404D9B44A0D15CA644C05CC722F59 /* PBXTargetDependency */,
+				DABB711192BF12F280191D7C7F854B4B /* PBXTargetDependency */,
+				4E0328043C2486EB84FE5D9C808091C2 /* PBXTargetDependency */,
 			);
 			name = YK_BaseTools;
 			productName = YK_BaseTools;
@@ -4689,38 +4837,38 @@
 		};
 		6F6D60E5C5BAB48107C2BA7D3DDD889F /* Pods-FirstDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EA4FB38BEF965F64FE118BD45A350B7E /* Build configuration list for PBXNativeTarget "Pods-FirstDemo" */;
+			buildConfigurationList = 07752846C8C5DAFB66B5A1CC4575D8AD /* Build configuration list for PBXNativeTarget "Pods-FirstDemo" */;
 			buildPhases = (
-				9B55F1EBC1989E5B9AF08CAEE7753124 /* Headers */,
-				86B638009573669E8C3AE32BCE066E02 /* Sources */,
-				94B58F5BDD8AF6214F0AB1FC08277768 /* Frameworks */,
-				49AB67AC8DD0A312AA919CDF892C58AD /* Resources */,
+				65E5F81ECB5EB69AE63D7601A0EB872F /* Headers */,
+				8162552A9D3A259C8D2C960B0B5C5070 /* Sources */,
+				94D4CF2E192D37F6B29C218663176818 /* Frameworks */,
+				57C1D6E44A24FBA0E71D2ADC6549AC0F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3F2D7DD5D818599B9D38073CB76CB61D /* PBXTargetDependency */,
-				5FE0C09387691E0AF26C84A7DB2006BF /* PBXTargetDependency */,
-				DC713D977BD181DEF51CEC6F02B45AA4 /* PBXTargetDependency */,
-				973044FD2CDA9C0658C0B856633CF234 /* PBXTargetDependency */,
-				DD801FB3B7B46BB506F7DF0A276B9050 /* PBXTargetDependency */,
-				F591B72908388FCFF9197082EEEF048C /* PBXTargetDependency */,
-				A18ED4CA48FE8DBB1EA58EF844234A02 /* PBXTargetDependency */,
-				F5991B065731B729BD4BD030EEDEE622 /* PBXTargetDependency */,
-				07263A624DE31CF7D4385AA2A705BEB4 /* PBXTargetDependency */,
-				37BF8AF7F61636FA78CF4D86074AFEE7 /* PBXTargetDependency */,
-				0C5DD376D8F6B1A89C202D091927B67F /* PBXTargetDependency */,
-				141D45CBFE24A3B433D265A225DAFE82 /* PBXTargetDependency */,
-				1A983C0384DE6DB11445C8D8F1B4D285 /* PBXTargetDependency */,
-				CFDE625019B3F9A283F8D3AA26263654 /* PBXTargetDependency */,
-				44D4A104082CF64D9A19C57577771076 /* PBXTargetDependency */,
-				85349EEFED03E2290E9BA17F2159A4A9 /* PBXTargetDependency */,
-				0B24ECAA40842CFC34C66DEFC709078A /* PBXTargetDependency */,
-				9094068A56D22BB96F8B7D3839E2EC3A /* PBXTargetDependency */,
-				912F3EFDD1A375A76E0CCE085CDF6A66 /* PBXTargetDependency */,
-				E686236B893E45A4D3771E771D506A98 /* PBXTargetDependency */,
-				78B2911FD05DE37E4F3E02F10DE7B136 /* PBXTargetDependency */,
-				F77C8C141F5E2D49A33CAA428FA83E3D /* PBXTargetDependency */,
+				5E2B63A4DE2BF52C9AD0571AD73A53E4 /* PBXTargetDependency */,
+				19378173E017C1F2977132AD9B504F09 /* PBXTargetDependency */,
+				FE0A435BB134C399BAC7212DE9BE6973 /* PBXTargetDependency */,
+				C4D3959C136BB4D725D40EC5AC83B0B2 /* PBXTargetDependency */,
+				7B72A9DDD9256737B45537D6EF62EF28 /* PBXTargetDependency */,
+				98093B5D2AF9B5DEAC72E1D5A3E42D6A /* PBXTargetDependency */,
+				B86E26A9AEFF242B45CE916387164477 /* PBXTargetDependency */,
+				30D55CDFF7A8BA4111B6E4D49C87A8BA /* PBXTargetDependency */,
+				EAA220BCF57EC4B13F9C0D3B51E19E3E /* PBXTargetDependency */,
+				BFA319E0A0DA62ECF1494D91F31376A2 /* PBXTargetDependency */,
+				070EC542E84AFB0E79AF83B2CAEB59D8 /* PBXTargetDependency */,
+				44CB472ADF732120FBB9B33C8F68AE84 /* PBXTargetDependency */,
+				B488782964BA374856D61AB84C430334 /* PBXTargetDependency */,
+				C5486ED98069A863B60DE11FBAF704F1 /* PBXTargetDependency */,
+				3DC66B79DE55FC9B76DBF39009153BF5 /* PBXTargetDependency */,
+				D4A7C577E75FB1EB381FF0FCB249E790 /* PBXTargetDependency */,
+				DDE7CFD0773BE3AA932E4FDFF9F9FED6 /* PBXTargetDependency */,
+				0BE8F0EFD38C210AD740FE0D4490E48E /* PBXTargetDependency */,
+				8D150863C11FB664C46FCCCDE81508C0 /* PBXTargetDependency */,
+				7E2BCE0CC58220BF1FCBF57475A40F3C /* PBXTargetDependency */,
+				985D14C62580D80EE72A71AC2AA06A94 /* PBXTargetDependency */,
+				554AD09DD4F46B1913E81EB51AEE926B /* PBXTargetDependency */,
 			);
 			name = "Pods-FirstDemo";
 			productName = "Pods-FirstDemo";
@@ -4842,18 +4990,18 @@
 		};
 		D015D7C0C1EE9DDC863F493A9551FFE3 /* RMQClient */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D51202D6295B071C28C4D6EB91D8943B /* Build configuration list for PBXNativeTarget "RMQClient" */;
+			buildConfigurationList = BEF508C0BFACA58DD6246C13532DD5B3 /* Build configuration list for PBXNativeTarget "RMQClient" */;
 			buildPhases = (
-				EA2A16A3B93D9D994980C71AA33E7EFD /* Headers */,
-				87595EB9A1F87E512BF4223BDC4EAC51 /* Sources */,
-				86378F970F652D16F6A4F96D763E46D2 /* Frameworks */,
-				9575DB966618B06F94E3BBC2C79C1770 /* Resources */,
+				93ED5F7B4BB460F72ED2CDACBC91497C /* Headers */,
+				6A0D78AC4C3F68A2ECA3D0F67B0A6815 /* Sources */,
+				F7DF8F13D7FF0E6685C2FC60D022C928 /* Frameworks */,
+				45937300FC0907FD5B87C27296B671B5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				062672FD277DCE53BFEE889819D59A9B /* PBXTargetDependency */,
-				11AB55E4C2F401F3337D88DDA053338B /* PBXTargetDependency */,
+				53AF7F6DDE12FE752AF61C0633C8D297 /* PBXTargetDependency */,
+				87AC8314A68AA89454B42216C8982440 /* PBXTargetDependency */,
 			);
 			name = RMQClient;
 			productName = RMQClient;
@@ -4935,7 +5083,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		05DD4CE2AC80796222825A950D4F3F4F /* Resources */ = {
+		1BBCAA36277BF4877B19328CB2D58AB9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -4970,21 +5118,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3ACF7521AFBC5A56C1FFF996C6885619 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		435BF4D16B2F9CAB6E7F883F30E32B74 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		49AB67AC8DD0A312AA919CDF892C58AD /* Resources */ = {
+		45937300FC0907FD5B87C27296B671B5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -5005,6 +5139,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		57C1D6E44A24FBA0E71D2ADC6549AC0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5AAFF4E9A7FD5CC955CC94BDE27FBA95 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -5017,6 +5158,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2636AC58FFB864367B2C7DA814440673 /* MJRefresh.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7105DA724381A8267C8EB65175C26F9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5041,13 +5189,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9575DB966618B06F94E3BBC2C79C1770 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A6620E44D4248429BD059BDB7FBF21F9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -5055,7 +5196,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A706880E23420055D9CF0CAF43B2011B /* Resources */ = {
+		B72E3F7F7735F1E39A3CDB992933ED3F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -5070,6 +5211,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C24D85925630BF2FC637DB8BE7ACBFC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8CBB9851C1238AB1A893CD6E09C3160 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -5097,19 +5245,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		11C51BD46DBB7BC5B53E846CCFBC96E0 /* Sources */ = {
+		2ED141B3EAD56AFFBCEF0F303C573307 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				612B4616835B79B84A0B148D41E6AEA9 /* FMDBTools.m in Sources */,
-				DB3494F1819363910BF02513A5B72093 /* MQKey.m in Sources */,
-				61072DDAE0F93C2D0D8B56F457ADF23F /* MQManager.m in Sources */,
-				79C037AE8BAC562ACC20FD3F64AF4073 /* YK_BaseTools-dummy.m in Sources */,
-				9B0C6C54CA7759DFEDCEF5B4BDF6CF4B /* YKAudioManager.m in Sources */,
-				D643182C929DE3E8EF7973304B101E64 /* YKNetWorking.m in Sources */,
-				E6161D35B0B067EAC01041D36DB3D27A /* YKNetWorkingRequest.m in Sources */,
-				0E0A8AB7DF9753ECF489F92FE0CDF291 /* YKRecordUtil.m in Sources */,
-				A538F22A8E20165988AF3083A4293A56 /* YKSocket.m in Sources */,
+				D7A05963C08AC4E81D8E9C17762A6EDC /* FMDBTools.m in Sources */,
+				2570EA636CA21B5DC474D56487324B0C /* MQKey.m in Sources */,
+				76C6E5AC83E5EF00C997E2B8DB7B0D1B /* MQManager.m in Sources */,
+				4523C142722353469447F262D6268CA2 /* YK_BaseTools-dummy.m in Sources */,
+				FF2B0C85256118C922F4E2F213BECF72 /* YKAudioManager.m in Sources */,
+				7DA925239DB7E7DAC36029BD895E6D2C /* YKNetWorking.m in Sources */,
+				32F465313621B0BB9C1EE8331730A7CE /* YKNetWorkingRequest.m in Sources */,
+				23DCE043F32E57C9B10F2253818C045D /* YKRecordUtil.m in Sources */,
+				DB68EB802A36C78B4151B690A0C4095F /* YKSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5270,14 +5418,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64B8EB80E929E59595124434D119D08E /* Sources */ = {
+		6A0D78AC4C3F68A2ECA3D0F67B0A6815 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E200B032CBFB856C3EAEB47C5CAF9C9 /* NSArray+TMSafeUtils.m in Sources */,
-				EC501923BB75C03F4D3494A4727FB326 /* NSDictionary+TMSafeUtils.m in Sources */,
-				B4A032684B38A1D5A95F25D83ED27500 /* NSString+TMSafeUtils.m in Sources */,
-				25A33DCEB2DEAB743DE331193CC1C8E2 /* TMUtils-dummy.m in Sources */,
+				2A8F983F16529226AABFD767CEE91E8E /* RMQAllocatedChannel.m in Sources */,
+				EAB141CD508D69AE69E9D0FE29B657F8 /* RMQBasicProperties+MergeDefaults.m in Sources */,
+				A0DF18C72C12E7D2C9D032BCA2865E40 /* RMQBasicProperties.m in Sources */,
+				E6A57F09B34C1F3B478021067A73CFF2 /* RMQClient-dummy.m in Sources */,
+				4FCF229F91910855CC4724B35C48AA13 /* RMQConfirmationTransaction.m in Sources */,
+				ABB6A4B100FA3144A69D093A3505C923 /* RMQConnection.m in Sources */,
+				1FF452C681FD9BF6EC61E3C0E94DE8C7 /* RMQConnectionConfig.m in Sources */,
+				E87FF1F003B28DF3483BB46CD6E91DDB /* RMQConnectionDelegateLogger.m in Sources */,
+				FB7B643C808C17EF45F2F68706C49671 /* RMQConnectionRecover.m in Sources */,
+				58ACCDB59B46905C44B6C9A216215D79 /* RMQConsumer.m in Sources */,
+				9C99B0B95A09070A606A6F7FD51BC5A9 /* RMQErrors.m in Sources */,
+				6D7CEB96B47CA3540569F02548C40FA1 /* RMQExchange.m in Sources */,
+				1FC27A13E7568A930985B79D7D5DB933 /* RMQFrame.m in Sources */,
+				5EFB8B9A1606BF003F29D0F62C84751A /* RMQFrameset.m in Sources */,
+				81A92E16F39B92330480C07B23F4CF7A /* RMQFramesetValidationResult.m in Sources */,
+				490DE6F38EC26BA5B51C1CAE9F1EBAC0 /* RMQFramesetValidator.m in Sources */,
+				9BF3BB207A407579A91567DE5DBA013B /* RMQGCDHeartbeatSender.m in Sources */,
+				9393E8A28BAF61E43D97608189138AF5 /* RMQGCDSerialQueue.m in Sources */,
+				0E0EF8CAC0735B4D6DFACE5B1B9517EA /* RMQHandshaker.m in Sources */,
+				63961A9969267E1D4DC94BEC2FF1C0A5 /* RMQHeartbeat.m in Sources */,
+				2D566AFC3C31F3F4F3CA1D19584892BA /* RMQMessage.m in Sources */,
+				7D22B4B0A6DE0179DF13DE1F893156E3 /* RMQMethodDecoder.m in Sources */,
+				063654EE3D168830E560BF51E85EFB81 /* RMQMethodMap.m in Sources */,
+				4573D99CC8F0E30B90A558887DD922DA /* RMQMethods+Convenience.m in Sources */,
+				E75B73FC5C71F8DE53DCA3D4C84F7947 /* RMQMethods.m in Sources */,
+				973D9A4EFC1890961465C0240C0F01DB /* RMQMultipleChannelAllocator.m in Sources */,
+				0942B82124B51510ABE22F3EFBBF32B3 /* RMQParser.m in Sources */,
+				732FBB911C11CB06924F4FFC9F92FB97 /* RMQPKCS12CertificateConverter.m in Sources */,
+				43CA37FB0A6F42226C3B4E4C3AA45984 /* RMQProcessInfoNameGenerator.m in Sources */,
+				E248730591235FEE93709CD1644AE6C7 /* RMQProtocolHeader.m in Sources */,
+				0267AEF413ED7566D0F2FF52D9104E00 /* RMQQueue.m in Sources */,
+				3C2C39DA6F71B250B1670540C2114D83 /* RMQQueuingConnectionDelegateProxy.m in Sources */,
+				87044F2205F8D8F4CE15A02230B59727 /* RMQReader.m in Sources */,
+				8B54EFA0B8F828DA1B1A7F79D4DAB540 /* RMQSemaphoreWaiter.m in Sources */,
+				4F8F2601BBBED56EDAA93E02F1003ED1 /* RMQSemaphoreWaiterFactory.m in Sources */,
+				F887DDC738CEA355D3C766F0893C59F0 /* RMQSuspendResumeDispatcher.m in Sources */,
+				F5EB557DA74C405A3A83380D9CD44EC6 /* RMQSynchronizedMutableDictionary.m in Sources */,
+				9785C82A4CA061912724467A79415AEE /* RMQTable.m in Sources */,
+				8C32EBCF42EA778C297113774A26831E /* RMQTCPSocketTransport.m in Sources */,
+				16E02CAC18FAF5691A309C1466CB31EA /* RMQTickingClock.m in Sources */,
+				47A2BF2EBD8DA46F073B91FEDBE9DC67 /* RMQTLSOptions.m in Sources */,
+				CDB772CFE6E786F904680D4EEAFF91D8 /* RMQTransactionalConfirmations.m in Sources */,
+				18007B313F60556FD213CB7D19FB433D /* RMQUnallocatedChannel.m in Sources */,
+				0A40973C4D24BA2EA4D8C16C3E9583AE /* RMQURI.m in Sources */,
+				5054A83A7AD71762C075E06768237508 /* RMQValues.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5301,6 +5490,51 @@
 				02937E01710489D6668D0C3700E8EADA /* UIProgressView+AFNetworking.m in Sources */,
 				01BEB06B4E262DCEA7A94F4206311BF9 /* UIRefreshControl+AFNetworking.m in Sources */,
 				951B6669114E3C8D2E4961AFE2BB6647 /* WKWebView+AFNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F9CFF2DAC2677B0246F6DEA2D33C6D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E00B510D65AFAACF31B8032A50E5A1C /* Base.m in Sources */,
+				E390C47D6C149CD4569BC9F4FC494951 /* BaseAlertAction.m in Sources */,
+				A9C68A9BB62A2A7147D559908B98D45E /* MASConstraint+YYK.m in Sources */,
+				DBD95275545DDC8EA91B0E2A30D276EE /* NSArray+YYK.m in Sources */,
+				26BBC979B436998842EC37B250DA02A4 /* NSDate+YYK.m in Sources */,
+				146D7493D6A67BB53A3AE52F2F1BF981 /* NSDictionary+YYK.m in Sources */,
+				C6A53127046165BC68BBEAD2013064B5 /* NSMutableAttributedString+YYK.m in Sources */,
+				0FE0A3BE17BC93815B68178449CDF0BD /* NSObject+YYK.m in Sources */,
+				215DEC8254C8B30370D9A8B8DFF7A663 /* NSObject+YYKLanguage.m in Sources */,
+				DFF1E153E21D2E56537EA9047BE55B25 /* NSString+YYK.m in Sources */,
+				0A024A6BBFF7B58B474A29106C4C7B18 /* RACSignal+YYK.m in Sources */,
+				8F78DC1E29E7A9B2B25E0A9EA8655DF2 /* UIAlertController+YYK.m in Sources */,
+				B50A452447CEA6BEA8D6AF313CE187B2 /* UIBarButtonItem+YYK.m in Sources */,
+				7251F008A2130E51D1927C95E6FE82B8 /* UIButton+YYK.m in Sources */,
+				B0B6F9881966DEEE12E53805C294B417 /* UIColor+YYK.m in Sources */,
+				EAE49053521AEF83B0696A71B72EE0C7 /* UIDevice+YYK.m in Sources */,
+				C535C6728CF6AA6D3971D275D793D49F /* UIImage+YYK.m in Sources */,
+				3EBA754657663241DE2E4ECD3772D2A3 /* UIImageView+YYK.m in Sources */,
+				E652B0FE0BA711AB23F321217CB1163B /* UILabel+YYK.m in Sources */,
+				B0D1EEB203CF22B110100FE2BD5E8775 /* UINavigationController+YYK.m in Sources */,
+				339A73726C1DD7CDBF85D47D5585D71F /* UIResponder+YYK.m in Sources */,
+				AADBF200C011BAB73B0369328409A735 /* UITableView+YYK.m in Sources */,
+				968B30EFBBC8EF420C17887AEAEADE81 /* UITextField+YYK.m in Sources */,
+				DF436E6CBC1DD1288BB2A707EF8BDB06 /* UITextView+YYK.m in Sources */,
+				E2E428DAECBCAAAD6CBC5A19B7CF194B /* UIView+YYK.m in Sources */,
+				98FE52871F83375EB24975484D748F1A /* UIViewController+YYK.m in Sources */,
+				F8882454C0199DBC66D92EA785BEF546 /* YKAlertCenter.m in Sources */,
+				321B8474AD7986AFC19A6DB32BA76E4F /* YKAlertView.m in Sources */,
+				2716B7049685E489947260CEF0CD1C11 /* YKButton.m in Sources */,
+				A0F7546B429DFA2B9142AEFDACA374B9 /* YKCollection.m in Sources */,
+				1985BEACDCE8176420543647DD7408AF /* YKCollectionView.m in Sources */,
+				BBD55195C94DCDB1A898FA6D91329BAB /* YKTableView.m in Sources */,
+				9C69E99D8AC35083C439A61A51D2A8AE /* YYK_BaseViews-dummy.m in Sources */,
+				3567EBDC11FA721DB44A01A7B4ED672A /* YYKBaseCollectionViewCell.m in Sources */,
+				CFB1526FCEF0BEACAC64839E4366EBCD /* YYKBaseCollectionViewCell.xib in Sources */,
+				A17982EC1E0E387854831F8292CF408D /* YYKObject.m in Sources */,
+				CABACF66A7517F7FA1CCD81292E42AB1 /* YYKView.m in Sources */,
+				02EDBA69FE809CAF18CC4FDE1B60906A /* YYKViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5335,63 +5569,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		86B638009573669E8C3AE32BCE066E02 /* Sources */ = {
+		8162552A9D3A259C8D2C960B0B5C5070 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF213C85D99F8D8649B8D6C91A3C0A99 /* Pods-FirstDemo-dummy.m in Sources */,
+				E7C2D4F2ED82DD752AA975D06A33468B /* Pods-FirstDemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		87595EB9A1F87E512BF4223BDC4EAC51 /* Sources */ = {
+		92E5E51ABEEA49B786FA0696542938CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D786FB77DB2F808384D726D842F05DDF /* RMQAllocatedChannel.m in Sources */,
-				BB978242CC77CAA120B1F7CAABAEBA5F /* RMQBasicProperties+MergeDefaults.m in Sources */,
-				9236851902AB2F717C491197DC9A6369 /* RMQBasicProperties.m in Sources */,
-				64FB106450B392FB7ECE7D2F87F23208 /* RMQClient-dummy.m in Sources */,
-				207BB96990F941E223B0C404C3883AC0 /* RMQConfirmationTransaction.m in Sources */,
-				15E59C0A549D41F897D8E84DBBCCD75E /* RMQConnection.m in Sources */,
-				B629F451A51CBD6FA425719A00F5E5B6 /* RMQConnectionConfig.m in Sources */,
-				AE3BCEB5DAEA26F43F7BB829FBBA0AC1 /* RMQConnectionDelegateLogger.m in Sources */,
-				6AB02E8B4C35AE2814DF08B44119FFA8 /* RMQConnectionRecover.m in Sources */,
-				B0ACE055C4D70A07206819366360B42E /* RMQConsumer.m in Sources */,
-				0A89434D819DE415B1CD9BB2D3B3EF91 /* RMQErrors.m in Sources */,
-				DABF964BF6CCC31FF701D86945983E2A /* RMQExchange.m in Sources */,
-				C2C1B680495C03233296C0D5BE60FAA0 /* RMQFrame.m in Sources */,
-				E29D9043D2A842EA25E07C9CE65AF729 /* RMQFrameset.m in Sources */,
-				110DAEF15958FB9A2D5C9BD512D0941D /* RMQFramesetValidationResult.m in Sources */,
-				1937F463897215A4C2B5195D87067D72 /* RMQFramesetValidator.m in Sources */,
-				C6A2038E91427DEFBB220F4A33652B9E /* RMQGCDHeartbeatSender.m in Sources */,
-				AAAA3026C6C35304D72C21556B5138DF /* RMQGCDSerialQueue.m in Sources */,
-				0B06D3467DB4A81088A8C304E68236C1 /* RMQHandshaker.m in Sources */,
-				BAE5D5B71ED5DCBABCA65D409BAB93D1 /* RMQHeartbeat.m in Sources */,
-				A5D689ECE8BC6F7D33524BA7B1B3691F /* RMQMessage.m in Sources */,
-				EB575D9171738D67F22F419FDA04A4D4 /* RMQMethodDecoder.m in Sources */,
-				ED979CDCCDDDA44D7CC578202551E491 /* RMQMethodMap.m in Sources */,
-				016C5016D4E57074F632CD9D6983F327 /* RMQMethods+Convenience.m in Sources */,
-				FA214F51A1D2911044F92AB6502E30CE /* RMQMethods.m in Sources */,
-				674623FC8B3D2A568FDDB92B9C053896 /* RMQMultipleChannelAllocator.m in Sources */,
-				C31FA29B45E91F0FFA40DAEE8CA2064E /* RMQParser.m in Sources */,
-				11DEA72B5F34A6EDD37D15DDD5DD8BAC /* RMQPKCS12CertificateConverter.m in Sources */,
-				AAAA4350460336B75384068CD364E47C /* RMQProcessInfoNameGenerator.m in Sources */,
-				50FB769027FC571A8BF428BD60455E68 /* RMQProtocolHeader.m in Sources */,
-				97C0F80E3199FD86DB9D63F41444338D /* RMQQueue.m in Sources */,
-				BAAD4E685D74991FD173F77CF0471F60 /* RMQQueuingConnectionDelegateProxy.m in Sources */,
-				1CAB7B829316CCDCD50B4805B2548AFC /* RMQReader.m in Sources */,
-				37D2A07E2B16C1ED76D7C6C6EF0EC7ED /* RMQSemaphoreWaiter.m in Sources */,
-				E8B009F7C7F850F1384C61691A2DFB70 /* RMQSemaphoreWaiterFactory.m in Sources */,
-				77A1BA57D400AFE912F15F2790B3EC16 /* RMQSuspendResumeDispatcher.m in Sources */,
-				1AD54AADB5C5766DD72EC6C04C0DCCB7 /* RMQSynchronizedMutableDictionary.m in Sources */,
-				E1701AE49F2E7951977AD47CEE6EEBD8 /* RMQTable.m in Sources */,
-				6277973373C7B31318F5C3022D8CF5EB /* RMQTCPSocketTransport.m in Sources */,
-				5051F5AE304C8779256BABCB5952643A /* RMQTickingClock.m in Sources */,
-				DE5299B08E37068A4A7FE67BC35C1AA0 /* RMQTLSOptions.m in Sources */,
-				22F2D6E81C0AD0F82BA3974D368CCC5A /* RMQTransactionalConfirmations.m in Sources */,
-				C970E219926F5244F81FFB77819EC46F /* RMQUnallocatedChannel.m in Sources */,
-				0EAB2C3538B592E211F0F7E4590D626A /* RMQURI.m in Sources */,
-				FFE4C2FA7CE2A8384691DC9CAD258D11 /* RMQValues.m in Sources */,
+				66C6DAFEB3C23AF9791FE5B4F537F9F3 /* NSArray+TMSafeUtils.m in Sources */,
+				C0EF0D5412FD8A17632D67E641083342 /* NSDictionary+TMSafeUtils.m in Sources */,
+				C6831880FDF62CFED447A31BA772747E /* NSString+TMSafeUtils.m in Sources */,
+				80779EEB4A0B7DD8BB644B0AA5C38680 /* TMUtils-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5456,6 +5649,19 @@
 				28022E74182B2397C573044E22EF6D06 /* IQUIView+Hierarchy.m in Sources */,
 				C6B3B0CF9A00D07E7A877ACE8AD65409 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				AD73568C5AEF8F76CA4B6F25E0DF6C30 /* IQUIViewController+Additions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C81A37846DFF38E4188ED82174681EDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B856516F6980423350554B36068779ED /* LazyScroll-dummy.m in Sources */,
+				7710B93DBA6555BCE5BF23E63B631142 /* TMLazyItemModel.m in Sources */,
+				24461F53856D9B4C39C34376654CF1E3 /* TMLazyModelBucket.m in Sources */,
+				713C73EBA55D1D9034258ECDA1EF7A30 /* TMLazyReusePool.m in Sources */,
+				7C2C1D0DD5022C106D02AACA867CAB73 /* TMLazyScrollView.m in Sources */,
+				43D7753134BFFA45F5091F39007CA872 /* UIView+TMLazyScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5587,87 +5793,80 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FC61FBB056CA26C46C54A95B8805F258 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4C5E4E2B97BDE8F64A5F170D85328DE7 /* LazyScroll-dummy.m in Sources */,
-				5B8234D8784ED64F9164F8BD78C75CDF /* TMLazyItemModel.m in Sources */,
-				0EC026EFBF1B21ABD061826F55A72891 /* TMLazyModelBucket.m in Sources */,
-				CB1142FBEBCDBBE84EBA70A844204299 /* TMLazyReusePool.m in Sources */,
-				2A7ABEB6CC01009E418CEBC40BEB34B3 /* TMLazyScrollView.m in Sources */,
-				CA78F8FE26A4062D9A5D61A70BB0D9B2 /* UIView+TMLazyScrollView.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		062672FD277DCE53BFEE889819D59A9B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			name = SocketRocket;
+			target = 1948D0B63D2CF6A48E18B0B292BC6091 /* SocketRocket */;
+			targetProxy = 883DBA802ED8AE0DC2A3F63FFA6A8E7E /* PBXContainerItemProxy */;
+		};
+		19378173E017C1F2977132AD9B504F09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
 			name = CocoaAsyncSocket;
 			target = 6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */;
-			targetProxy = F5DD795AF8CAE2D0A5E3CCEAC5769F02 /* PBXContainerItemProxy */;
+			targetProxy = 72A3938468B4D438BE16D8A47B8ED7B8 /* PBXContainerItemProxy */;
 		};
-		07263A624DE31CF7D4385AA2A705BEB4 /* PBXTargetDependency */ = {
+		1B77EF8BCB3CB80750F8C9B8E5C120AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = LookinServer;
-			target = 638FEAAFC575BB76BC6AC055CDDA3506 /* LookinServer */;
-			targetProxy = CEEF1C07F31872EBD0B95E3F69547B86 /* PBXContainerItemProxy */;
+			name = TMUtils;
+			target = 000E2E1CEA5AF96DEBC2F5498D244C6E /* TMUtils */;
+			targetProxy = 788156E6C1E660110597CE083E7E5F66 /* PBXContainerItemProxy */;
 		};
-		0B24ECAA40842CFC34C66DEFC709078A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SDWebImage;
-			target = 3847153A6E5EEFB86565BA840768F429 /* SDWebImage */;
-			targetProxy = 0A4F8CBA154E65F8E90A23CD7B02C11C /* PBXContainerItemProxy */;
-		};
-		0C5DD376D8F6B1A89C202D091927B67F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MJExtension;
-			target = 4D3BA58D0583DF37575CACAB3DDADC85 /* MJExtension */;
-			targetProxy = 3619F33E96837F11B431FB258473383E /* PBXContainerItemProxy */;
-		};
-		11AB55E4C2F401F3337D88DDA053338B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = JKVValue;
-			target = 693F68B0ECDCFF738C4CC7B5E5243743 /* JKVValue */;
-			targetProxy = 286B4C3AD3DBE4794C9769AE3435990D /* PBXContainerItemProxy */;
-		};
-		141D45CBFE24A3B433D265A225DAFE82 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MJRefresh;
-			target = 6868056D761E163D10FDAF8CF1C4D9B8 /* MJRefresh */;
-			targetProxy = 23AD28F641413C128BFBEC623B87497C /* PBXContainerItemProxy */;
-		};
-		1A983C0384DE6DB11445C8D8F1B4D285 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Masonry;
-			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
-			targetProxy = A3D9BACBF18973D11C82A759A221B1B7 /* PBXContainerItemProxy */;
-		};
-		2CFF306AB82585FF4A35623D4B892973 /* PBXTargetDependency */ = {
+		276404D9B44A0D15CA644C05CC722F59 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RMQClient;
 			target = D015D7C0C1EE9DDC863F493A9551FFE3 /* RMQClient */;
-			targetProxy = 352C4817B2FC467288F549C8E77F4105 /* PBXContainerItemProxy */;
+			targetProxy = 336DF45D50B554DD30E27A835BD05E11 /* PBXContainerItemProxy */;
 		};
-		375619852492947359EB8A1F99537168 /* PBXTargetDependency */ = {
+		30D55CDFF7A8BA4111B6E4D49C87A8BA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = FMDB;
-			target = 8592E0E389D40AC17881400ADC67ABC0 /* FMDB */;
-			targetProxy = 0953BA2F5D2974DC126B36C82F289D3C /* PBXContainerItemProxy */;
+			name = LazyScroll;
+			target = 0620493F3B6F611088C7488B6C80FEA2 /* LazyScroll */;
+			targetProxy = 96CB10F5373013D54641B400D9D74B2D /* PBXContainerItemProxy */;
 		};
-		37BF8AF7F61636FA78CF4D86074AFEE7 /* PBXTargetDependency */ = {
+		3DC66B79DE55FC9B76DBF39009153BF5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = MBProgressHUD;
-			target = 82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */;
-			targetProxy = A020AE62D4E679383B1B0C965CC63433 /* PBXContainerItemProxy */;
+			name = RMQClient;
+			target = D015D7C0C1EE9DDC863F493A9551FFE3 /* RMQClient */;
+			targetProxy = E8225DA525A6BC7FBFF3F8E9DAD36797 /* PBXContainerItemProxy */;
 		};
-		3F2D7DD5D818599B9D38073CB76CB61D /* PBXTargetDependency */ = {
+		44CB472ADF732120FBB9B33C8F68AE84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MJRefresh;
+			target = 6868056D761E163D10FDAF8CF1C4D9B8 /* MJRefresh */;
+			targetProxy = C9939F6F7202EBF34E0AE2B27A08740C /* PBXContainerItemProxy */;
+		};
+		4E0328043C2486EB84FE5D9C808091C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SocketRocket;
+			target = 1948D0B63D2CF6A48E18B0B292BC6091 /* SocketRocket */;
+			targetProxy = C0789757214CFCA6588EB56A8C71415F /* PBXContainerItemProxy */;
+		};
+		53AF7F6DDE12FE752AF61C0633C8D297 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaAsyncSocket;
+			target = 6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */;
+			targetProxy = 69E1B9CC2B88B6796E652A24A5303837 /* PBXContainerItemProxy */;
+		};
+		554AD09DD4F46B1913E81EB51AEE926B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YYK_BaseViews;
+			target = 92973FFF73DE59F41738C0316DE4387F /* YYK_BaseViews */;
+			targetProxy = 79F125FFBBE666677448449B2F98DCFA /* PBXContainerItemProxy */;
+		};
+		5E2B63A4DE2BF52C9AD0571AD73A53E4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AFNetworking;
 			target = 0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */;
-			targetProxy = 1ED786DE7DC9AEB38DD6BCE72EA2017A /* PBXContainerItemProxy */;
+			targetProxy = 3627B5B3AC8ED2D9E9410DC7EA43976A /* PBXContainerItemProxy */;
+		};
+		600E71DDEA11C4ED8FB742BA4F4A6BDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = 0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */;
+			targetProxy = 60EA6078BF090732F8DE04F8F9708F53 /* PBXContainerItemProxy */;
 		};
 		42B9845FDDBAC86F01F59060483B3F67 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -5677,21 +5876,21 @@
 		};
 		44D4A104082CF64D9A19C57577771076 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = RMQClient;
-			target = D015D7C0C1EE9DDC863F493A9551FFE3 /* RMQClient */;
-			targetProxy = BCE374D1A0FCEA021B50C1A76D208AB3 /* PBXContainerItemProxy */;
+			name = ReactiveObjC;
+			target = 438B238ACC7DF1178D1BCE1A31983146 /* ReactiveObjC */;
+			targetProxy = 7862FD6BA4B022735E507E89646348E6 /* PBXContainerItemProxy */;
 		};
-		502C748367A37E0507BCED042E7F3A36 /* PBXTargetDependency */ = {
+		7B72A9DDD9256737B45537D6EF62EF28 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SocketRocket;
-			target = 1948D0B63D2CF6A48E18B0B292BC6091 /* SocketRocket */;
-			targetProxy = C6C04ECB137D4973FBAD70A01C75C3D6 /* PBXContainerItemProxy */;
+			name = GTMBase64;
+			target = ABD0BEB997F424C11EE21A4E091425E4 /* GTMBase64 */;
+			targetProxy = F1D6CB6DCF3812B5C1365DB3C98BE1E9 /* PBXContainerItemProxy */;
 		};
-		52811D2A724EABFFCE9C87BE029F1E96 /* PBXTargetDependency */ = {
+		7E2BCE0CC58220BF1FCBF57475A40F3C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = TMUtils;
-			target = 000E2E1CEA5AF96DEBC2F5498D244C6E /* TMUtils */;
-			targetProxy = 93FF9E9752A68D756C4E6BAC617DE4A5 /* PBXContainerItemProxy */;
+			name = WoodPeckeriOS;
+			target = 1150BA9E63B3AAABFCA7335BD73FD9FD /* WoodPeckeriOS */;
+			targetProxy = B60CCA74F2C7889A0124B25FFF0DD722 /* PBXContainerItemProxy */;
 		};
 		586B50EA987B353B6557DA55A058EA8D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -5701,51 +5900,57 @@
 		};
 		5FE0C09387691E0AF26C84A7DB2006BF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = CocoaAsyncSocket;
-			target = 6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */;
-			targetProxy = 815BD9475C4ABEB9D95D9E66B702B473 /* PBXContainerItemProxy */;
+			name = JKVValue;
+			target = 693F68B0ECDCFF738C4CC7B5E5243743 /* JKVValue */;
+			targetProxy = 45FA3F31A7B3601807DCAAA6FFDD9DEC /* PBXContainerItemProxy */;
 		};
-		75DDC3CA4FEDC04F8E6C06A3837D8892 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ReactiveObjC;
-			target = 438B238ACC7DF1178D1BCE1A31983146 /* ReactiveObjC */;
-			targetProxy = 80E6A07AAF261FA315D5736C5D489806 /* PBXContainerItemProxy */;
-		};
-		78B2911FD05DE37E4F3E02F10DE7B136 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = YK_BaseTools;
-			target = 1E15F13BBB81310B9597BFC22320D4E5 /* YK_BaseTools */;
-			targetProxy = 4BF39C9F1B68B5EB245EBB13FB4568CD /* PBXContainerItemProxy */;
-		};
-		837F5BBCCA73855374D702DC90860862 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AFNetworking;
-			target = 0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */;
-			targetProxy = 1D13DEA2FBE7E84381147ED357FDAF84 /* PBXContainerItemProxy */;
-		};
-		85349EEFED03E2290E9BA17F2159A4A9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ReactiveObjC;
-			target = 438B238ACC7DF1178D1BCE1A31983146 /* ReactiveObjC */;
-			targetProxy = F9952A944447156A750A0422F503CDAD /* PBXContainerItemProxy */;
-		};
-		9094068A56D22BB96F8B7D3839E2EC3A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SocketRocket;
-			target = 1948D0B63D2CF6A48E18B0B292BC6091 /* SocketRocket */;
-			targetProxy = AC567253A95D206551CEA3C054827719 /* PBXContainerItemProxy */;
-		};
-		912F3EFDD1A375A76E0CCE085CDF6A66 /* PBXTargetDependency */ = {
+		8D150863C11FB664C46FCCCDE81508C0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TMUtils;
 			target = 000E2E1CEA5AF96DEBC2F5498D244C6E /* TMUtils */;
-			targetProxy = 2AE379C31A04A21FDD66567817EE5664 /* PBXContainerItemProxy */;
+			targetProxy = F01A262D9B68F679D6EC06AB26DF260D /* PBXContainerItemProxy */;
 		};
-		973044FD2CDA9C0658C0B856633CF234 /* PBXTargetDependency */ = {
+		98093B5D2AF9B5DEAC72E1D5A3E42D6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IQKeyboardManager;
+			target = FBA456CB50E371584C11231929A0971E /* IQKeyboardManager */;
+			targetProxy = EEB66DA226E3FD09005A6C94A13C7104 /* PBXContainerItemProxy */;
+		};
+		985D14C62580D80EE72A71AC2AA06A94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YK_BaseTools;
+			target = 1E15F13BBB81310B9597BFC22320D4E5 /* YK_BaseTools */;
+			targetProxy = 17C8B88C66972C441F16B11C2F58EE23 /* PBXContainerItemProxy */;
+		};
+		9B159851DE3928B731EEE500246271B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MJExtension;
+			target = 4D3BA58D0583DF37575CACAB3DDADC85 /* MJExtension */;
+			targetProxy = 4A53AB0EC3476B5BB3EB8AD78AE21520 /* PBXContainerItemProxy */;
+		};
+		A88AC3B7F4413499F71E24BDA3C54C7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
+			targetProxy = 67A096F39603EFFAC1278CE44D4B36FE /* PBXContainerItemProxy */;
+		};
+		9094068A56D22BB96F8B7D3839E2EC3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JKVValue;
+			target = 693F68B0ECDCFF738C4CC7B5E5243743 /* JKVValue */;
+			targetProxy = FFA40AEB98A0977C86B9C4442F5FD99E /* PBXContainerItemProxy */;
+		};
+		BFA319E0A0DA62ECF1494D91F31376A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = 82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */;
+			targetProxy = 539F025CDC569F015C7025F2423E4A53 /* PBXContainerItemProxy */;
+		};
+		C4D3959C136BB4D725D40EC5AC83B0B2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "GDataXML-HTML";
 			target = 8DC930BB3CA83896E6936E285BBA90B9 /* GDataXML-HTML */;
-			targetProxy = 2157C4D6C91DFC0D264A06F7A583D058 /* PBXContainerItemProxy */;
+			targetProxy = 4C3F5A2389C5171A1C0F9DC7E735DB03 /* PBXContainerItemProxy */;
 		};
 		9AA0BDDB18E2F8AF0B5B21E9AFAACC87 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -5761,33 +5966,33 @@
 		};
 		A18ED4CA48FE8DBB1EA58EF844234A02 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = JKVValue;
-			target = 693F68B0ECDCFF738C4CC7B5E5243743 /* JKVValue */;
-			targetProxy = 68C4F085E491AB92C73AA4DB109A23CA /* PBXContainerItemProxy */;
+			name = PPBadgeView;
+			target = 9BA99EA678644AC23346F73D0DD3DCEB /* PPBadgeView */;
+			targetProxy = 16DABFFB3103834C4FE76E98AE10605D /* PBXContainerItemProxy */;
 		};
 		CFDE625019B3F9A283F8D3AA26263654 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = PPBadgeView;
-			target = 9BA99EA678644AC23346F73D0DD3DCEB /* PPBadgeView */;
-			targetProxy = E3E28689DB073CAFDA9126946BE58095 /* PBXContainerItemProxy */;
+			name = ReactiveObjC;
+			target = 438B238ACC7DF1178D1BCE1A31983146 /* ReactiveObjC */;
+			targetProxy = 921CA55F39DC0B1D265C1F45C8C4ADFD /* PBXContainerItemProxy */;
 		};
 		DC713D977BD181DEF51CEC6F02B45AA4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			name = SDWebImage;
+			target = 3847153A6E5EEFB86565BA840768F429 /* SDWebImage */;
+			targetProxy = 079DEC2B292B5E458E76A0ED10F40081 /* PBXContainerItemProxy */;
+		};
+		EAA220BCF57EC4B13F9C0D3B51E19E3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LookinServer;
+			target = 638FEAAFC575BB76BC6AC055CDDA3506 /* LookinServer */;
+			targetProxy = E3FDA8BBBF0757C799F8D13FF5C43F02 /* PBXContainerItemProxy */;
+		};
+		FE0A435BB134C399BAC7212DE9BE6973 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
 			name = FMDB;
 			target = 8592E0E389D40AC17881400ADC67ABC0 /* FMDB */;
-			targetProxy = 10F02637C1880B1315CC2284A230F152 /* PBXContainerItemProxy */;
-		};
-		DD801FB3B7B46BB506F7DF0A276B9050 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GTMBase64;
-			target = ABD0BEB997F424C11EE21A4E091425E4 /* GTMBase64 */;
-			targetProxy = 815F736B4D91C6DF7D8AE2A005DCE939 /* PBXContainerItemProxy */;
-		};
-		E686236B893E45A4D3771E771D506A98 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WoodPeckeriOS;
-			target = 1150BA9E63B3AAABFCA7335BD73FD9FD /* WoodPeckeriOS */;
-			targetProxy = 7F3E84DB6DE09F69AC7A3937A9DD2C19 /* PBXContainerItemProxy */;
+			targetProxy = 0D4AA4B417DFD8C6162CE42FC3A9AD04 /* PBXContainerItemProxy */;
 		};
 		F36F2C62F578C90A96A97FF3DDBE47FD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -5797,21 +6002,9 @@
 		};
 		F591B72908388FCFF9197082EEEF048C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = IQKeyboardManager;
-			target = FBA456CB50E371584C11231929A0971E /* IQKeyboardManager */;
-			targetProxy = 58D77226146CFCB5469E1975EB8FA055 /* PBXContainerItemProxy */;
-		};
-		F5991B065731B729BD4BD030EEDEE622 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = LazyScroll;
-			target = 0620493F3B6F611088C7488B6C80FEA2 /* LazyScroll */;
-			targetProxy = 29CD2D1A22C023800B019A7F3633B95F /* PBXContainerItemProxy */;
-		};
-		F77C8C141F5E2D49A33CAA428FA83E3D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = YYK_BaseViews;
-			target = 92973FFF73DE59F41738C0316DE4387F /* YYK_BaseViews */;
-			targetProxy = E87A77C774C24DC674E8776DCFD157D3 /* PBXContainerItemProxy */;
+			name = FMDB;
+			target = 8592E0E389D40AC17881400ADC67ABC0 /* FMDB */;
+			targetProxy = 57F43F86162E5F1BA08EEDC8DE07947D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -5850,7 +6043,7 @@
 			};
 			name = Debug;
 		};
-		0A97BE9A07CBB9A61461DA095C53A680 /* Debug */ = {
+		0A79C1725DD57D2BC59CEF82E32619BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 316614724FC6BAB5B308F23B247AE831 /* YK_BaseTools.debug.xcconfig */;
 			buildSettings = {
@@ -5863,26 +6056,27 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/YK_BaseTools/YK_BaseTools-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YK_BaseTools/YK_BaseTools-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/LazyScroll/LazyScroll-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LazyScroll/LazyScroll-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/YK_BaseTools/YK_BaseTools.modulemap";
-				PRODUCT_MODULE_NAME = YK_BaseTools;
-				PRODUCT_NAME = YK_BaseTools;
+				MODULEMAP_FILE = "Target Support Files/LazyScroll/LazyScroll.modulemap";
+				PRODUCT_MODULE_NAME = LazyScroll;
+				PRODUCT_NAME = LazyScroll;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		0E28086211F7EE80462ACF15CC14B2BB /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -6032,6 +6226,41 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		240B2D26F7AA4C8D46921D0899672BB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6FCEF713C7276111DCD328FC9BA3954 /* YYK_BaseViews.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YYK_BaseViews/YYK_BaseViews-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YYK_BaseViews/YYK_BaseViews-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/YYK_BaseViews/YYK_BaseViews.modulemap";
+				PRODUCT_MODULE_NAME = YYK_BaseViews;
+				PRODUCT_NAME = YYK_BaseViews;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		24841A53A09BB7F70F7EB38418D34BBD /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -6275,44 +6504,6 @@
 			};
 			name = Release;
 		};
-		4991F29235D5504013315A9ADB9C0ABD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C7D5BBE84101D5141CC96ADD231BB17 /* Pods-FirstDemo.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FirstDemo/Pods-FirstDemo-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FirstDemo/Pods-FirstDemo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		4E2A9BFF57A72A137203A9387C2F69D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CF2959746968D40D8BC4271CE72B24CF /* PPBadgeView.debug.xcconfig */;
@@ -6381,9 +6572,43 @@
 			};
 			name = Debug;
 		};
-		52542F7B931490A1CBD2314E564B072E /* Release */ = {
+		513352FD44DB5D5F2842890DBE21745B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D118969903CE0D2A8474079661D45F50 /* ReactiveObjC.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YYK_BaseViews/YYK_BaseViews-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YYK_BaseViews/YYK_BaseViews-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/YYK_BaseViews/YYK_BaseViews.modulemap";
+				PRODUCT_MODULE_NAME = YYK_BaseViews;
+				PRODUCT_NAME = YYK_BaseViews;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		52542F7B931490A1CBD2314E564B072E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63BEEFF935C9C7F32910A9DE2588FAEA /* RMQClient.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -6406,41 +6631,6 @@
 				MODULEMAP_FILE = "Target Support Files/ReactiveObjC/ReactiveObjC.modulemap";
 				PRODUCT_MODULE_NAME = ReactiveObjC;
 				PRODUCT_NAME = ReactiveObjC;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		57FAA35BF6C8A2E702E446A08358A43F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63BEEFF935C9C7F32910A9DE2588FAEA /* RMQClient.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RMQClient/RMQClient-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RMQClient/RMQClient-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/RMQClient/RMQClient.modulemap";
-				PRODUCT_MODULE_NAME = RMQClient;
-				PRODUCT_NAME = RMQClient;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -6555,9 +6745,42 @@
 			};
 			name = Release;
 		};
-		624A99678155B190D61D668756DD1B75 /* Debug */ = {
+		6730493796C72F035E1A2AFCE52BB49C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7E67130A93C781CE8BDF486886E6AF17 /* TMUtils.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6A6B4D0426A32422940DA416B5C339B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A2C70407955B020E4F7827A2BEC3E66 /* YK_BaseTools.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7271C5CF6A451447105B93A523FDDA7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2969413BA1BD79DFB814FF0FF59D778 /* RMQClient.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -6568,8 +6791,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TMUtils/TMUtils-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TMUtils/TMUtils-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/RMQClient/RMQClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RMQClient/RMQClient-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -6577,43 +6800,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/TMUtils/TMUtils.modulemap";
-				PRODUCT_MODULE_NAME = TMUtils;
-				PRODUCT_NAME = TMUtils;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6285383417165B398064857A6B4E68D8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A2C70407955B020E4F7827A2BEC3E66 /* YK_BaseTools.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/YK_BaseTools/YK_BaseTools-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YK_BaseTools/YK_BaseTools-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/YK_BaseTools/YK_BaseTools.modulemap";
-				PRODUCT_MODULE_NAME = YK_BaseTools;
-				PRODUCT_NAME = YK_BaseTools;
+				MODULEMAP_FILE = "Target Support Files/RMQClient/RMQClient.modulemap";
+				PRODUCT_MODULE_NAME = RMQClient;
+				PRODUCT_NAME = RMQClient;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -6777,7 +6966,7 @@
 			};
 			name = Debug;
 		};
-		88083EBBE195DA0A0405565839890076 /* Debug */ = {
+		8E3C080482B6E18A2E533D3CD4DF1D71 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 68CF05355AF9FAEBE0F25A90A9943514 /* RMQClient.debug.xcconfig */;
 			buildSettings = {
@@ -6790,8 +6979,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RMQClient/RMQClient-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RMQClient/RMQClient-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/LazyScroll/LazyScroll-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LazyScroll/LazyScroll-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -6799,9 +6988,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/RMQClient/RMQClient.modulemap";
-				PRODUCT_MODULE_NAME = RMQClient;
-				PRODUCT_NAME = RMQClient;
+				MODULEMAP_FILE = "Target Support Files/LazyScroll/LazyScroll.modulemap";
+				PRODUCT_MODULE_NAME = LazyScroll;
+				PRODUCT_NAME = LazyScroll;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -6948,9 +7137,44 @@
 			};
 			name = Debug;
 		};
-		AE69F2AE876DEC4E1C77AEA9608AE7A2 /* Release */ = {
+		AB329589D68A8A4AB02E8F8ADCED6867 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7BCBDB73C6922CCDF00E0AD2B7968717 /* GTMBase64.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YK_BaseTools/YK_BaseTools-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YK_BaseTools/YK_BaseTools-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/YK_BaseTools/YK_BaseTools.modulemap";
+				PRODUCT_MODULE_NAME = YK_BaseTools;
+				PRODUCT_NAME = YK_BaseTools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AE69F2AE876DEC4E1C77AEA9608AE7A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2222878890924EE63979E607AAC79E8D /* LazyScroll.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -6982,40 +7206,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		AF5B44EAD289BED3ADC17D769128AED3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2222878890924EE63979E607AAC79E8D /* LazyScroll.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LazyScroll/LazyScroll-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LazyScroll/LazyScroll-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/LazyScroll/LazyScroll.modulemap";
-				PRODUCT_MODULE_NAME = LazyScroll;
-				PRODUCT_NAME = LazyScroll;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -7077,9 +7267,9 @@
 			};
 			name = Release;
 		};
-		B81B415E3D618D24E7C4D4A6B6185C60 /* Release */ = {
+		B13702AF9A3621E055FEDD328DBE477F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E862BD29C45397757419A98A253056A /* Pods-FirstDemo.release.xcconfig */;
+			baseConfigurationReference = 6C7D5BBE84101D5141CC96ADD231BB17 /* Pods-FirstDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -7110,11 +7300,10 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		B8727AE0BCFC028F864893C133D2F060 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -7323,7 +7512,7 @@
 			};
 			name = Release;
 		};
-		D1F20CA5AF74551DBEC539096B44760B /* Release */ = {
+		D45412CBFE0FC570945F58622B5160D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2ACFC0E7DDB0DCD6B6C45B09195CD744 /* Masonry.release.xcconfig */;
 			buildSettings = {
@@ -7336,8 +7525,42 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/YK_BaseTools/YK_BaseTools-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YK_BaseTools/YK_BaseTools-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/YK_BaseTools/YK_BaseTools.modulemap";
+				PRODUCT_MODULE_NAME = YK_BaseTools;
+				PRODUCT_NAME = YK_BaseTools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D7BB2407F0839A4F7884E4577C428341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86A4B02188F66D9280E313E54A4E2752 /* RMQClient.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RMQClient/RMQClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RMQClient/RMQClient-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -7345,20 +7568,19 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
-				PRODUCT_MODULE_NAME = Masonry;
-				PRODUCT_NAME = Masonry;
+				MODULEMAP_FILE = "Target Support Files/RMQClient/RMQClient.modulemap";
+				PRODUCT_MODULE_NAME = RMQClient;
+				PRODUCT_NAME = RMQClient;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		EB80C56A9214A58296EBB1463E0C2EAB /* Release */ = {
+		E34C34CDFEB047543C2B816EF7EC779B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 77DF5C50063F99EE9AB311323D44E600 /* LazyScroll.release.xcconfig */;
 			buildSettings = {
@@ -7371,8 +7593,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LazyScroll/LazyScroll-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LazyScroll/LazyScroll-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/TMUtils/TMUtils-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TMUtils/TMUtils-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -7380,18 +7602,17 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/LazyScroll/LazyScroll.modulemap";
-				PRODUCT_MODULE_NAME = LazyScroll;
-				PRODUCT_NAME = LazyScroll;
+				MODULEMAP_FILE = "Target Support Files/TMUtils/TMUtils.modulemap";
+				PRODUCT_MODULE_NAME = TMUtils;
+				PRODUCT_NAME = TMUtils;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		F0F5A16A696891D59659019AEEEF208B /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -7421,6 +7642,45 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F74E6810313877B06955F40F610F6D5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E862BD29C45397757419A98A253056A /* Pods-FirstDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FirstDemo/Pods-FirstDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FirstDemo/Pods-FirstDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -7475,6 +7735,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		07752846C8C5DAFB66B5A1CC4575D8AD /* Build configuration list for PBXNativeTarget "Pods-FirstDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B13702AF9A3621E055FEDD328DBE477F /* Debug */,
+				F74E6810313877B06955F40F610F6D5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		087BD3E831FEAE1DCCB42471A807DF49 /* Build configuration list for PBXNativeTarget "MJRefresh" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -7520,11 +7789,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		210647153E6CEB06D1C1FA0F4697E8E6 /* Build configuration list for PBXNativeTarget "YK_BaseTools" */ = {
+		3AD457A57C2BEC81AE59FB4685978B60 /* Build configuration list for PBXNativeTarget "TMUtils" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0A97BE9A07CBB9A61461DA095C53A680 /* Debug */,
-				6285383417165B398064857A6B4E68D8 /* Release */,
+				E34C34CDFEB047543C2B816EF7EC779B /* Debug */,
+				D452E3ECEE5E3AE6B85535B8C1CF2696 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -7561,6 +7830,15 @@
 			buildConfigurations = (
 				B8727AE0BCFC028F864893C133D2F060 /* Debug */,
 				5F73FAFE8B8967E89A0F1B2A0C6A2E64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69A7C5A9F68AFADD2D2FDFAE42065177 /* Build configuration list for PBXNativeTarget "LazyScroll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E3C080482B6E18A2E533D3CD4DF1D71 /* Debug */,
+				0A79C1725DD57D2BC59CEF82E32619BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -7610,20 +7888,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A680B8760B0894FDF1B9F0F17A831925 /* Build configuration list for PBXNativeTarget "LazyScroll" */ = {
+		BEF508C0BFACA58DD6246C13532DD5B3 /* Build configuration list for PBXNativeTarget "RMQClient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AF5B44EAD289BED3ADC17D769128AED3 /* Debug */,
-				EB80C56A9214A58296EBB1463E0C2EAB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B03F374EB80226CAEFE3F5BB017130E4 /* Build configuration list for PBXNativeTarget "TMUtils" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				624A99678155B190D61D668756DD1B75 /* Debug */,
-				D09D877483EF86EB519C7E04A9E6AB57 /* Release */,
+				D7BB2407F0839A4F7884E4577C428341 /* Debug */,
+				7271C5CF6A451447105B93A523FDDA7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -7646,20 +7915,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D51202D6295B071C28C4D6EB91D8943B /* Build configuration list for PBXNativeTarget "RMQClient" */ = {
+		E50069C3EB917EBB49F00010D6AD6CAF /* Build configuration list for PBXNativeTarget "YK_BaseTools" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88083EBBE195DA0A0405565839890076 /* Debug */,
-				57FAA35BF6C8A2E702E446A08358A43F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EA4FB38BEF965F64FE118BD45A350B7E /* Build configuration list for PBXNativeTarget "Pods-FirstDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4991F29235D5504013315A9ADB9C0ABD /* Debug */,
-				B81B415E3D618D24E7C4D4A6B6185C60 /* Release */,
+				D45412CBFE0FC570945F58622B5160D0 /* Debug */,
+				AB329589D68A8A4AB02E8F8ADCED6867 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

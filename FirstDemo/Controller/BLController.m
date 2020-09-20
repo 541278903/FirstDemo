@@ -12,6 +12,7 @@
 //#import <BLTNBoard-Swift.h>
 #import "Toast.h"
 #import "TButton.h"
+#import <YYK_BaseViews/YKBaseClass.h>
 @interface BLController ()
 
 //@property(nonatomic,strong)BLTNItemManager *blnt;
@@ -71,6 +72,15 @@
 -(void)Touch
 {
 //    [self.blnt showBulletinAboveViewController:self animated:YES completion:NULL];
+    YKAlertView *alertv = [[YKAlertView alloc]initViewController:self showType:AlertShowTypeFromBottom];
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 0, 200)];
+    [alertv addViewinMainView:view];
+    [view mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo(200);
+    }];
+    view.backgroundColor = UIColor.redColor;
+    [alertv showView];
+    
 }
 - (void)dealloc
 {

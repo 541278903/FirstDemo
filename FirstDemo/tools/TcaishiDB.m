@@ -8,6 +8,7 @@
 
 #import "TcaishiDB.h"
 #import "T_CS_Entity.h"
+#import <MJExtension/MJExtension.h>
 //#def
 @interface TcaishiDB()
 @property(nonatomic,strong)Fmdbtool *maindb;
@@ -57,10 +58,7 @@ static TcaishiDB *caishidb;
     @autoreleasepool {
         NSMutableArray<T_CS_Entity *> *arr = [[NSMutableArray alloc]init];
         NSArray *larr = [self.maindb serchTable:@"T_caishi" argmes:parms];
-        for (id obj in larr) {
-            T_CS_Entity *tcs = [[T_CS_Entity alloc]initWithDic:obj];
-            [arr addObject:tcs];
-        }
+        arr = [T_CS_Entity mj_objectArrayWithKeyValuesArray:larr];
         return [arr copy];
     }
 }
