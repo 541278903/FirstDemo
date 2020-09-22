@@ -1,5 +1,6 @@
 ${PODS_ROOT}/Target Support Files/Pods-FirstDemo/Pods-FirstDemo-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
+${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework
 ${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework
 ${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework
 ${BUILT_PRODUCTS_DIR}/GDataXML-HTML/GDataXML_HTML.framework
@@ -19,5 +20,6 @@ ${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
 ${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework
 ${BUILT_PRODUCTS_DIR}/TMUtils/TMUtils.framework
 ${PODS_ROOT}/WoodPeckeriOS/WoodPeckeriOS.framework
+${BUILT_PRODUCTS_DIR}/YK_BaseMediator/YK_BaseMediator.framework
 ${BUILT_PRODUCTS_DIR}/YK_BaseTools/YK_BaseTools.framework
 ${BUILT_PRODUCTS_DIR}/YYK_BaseViews/YYK_BaseViews.framework

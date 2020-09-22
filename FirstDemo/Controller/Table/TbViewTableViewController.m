@@ -10,6 +10,7 @@
 
 #import "CTableViewController.h"
 #import <SocketRocket/SocketRocket.h>
+#import <YK_BaseMediator/CTMediator+YKBase.h>
 
 
 #define XMGTextFont [UIFont systemFontSize:14];
@@ -106,7 +107,7 @@
 /// @param con 所存在的控制器
 -(void)SetMessageDelegate:(SendMessageController *)con
 {
-    AllController *firstcon = [[AllController alloc]init];
+    AllController *firstcon =  [[AllController alloc]initWithName:@"" Con:[[CTMediator sharedInstance]normalBaseViewController:@{}]]; //[[AllController alloc]init];
     [self.allcon addObject:firstcon];
     [self.tableView reloadData];
 }

@@ -1,0 +1,6 @@
+framework module YK_BaseMediator {
+  umbrella header "YK_BaseMediator-umbrella.h"
+
+  export *
+  module * { export * }
+}
