@@ -51,7 +51,7 @@
 		2BBDA098232684A100A2E111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BBDA097232684A100A2E111 /* Assets.xcassets */; };
 		2BBDA09B232684A100A2E111 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BBDA099232684A100A2E111 /* LaunchScreen.storyboard */; };
 		2BBDA09E232684A100A2E111 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBDA09D232684A100A2E111 /* main.m */; };
-		DCAEF9209F46B39D96AFDB64 /* Pods_FirstDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934455A8135A010255932ED3 /* Pods_FirstDemo.framework */; };
+		727C193047AF559E88AE9D04 /* Pods_FirstDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55BE96D0BF7849D81E123EB /* Pods_FirstDemo.framework */; };
 		F92389AC24C7D6530000BCC2 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92389AB24C7D6530000BCC2 /* TextViewController.m */; };
 		F92389AF24C7DD420000BCC2 /* YKAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92389AE24C7DD420000BCC2 /* YKAlertViewController.m */; };
 		F92389B224C801470000BCC2 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92389B124C801470000BCC2 /* DetailViewController.m */; };
@@ -145,8 +145,8 @@
 		2BBDA09C232684A100A2E111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BBDA09D232684A100A2E111 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		47D9FFB30FEE4A3B1BF0A528 /* Pods-FirstDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstDemo.release.xcconfig"; path = "Target Support Files/Pods-FirstDemo/Pods-FirstDemo.release.xcconfig"; sourceTree = "<group>"; };
-		934455A8135A010255932ED3 /* Pods_FirstDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirstDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B9BEDE23D0CEE1E85F90557 /* Pods-FirstDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstDemo.debug.xcconfig"; path = "Target Support Files/Pods-FirstDemo/Pods-FirstDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B55BE96D0BF7849D81E123EB /* Pods_FirstDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirstDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92389AA24C7D6530000BCC2 /* TextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
 		F92389AB24C7D6530000BCC2 /* TextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
 		F92389AD24C7DD420000BCC2 /* YKAlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKAlertViewController.h; sourceTree = "<group>"; };
@@ -163,7 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B23594F23B495C000C5E1B3 /* CoreFoundation.framework in Frameworks */,
-				DCAEF9209F46B39D96AFDB64 /* Pods_FirstDemo.framework in Frameworks */,
+				727C193047AF559E88AE9D04 /* Pods_FirstDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +176,7 @@
 				2B23594E23B495C000C5E1B3 /* CoreFoundation.framework */,
 				2BBA7889234C68BE004055A9 /* Foundation.framework */,
 				2B203EFC234C59CB00808F21 /* UIKit.framework */,
-				934455A8135A010255932ED3 /* Pods_FirstDemo.framework */,
+				B55BE96D0BF7849D81E123EB /* Pods_FirstDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

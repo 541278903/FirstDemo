@@ -1061,13 +1061,6 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 000E2E1CEA5AF96DEBC2F5498D244C6E;
-			remoteInfo = TMUtils;
-		};
-		98FD026315BFD99FC5AC4D687097A4A4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
 			remoteGlobalIDString = 438B238ACC7DF1178D1BCE1A31983146;
 			remoteInfo = ReactiveObjC;
 		};
@@ -2207,23 +2200,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2AB18AFFCAB2A1254B96ACB04DD1FCA0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2C18C75CBB31A15FCF43DB613A0B1795 /* AVFoundation.framework in Frameworks */,
-				8305A8CFDDFADF90CCADD6D33FC27614 /* Foundation.framework in Frameworks */,
-				F78AEB9210F12FFBD05A9AAA976CBDA4 /* Masonry.framework in Frameworks */,
-				87B4FAC5EDFCCDBCDC56A0ED6D90D37B /* MJExtension.framework in Frameworks */,
-				E7FF03AA06E7F333C6A8FB1098FE459C /* MJRefresh.framework in Frameworks */,
-				FBBAA9751FBAA946C04138CE771FF642 /* Photos.framework in Frameworks */,
-				5D8406B7A9EA7AC6F91D87ACDB5AEFE2 /* ReactiveObjC.framework in Frameworks */,
-				D00A88234A84D76983B68D3F656581BD /* SDWebImage.framework in Frameworks */,
-				A02DB4807B993E742599859142341555 /* Security.framework in Frameworks */,
-				BC610DD5DA34EFEB24D32835A0CFACCC /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2B81D36864111405952DE674DFB6A43D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -2270,11 +2246,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46A26D60232713B37516B8E5EF90CA55 /* Frameworks */ = {
+		42EEB1516040507037638E034BBA4636 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF5E1555C50CBB03E93FF706A5219439 /* Foundation.framework in Frameworks */,
+				72BB75CC3FACDE295824FD705B280A2E /* AFNetworking.framework in Frameworks */,
+				78BB46993A5CC7107A1D5F4110F06ED0 /* AVFoundation.framework in Frameworks */,
+				9F44072F77B75F03C6442A9AD4E6BC2A /* FMDB.framework in Frameworks */,
+				B500DFF2D57AD1626E38FC8B837D2D46 /* Foundation.framework in Frameworks */,
+				BB707C7F29750D37483CD201D6C93789 /* Photos.framework in Frameworks */,
+				B1BDCA84ED2DE46725C1BE49EA22131B /* ReactiveObjC.framework in Frameworks */,
+				A3C6D4D49EE6A3C796FBD9E2C2EBFB72 /* RMQClient.framework in Frameworks */,
+				70625AB5CED4C2D9A1354C230F8E66BB /* Security.framework in Frameworks */,
+				EAEAAE2B152A8EFF36D5F06D3CFED5E7 /* SocketRocket.framework in Frameworks */,
+				9BEE87259B9E5C23C62A2D6373B27787 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2342,28 +2327,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7E84207BED392F4B19B3BD09AD8C6F11 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DD2C43BCED61720ADD2623AFA7DDF6B6 /* AVFoundation.framework in Frameworks */,
-				257CB6985D278571B3C2AACF9142D37E /* CTMediator.framework in Frameworks */,
-				DD8CB8CC3C56728A3062A75F461A2F0D /* Foundation.framework in Frameworks */,
-				650D812CD58400553B0B48160AA5C830 /* Photos.framework in Frameworks */,
-				44B046E3F2E28A5392B70B1DE657B1D3 /* Security.framework in Frameworks */,
-				9591C5A8FD7E596C18E0434AFD116059 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		81855EC19B4F7B96AC55795BCD131AFA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B6C10C0A45ED66499CE13A961B01F12C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B621838E9985FDCBB44497A1B908552D /* Frameworks */ = {
+		8889C8AFAB37E060AD881B0E266AA3EC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -2376,6 +2340,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				27256E913790A1EC111854E3D10E67F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B621838E9985FDCBB44497A1B908552D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				682C7C734B3010DFB31A10E8E0001E22 /* Foundation.framework in Frameworks */,
+				BA5143980BC2746E8931EE1B444892D1 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B72F4A92E740B5881E39EB270809B619 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DBBCDEE94B6CDAA96C9A3CEB1141327 /* Foundation.framework in Frameworks */,
+				B6614D4DA18359CC5D5ECE52D644E874 /* TMUtils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2409,25 +2391,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				682C7C734B3010DFB31A10E8E0001E22 /* Foundation.framework in Frameworks */,
-				BA5143980BC2746E8931EE1B444892D1 /* UIKit.framework in Frameworks */,
+				8FC29E832DDAB80383225B6835060BA1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C1DC70D953BA2625C2371DE87C143487 /* Frameworks */ = {
+		F7DF8F13D7FF0E6685C2FC60D022C928 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C6B54BA75A17198C96AD2F8A461B660 /* AFNetworking.framework in Frameworks */,
-				8B75B7C8B4BE72CAB6F8E184C19BB815 /* AVFoundation.framework in Frameworks */,
-				5A0FF0FE8AEE9B7C177A74F8FAA56B96 /* FMDB.framework in Frameworks */,
-				C1C686166004B737B5EFFA175B41C730 /* Foundation.framework in Frameworks */,
-				0F2CE726231ED258EE7C1AAA0ACE4A2B /* Photos.framework in Frameworks */,
-				9711B5FC69F1D420C871167D574EB0DF /* ReactiveObjC.framework in Frameworks */,
-				D17648B005A84A33BA6EEE47D875A53B /* RMQClient.framework in Frameworks */,
-				4E82503E66F842877841314EE2F8837C /* Security.framework in Frameworks */,
-				231998150A98651899879FA803FCCDBC /* SocketRocket.framework in Frameworks */,
-				BBDCB2B7AEE7D8D4DB585E52302D617D /* UIKit.framework in Frameworks */,
+				F4A10906A5A31E359651468A15C24305 /* CocoaAsyncSocket.framework in Frameworks */,
+				B539380072BE83FF467E9663D5109363 /* Foundation.framework in Frameworks */,
+				33DAB9C7812AD0DFB6C0965EB6F88D20 /* JKVValue.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3436,15 +3410,6 @@
 			name = Security;
 			sourceTree = "<group>";
 		};
-		84EE28CF15D3EF398200BEA6A67AD0E4 /* Security */ = {
-			isa = PBXGroup;
-			children = (
-				303680F2E08EB7DF0CFB38C5B8129A82 /* AFSecurityPolicy.h */,
-				97D09AA257D5CD41C437FD2B4D16D863 /* AFSecurityPolicy.m */,
-			);
-			name = Security;
-			sourceTree = "<group>";
-		};
 		8A254C8E12D1C8D7455D0061B4606C85 /* Pods-FirstDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -3864,20 +3829,6 @@
 				8C2288F27599D6DC7C9B6B6140853D17 /* FMDB.debug.xcconfig */,
 				45F512B5603A4152E7B4D661C6EA8B3B /* FMDB.release.xcconfig */,
 			);
-			name = NSURLSession;
-			sourceTree = "<group>";
-		};
-		F56AFE13E04EB5471DBE30814F418DDF /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				149CEA1D1B1A45743C5DD781E7AEA987 /* ReactiveObjC.modulemap */,
-				84C19F3156E55841BAB2D9A92233FF78 /* ReactiveObjC-dummy.m */,
-				094D4DAA8BA03E911A53370B325688E9 /* ReactiveObjC-Info.plist */,
-				B66B19AD146954C8CD5FBB31AF3DC530 /* ReactiveObjC-prefix.pch */,
-				4786BD5A905180921A1A2B2A467474F1 /* ReactiveObjC-umbrella.h */,
-				E4BBB4900BB6DFC0D29F3A1BDCF8AC3A /* ReactiveObjC.debug.xcconfig */,
-				882CA97F10D6D5F20F77B9E0CC3C7510 /* ReactiveObjC.release.xcconfig */,
-			);
 			name = "Support Files";
 			path = "../Target Support Files/FMDB";
 			sourceTree = "<group>";
@@ -4149,15 +4100,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1C03F13FD5041570A74DC48FC0AB8B51 /* Headers */ = {
+		1BB69489F03B2F37717EE174219C239B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CC96366D9C15520CF3BEE60059ADFAD /* NSArray+TMSafeUtils.h in Headers */,
-				A5BD2794A416E1B3637DBB8C118D9D1B /* NSDictionary+TMSafeUtils.h in Headers */,
-				CFD8A11BC3CA7A75A0DA5FBE6E539196 /* NSString+TMSafeUtils.h in Headers */,
-				7702CEEA7C1203035702AFBE5815A571 /* TMUtils-umbrella.h in Headers */,
-				59BF40420A296A36C8FBB46BD5FE2025 /* TMUtils.h in Headers */,
+				6C05F134D666F33CB0957ADEE6E79317 /* LazyScroll-umbrella.h in Headers */,
+				43BFACC8E13671560EC64514ACFB2DE9 /* LazyScroll.h in Headers */,
+				C3C13A3FEDBD8CE63F5456D2BD903353 /* TMLazyItemModel.h in Headers */,
+				4C031B3E09211339F5C806CD0401A166 /* TMLazyItemViewProtocol.h in Headers */,
+				157F7F0383087F3931AC7A48043598E9 /* TMLazyModelBucket.h in Headers */,
+				640BD147339BEE9C56AF94BB28A0B0D6 /* TMLazyReusePool.h in Headers */,
+				FAF3906DFE63659831AC64B133B263BE /* TMLazyScrollView.h in Headers */,
+				5BF59A01C22CB135E0AC2FEE641D5AC8 /* UIView+TMLazyScrollView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4184,11 +4138,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2E91AFFA530F7D68F5819D099B789CBD /* Headers */ = {
+		258661F5530C8FE0AB5B759C4E7E769E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD941CD445B27BD5F84ADC9D880EA142 /* Pods-FirstDemo-umbrella.h in Headers */,
+				B7B1D1640CD084476A6BD39B115A5A3E /* FMDBTools.h in Headers */,
+				3A22A10980B39806490689A1DD8132C6 /* MQKey.h in Headers */,
+				ECCB6F1F1F58C1A4312F4158266443FB /* MQManager.h in Headers */,
+				D79BE80F972C2748BA867B93C7EABE8B /* Singleton.h in Headers */,
+				F5DEC3E940E25E5D92E64CFDC6ECB2FA /* YK_BaseTools-umbrella.h in Headers */,
+				941BC07B58AEAF4A6D9C650418E94977 /* YKAudioManager.h in Headers */,
+				A3E3F91F3C142D35002F3F88D62226A1 /* YKNetWorking.h in Headers */,
+				F7C565017200959910715840917E40F2 /* YKNetWorkingRequest.h in Headers */,
+				987703A6B201524A77C6565C83129B4D /* YKRecordUtil.h in Headers */,
+				9D74D0685D75BACBA3C972906AEB4929 /* YKSocket.h in Headers */,
+				C027951A8D2B5AA3989D5773D7B62750 /* YKTools.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4227,18 +4191,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8B0F59EF05BF63B669B1F7776A989E07 /* Headers */ = {
+		8F0EBAB2761523F18BB73EB4DC5CBEC3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				371B811D6F4F93717F2A1106631707D6 /* LazyScroll-umbrella.h in Headers */,
-				0787E297ABC2C1153061F784820092DF /* LazyScroll.h in Headers */,
-				C56F5FBCCBE5F7486C9F197D327093F2 /* TMLazyItemModel.h in Headers */,
-				2CFF66638B65EB50D1A1DB5DE92CB77F /* TMLazyItemViewProtocol.h in Headers */,
-				BD220A04CB05A5031F20F8331647305A /* TMLazyModelBucket.h in Headers */,
-				F183B47A6A235918B3506883700D342C /* TMLazyReusePool.h in Headers */,
-				D50A9AFAF2B83356DD4B9D11398CCC4C /* TMLazyScrollView.h in Headers */,
-				6E660BED8458C98F7FF3C70E5ACA0946 /* UIView+TMLazyScrollView.h in Headers */,
+				81B9E2F21B1EF9FE4E769103108DEA8A /* MBProgressHUD-umbrella.h in Headers */,
+				EB2A4C29BE958CCB03B3FD9FAB927F1F /* MBProgressHUD.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4351,57 +4309,6 @@
 				2F44236F240D213E02C4BD3445600A18 /* UIScrollView+MJExtension.h in Headers */,
 				55C0AA01EFB38DB3E99E12871EAAA0CA /* UIScrollView+MJRefresh.h in Headers */,
 				945A9BE25F8E6ABADEA3F04A7DDE9B08 /* UIView+MJExtension.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A3FF604A29CAA1A907E0AAAEF818E3EE /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				011FF435D95B41AF755D74E1E9325475 /* MASConstraint+YYK.h in Headers */,
-				4BF2878DA7631BD0CF99DC57688CD388 /* NSArray+YYK.h in Headers */,
-				DCCD077FACF219367925BA6C001D9049 /* NSDate+YYK.h in Headers */,
-				9304D6B8EAB79916B94BB70F39F8FE10 /* NSDictionary+YYK.h in Headers */,
-				7C533C51F577045FCE7EBA19F8B6170F /* NSMutableAttributedString+YYK.h in Headers */,
-				A66A2E6595761270DA0118DE2105C70C /* NSObject+YYK.h in Headers */,
-				24426DCB85B258F5C78938A3FA27EA33 /* NSObject+YYKLanguage.h in Headers */,
-				DD066C6871749557BE7F8C86F1D116D8 /* NSString+YYK.h in Headers */,
-				69D6B42E53214570E4E292901C84B353 /* RACSignal+YYK.h in Headers */,
-				12180A66B8AC81A7365BA7DA00C667A2 /* SDView.h in Headers */,
-				9844DCB7B895E0C53BA01D5E47C77BDA /* Singleton.h in Headers */,
-				67C6A5A9486C8B6D5B40085FCCC46E1E /* UIAlertController+YYK.h in Headers */,
-				44A8CFDA7CBF2A88D195549DAB4E7C8C /* UIBarButtonItem+YYK.h in Headers */,
-				18462245DAF2741F23BF552642F07410 /* UIButton+YYK.h in Headers */,
-				DBC0969368ADD73A294073118617F153 /* UIColor+YYK.h in Headers */,
-				1EAEDE1CC59AD3AB580003552BFBC78D /* UIDevice+YYK.h in Headers */,
-				B9B98C5767D8BB910A076E5CBBBF4728 /* UIImage+YYK.h in Headers */,
-				B0546FA212E38E744EAEE23063DE9785 /* UIImageView+YYK.h in Headers */,
-				C2176059472B08D3AFCC49B6B2EA7ED3 /* UILabel+YYK.h in Headers */,
-				F32B6324AF8635B66C494EC25C143082 /* UINavigationController+YYK.h in Headers */,
-				85AB67642B87B48D51D144AE747F21D3 /* UIResponder+YYK.h in Headers */,
-				75C8FC2BEF84AC10FFCB70F8948096B0 /* UITableView+YYK.h in Headers */,
-				7EE90975C0D00CB3F9E7D9C4AB182E95 /* UITextField+YYK.h in Headers */,
-				2C39FEE316442153A742C8CC93F8277F /* UITextView+YYK.h in Headers */,
-				4023FF190C8F604C5EB0512895A7127C /* UIView+YYK.h in Headers */,
-				3EE3731D3B14D0A4CF2C974AAF8D4BBC /* UIViewController+YYK.h in Headers */,
-				D18A1CAB9460F3EA75B890F412D96012 /* YKAlertCenter.h in Headers */,
-				20E4C2CAA831E441643EE102CEC51C25 /* YKAlertView.h in Headers */,
-				66496D370072C0294C52F1032F7FAC40 /* YKBannerView.h in Headers */,
-				D93B2F7A98ADDE2F2DC1ED4AF1FE2C9E /* YKBannerViewCell.h in Headers */,
-				069E28D00AE13B4708452F34C4A9012D /* YKBaseClass.h in Headers */,
-				0ABC892FF5B5F1922C93EE6C6CDAADDA /* YKButton.h in Headers */,
-				65E88DA8CCA0C0EE2277B359BD3DCD6E /* YKCollection.h in Headers */,
-				3F4A2E634F72EF5A68E71572529C0EFA /* YKCollectionView.h in Headers */,
-				D022316CDBF29A2EFC4C158A2178AA25 /* YKFoundation.h in Headers */,
-				69EBF5DEDE4003C8B3777F4FDA0C8FAF /* YKMacro.h in Headers */,
-				1AA8EE260F1167049F9EC70D25B433DF /* YKTableView.h in Headers */,
-				7DC72BB0F933C947C676F86CCFCE7AA1 /* YKThird.h in Headers */,
-				C4F224A55765413C5A349A4A865323F9 /* YKUIK.h in Headers */,
-				4360128CA243377416DF037E95D16BFE /* YYK_BaseViews-umbrella.h in Headers */,
-				54011380AEA299DB2BE6CF7473BB93E8 /* YYKBaseCollectionViewCell.h in Headers */,
-				99EDB03DD4D28B237ACCE12183F90B57 /* YYKObject.h in Headers */,
-				114AF9801E48A1296F8491AD7ECA260C /* YYKView.h in Headers */,
-				AEC110BB4ABC3EE4B2CF5D1993E4633A /* YYKViewModel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4795,12 +4702,12 @@
 		};
 		0620493F3B6F611088C7488B6C80FEA2 /* LazyScroll */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A680B8760B0894FDF1B9F0F17A831925 /* Build configuration list for PBXNativeTarget "LazyScroll" */;
+			buildConfigurationList = 69A7C5A9F68AFADD2D2FDFAE42065177 /* Build configuration list for PBXNativeTarget "LazyScroll" */;
 			buildPhases = (
-				8B0F59EF05BF63B669B1F7776A989E07 /* Headers */,
-				FC61FBB056CA26C46C54A95B8805F258 /* Sources */,
-				0CC9A32EFD136206E5A425D9DF2A26EC /* Frameworks */,
-				A706880E23420055D9CF0CAF43B2011B /* Resources */,
+				1BB69489F03B2F37717EE174219C239B /* Headers */,
+				C81A37846DFF38E4188ED82174681EDB /* Sources */,
+				B72F4A92E740B5881E39EB270809B619 /* Frameworks */,
+				B72E3F7F7735F1E39A3CDB992933ED3F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -4832,12 +4739,12 @@
 		};
 		1E15F13BBB81310B9597BFC22320D4E5 /* YK_BaseTools */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 210647153E6CEB06D1C1FA0F4697E8E6 /* Build configuration list for PBXNativeTarget "YK_BaseTools" */;
+			buildConfigurationList = E50069C3EB917EBB49F00010D6AD6CAF /* Build configuration list for PBXNativeTarget "YK_BaseTools" */;
 			buildPhases = (
-				E703A3667D49BBC56E0866B3384B48E7 /* Headers */,
-				11C51BD46DBB7BC5B53E846CCFBC96E0 /* Sources */,
-				C1DC70D953BA2625C2371DE87C143487 /* Frameworks */,
-				3ACF7521AFBC5A56C1FFF996C6885619 /* Resources */,
+				258661F5530C8FE0AB5B759C4E7E769E /* Headers */,
+				2ED141B3EAD56AFFBCEF0F303C573307 /* Sources */,
+				42EEB1516040507037638E034BBA4636 /* Frameworks */,
+				7105DA724381A8267C8EB65175C26F9C /* Resources */,
 			);
 			buildRules = (
 			);
@@ -5173,12 +5080,12 @@
 		};
 		D015D7C0C1EE9DDC863F493A9551FFE3 /* RMQClient */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D51202D6295B071C28C4D6EB91D8943B /* Build configuration list for PBXNativeTarget "RMQClient" */;
+			buildConfigurationList = BEF508C0BFACA58DD6246C13532DD5B3 /* Build configuration list for PBXNativeTarget "RMQClient" */;
 			buildPhases = (
-				EA2A16A3B93D9D994980C71AA33E7EFD /* Headers */,
-				87595EB9A1F87E512BF4223BDC4EAC51 /* Sources */,
-				86378F970F652D16F6A4F96D763E46D2 /* Frameworks */,
-				9575DB966618B06F94E3BBC2C79C1770 /* Resources */,
+				93ED5F7B4BB460F72ED2CDACBC91497C /* Headers */,
+				6A0D78AC4C3F68A2ECA3D0F67B0A6815 /* Sources */,
+				F7DF8F13D7FF0E6685C2FC60D022C928 /* Frameworks */,
+				45937300FC0907FD5B87C27296B671B5 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -5268,13 +5175,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		05DD4CE2AC80796222825A950D4F3F4F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1BBCAA36277BF4877B19328CB2D58AB9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -5289,14 +5189,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		435BF4D16B2F9CAB6E7F883F30E32B74 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3ACF7521AFBC5A56C1FFF996C6885619 /* Resources */ = {
+		2B6B314F2508F3A29CC15F9D75CB5E33 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -5304,6 +5197,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		435BF4D16B2F9CAB6E7F883F30E32B74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45937300FC0907FD5B87C27296B671B5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -5311,6 +5211,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4A6919DCFB0718DF2937405C23168427 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5526C4C8822D8F13C2C736A5F9677481 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -5355,7 +5262,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8127348CFA9DD544F7DF1E95197A6A80 /* Resources */ = {
+		728FF2A4CDAFD0B0CDAA210105C25BF6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -5412,15 +5319,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C11823A57E90A453B870218499519234 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				46C47C427F6A2A7A66F064B9E7EFA056 /* ic_askroom_image_delete@2x.png in Resources */,
-				731338086DFFBD36BF9F0D998FF2755B /* ic_askroom_image_delete@3x.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C24D85925630BF2FC637DB8BE7ACBFC1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -5504,15 +5402,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				612B4616835B79B84A0B148D41E6AEA9 /* FMDBTools.m in Sources */,
-				DB3494F1819363910BF02513A5B72093 /* MQKey.m in Sources */,
-				61072DDAE0F93C2D0D8B56F457ADF23F /* MQManager.m in Sources */,
-				79C037AE8BAC562ACC20FD3F64AF4073 /* YK_BaseTools-dummy.m in Sources */,
-				9B0C6C54CA7759DFEDCEF5B4BDF6CF4B /* YKAudioManager.m in Sources */,
-				D643182C929DE3E8EF7973304B101E64 /* YKNetWorking.m in Sources */,
-				E6161D35B0B067EAC01041D36DB3D27A /* YKNetWorkingRequest.m in Sources */,
-				0E0A8AB7DF9753ECF489F92FE0CDF291 /* YKRecordUtil.m in Sources */,
-				A538F22A8E20165988AF3083A4293A56 /* YKSocket.m in Sources */,
+				D7A05963C08AC4E81D8E9C17762A6EDC /* FMDBTools.m in Sources */,
+				2570EA636CA21B5DC474D56487324B0C /* MQKey.m in Sources */,
+				76C6E5AC83E5EF00C997E2B8DB7B0D1B /* MQManager.m in Sources */,
+				4523C142722353469447F262D6268CA2 /* YK_BaseTools-dummy.m in Sources */,
+				FF2B0C85256118C922F4E2F213BECF72 /* YKAudioManager.m in Sources */,
+				7DA925239DB7E7DAC36029BD895E6D2C /* YKNetWorking.m in Sources */,
+				32F465313621B0BB9C1EE8331730A7CE /* YKNetWorkingRequest.m in Sources */,
+				23DCE043F32E57C9B10F2253818C045D /* YKRecordUtil.m in Sources */,
+				DB68EB802A36C78B4151B690A0C4095F /* YKSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5539,51 +5437,6 @@
 			files = (
 				4E23F4B715B693E22B5A0D98577C4BC3 /* GDataXML-HTML-dummy.m in Sources */,
 				AB457CBC5AD624F55264ABE69BEA7070 /* GDataXMLNode.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		405142DE7331B74381DC2BB3DB08ADDB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B816DF0893DADCF3F69B62D572E357BD /* MASConstraint+YYK.m in Sources */,
-				DBA07C1FB6532087C530117CAB160869 /* NSArray+YYK.m in Sources */,
-				8E1AFB5F5674449F1BF122789432A5A8 /* NSDate+YYK.m in Sources */,
-				9A5CF55D4E5CBF19BC88E1902B94013E /* NSDictionary+YYK.m in Sources */,
-				F926D47240E8C93ADD2109FE05D02B9B /* NSMutableAttributedString+YYK.m in Sources */,
-				DA9C671837ECEC755A7C65678B2AC68A /* NSObject+YYK.m in Sources */,
-				7AB88297FF18BB34EA409ED56004E944 /* NSObject+YYKLanguage.m in Sources */,
-				22019C5E3FB38C57AF5B98E305CBEA12 /* NSString+YYK.m in Sources */,
-				50502578414D5DAB038EEAD076AFB2A6 /* RACSignal+YYK.m in Sources */,
-				234FCC87410610F4DD3FBD68DB49A3F1 /* UIAlertController+YYK.m in Sources */,
-				F44BA2602943C0FDD19491B1580445FD /* UIBarButtonItem+YYK.m in Sources */,
-				C1D1559BD16752D74B1C110F525AA3A4 /* UIButton+YYK.m in Sources */,
-				044363D3758786F1F0BD6A24346F0670 /* UIColor+YYK.m in Sources */,
-				2F5F6518B505FD694280F4BE25C21574 /* UIDevice+YYK.m in Sources */,
-				650A45CB7F14B2DC3558CE922014EFDE /* UIImage+YYK.m in Sources */,
-				677140266FE5F03064A7F03D0FE04AEE /* UIImageView+YYK.m in Sources */,
-				511BC805ACF61390A5725D674A3E446D /* UILabel+YYK.m in Sources */,
-				8FB927E8D47F0AE83763E258FA642666 /* UINavigationController+YYK.m in Sources */,
-				4DEE0015AC124C09C8DB0D86DE37672C /* UIResponder+YYK.m in Sources */,
-				8343F71D51C0149D37EFE32003B9F6F2 /* UITableView+YYK.m in Sources */,
-				E118C0B47529CAF2E39E1A2C00C3303D /* UITextField+YYK.m in Sources */,
-				C33D92431E0E258A1771C4236BC6E957 /* UITextView+YYK.m in Sources */,
-				236966EC2157EEB60535CF970F8C5D71 /* UIView+YYK.m in Sources */,
-				0BECB86E0CBBBA0E4B8798B3AF74BBE9 /* UIViewController+YYK.m in Sources */,
-				534058979255B378B0F373288DE74EDF /* YKAlertCenter.m in Sources */,
-				D8000FEE28D4E936E5427F98DDE54253 /* YKAlertView.m in Sources */,
-				A5EDF388DDD7864F751F62DBA2FA51DD /* YKBannerView.m in Sources */,
-				2B99B15B321528C5BBDEA15852A693E1 /* YKBannerViewCell.m in Sources */,
-				D21467DFF5A427877067D15CA71281A1 /* YKButton.m in Sources */,
-				90D88CC39EBB8116569ACC4789795935 /* YKCollection.m in Sources */,
-				D1BE3A0F6E16EDD57BE28221A157D107 /* YKCollectionView.m in Sources */,
-				E41A6A2E9D0D6C9D42065E0804DBAD29 /* YKTableView.m in Sources */,
-				21807B4840F9F63A5A0988C27A5C89CF /* YYK_BaseViews-dummy.m in Sources */,
-				E59E8A663897B4386E5053C87AB11002 /* YYKBaseCollectionViewCell.m in Sources */,
-				16029E9D547E610C6A13D0143EF699BF /* YYKBaseCollectionViewCell.xib in Sources */,
-				CD8729B99273EABA34E3A390F4F68CE4 /* YYKObject.m in Sources */,
-				1F65EFB9D356E85644387A9AE448EE3D /* YYKView.m in Sources */,
-				244534C0704056E754C41167A58AEAAF /* YYKViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5681,14 +5534,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64B8EB80E929E59595124434D119D08E /* Sources */ = {
+		6A0D78AC4C3F68A2ECA3D0F67B0A6815 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E200B032CBFB856C3EAEB47C5CAF9C9 /* NSArray+TMSafeUtils.m in Sources */,
-				EC501923BB75C03F4D3494A4727FB326 /* NSDictionary+TMSafeUtils.m in Sources */,
-				B4A032684B38A1D5A95F25D83ED27500 /* NSString+TMSafeUtils.m in Sources */,
-				25A33DCEB2DEAB743DE331193CC1C8E2 /* TMUtils-dummy.m in Sources */,
+				2A8F983F16529226AABFD767CEE91E8E /* RMQAllocatedChannel.m in Sources */,
+				EAB141CD508D69AE69E9D0FE29B657F8 /* RMQBasicProperties+MergeDefaults.m in Sources */,
+				A0DF18C72C12E7D2C9D032BCA2865E40 /* RMQBasicProperties.m in Sources */,
+				E6A57F09B34C1F3B478021067A73CFF2 /* RMQClient-dummy.m in Sources */,
+				4FCF229F91910855CC4724B35C48AA13 /* RMQConfirmationTransaction.m in Sources */,
+				ABB6A4B100FA3144A69D093A3505C923 /* RMQConnection.m in Sources */,
+				1FF452C681FD9BF6EC61E3C0E94DE8C7 /* RMQConnectionConfig.m in Sources */,
+				E87FF1F003B28DF3483BB46CD6E91DDB /* RMQConnectionDelegateLogger.m in Sources */,
+				FB7B643C808C17EF45F2F68706C49671 /* RMQConnectionRecover.m in Sources */,
+				58ACCDB59B46905C44B6C9A216215D79 /* RMQConsumer.m in Sources */,
+				9C99B0B95A09070A606A6F7FD51BC5A9 /* RMQErrors.m in Sources */,
+				6D7CEB96B47CA3540569F02548C40FA1 /* RMQExchange.m in Sources */,
+				1FC27A13E7568A930985B79D7D5DB933 /* RMQFrame.m in Sources */,
+				5EFB8B9A1606BF003F29D0F62C84751A /* RMQFrameset.m in Sources */,
+				81A92E16F39B92330480C07B23F4CF7A /* RMQFramesetValidationResult.m in Sources */,
+				490DE6F38EC26BA5B51C1CAE9F1EBAC0 /* RMQFramesetValidator.m in Sources */,
+				9BF3BB207A407579A91567DE5DBA013B /* RMQGCDHeartbeatSender.m in Sources */,
+				9393E8A28BAF61E43D97608189138AF5 /* RMQGCDSerialQueue.m in Sources */,
+				0E0EF8CAC0735B4D6DFACE5B1B9517EA /* RMQHandshaker.m in Sources */,
+				63961A9969267E1D4DC94BEC2FF1C0A5 /* RMQHeartbeat.m in Sources */,
+				2D566AFC3C31F3F4F3CA1D19584892BA /* RMQMessage.m in Sources */,
+				7D22B4B0A6DE0179DF13DE1F893156E3 /* RMQMethodDecoder.m in Sources */,
+				063654EE3D168830E560BF51E85EFB81 /* RMQMethodMap.m in Sources */,
+				4573D99CC8F0E30B90A558887DD922DA /* RMQMethods+Convenience.m in Sources */,
+				E75B73FC5C71F8DE53DCA3D4C84F7947 /* RMQMethods.m in Sources */,
+				973D9A4EFC1890961465C0240C0F01DB /* RMQMultipleChannelAllocator.m in Sources */,
+				0942B82124B51510ABE22F3EFBBF32B3 /* RMQParser.m in Sources */,
+				732FBB911C11CB06924F4FFC9F92FB97 /* RMQPKCS12CertificateConverter.m in Sources */,
+				43CA37FB0A6F42226C3B4E4C3AA45984 /* RMQProcessInfoNameGenerator.m in Sources */,
+				E248730591235FEE93709CD1644AE6C7 /* RMQProtocolHeader.m in Sources */,
+				0267AEF413ED7566D0F2FF52D9104E00 /* RMQQueue.m in Sources */,
+				3C2C39DA6F71B250B1670540C2114D83 /* RMQQueuingConnectionDelegateProxy.m in Sources */,
+				87044F2205F8D8F4CE15A02230B59727 /* RMQReader.m in Sources */,
+				8B54EFA0B8F828DA1B1A7F79D4DAB540 /* RMQSemaphoreWaiter.m in Sources */,
+				4F8F2601BBBED56EDAA93E02F1003ED1 /* RMQSemaphoreWaiterFactory.m in Sources */,
+				F887DDC738CEA355D3C766F0893C59F0 /* RMQSuspendResumeDispatcher.m in Sources */,
+				F5EB557DA74C405A3A83380D9CD44EC6 /* RMQSynchronizedMutableDictionary.m in Sources */,
+				9785C82A4CA061912724467A79415AEE /* RMQTable.m in Sources */,
+				8C32EBCF42EA778C297113774A26831E /* RMQTCPSocketTransport.m in Sources */,
+				16E02CAC18FAF5691A309C1466CB31EA /* RMQTickingClock.m in Sources */,
+				47A2BF2EBD8DA46F073B91FEDBE9DC67 /* RMQTLSOptions.m in Sources */,
+				CDB772CFE6E786F904680D4EEAFF91D8 /* RMQTransactionalConfirmations.m in Sources */,
+				18007B313F60556FD213CB7D19FB433D /* RMQUnallocatedChannel.m in Sources */,
+				0A40973C4D24BA2EA4D8C16C3E9583AE /* RMQURI.m in Sources */,
+				5054A83A7AD71762C075E06768237508 /* RMQValues.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5733,16 +5627,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7CAB9D0FE183454F9033128CE42D35CF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5EBF5B7BC83304B8CA55DAFF020F8C15 /* CTMediator+YKBase.m in Sources */,
-				6C169CFFDB8AE49D7F850C6C8C6653E7 /* Target_YKBase.m in Sources */,
-				C4777E3BA025382ED2E361FCF690742F /* YK_BaseMediator-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7E0D56167C29831E3033100E4A70F3B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -5775,14 +5659,6 @@
 				5EB3F370507081FEE08D6591AD302363 /* CocoaAsyncSocket-dummy.m in Sources */,
 				EED4278256E6749A7DDE0A013C792602 /* GCDAsyncSocket.m in Sources */,
 				46465B88D8CAFD0F3E8FBBC3B185CDD7 /* GCDAsyncUdpSocket.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9C77FB33FFA5DEBFDF324F606E43960A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E6849FBB1FECD73631B9DC54E48EC573 /* Pods-FirstDemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6000,19 +5876,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FC61FBB056CA26C46C54A95B8805F258 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4C5E4E2B97BDE8F64A5F170D85328DE7 /* LazyScroll-dummy.m in Sources */,
-				5B8234D8784ED64F9164F8BD78C75CDF /* TMLazyItemModel.m in Sources */,
-				0EC026EFBF1B21ABD061826F55A72891 /* TMLazyModelBucket.m in Sources */,
-				CB1142FBEBCDBBE84EBA70A844204299 /* TMLazyReusePool.m in Sources */,
-				2A7ABEB6CC01009E418CEBC40BEB34B3 /* TMLazyScrollView.m in Sources */,
-				CA78F8FE26A4062D9A5D61A70BB0D9B2 /* UIView+TMLazyScrollView.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -6029,12 +5892,6 @@
 			targetProxy = 7881F11777BE3A309889546334C426E1 /* PBXContainerItemProxy */;
 		};
 		24568908F7C2AF02E4CE908181D3AA45 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SDWebImage;
-			target = 3847153A6E5EEFB86565BA840768F429 /* SDWebImage */;
-			targetProxy = CECCD4095FF448122C7CF5B9A78F8C5B /* PBXContainerItemProxy */;
-		};
-		1B24C521C20A47DA34C1E91CBF987F9E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CocoaAsyncSocket;
 			target = 6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */;
@@ -6250,12 +6107,6 @@
 			target = 438B238ACC7DF1178D1BCE1A31983146 /* ReactiveObjC */;
 			targetProxy = 7891D0BB2D7518B42CB39ABD515AD41D /* PBXContainerItemProxy */;
 		};
-		F36F2C62F578C90A96A97FF3DDBE47FD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Masonry;
-			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
-			targetProxy = 724F2AB11CC970505613A682B2DD6397 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -6293,7 +6144,7 @@
 			};
 			name = Debug;
 		};
-		0A97BE9A07CBB9A61461DA095C53A680 /* Debug */ = {
+		0A79C1725DD57D2BC59CEF82E32619BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CB2C4F8F65020B21F68BD42CB15FF721 /* LazyScroll.release.xcconfig */;
 			buildSettings = {
@@ -6306,26 +6157,27 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/YK_BaseTools/YK_BaseTools-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YK_BaseTools/YK_BaseTools-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/LazyScroll/LazyScroll-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LazyScroll/LazyScroll-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/YK_BaseTools/YK_BaseTools.modulemap";
-				PRODUCT_MODULE_NAME = YK_BaseTools;
-				PRODUCT_NAME = YK_BaseTools;
+				MODULEMAP_FILE = "Target Support Files/LazyScroll/LazyScroll.modulemap";
+				PRODUCT_MODULE_NAME = LazyScroll;
+				PRODUCT_NAME = LazyScroll;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		0E28086211F7EE80462ACF15CC14B2BB /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -6342,41 +6194,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
-		};
-		105525A6699A9857588CB981B1D2CC56 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D902EC05930B793C3B63F5E25819DA15 /* YYK_BaseViews.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/YYK_BaseViews/YYK_BaseViews-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YYK_BaseViews/YYK_BaseViews-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/YYK_BaseViews/YYK_BaseViews.modulemap";
-				PRODUCT_MODULE_NAME = YYK_BaseViews;
-				PRODUCT_NAME = YYK_BaseViews;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -6489,6 +6306,41 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManager/IQKeyboardManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IQKeyboardManager/IQKeyboardManager-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IQKeyboardManager/IQKeyboardManager.modulemap";
+				PRODUCT_MODULE_NAME = IQKeyboardManager;
+				PRODUCT_NAME = IQKeyboardManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2957EC4C67CD05C6E82C3E9B6885085E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2308EAD9A8C6C694D5F1560397E9D031 /* MBProgressHUD.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -6510,40 +6362,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		2D81C9BB1DA1F068C78E96FE566FF34F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2308EAD9A8C6C694D5F1560397E9D031 /* MBProgressHUD.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/YK_BaseMediator/YK_BaseMediator-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YK_BaseMediator/YK_BaseMediator-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/YK_BaseMediator/YK_BaseMediator.modulemap";
-				PRODUCT_MODULE_NAME = YK_BaseMediator;
-				PRODUCT_NAME = YK_BaseMediator;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		333203B8DD95FBBE699A2099ABD53526 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -7063,7 +6881,7 @@
 			};
 			name = Release;
 		};
-		7DDDB6BAB83A2627CFA6F214477142CC /* Release */ = {
+		7271C5CF6A451447105B93A523FDDA7C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 72263438BEFDE450C727042CC2A265DE /* RMQClient.release.xcconfig */;
 			buildSettings = {
@@ -7076,8 +6894,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CTMediator/CTMediator-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CTMediator/CTMediator-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/RMQClient/RMQClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RMQClient/RMQClient-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -7085,9 +6903,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/CTMediator/CTMediator.modulemap";
-				PRODUCT_MODULE_NAME = CTMediator;
-				PRODUCT_NAME = CTMediator;
+				MODULEMAP_FILE = "Target Support Files/RMQClient/RMQClient.modulemap";
+				PRODUCT_MODULE_NAME = RMQClient;
+				PRODUCT_NAME = RMQClient;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -7288,7 +7106,7 @@
 			};
 			name = Debug;
 		};
-		88083EBBE195DA0A0405565839890076 /* Debug */ = {
+		8E3C080482B6E18A2E533D3CD4DF1D71 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F81A7FE52DA681993DC4E9073B55764F /* LazyScroll.debug.xcconfig */;
 			buildSettings = {
@@ -7301,8 +7119,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RMQClient/RMQClient-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RMQClient/RMQClient-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/LazyScroll/LazyScroll-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LazyScroll/LazyScroll-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -7310,9 +7128,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/RMQClient/RMQClient.modulemap";
-				PRODUCT_MODULE_NAME = RMQClient;
-				PRODUCT_NAME = RMQClient;
+				MODULEMAP_FILE = "Target Support Files/LazyScroll/LazyScroll.modulemap";
+				PRODUCT_MODULE_NAME = LazyScroll;
+				PRODUCT_NAME = LazyScroll;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -7562,9 +7380,44 @@
 			};
 			name = Debug;
 		};
-		AE69F2AE876DEC4E1C77AEA9608AE7A2 /* Release */ = {
+		AB329589D68A8A4AB02E8F8ADCED6867 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A9A856E14B94D20C63C11BC0ABE23138 /* YK_BaseTools.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YK_BaseTools/YK_BaseTools-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YK_BaseTools/YK_BaseTools-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/YK_BaseTools/YK_BaseTools.modulemap";
+				PRODUCT_MODULE_NAME = YK_BaseTools;
+				PRODUCT_NAME = YK_BaseTools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AE69F2AE876DEC4E1C77AEA9608AE7A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DD560C611F15853903A68BCF28258E3 /* GTMBase64.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -7596,40 +7449,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		AF5B44EAD289BED3ADC17D769128AED3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DD560C611F15853903A68BCF28258E3 /* GTMBase64.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LazyScroll/LazyScroll-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LazyScroll/LazyScroll-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/LazyScroll/LazyScroll.modulemap";
-				PRODUCT_MODULE_NAME = LazyScroll;
-				PRODUCT_NAME = LazyScroll;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -7864,7 +7683,7 @@
 			};
 			name = Debug;
 		};
-		CF76D3FFBA6A63AA97199099AFCA60D8 /* Debug */ = {
+		D1F20CA5AF74551DBEC539096B44760B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 271287D07E5E92EE3D3BBE9CC839129D /* Masonry.release.xcconfig */;
 			buildSettings = {
@@ -7877,26 +7696,27 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/YYK_BaseViews/YYK_BaseViews-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YYK_BaseViews/YYK_BaseViews-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/YYK_BaseViews/YYK_BaseViews.modulemap";
-				PRODUCT_MODULE_NAME = YYK_BaseViews;
-				PRODUCT_NAME = YYK_BaseViews;
+				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		D45412CBFE0FC570945F58622B5160D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -7911,8 +7731,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/YK_BaseTools/YK_BaseTools-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YK_BaseTools/YK_BaseTools-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -7954,18 +7774,17 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
-				PRODUCT_MODULE_NAME = Masonry;
-				PRODUCT_NAME = Masonry;
+				MODULEMAP_FILE = "Target Support Files/RMQClient/RMQClient.modulemap";
+				PRODUCT_MODULE_NAME = RMQClient;
+				PRODUCT_NAME = RMQClient;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		D9B9C4582734C1AFF1A48A02F40F523E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -8187,11 +8006,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5B8E68449A18121BC5A5B5C491F1283E /* Build configuration list for PBXNativeTarget "MJExtension" */ = {
+		69A7C5A9F68AFADD2D2FDFAE42065177 /* Build configuration list for PBXNativeTarget "LazyScroll" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B8727AE0BCFC028F864893C133D2F060 /* Debug */,
-				5F73FAFE8B8967E89A0F1B2A0C6A2E64 /* Release */,
+				8E3C080482B6E18A2E533D3CD4DF1D71 /* Debug */,
+				0A79C1725DD57D2BC59CEF82E32619BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -8223,15 +8042,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83705B2497143E3AD7604C5A87A9B5DA /* Build configuration list for PBXNativeTarget "Pods-FirstDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B2EF709CB553FEF809756168662C6205 /* Debug */,
-				A1A0607BFE1BEF53C02D92E6B663614D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		87FD40BD683E3BD044AA4D1B5CA58652 /* Build configuration list for PBXNativeTarget "Masonry" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -8250,20 +8060,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A680B8760B0894FDF1B9F0F17A831925 /* Build configuration list for PBXNativeTarget "LazyScroll" */ = {
+		BEF508C0BFACA58DD6246C13532DD5B3 /* Build configuration list for PBXNativeTarget "RMQClient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AF5B44EAD289BED3ADC17D769128AED3 /* Debug */,
-				EB80C56A9214A58296EBB1463E0C2EAB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B03F374EB80226CAEFE3F5BB017130E4 /* Build configuration list for PBXNativeTarget "TMUtils" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				624A99678155B190D61D668756DD1B75 /* Debug */,
-				D09D877483EF86EB519C7E04A9E6AB57 /* Release */,
+				D7BB2407F0839A4F7884E4577C428341 /* Debug */,
+				7271C5CF6A451447105B93A523FDDA7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -8307,17 +8108,8 @@
 		E50069C3EB917EBB49F00010D6AD6CAF /* Build configuration list for PBXNativeTarget "YK_BaseTools" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88083EBBE195DA0A0405565839890076 /* Debug */,
-				57FAA35BF6C8A2E702E446A08358A43F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DE0457E9249CBF11B87DB7DEEDF0DB2C /* Build configuration list for PBXNativeTarget "CTMediator" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8FA599F4FEC30B203C9EFCF6BD9B3F31 /* Debug */,
-				7DDDB6BAB83A2627CFA6F214477142CC /* Release */,
+				D45412CBFE0FC570945F58622B5160D0 /* Debug */,
+				AB329589D68A8A4AB02E8F8ADCED6867 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
