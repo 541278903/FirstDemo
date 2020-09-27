@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1E15F13BBB81310B9597BFC22320D4E5"
-               BuildableName = "YK_BaseTools.framework"
+               BuildableName = "libYK_BaseTools.a"
                BlueprintName = "YK_BaseTools"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

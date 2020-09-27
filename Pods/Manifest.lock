@@ -118,6 +118,7 @@ DEPENDENCIES:
   - GDataXML-HTML
   - GTMBase64
   - IQKeyboardManager
+  - JKVValue
   - LazyScroll
   - LookinServer
   - Masonry
@@ -184,6 +185,6 @@ SPEC CHECKSUMS:
   YK_BaseTools: bd77bbf13681aedbcde423f00a4a2f4d513d2906
   YYK_BaseViews: 2305ba939574346feb31e549bddb8df9bcdccbe3
 
-PODFILE CHECKSUM: b242e19813a302b7326278ccf500a4cbc7a90b26
+PODFILE CHECKSUM: 943fa8de7896453d64f752c0bafe19fc55e1c86a
 
 COCOAPODS: 1.9.3

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FA3AA612E3720B0C68B3A99 /* libPods-FirstDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04428723589D7422C08EE122 /* libPods-FirstDemo.a */; };
 		2B23594F23B495C000C5E1B3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B23594E23B495C000C5E1B3 /* CoreFoundation.framework */; };
 		2B235D2A238F7B7A0013B665 /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B235D29238F7B7A0013B665 /* Toast.m */; };
 		2B235D2D238F9FFD0013B665 /* ToastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B235D2C238F9FFD0013B665 /* ToastViewController.m */; };
@@ -51,7 +52,6 @@
 		2BBDA098232684A100A2E111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BBDA097232684A100A2E111 /* Assets.xcassets */; };
 		2BBDA09B232684A100A2E111 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BBDA099232684A100A2E111 /* LaunchScreen.storyboard */; };
 		2BBDA09E232684A100A2E111 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BBDA09D232684A100A2E111 /* main.m */; };
-		727C193047AF559E88AE9D04 /* Pods_FirstDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55BE96D0BF7849D81E123EB /* Pods_FirstDemo.framework */; };
 		F92389AC24C7D6530000BCC2 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92389AB24C7D6530000BCC2 /* TextViewController.m */; };
 		F92389AF24C7DD420000BCC2 /* YKAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92389AE24C7DD420000BCC2 /* YKAlertViewController.m */; };
 		F92389B224C801470000BCC2 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F92389B124C801470000BCC2 /* DetailViewController.m */; };
@@ -59,6 +59,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04428723589D7422C08EE122 /* libPods-FirstDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FirstDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B203EFC234C59CB00808F21 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2B23594E23B495C000C5E1B3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		2B235D28238F7B7A0013B665 /* Toast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Toast.h; sourceTree = "<group>"; };
@@ -146,7 +147,6 @@
 		2BBDA09D232684A100A2E111 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		47D9FFB30FEE4A3B1BF0A528 /* Pods-FirstDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstDemo.release.xcconfig"; path = "Target Support Files/Pods-FirstDemo/Pods-FirstDemo.release.xcconfig"; sourceTree = "<group>"; };
 		9B9BEDE23D0CEE1E85F90557 /* Pods-FirstDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirstDemo.debug.xcconfig"; path = "Target Support Files/Pods-FirstDemo/Pods-FirstDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		B55BE96D0BF7849D81E123EB /* Pods_FirstDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirstDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92389AA24C7D6530000BCC2 /* TextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
 		F92389AB24C7D6530000BCC2 /* TextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
 		F92389AD24C7DD420000BCC2 /* YKAlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKAlertViewController.h; sourceTree = "<group>"; };
@@ -163,7 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B23594F23B495C000C5E1B3 /* CoreFoundation.framework in Frameworks */,
-				727C193047AF559E88AE9D04 /* Pods_FirstDemo.framework in Frameworks */,
+				1FA3AA612E3720B0C68B3A99 /* libPods-FirstDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +176,7 @@
 				2B23594E23B495C000C5E1B3 /* CoreFoundation.framework */,
 				2BBA7889234C68BE004055A9 /* Foundation.framework */,
 				2B203EFC234C59CB00808F21 /* UIKit.framework */,
-				B55BE96D0BF7849D81E123EB /* Pods_FirstDemo.framework */,
+				04428723589D7422C08EE122 /* libPods-FirstDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -380,6 +380,7 @@
 				2BBDA088232684A000A2E111 /* Frameworks */,
 				2BBDA089232684A000A2E111 /* Resources */,
 				32DE3F538F5F206AB308A63D /* [CP] Embed Pods Frameworks */,
+				9FEB538BD8F0E37D189269D6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -454,6 +455,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirstDemo/Pods-FirstDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FEB538BD8F0E37D189269D6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirstDemo/Pods-FirstDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirstDemo/Pods-FirstDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirstDemo/Pods-FirstDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F539D1917DD865367CB9FB5A /* [CP] Check Pods Manifest.lock */ = {

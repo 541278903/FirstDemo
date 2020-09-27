@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "ABD0BEB997F424C11EE21A4E091425E4"
-               BuildableName = "GTMBase64.framework"
+               BuildableName = "libGTMBase64.a"
                BlueprintName = "GTMBase64"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9BA99EA678644AC23346F73D0DD3DCEB"
-               BuildableName = "PPBadgeView.framework"
+               BuildableName = "libPPBadgeView.a"
                BlueprintName = "PPBadgeView"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

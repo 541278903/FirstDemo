@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D015D7C0C1EE9DDC863F493A9551FFE3"
-               BuildableName = "RMQClient.framework"
+               BuildableName = "libRMQClient.a"
                BlueprintName = "RMQClient"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "693F68B0ECDCFF738C4CC7B5E5243743"
-               BuildableName = "JKVValue.framework"
+               BuildableName = "libJKVValue.a"
                BlueprintName = "JKVValue"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0620493F3B6F611088C7488B6C80FEA2"
-               BuildableName = "LazyScroll.framework"
+               BuildableName = "libLazyScroll.a"
                BlueprintName = "LazyScroll"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

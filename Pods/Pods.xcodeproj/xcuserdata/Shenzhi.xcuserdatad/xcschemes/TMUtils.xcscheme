@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "000E2E1CEA5AF96DEBC2F5498D244C6E"
-               BuildableName = "TMUtils.framework"
+               BuildableName = "libTMUtils.a"
                BlueprintName = "TMUtils"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
