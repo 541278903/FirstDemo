@@ -10,21 +10,20 @@
 #endif
 #endif
 
-#import "Base.h"
+#import "Singleton.h"
 #import "UIColor+YYK.h"
 #import "UIDevice+YYK.h"
 #import "UIResponder+YYK.h"
 #import "UIView+YYK.h"
 #import "YKAlertCenter.h"
-#import "YKAlertView.h"
 #import "YKBaseClass.h"
+#import "YKMacro.h"
 #import "YYKObject.h"
 #import "YYKView.h"
 #import "YYKViewModel.h"
 #import "MASConstraint+YYK.h"
 #import "RACSignal+YYK.h"
 #import "YKThird.h"
-#import "YKExection.h"
 #import "NSArray+YYK.h"
 #import "NSDate+YYK.h"
 #import "NSDictionary+YYK.h"
@@ -45,15 +44,15 @@
 #import "UITextView+YYK.h"
 #import "UIViewController+YYK.h"
 #import "YKUIK.h"
-#import "BaseAlertAction.h"
+#import "YKBannerView.h"
+#import "YKBannerViewCell.h"
 #import "SDView.h"
+#import "YKAlertView.h"
 #import "YKButton.h"
 #import "YKCollection.h"
 #import "YKCollectionView.h"
 #import "YKTableView.h"
 #import "YYKBaseCollectionViewCell.h"
-#import "Singleton.h"
-#import "YKMacro.h"
 
 FOUNDATION_EXPORT double YYK_BaseViewsVersionNumber;
 FOUNDATION_EXPORT const unsigned char YYK_BaseViewsVersionString[];

@@ -21,6 +21,7 @@ PODS:
     - CocoaAsyncSocket/RunLoop
   - CocoaAsyncSocket/GCD (7.4.3)
   - CocoaAsyncSocket/RunLoop (7.4.3)
+  - CTMediator (44)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
@@ -40,27 +41,80 @@ PODS:
   - RMQClient (0.10.0):
     - CocoaAsyncSocket (~> 7.4.0)
     - JKVValue
-  - SDWebImage (5.9.0):
-    - SDWebImage/Core (= 5.9.0)
-  - SDWebImage/Core (5.9.0)
+  - SDWebImage (5.9.1):
+    - SDWebImage/Core (= 5.9.1)
+  - SDWebImage/Core (5.9.1)
   - SocketRocket (0.5.1)
   - TMUtils (1.0.1)
   - WoodPeckeriOS (1.2.8)
+  - YK_BaseMediator (0.0.2):
+    - CTMediator
+    - YK_BaseMediator/MainModel_Mediator (= 0.0.2)
+    - YK_BaseMediator/Model_YKBase (= 0.0.2)
+  - YK_BaseMediator/MainModel_Mediator (0.0.2):
+    - CTMediator
+  - YK_BaseMediator/Model_YKBase (0.0.2):
+    - CTMediator
   - YK_BaseTools (0.0.3):
     - AFNetworking
     - FMDB
     - ReactiveObjC
     - RMQClient
     - SocketRocket
-  - YYK_BaseViews (1.0.3):
+  - YYK_BaseViews (1.0.9):
     - Masonry
     - MJExtension
     - MJRefresh
     - ReactiveObjC
+    - SDWebImage
+    - YYK_BaseViews/BaseClass (= 1.0.9)
+    - YYK_BaseViews/Exection (= 1.0.9)
+    - YYK_BaseViews/SdView (= 1.0.9)
+  - YYK_BaseViews/BaseClass (1.0.9):
+    - Masonry
+    - MJExtension
+    - MJRefresh
+    - ReactiveObjC
+    - SDWebImage
+  - YYK_BaseViews/Exection (1.0.9):
+    - Masonry
+    - MJExtension
+    - MJRefresh
+    - ReactiveObjC
+    - SDWebImage
+    - YYK_BaseViews/Exection/Third (= 1.0.9)
+    - YYK_BaseViews/Exection/YYKNSObject (= 1.0.9)
+    - YYK_BaseViews/Exection/YYKUIK (= 1.0.9)
+  - YYK_BaseViews/Exection/Third (1.0.9):
+    - Masonry
+    - MJExtension
+    - MJRefresh
+    - ReactiveObjC
+    - SDWebImage
+    - YYK_BaseViews/BaseClass
+  - YYK_BaseViews/Exection/YYKNSObject (1.0.9):
+    - Masonry
+    - MJExtension
+    - MJRefresh
+    - ReactiveObjC
+    - SDWebImage
+    - YYK_BaseViews/BaseClass
+  - YYK_BaseViews/Exection/YYKUIK (1.0.9):
+    - Masonry
+    - MJExtension
+    - MJRefresh
+    - ReactiveObjC
+    - SDWebImage
+    - YYK_BaseViews/BaseClass
+  - YYK_BaseViews/SdView (1.0.9):
+    - Masonry
+    - MJExtension
+    - MJRefresh
+    - ReactiveObjC
+    - SDWebImage
+    - YYK_BaseViews/BaseClass
 
 DEPENDENCIES:
-  - AFNetworking
-  - FMDB
   - GDataXML-HTML
   - GTMBase64
   - IQKeyboardManager
@@ -70,19 +124,21 @@ DEPENDENCIES:
   - MBProgressHUD
   - MJRefresh
   - PPBadgeView
-  - RMQClient
   - SDWebImage
   - WoodPeckeriOS
+  - YK_BaseMediator
   - YK_BaseTools
   - YYK_BaseViews
 
 SPEC REPOS:
   https://gitee.com/Edwrard/YKSpec.git:
+    - YK_BaseMediator
     - YK_BaseTools
     - YYK_BaseViews
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - CocoaAsyncSocket
+    - CTMediator
     - FMDB
     - GDataXML-HTML
     - GTMBase64
@@ -105,6 +161,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   CocoaAsyncSocket: a18c75dca4b08723628a0bacca6e94803d90be91
+  CTMediator: 933dba523da87bf875e4a7e8728945fbc512f1d2
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   GDataXML-HTML: a4f11079b48d9fe96ff1fe478943a317185227e2
   GTMBase64: f0f91be06a7a20b84c8e4fee30c0430395091d82
@@ -119,13 +176,14 @@ SPEC CHECKSUMS:
   PPBadgeView: b50a223638970fd0781e8753250385864b6dd2fe
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   RMQClient: e9bfea2d08f151b6b12df82ad115c78bd8de2106
-  SDWebImage: 62ae4a18473520c67b79e9724c31a63599cc9423
+  SDWebImage: a990c053fff71e388a10f3357edb0be17929c9c5
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   TMUtils: 8af8e4695b6e4086d0545ecd7cd025556515ab42
   WoodPeckeriOS: 20a14e389721ec317d99512b98885fce7076a05c
+  YK_BaseMediator: 7e08e69692e326958c6b3247e190d316461a6529
   YK_BaseTools: bd77bbf13681aedbcde423f00a4a2f4d513d2906
-  YYK_BaseViews: 101b2687595ff6d182172e2596d21cae1252a87d
+  YYK_BaseViews: 2305ba939574346feb31e549bddb8df9bcdccbe3
 
-PODFILE CHECKSUM: 221a091fbd10e698d23f900f9da31874fa14211f
+PODFILE CHECKSUM: b242e19813a302b7326278ccf500a4cbc7a90b26
 
 COCOAPODS: 1.9.3

@@ -1,16 +1,17 @@
 //
-//  BaseAlertAction.h
+//  Target_YKBase.h
 //  YYKPodLib_Sec
 //
-//  Created by Shenzhi on 2020/5/26.
+//  Created by edward on 2020/9/22.
 //  Copyright © 2020 edward. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BaseAlertAction : UIView
+@interface Target_YKBase : NSObject
 
 @end
 

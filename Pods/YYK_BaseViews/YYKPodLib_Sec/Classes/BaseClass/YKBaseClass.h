@@ -16,6 +16,6 @@
 #import "UIColor+YYK.h"
 #import "UIResponder+YYK.h"
 #import "YKAlertCenter.h"
-#import "YKAlertView.h"
+//#import "YKAlertView.h"
 
 #endif /* YKBaseClass_h */

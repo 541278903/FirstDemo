@@ -10,6 +10,7 @@
 
 #import "CTableViewController.h"
 #import <SocketRocket/SocketRocket.h>
+#import <YK_BaseMediator/CTMediator+YKBase.h>
 
 
 #define XMGTextFont [UIFont systemFontSize:14];
@@ -106,6 +107,9 @@
 {
     if(!_allcon){
         NSMutableArray *all = [[NSMutableArray alloc]init];
+        
+        AllController *sixteen = [[AllController alloc]initWithName:@"YKSpec组件化新增测试" Con:[[CTMediator sharedInstance] normalBaseViewController:@"你好可爱"]];
+        [all addObject:sixteen];
         
         AllController *fifteen = [[AllController alloc]initWithName:@"自定义弹出Con" Con:[[YKAlertViewController alloc] init]];
         [all addObject:fifteen];
